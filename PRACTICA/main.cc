@@ -25,7 +25,7 @@ int main() {
         else if (op == "nueva sesion" or op == "ns") {
             string s;
             cin >> s;
-            cs.nueva_sesion(s);             
+            cs.nueva_sesion(s);
         }
         else if (op == "nuevo curso" or op == "nc") {
             int c;
@@ -68,7 +68,7 @@ int main() {
         else if (op == "listar_problemas" or op == "lp") {
             cp.listar_problemas();
         }
-        else if (op == "escribrir problema" or op == "ep") { 
+        else if (op == "escribrir problema" or op == "ep") {
             string p;
             cin >> p;
 
@@ -93,8 +93,10 @@ int main() {
             cc.buscar_escribir_curso(c)
         }
         else if (op == "listar usuarios" or op == "lu") {
-            
+
         }
         else if (op == "escribir usuario" or op == "eu")
     }
 }
+
+//MIRA HE FET UN CANVI
