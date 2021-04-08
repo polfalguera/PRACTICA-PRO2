@@ -2,7 +2,7 @@
     @brief Especificación de la clase Usuario
 */
 
-#ifndef _USUARIO_HH_ 
+#ifndef _USUARIO_HH_
 #define _USUARIO_HH_
 
 #ifndef NO_DIAGRAM
@@ -10,6 +10,7 @@
 #include <vector>
 #include <map>
 #endif
+using namespace std;
 
 /*
  * Clase Usuario
@@ -17,7 +18,7 @@
 
 /** @class Usuario
     @brief Representa un usuario registrado en la plataforma EVALUATOR.
-    
+
 */
 
 class Usuario {

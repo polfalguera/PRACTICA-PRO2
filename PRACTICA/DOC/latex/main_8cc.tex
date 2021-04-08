@@ -1,0 +1,125 @@
+\hypertarget{main_8cc}{}\section{Referencia del Archivo main.\+cc}
+\label{main_8cc}\index{main.\+cc@{main.\+cc}}
+Dependencia gráfica adjunta para main.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cc@{main.\+cc}!main@{main}}
+\index{main@{main}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 12 del archivo main.\+cc.
+
+
+\begin{DoxyCode}
+12            \{
+13     \mbox{\hyperlink{class_cursos}{Cursos}} cc;
+14     cc.\mbox{\hyperlink{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}{leer\_conjunto\_cursos}}();
+15     \mbox{\hyperlink{class_sesiones}{Sesiones}} cs;
+16     cs.\mbox{\hyperlink{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}{leer\_conjunto\_sesiones}}();
+17     \mbox{\hyperlink{class_problemas}{Problemas}} cp;
+18     cp.\mbox{\hyperlink{class_problemas_a6d16937dea64409081e507065e17f2b1}{leer\_coleccion\_problemas}}();
+19     \mbox{\hyperlink{class_usuarios}{Usuarios}} cu;
+20 
+21     \textcolor{keywordtype}{string} op;
+22     \textcolor{keywordflow}{while} (op != \textcolor{stringliteral}{"fin"}) \{
+23         \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"nuevo problema"} or op == \textcolor{stringliteral}{"np"}) \{
+24             \textcolor{keywordtype}{string} p;
+25             cin >> p;
+26 
+27 
+28             cp.\mbox{\hyperlink{class_problemas_a1cebce2784b951482651d299be50d8b3}{nuevo\_problema}}(p);
+29         \}
+30         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"nueva sesion"} or op == \textcolor{stringliteral}{"ns"}) \{
+31             \textcolor{keywordtype}{string} s;
+32             cin >> s;
+33             cs.\mbox{\hyperlink{class_sesiones_a9a08619cdbf3cdc21b7be343c2f05ce4}{nueva\_sesion}}(s);
+34         \}
+35         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"nuevo curso"} or op == \textcolor{stringliteral}{"nc"}) \{
+36             \textcolor{keywordtype}{int} c;
+37             cin >> c;
+38             cc.\mbox{\hyperlink{class_cursos_a64e6fd6a1d034b381b0377d098778dd9}{nuevo\_curso}}(c);
+39         \}
+40         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"alta usuario"} or op == \textcolor{stringliteral}{"a"}) \{
+41             \textcolor{keywordtype}{string} u;
+42             cin >> u;
+43 
+44             \mbox{\hyperlink{class_usuario}{Usuario}} us;
+45             usuario.\mbox{\hyperlink{class_usuario_a2643a5c29f64aab2c531f78d2618e891}{leer\_usuario}}();
+46             cu.\mbox{\hyperlink{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}{alta\_usuario}}(u,us);
+47         \}
+48         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"baja usuario"} or op == \textcolor{stringliteral}{"b"}) \{
+49             \textcolor{keywordtype}{string} u;
+50             cin >> u;
+51 
+52             cu.\mbox{\hyperlink{class_usuarios_a11e75ce29066b53e84731315ef476312}{baja\_usuario}}(u);
+53         \}
+54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"inscribir curso"} or op == \textcolor{stringliteral}{"i"}) \{
+55 
+56         \}
+57         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"curso usuario"} or op == \textcolor{stringliteral}{"cu"}) \{
+58             \textcolor{keywordtype}{string} u;
+59             cin >> u;
+60         \}
+61         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"sesion problema"} or op == \textcolor{stringliteral}{"sp"}) \{
+62 
+63         \}
+64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"problemas resuletos"} or op == \textcolor{stringliteral}{"pr"}) \{
+65 
+66         \}
+67         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"problemas enviables"} or op == \textcolor{stringliteral}{"pe"}) \{
+68 
+69         \}
+70         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"envio"} or op == \textcolor{stringliteral}{"e"}) \{
+71 
+72         \}
+73         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar\_problemas"} or op == \textcolor{stringliteral}{"lp"}) \{
+74             cp.\mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\_problemas}}();
+75         \}
+76         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribrir problema"} or op == \textcolor{stringliteral}{"ep"}) \{
+77             \textcolor{keywordtype}{string} p;
+78             cin >> p;
+79 
+80             cp.\mbox{\hyperlink{class_problemas_a36f5cb6d84345475fd7ea80142d7500d}{buscar\_escribir\_problema}}(p);
+81         \}
+82         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar sesiones"} or op == \textcolor{stringliteral}{"ls"}) \{
+83             cs.\mbox{\hyperlink{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}{listar\_sesiones}}();
+84         \}
+85         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir sesion"} or op == \textcolor{stringliteral}{"es"}) \{
+86             \textcolor{keywordtype}{string} s;
+87             cin >> s;
+88 
+89             cs.\mbox{\hyperlink{class_sesiones_a2ade13f47c028e41888540c4f03449b6}{buscar\_escribir\_sesion}}(s);
+90         \}
+91         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar cursos"} or op == \textcolor{stringliteral}{"lc"}) \{
+92             cc.\mbox{\hyperlink{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}{listar\_cursos}}();
+93         \}
+94         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir curso"} or op == \textcolor{stringliteral}{"ec"}) \{
+95             \textcolor{keywordtype}{int} c;
+96             cin >> c;
+97 
+98             cc.\mbox{\hyperlink{class_cursos_af870c77c0a43615e18d4f7c5db30c49f}{buscar\_escribir\_curso}}(c)
+99         \}
+100         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar usuarios"} or op == \textcolor{stringliteral}{"lu"}) \{
+101 
+102         \}
+103         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir usuario"} or op == \textcolor{stringliteral}{"eu"})
+104     \}
+105 \}
+\end{DoxyCode}

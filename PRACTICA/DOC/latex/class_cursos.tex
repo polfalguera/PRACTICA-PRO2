@@ -1,0 +1,190 @@
+\hypertarget{class_cursos}{}\section{Referencia de la Clase Cursos}
+\label{class_cursos}\index{Cursos@{Cursos}}
+
+
+Representa el conjunto de cursos de la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cursos_acdb8d248e1a8ebe1aac747efa7b54cd4}{Cursos}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_a64e6fd6a1d034b381b0377d098778dd9}{nuevo\+\_\+curso}} (int c)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo curso al conjunto de cursos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}{incrementar\+\_\+usuarios\+\_\+completado}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios que han completado el curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}{incrementar\+\_\+usuarios\+\_\+inscritos}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios inscritos actualmente en el curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_aa9b43f3b9380052878414fa4906b7925}{decrementar\+\_\+usuarios\+\_\+inscritos}} ()
+\begin{DoxyCompactList}\small\item\em Decrementa una unidad el número de usuarios inscritos actualmente en el curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_aa5a8cdb45236245e938ba34481a788fe}{sesion\+\_\+problema}} (int c, string p)
+\begin{DoxyCompactList}\small\item\em Consulta la sesion a la que pertenece un problema dentro de un curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}{leer\+\_\+conjunto\+\_\+cursos}} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}{listar\+\_\+cursos}} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_af870c77c0a43615e18d4f7c5db30c49f}{buscar\+\_\+escribir\+\_\+curso}} (int c)
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el conjunto de cursos de la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
+
+Definición en la línea 23 del archivo Cursos.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cursos_acdb8d248e1a8ebe1aac747efa7b54cd4}\label{class_cursos_acdb8d248e1a8ebe1aac747efa7b54cd4}} 
+\index{Cursos@{Cursos}!Cursos@{Cursos}}
+\index{Cursos@{Cursos}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{Cursos()}{Cursos()}}
+{\footnotesize\ttfamily Cursos\+::\+Cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automàticamente al declarar un curso. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de cursos vacío 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cursos_a64e6fd6a1d034b381b0377d098778dd9}\label{class_cursos_a64e6fd6a1d034b381b0377d098778dd9}} 
+\index{Cursos@{Cursos}!nuevo\+\_\+curso@{nuevo\+\_\+curso}}
+\index{nuevo\+\_\+curso@{nuevo\+\_\+curso}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{nuevo\+\_\+curso()}{nuevo\_curso()}}
+{\footnotesize\ttfamily void Cursos\+::nuevo\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo curso al conjunto de cursos. 
+
+\begin{DoxyPrecond}{Precondición}
+c es un entero que represental el identificador del curso a añadir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha añadido el curso con identificador c al conjunto de cursos siempre y cuando este no estuviera previamente y cumpla la no repetición de problemas dentro del mismo. En caso contrario, se imprime un mensaje de error 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}\label{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}} 
+\index{Cursos@{Cursos}!incrementar\+\_\+usuarios\+\_\+completado@{incrementar\+\_\+usuarios\+\_\+completado}}
+\index{incrementar\+\_\+usuarios\+\_\+completado@{incrementar\+\_\+usuarios\+\_\+completado}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{incrementar\+\_\+usuarios\+\_\+completado()}{incrementar\_usuarios\_completado()}}
+{\footnotesize\ttfamily void Cursos\+::incrementar\+\_\+usuarios\+\_\+completado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad el número de usuarios que han completado el curso. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha incrementado una unidad el número de usuarios que han completado el parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}\label{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}} 
+\index{Cursos@{Cursos}!incrementar\+\_\+usuarios\+\_\+inscritos@{incrementar\+\_\+usuarios\+\_\+inscritos}}
+\index{incrementar\+\_\+usuarios\+\_\+inscritos@{incrementar\+\_\+usuarios\+\_\+inscritos}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{incrementar\+\_\+usuarios\+\_\+inscritos()}{incrementar\_usuarios\_inscritos()}}
+{\footnotesize\ttfamily void Cursos\+::incrementar\+\_\+usuarios\+\_\+inscritos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad el número de usuarios inscritos actualmente en el curso. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha incrementado una unidad el número de usuarios inscritos actualmente en el parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_aa9b43f3b9380052878414fa4906b7925}\label{class_cursos_aa9b43f3b9380052878414fa4906b7925}} 
+\index{Cursos@{Cursos}!decrementar\+\_\+usuarios\+\_\+inscritos@{decrementar\+\_\+usuarios\+\_\+inscritos}}
+\index{decrementar\+\_\+usuarios\+\_\+inscritos@{decrementar\+\_\+usuarios\+\_\+inscritos}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{decrementar\+\_\+usuarios\+\_\+inscritos()}{decrementar\_usuarios\_inscritos()}}
+{\footnotesize\ttfamily void Cursos\+::decrementar\+\_\+usuarios\+\_\+inscritos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decrementa una unidad el número de usuarios inscritos actualmente en el curso. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha decrementado una unidad el número de usuarios inscritos actualmente en el parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_aa5a8cdb45236245e938ba34481a788fe}\label{class_cursos_aa5a8cdb45236245e938ba34481a788fe}} 
+\index{Cursos@{Cursos}!sesion\+\_\+problema@{sesion\+\_\+problema}}
+\index{sesion\+\_\+problema@{sesion\+\_\+problema}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{sesion\+\_\+problema()}{sesion\_problema()}}
+{\footnotesize\ttfamily void Cursos\+::sesion\+\_\+problema (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Consulta la sesion a la que pertenece un problema dentro de un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+c es el identificador de un curso y p es el identificador de un problema 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si c es un curso válido y p pertenece a c, se imprime la sesión a la que pertenece p dentro de c. En caso que el curso no existao el problema no pertenezca al curso, se imprime un mensaje de error 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}\label{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}} 
+\index{Cursos@{Cursos}!leer\+\_\+conjunto\+\_\+cursos@{leer\+\_\+conjunto\+\_\+cursos}}
+\index{leer\+\_\+conjunto\+\_\+cursos@{leer\+\_\+conjunto\+\_\+cursos}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{leer\+\_\+conjunto\+\_\+cursos()}{leer\_conjunto\_cursos()}}
+{\footnotesize\ttfamily void Cursos\+::leer\+\_\+conjunto\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+Se leen los cursos que formaran parte de la plataforma E\+V\+A\+L\+U\+A\+T\+OR. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene uno o más cursos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}\label{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}} 
+\index{Cursos@{Cursos}!listar\+\_\+cursos@{listar\+\_\+cursos}}
+\index{listar\+\_\+cursos@{listar\+\_\+cursos}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{listar\+\_\+cursos()}{listar\_cursos()}}
+{\footnotesize\ttfamily void Cursos\+::listar\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+Se listan los cursos actuales de la plataforma E\+V\+A\+L\+U\+A\+T\+OR \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla los cursos del conjunto de forma creciente por su identificador. Para cada uno, se muestra el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_af870c77c0a43615e18d4f7c5db30c49f}\label{class_cursos_af870c77c0a43615e18d4f7c5db30c49f}} 
+\index{Cursos@{Cursos}!buscar\+\_\+escribir\+\_\+curso@{buscar\+\_\+escribir\+\_\+curso}}
+\index{buscar\+\_\+escribir\+\_\+curso@{buscar\+\_\+escribir\+\_\+curso}!Cursos@{Cursos}}
+\subsubsection{\texorpdfstring{buscar\+\_\+escribir\+\_\+curso()}{buscar\_escribir\_curso()}}
+{\footnotesize\ttfamily void Cursos\+::buscar\+\_\+escribir\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+Busca y imprime un curso perteneciente al parámetro implícito. \begin{DoxyPrecond}{Precondición}
+c es el identificador de un curso 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si c pertenece al parámetro implícito, se imprime el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente, el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden en el que se leyeron cuando se creó el curso. En caso que c no exista, se imprime por pantalla un mensaje de error 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cursos_8hh}{Cursos.\+hh}}\end{DoxyCompactItemize}

@@ -12,7 +12,7 @@
 #include <vector>
 #include <map>
 #endif
-
+using namespace std;
 /*
  * Clase Usuarios
  */
@@ -46,17 +46,17 @@ public:
       \post Se ha añadido el usuario con identificador u al parámetro
       implícito, si este no existía previamente, y se imprime por pantalla
       el número de usuarios registrados tras ser añadido. En caso que el
-      usuario ya exista, se imprime un mensaje de error  
+      usuario ya exista, se imprime un mensaje de error
     */
     void alta_usuario(string u, const Usuario& us);
 
     /** @brief Da de baja a un usuario de la plataforma
       \pre u representa el identificador del usuario a dar de baja
       \post Si u es un identificador válido, se borra de la plataforma el
-      usuario con identificador u y se imprime por pantalla el número de 
+      usuario con identificador u y se imprime por pantalla el número de
       usuarios registrados tras ser borrado. En caso que no exista el usuario,
-      se imprime por pantalla un mensaje de error  
+      se imprime por pantalla un mensaje de error
     */
-    void baja_usuario(string u);    
+    void baja_usuario(string u);
 };
 #endif

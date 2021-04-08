@@ -10,6 +10,7 @@
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <vector>
+#endif
 using namespace std;
 
 /*
@@ -25,7 +26,7 @@ public:
     //Constructora
 
     /** @brief Creadora por defecto.
-        
+
         Se ejecuta automàticamente al declarar un curso.
         \pre Cierto
         \post El resultado es un conjunto de cursos vacío
@@ -46,27 +47,27 @@ public:
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
         \pre cierto
-        \post se ha incrementado una unidad el número de usuarios que han 
+        \post se ha incrementado una unidad el número de usuarios que han
         completado el parámetro implícito
     */
     void incrementar_usuarios_completado();
 
-    /** @brief Incrementa una unidad el número de usuarios inscritos 
+    /** @brief Incrementa una unidad el número de usuarios inscritos
         actualmente en el curso.
         \pre cierto
-        \post se ha incrementado una unidad el número de usuarios inscritos 
+        \post se ha incrementado una unidad el número de usuarios inscritos
         actualmente en el parámetro implícito
     */
     void incrementar_usuarios_inscritos();
 
-    /** @brief Decrementa una unidad el número de usuarios inscritos 
+    /** @brief Decrementa una unidad el número de usuarios inscritos
         actualmente en el curso.
         \pre cierto
-        \post se ha decrementado una unidad el número de usuarios inscritos 
+        \post se ha decrementado una unidad el número de usuarios inscritos
         actualmente en el parámetro implícito
     */
     void decrementar_usuarios_inscritos();
-    
+
     //Consultora
 
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
@@ -83,7 +84,7 @@ public:
     //Lectura
 
     /** @brief Operación de lectura.
-        
+
         Se leen los cursos que formaran parte de la plataforma EVALUATOR.
         \pre Cierto
         \post El parámetro implícito contiene uno o más cursos
@@ -93,12 +94,12 @@ public:
     //Escritura
 
     /** @brief Operación de escritura.
-        
+
         Se listan los cursos actuales de la plataforma EVALUATOR
         \pre Cierto
-        \post Se imprimen por pantalla los cursos del conjunto de forma 
+        \post Se imprimen por pantalla los cursos del conjunto de forma
         creciente por su identificador. Para cada uno, se muestra el número
-        de usuarios actuales o pasados que lo han completado, el número de 
+        de usuarios actuales o pasados que lo han completado, el número de
         usuarios inscritos actualmente y el número de sesiones que lo forman
         y los identificadores de dichas sesiones, en el mismo orden que se
         leyeron cuando se creó el curso
@@ -106,11 +107,11 @@ public:
     void listar_cursos();
 
     /** @brief Operación de escritura.
-        
+
         Busca y imprime un curso perteneciente al parámetro implícito.
         \pre c es el identificador de un curso
-        \post Si c pertenece al parámetro implícito, se imprime el número de 
-        usuarios actuales o pasados que lo han completado, el número de 
+        \post Si c pertenece al parámetro implícito, se imprime el número de
+        usuarios actuales o pasados que lo han completado, el número de
         usuarios inscritos actualmente, el número de sesiones que lo forman
         y los identificadores de dichas sesiones, en el mismo orden en el que
         se leyeron cuando se creó el curso. En caso que c no exista, se imprime

@@ -1,0 +1,80 @@
+\hypertarget{class_usuarios}{}\section{Referencia de la Clase Usuarios}
+\label{class_usuarios}\index{Usuarios@{Usuarios}}
+
+
+Representa el conjunt d\textquotesingle{}\mbox{\hyperlink{class_usuarios}{Usuarios}} registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_usuarios_a90a1868e60e0914555701ae554aa9e87}{Usuarios}} ()
+\item 
+\mbox{\hyperlink{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}{$\sim$\+Usuarios}} ()
+\item 
+void \mbox{\hyperlink{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}{alta\+\_\+usuario}} (string u, const \mbox{\hyperlink{class_usuario}{Usuario}} \&us)
+\begin{DoxyCompactList}\small\item\em Registra a un nuevo usuario en la plataforma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuarios_a11e75ce29066b53e84731315ef476312}{baja\+\_\+usuario}} (string u)
+\begin{DoxyCompactList}\small\item\em Da de baja a un usuario de la plataforma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el conjunt d\textquotesingle{}\mbox{\hyperlink{class_usuarios}{Usuarios}} registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
+
+Definición en la línea 25 del archivo Usuarios.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_usuarios_a90a1868e60e0914555701ae554aa9e87}\label{class_usuarios_a90a1868e60e0914555701ae554aa9e87}} 
+\index{Usuarios@{Usuarios}!Usuarios@{Usuarios}}
+\index{Usuarios@{Usuarios}!Usuarios@{Usuarios}}
+\subsubsection{\texorpdfstring{Usuarios()}{Usuarios()}}
+{\footnotesize\ttfamily Usuarios\+::\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}\label{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}} 
+\index{Usuarios@{Usuarios}!````~Usuarios@{$\sim$\+Usuarios}}
+\index{````~Usuarios@{$\sim$\+Usuarios}!Usuarios@{Usuarios}}
+\subsubsection{\texorpdfstring{$\sim$\+Usuarios()}{~Usuarios()}}
+{\footnotesize\ttfamily Usuarios\+::$\sim$\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}\label{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}} 
+\index{Usuarios@{Usuarios}!alta\+\_\+usuario@{alta\+\_\+usuario}}
+\index{alta\+\_\+usuario@{alta\+\_\+usuario}!Usuarios@{Usuarios}}
+\subsubsection{\texorpdfstring{alta\+\_\+usuario()}{alta\_usuario()}}
+{\footnotesize\ttfamily void Usuarios\+::alta\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{u,  }\item[{const \mbox{\hyperlink{class_usuario}{Usuario}} \&}]{us }\end{DoxyParamCaption})}
+
+
+
+Registra a un nuevo usuario en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+u representa el identificador del usuario a dar de alta y us el usuario en si 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido el usuario con identificador u al parámetro implícito, si este no existía previamente, y se imprime por pantalla el número de usuarios registrados tras ser añadido. En caso que el usuario ya exista, se imprime un mensaje de error 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_a11e75ce29066b53e84731315ef476312}\label{class_usuarios_a11e75ce29066b53e84731315ef476312}} 
+\index{Usuarios@{Usuarios}!baja\+\_\+usuario@{baja\+\_\+usuario}}
+\index{baja\+\_\+usuario@{baja\+\_\+usuario}!Usuarios@{Usuarios}}
+\subsubsection{\texorpdfstring{baja\+\_\+usuario()}{baja\_usuario()}}
+{\footnotesize\ttfamily void Usuarios\+::baja\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{u }\end{DoxyParamCaption})}
+
+
+
+Da de baja a un usuario de la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+u representa el identificador del usuario a dar de baja 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si u es un identificador válido, se borra de la plataforma el usuario con identificador u y se imprime por pantalla el número de usuarios registrados tras ser borrado. En caso que no exista el usuario, se imprime por pantalla un mensaje de error 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_usuarios_8hh}{Usuarios.\+hh}}\end{DoxyCompactItemize}

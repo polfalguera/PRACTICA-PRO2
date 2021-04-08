@@ -2,7 +2,10 @@
 #include "Problemas.hh"
 #include "Sesiones.hh"
 #include "Cursos.hh"
+
+#ifndef NO_DIAGRAM
 #include <iostream>
+#endif
 
 using namespace std;
 
@@ -20,6 +23,8 @@ int main() {
         if (op == "nuevo problema" or op == "np") {
             string p;
             cin >> p;
+
+
             cp.nuevo_problema(p);
         }
         else if (op == "nueva sesion" or op == "ns") {
@@ -37,7 +42,7 @@ int main() {
             cin >> u;
 
             Usuario us;
-            usuario.leer_usuario();
+            us.leer_usuario();
             cu.alta_usuario(u,us);
         }
         else if (op == "baja usuario" or op == "b") {
@@ -90,12 +95,13 @@ int main() {
             int c;
             cin >> c;
 
-            cc.buscar_escribir_curso(c)
+            cc.buscar_escribir_curso(c);
         }
         else if (op == "listar usuarios" or op == "lu") {
 
         }
-        else if (op == "escribir usuario" or op == "eu")
+        else if (op == "escribir usuario" or op == "eu") {
+        }
     }
 }
 
