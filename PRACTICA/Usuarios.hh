@@ -92,6 +92,6 @@ public:
         el identificador del curso en el que está escrito o un cero si no está
         inscrito en ninguno
     */
-    void listar_cursos();
+    void listar_usuarios();
 };
 #endif

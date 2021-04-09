@@ -19,6 +19,7 @@ int main() {
     Usuarios cu;
     
     
+    
 
     string op;
     while (op != "fin") {
@@ -113,14 +114,15 @@ int main() {
             string u, p;
             int r;
             cin >> u >> p >> r;
-            cc.envio()
+            cc.envio(u,p,r,cs,cu);
+            cp.envio(p,r);
         }
         else if (op == "listar_problemas" or op == "lp") {
             cp.listar_problemas();
         }
         else if (op == "escribrir problema" or op == "ep") {
             string p;
-            cin >> p;
+            cin >> p;   
 
             cp.buscar_escribir_problema(p);
         }
