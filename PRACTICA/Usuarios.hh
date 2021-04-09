@@ -75,5 +75,23 @@ public:
         identificador u
     */
     Usuario consultar_usuario(string u);
+
+    //Lectura
+
+
+    //Escritura
+
+    /** @brief Operación de escritura.
+
+        Se listan los usuarios registrados actualmente en la plataforma.
+        \pre Cierto
+        \post Se imprimen por pantalla los usuarios registrados actualmente en 
+        la plataforma, ordenados crecientemente por su nombre. Para cada uno, 
+        se imprime cuántos envíos en total ha realizado, cuántos problemas ha
+        resuelto satisfactoriamente, cuántos problemas ha intentado resolver y 
+        el identificador del curso en el que está escrito o un cero si no está
+        inscrito en ninguno
+    */
+    void listar_cursos();
 };
 #endif

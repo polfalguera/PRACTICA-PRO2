@@ -6,6 +6,8 @@
 #define _CURSOS_HH_
 
 #include "Curso.hh"
+#include "Sesiones.hh"
+#include "Usuarios.hh"
 
 #ifndef NO_DIAGRAM
 #include <iostream>
@@ -36,13 +38,13 @@ public:
     //Modificadoras
 
     /** @brief Añade un nuevo curso al conjunto de cursos.
-        \pre c es un entero que represental el identificador del curso a añadir
+        \pre cierto
         \post se ha añadido el curso con identificador c al conjunto de cursos
         siempre y cuando este no estuviera previamente y cumpla la no repetición
         de problemas dentro del mismo. En caso contrario, se imprime un mensaje
         de error
     */
-    void nuevo_curso(int c);
+    void nuevo_curso();
 
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
@@ -85,13 +87,6 @@ public:
     */
     bool existe_curso(int c);
 
-    /** @brief Consultora de el cumplimiento de la restricción de no repetición
-        \pre p es el identificador de un problema
-        \post Devuelve true si el problema pertenece al parámetro implícito.
-        En caso contrario, devuelve false
-    */
-    bool repeticion_ejercicios(const Curso& curso);
-
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
         curso
         \pre c es el identificador de un curso y p es el identificador de un
@@ -118,7 +113,7 @@ public:
 
     /** @brief Operación de escritura.
 
-        Se listan los cursos actuales de la plataforma EVALUATOR
+        Se listan los cursos actuales de la plataforma EVALUATOR.
         \pre Cierto
         \post Se imprimen por pantalla los cursos del conjunto de forma
         creciente por su identificador. Para cada uno, se muestra el número
@@ -128,6 +123,6 @@ public:
         leyeron cuando se creó el curso
     */
     void listar_cursos();
-    
+
 };
 #endif

@@ -36,9 +36,17 @@ public:
 
     //Consultoras
 
+    /** @brief Consultora de el cumplimiento de la restricción de no repetición
+        \pre p es el identificador de un problema
+        \post Devuelve true si el problema pertenece al parámetro implícito.
+        En caso contrario, devuelve false
+    */
+    bool repeticion_ejercicios();
+
     /** @brief Consultora de la sesión a la que pertenece un problema 
         perteneciente al parámetro implícito
         \pre p es el identificador de un problema
+
         \post Se imprime el identificador de la sesión a la que pertenece
         el problema con identificador p dentro del parámetro implícito
     */
