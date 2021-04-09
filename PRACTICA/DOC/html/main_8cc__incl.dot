@@ -1,0 +1,21 @@
+digraph "main.cc"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="main.cc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Usuarios.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_usuarios_8hh.html",tooltip="Especificación de la clase Usuarios."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="Usuario.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_usuario_8hh.html",tooltip="Especificación de la clase Usuario."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="Problemas.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_problemas_8hh.html",tooltip="Especificación de la clase Problemas."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="Sesiones.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sesiones_8hh.html",tooltip="Especificación de la clase Sesiones."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="Sesion.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sesion_8hh.html",tooltip="Especificación de la clase Sesion."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="Cursos.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cursos_8hh.html",tooltip="Especificación de la clase Cursos."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="Curso.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_curso_8hh.html",tooltip="Especificación de la clase Curso."];
+}

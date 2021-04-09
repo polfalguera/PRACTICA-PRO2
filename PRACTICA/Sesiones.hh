@@ -41,6 +41,16 @@ public:
     /* Post: la sesión con idetificador s se ha añadido al conjunto de
     sesiones */
 
+    //Consultoras
+
+    /** @brief Consultora de la existencia de una sesión dentro del
+        parámetro implícito
+        \pre s es el identificador de una sesión
+        \post Devuelve <em>true</em> si la sesión con identificador s pertenece 
+        al parámetro implícito. En caso contrario, devuelve <em>false</em>
+    */
+    bool existe_sesion(string s);
+
     //Lectura
 
     void leer_conjunto_sesiones();

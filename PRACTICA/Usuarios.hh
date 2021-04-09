@@ -46,9 +46,9 @@ public:
       \post Se ha añadido el usuario con identificador u al parámetro
       implícito, si este no existía previamente, y se imprime por pantalla
       el número de usuarios registrados tras ser añadido. En caso que el
-      usuario ya exista, se imprime un mensaje de error
+      usuario ya existiera, se imprime un mensaje de error
     */
-    void alta_usuario(string u, const Usuario& us);
+    void alta_usuario(string u);
 
     /** @brief Da de baja a un usuario de la plataforma
       \pre u representa el identificador del usuario a dar de baja
@@ -58,5 +58,22 @@ public:
       se imprime por pantalla un mensaje de error
     */
     void baja_usuario(string u);
+
+    //Consultoras
+
+    /** @brief Consultora de la existencia de un usuario dentro del parámetro
+        implícito
+        \pre u es el identificador de un usuario
+        \post Devuelve <em>true</em> si el usuario con identificador u pertenece 
+        al parámetro implícito. En caso contrario, devuelve <em>false</em>
+    */
+    bool existe_usuario(string u);
+
+    /** @brief Consultora de un usuario perteneciente al parámetro implícito
+        \pre u es el identificador de un usuario
+        \post Devuelve el usuario perteneciente al parámetro implícito con 
+        identificador u
+    */
+    Usuario consultar_usuario(string u);
 };
 #endif

@@ -1,72 +1,112 @@
-\hypertarget{class_problemas}{}\section{Referencia de la Clase Problemas}
+\hypertarget{class_problemas}{}\doxysection{Referencia de la Clase Problemas}
 \label{class_problemas}\index{Problemas@{Problemas}}
 
 
 Representa la colección de problemas de la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
 
 
-\subsection*{Métodos públicos}
+\doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_problemas_ae587a6825117a5103b50f544a7415c0c}{Problemas}} ()
-\item 
-\mbox{\hyperlink{class_problemas_aec05a82a712fee2327b6e3f6ce7b4e65}{$\sim$\+Problemas}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a1cebce2784b951482651d299be50d8b3}{nuevo\+\_\+problema}} (string p)
-\item 
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\+\_\+problema}} (string p)
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro del parámetro implícito. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a6d16937dea64409081e507065e17f2b1}{leer\+\_\+coleccion\+\_\+problemas}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\+\_\+problemas}} () const
 \item 
-void \mbox{\hyperlink{class_problemas_a36f5cb6d84345475fd7ea80142d7500d}{buscar\+\_\+escribir\+\_\+problema}} (string p))
+void \mbox{\hyperlink{class_problemas_aa66262cdeb053754e3a8571850486736}{buscar\+\_\+escribir\+\_\+problema}} (string p)
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Descripción detallada}
+\doxysubsection{Descripción detallada}
 Representa la colección de problemas de la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
 
-Definición en la línea 21 del archivo Problemas.\+hh.
+Definición en la línea 22 del archivo Problemas.\+hh.
 
 
 
-\subsection{Documentación del constructor y destructor}
+\doxysubsection{Documentación del constructor y destructor}
 \mbox{\Hypertarget{class_problemas_ae587a6825117a5103b50f544a7415c0c}\label{class_problemas_ae587a6825117a5103b50f544a7415c0c}} 
 \index{Problemas@{Problemas}!Problemas@{Problemas}}
 \index{Problemas@{Problemas}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{Problemas()}{Problemas()}}
+\doxysubsubsection{\texorpdfstring{Problemas()}{Problemas()}}
 {\footnotesize\ttfamily Problemas\+::\+Problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_problemas_aec05a82a712fee2327b6e3f6ce7b4e65}\label{class_problemas_aec05a82a712fee2327b6e3f6ce7b4e65}} 
-\index{Problemas@{Problemas}!````~Problemas@{$\sim$\+Problemas}}
-\index{````~Problemas@{$\sim$\+Problemas}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{$\sim$\+Problemas()}{~Problemas()}}
-{\footnotesize\ttfamily Problemas\+::$\sim$\+Problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+Creadora por defecto. 
 
-\subsection{Documentación de las funciones miembro}
+Se ejecuta automàticamente al declarar un problema. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de problemas vacío 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
 \mbox{\Hypertarget{class_problemas_a1cebce2784b951482651d299be50d8b3}\label{class_problemas_a1cebce2784b951482651d299be50d8b3}} 
-\index{Problemas@{Problemas}!nuevo\+\_\+problema@{nuevo\+\_\+problema}}
-\index{nuevo\+\_\+problema@{nuevo\+\_\+problema}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{nuevo\+\_\+problema()}{nuevo\_problema()}}
+\index{Problemas@{Problemas}!nuevo\_problema@{nuevo\_problema}}
+\index{nuevo\_problema@{nuevo\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{nuevo\_problema()}{nuevo\_problema()}}
 {\footnotesize\ttfamily void Problemas\+::nuevo\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
 
+
+
+Añade un nuevo problema a la colección. 
+
+\begin{DoxyPrecond}{Precondición}
+p es un string que representa el identificador del problema a añadir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido el problema con identificador p al parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}\label{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}} 
+\index{Problemas@{Problemas}!existe\_problema@{existe\_problema}}
+\index{existe\_problema@{existe\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{existe\_problema()}{existe\_problema()}}
+{\footnotesize\ttfamily bool Problemas\+::existe\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Consultora de la existencia de un problema dentro del parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+p es el identificador de un problema 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_a6d16937dea64409081e507065e17f2b1}\label{class_problemas_a6d16937dea64409081e507065e17f2b1}} 
-\index{Problemas@{Problemas}!leer\+\_\+coleccion\+\_\+problemas@{leer\+\_\+coleccion\+\_\+problemas}}
-\index{leer\+\_\+coleccion\+\_\+problemas@{leer\+\_\+coleccion\+\_\+problemas}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{leer\+\_\+coleccion\+\_\+problemas()}{leer\_coleccion\_problemas()}}
+\index{Problemas@{Problemas}!leer\_coleccion\_problemas@{leer\_coleccion\_problemas}}
+\index{leer\_coleccion\_problemas@{leer\_coleccion\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{leer\_coleccion\_problemas()}{leer\_coleccion\_problemas()}}
 {\footnotesize\ttfamily void Problemas\+::leer\+\_\+coleccion\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Añade un nuevo problema a la colección. 
+
+\begin{DoxyPrecond}{Precondición}
+p es un string que representa el identificador del problema a añadir 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido el problema con identificador p al parámetro implícito 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}\label{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}} 
-\index{Problemas@{Problemas}!listar\+\_\+problemas@{listar\+\_\+problemas}}
-\index{listar\+\_\+problemas@{listar\+\_\+problemas}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{listar\+\_\+problemas()}{listar\_problemas()}}
+\index{Problemas@{Problemas}!listar\_problemas@{listar\_problemas}}
+\index{listar\_problemas@{listar\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{listar\_problemas()}{listar\_problemas()}}
 {\footnotesize\ttfamily void Problemas\+::listar\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{class_problemas_a36f5cb6d84345475fd7ea80142d7500d}\label{class_problemas_a36f5cb6d84345475fd7ea80142d7500d}} 
-\index{Problemas@{Problemas}!buscar\+\_\+escribir\+\_\+problema@{buscar\+\_\+escribir\+\_\+problema}}
-\index{buscar\+\_\+escribir\+\_\+problema@{buscar\+\_\+escribir\+\_\+problema}!Problemas@{Problemas}}
-\subsubsection{\texorpdfstring{buscar\+\_\+escribir\+\_\+problema()}{buscar\_escribir\_problema()}}
+\mbox{\Hypertarget{class_problemas_aa66262cdeb053754e3a8571850486736}\label{class_problemas_aa66262cdeb053754e3a8571850486736}} 
+\index{Problemas@{Problemas}!buscar\_escribir\_problema@{buscar\_escribir\_problema}}
+\index{buscar\_escribir\_problema@{buscar\_escribir\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{buscar\_escribir\_problema()}{buscar\_escribir\_problema()}}
 {\footnotesize\ttfamily void Problemas\+::buscar\+\_\+escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
 
 

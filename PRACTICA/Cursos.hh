@@ -68,7 +68,29 @@ public:
     */
     void decrementar_usuarios_inscritos();
 
-    //Consultora
+    //Consultoras
+
+    /** @brief Consultora de un curso perteneciente al parámetro implícito
+        \pre c es el identificador de un curso
+        \post Devuelve el curso perteneciente al parámetro implícito con 
+        identificador c
+    */
+    Curso consultar_curso(int c);
+
+    /** @brief Consultora de la existencia de un curso dentro del
+        parámetro implícito
+        \pre c es el identificador de un curso
+        \post Devuelve <em>true</em> si el curso pertenece al parámetro
+        implícito. En caso contrario, devuelve <em>false</em>
+    */
+    bool existe_curso(int c);
+
+    /** @brief Consultora de el cumplimiento de la restricción de no repetición
+        \pre p es el identificador de un problema
+        \post Devuelve true si el problema pertenece al parámetro implícito.
+        En caso contrario, devuelve false
+    */
+    bool repeticion_ejercicios(const Curso& curso);
 
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
         curso
@@ -78,8 +100,9 @@ public:
         a la que pertenece p dentro de c. En caso que el curso no existao el
         problema no pertenezca al curso, se imprime un mensaje de error
     */
-
     void sesion_problema(int c, string p);
+
+
 
     //Lectura
 
@@ -105,18 +128,6 @@ public:
         leyeron cuando se creó el curso
     */
     void listar_cursos();
-
-    /** @brief Operación de escritura.
-
-        Busca y imprime un curso perteneciente al parámetro implícito.
-        \pre c es el identificador de un curso
-        \post Si c pertenece al parámetro implícito, se imprime el número de
-        usuarios actuales o pasados que lo han completado, el número de
-        usuarios inscritos actualmente, el número de sesiones que lo forman
-        y los identificadores de dichas sesiones, en el mismo orden en el que
-        se leyeron cuando se creó el curso. En caso que c no exista, se imprime
-        por pantalla un mensaje de error
-    */
-    void buscar_escribir_curso(int c);
+    
 };
 #endif

@@ -49,8 +49,8 @@ public:
     /** @brief Consultora de la existencia de un problema dentro del
         parámetro implícito
         \pre p es el identificador de un problema
-        \post Devuelve true si el problema pertenece al parámetro implícito.
-        En caso contrario, devuelve false
+        \post Devuelve <em>true</em> si el problema pertenece al parámetro
+        implícito. En caso contrario, devuelve <em>false</em>
     */
     bool existe_problema(string p);
 

@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Laboratorio de PRO2. Ejercicio &#39;EVALUATOR&#39;.: Fichero Fuente Sesion.hh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Generado por Doxygen 1.8.14 -->
+<!-- Generado por Doxygen 1.8.17 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
@@ -66,18 +66,58 @@ $(function() {
 <div class="title">Sesion.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_sesion_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _SESION_HH_</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _SESION_HH_</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bin_tree_8hh.html">BinTree.hh</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * Clase Sesion</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_sesion.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sesion.html">Sesion</a> {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//Constructoras</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_sesion.html#adf5a84efa8e2629b30ad89df74cfc0a2">Sesion</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/* Pre: cierto */</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/* Post: el resultado es una sesión vacía */</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Destructora: borra automaticamente los objetos locales en salir de un</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// ámbito de visibilidad</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_sesion.html#acc4bd3e753a45d6b7a01aa27fb8f171f">~Sesion</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//Lectura</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sesion.html#a970d42fc3310a465b78b5a1549c30ec1">leer_sesion</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/* Pre: cierto */</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/* Post: el parámetro implícito contiene un numero de problemas y un </span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    conjunto de identificadores de dichos problemas */</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//Escritura</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_sesion.html#a0472395ecd329355cccd46b3d3e8a8a0">escribir_sesion</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* Pre: cierto */</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* Post: en caso que s sea un identificador válido, se imprime por pantalla</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    el número de problemas que forman la sesión y los identificadores de dichos</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    problemas. En caso contrario, se imprime un mensaje de error por pantalla </span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    */</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_sesion_html_a0472395ecd329355cccd46b3d3e8a8a0"><div class="ttname"><a href="class_sesion.html#a0472395ecd329355cccd46b3d3e8a8a0">Sesion::escribir_sesion</a></div><div class="ttdeci">void escribir_sesion() const</div></div>
-<div class="ttc" id="_bin_tree_8hh_html"><div class="ttname"><a href="_bin_tree_8hh.html">BinTree.hh</a></div></div>
-<div class="ttc" id="class_sesion_html"><div class="ttname"><a href="class_sesion.html">Sesion</a></div><div class="ttdoc">Representa una sesión con un conjunto de problemas que pertenece a uno o a más de los cursos de EVALU...</div><div class="ttdef"><b>Definition:</b> <a href="_sesion_8hh_source.html#l00023">Sesion.hh:23</a></div></div>
-<div class="ttc" id="class_sesion_html_a970d42fc3310a465b78b5a1549c30ec1"><div class="ttname"><a href="class_sesion.html#a970d42fc3310a465b78b5a1549c30ec1">Sesion::leer_sesion</a></div><div class="ttdeci">void leer_sesion()</div></div>
-<div class="ttc" id="class_sesion_html_adf5a84efa8e2629b30ad89df74cfc0a2"><div class="ttname"><a href="class_sesion.html#adf5a84efa8e2629b30ad89df74cfc0a2">Sesion::Sesion</a></div><div class="ttdeci">Sesion()</div></div>
-<div class="ttc" id="class_sesion_html_acc4bd3e753a45d6b7a01aa27fb8f171f"><div class="ttname"><a href="class_sesion.html#acc4bd3e753a45d6b7a01aa27fb8f171f">Sesion::~Sesion</a></div><div class="ttdeci">~Sesion()</div></div>
+<a href="_sesion_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _SESION_HH_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _SESION_HH_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bin_tree_8hh.html">BinTree.hh</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * Clase Sesion</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_sesion.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sesion.html">Sesion</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//Constructoras</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_sesion.html">Sesion</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/* Pre: cierto */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/* Post: el resultado es una sesión vacía */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Destructora: borra automaticamente los objetos locales en salir de un</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// ámbito de visibilidad</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ~<a class="code" href="class_sesion.html">Sesion</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//Lectura</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> leer_sesion();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/* Pre: cierto */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/* Post: el parámetro implícito contiene un numero de problemas y un</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    conjunto de identificadores de dichos problemas */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Escritura</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> escribir_sesion() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* Pre: cierto */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/* Post: en caso que s sea un identificador válido, se imprime por pantalla</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    el número de problemas que forman la sesión y los identificadores de dichos</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    problemas. En caso contrario, se imprime un mensaje de error por pantalla</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_sesion_html"><div class="ttname"><a href="class_sesion.html">Sesion</a></div><div class="ttdoc">Representa una sesión con un conjunto de problemas que pertenece a uno o a más de los cursos de EVALU...</div><div class="ttdef"><b>Definition:</b> <a href="_sesion_8hh_source.html#l00024">Sesion.hh:24</a></div></div>
+<div class="ttc" id="a_bin_tree_8hh_html"><div class="ttname"><a href="_bin_tree_8hh.html">BinTree.hh</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generado por &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
+</a> 1.8.17
 </small></address>
 </body>
 </html>
