@@ -28,7 +28,7 @@ public:
 
     /** @brief Creadora por defecto.
 
-        Se ejecuta automàticamente al declarar un problema.
+        Se ejecuta automáticamente al declarar un conjunto de problemas.
         \pre Cierto
         \post El resultado es un conjunto de problemas vacío
     */
@@ -36,55 +36,58 @@ public:
 
     //Modificadoras
 
-    /** @brief Añade un nuevo problema a la colección.
-        \pre p es un string que representa el identificador del problema a
-        añadir
-        \post Se ha añadido el problema con identificador p al parámetro
+    /** @brief Añade un nuevo problema a la colección de problemas.
+        \pre Cierto
+        \post Se ha añadido un nuevo problema con identificador p al parámetro 
         implícito
     */
     void nuevo_problema(string p);
 
     //Consultoras
 
-    /** @brief Consultora de la existencia de un problema dentro del
-        parámetro implícito
-        \pre p es el identificador de un problema
+    /** @brief Consultora de la existencia de un problema dentro de la
+        plataforma.
+        \pre Cierto
         \post Devuelve <em>true</em> si el problema pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
     */
     bool existe_problema(string p);
 
+    /** @brief Consultora del número total de problemas que hay en la
+        plataforma.
+        \pre Cierto
+        \post Devuelve el número total de problemas que contiene el 
+        parámetro implícito
+    */
+    int numero_problemas();
+
     //Lectura
 
-    /** @brief Añade un nuevo problema a la colección.
-        \pre p es un string que representa el identificador del problema a
-        añadir
-        \post Se ha añadido el problema con identificador p al parámetro
-        implícito
+    /** @brief Operación de lectura.
+        \pre Cierto
+        \post El parámetro implícito contiene uno o más problemas
     */
-
     void leer_coleccion_problemas();
-    /* Pre: cierto */
-    /* Post: el parámetro implícito contiene 1 o más problemas */
 
-    //Consultora o Escritura?
-
-    void listar_problemas() const;
-    /* Pre: cierto */
-    /* Post: se imprimen por pantalla los problemas de la colección, indicando
-    para cada uno el número de envíos totales(t) y el número de envíos con éxito(e).
-    El orden en el que se imprimen viene determinado por el ratio (t+1)/(e+1),
-    el cual también se imprime por pantalla. En caso de empate, se imprimen en
-    orden creciente por identificador */
+    //Escritura
 
     /** @brief Operación de escritura.
-
-        Busca y imprime un problema perteneciente al parámetro implícito.
-        \pre p es el identificador de un problema
-        \post Si p pertenece al parámetro implícito, se imprime por pantalla
-        el número de envíos totales y el número de envíos con éxito del
-        problema. En caso que no exista, se imprime un mensaje de error
+        \pre Cierto
+        \post Se imprime el número de envíos totales y el número de envíos
+        con éxito realizados a un problema con identificador p
     */
-    void buscar_escribir_problema(string p);
+    void escribir_problema(string p) const;
+
+    /** @brief Operación de escritura.
+        \pre Cierto
+        \post Se imprimen por pantalla los problemas de la colección, indicando
+        para cada uno el número de envíos totales(t) y el número de envíos con
+        éxito(e). El orden en el que se imprimen viene determinado por el ratio 
+        (t+1)/(e+1), el cual también se imprime. En caso de empate, se imprimen
+        en orden creciente por identificador
+    */
+    void listar_problemas() const;
+    
+
 };
 #endif

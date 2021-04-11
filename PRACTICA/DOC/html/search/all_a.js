@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['repeticion_5fejercicios_38',['repeticion_ejercicios',['../class_cursos.html#a1b79de54f6d7f08e7edf21bbe62b47ab',1,'Cursos']]],
-  ['right_39',['right',['../class_bin_tree.html#aff8e96651b27284c329667b5ad3e4d0b',1,'BinTree']]]
+  ['repeticion_5fejercicios_53',['repeticion_ejercicios',['../class_curso.html#a8e9f2fa10f3a9eee050f5cb85755ff87',1,'Curso']]],
+  ['right_54',['right',['../class_bin_tree.html#aff8e96651b27284c329667b5ad3e4d0b',1,'BinTree']]]
 ];

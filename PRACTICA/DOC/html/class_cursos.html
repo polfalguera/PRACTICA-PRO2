@@ -78,9 +78,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:acdb8d248e1a8ebe1aac747efa7b54cd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#acdb8d248e1a8ebe1aac747efa7b54cd4">Cursos</a> ()</td></tr>
 <tr class="memdesc:acdb8d248e1a8ebe1aac747efa7b54cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creadora por defecto.  <a href="class_cursos.html#acdb8d248e1a8ebe1aac747efa7b54cd4">Más...</a><br /></td></tr>
 <tr class="separator:acdb8d248e1a8ebe1aac747efa7b54cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e6fd6a1d034b381b0377d098778dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a64e6fd6a1d034b381b0377d098778dd9">nuevo_curso</a> (int c)</td></tr>
-<tr class="memdesc:a64e6fd6a1d034b381b0377d098778dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un nuevo curso al conjunto de cursos.  <a href="class_cursos.html#a64e6fd6a1d034b381b0377d098778dd9">Más...</a><br /></td></tr>
-<tr class="separator:a64e6fd6a1d034b381b0377d098778dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78452941945e62a07a717cb5188332fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a78452941945e62a07a717cb5188332fd">nuevo_curso</a> (const <a class="el" href="class_sesiones.html">Sesiones</a> &amp;cjt_sesiones)</td></tr>
+<tr class="memdesc:a78452941945e62a07a717cb5188332fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones.  <a href="class_cursos.html#a78452941945e62a07a717cb5188332fd">Más...</a><br /></td></tr>
+<tr class="separator:a78452941945e62a07a717cb5188332fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a3ce8af0e0132939cf6f51a4321d58d7f">incrementar_usuarios_completado</a> ()</td></tr>
 <tr class="memdesc:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incrementa una unidad el número de usuarios que han completado el curso.  <a href="class_cursos.html#a3ce8af0e0132939cf6f51a4321d58d7f">Más...</a><br /></td></tr>
 <tr class="separator:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,9 +90,15 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:aa9b43f3b9380052878414fa4906b7925"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#aa9b43f3b9380052878414fa4906b7925">decrementar_usuarios_inscritos</a> ()</td></tr>
 <tr class="memdesc:aa9b43f3b9380052878414fa4906b7925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrementa una unidad el número de usuarios inscritos actualmente en el curso.  <a href="class_cursos.html#aa9b43f3b9380052878414fa4906b7925">Más...</a><br /></td></tr>
 <tr class="separator:aa9b43f3b9380052878414fa4906b7925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b79de54f6d7f08e7edf21bbe62b47ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a1b79de54f6d7f08e7edf21bbe62b47ab">repeticion_ejercicios</a> (const <a class="el" href="class_curso.html">Curso</a> &amp;curso)</td></tr>
-<tr class="memdesc:a1b79de54f6d7f08e7edf21bbe62b47ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de el cumplimiento de la restricción de no repetición.  <a href="class_cursos.html#a1b79de54f6d7f08e7edf21bbe62b47ab">Más...</a><br /></td></tr>
-<tr class="separator:a1b79de54f6d7f08e7edf21bbe62b47ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade12943fdce21445be44c2f1a84525c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_curso.html">Curso</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#aade12943fdce21445be44c2f1a84525c">consultar_curso</a> (int c)</td></tr>
+<tr class="memdesc:aade12943fdce21445be44c2f1a84525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de un curso de la plataforma.  <a href="class_cursos.html#aade12943fdce21445be44c2f1a84525c">Más...</a><br /></td></tr>
+<tr class="separator:aade12943fdce21445be44c2f1a84525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452f2fff12a917d4ca3a20812050f816"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a452f2fff12a917d4ca3a20812050f816">existe_curso</a> (int c)</td></tr>
+<tr class="memdesc:a452f2fff12a917d4ca3a20812050f816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de la existencia de un curso dentro de la plataforma.  <a href="class_cursos.html#a452f2fff12a917d4ca3a20812050f816">Más...</a><br /></td></tr>
+<tr class="separator:a452f2fff12a917d4ca3a20812050f816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafef6554cfdf5958038b075eeac07415"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#aafef6554cfdf5958038b075eeac07415">numero_cursos</a> ()</td></tr>
+<tr class="memdesc:aafef6554cfdf5958038b075eeac07415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora del número total de cursos que hay en la plataforma.  <a href="class_cursos.html#aafef6554cfdf5958038b075eeac07415">Más...</a><br /></td></tr>
+<tr class="separator:aafef6554cfdf5958038b075eeac07415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a8cdb45236245e938ba34481a788fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#aa5a8cdb45236245e938ba34481a788fe">sesion_problema</a> (int c, string p)</td></tr>
 <tr class="memdesc:aa5a8cdb45236245e938ba34481a788fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consulta la sesion a la que pertenece un problema dentro de un curso.  <a href="class_cursos.html#aa5a8cdb45236245e938ba34481a788fe">Más...</a><br /></td></tr>
 <tr class="separator:aa5a8cdb45236245e938ba34481a788fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,14 +108,11 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:aeb29e1a1c81d4bbe0537653a0a6bbc08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#aeb29e1a1c81d4bbe0537653a0a6bbc08">listar_cursos</a> ()</td></tr>
 <tr class="memdesc:aeb29e1a1c81d4bbe0537653a0a6bbc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operación de escritura.  <a href="class_cursos.html#aeb29e1a1c81d4bbe0537653a0a6bbc08">Más...</a><br /></td></tr>
 <tr class="separator:aeb29e1a1c81d4bbe0537653a0a6bbc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af870c77c0a43615e18d4f7c5db30c49f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#af870c77c0a43615e18d4f7c5db30c49f">buscar_escribir_curso</a> (int c)</td></tr>
-<tr class="memdesc:af870c77c0a43615e18d4f7c5db30c49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operación de escritura.  <a href="class_cursos.html#af870c77c0a43615e18d4f7c5db30c49f">Más...</a><br /></td></tr>
-<tr class="separator:af870c77c0a43615e18d4f7c5db30c49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Representa el conjunto de cursos de la plataforma EVALUATOR. </p>
 
-<p class="definition">Definición en la línea <a class="el" href="_cursos_8hh_source.html#l00024">24</a> del archivo <a class="el" href="_cursos_8hh_source.html">Cursos.hh</a>.</p>
+<p class="definition">Definición en la línea <a class="el" href="_cursos_8hh_source.html#l00026">26</a> del archivo <a class="el" href="_cursos_8hh_source.html">Cursos.hh</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
 <a id="acdb8d248e1a8ebe1aac747efa7b54cd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdb8d248e1a8ebe1aac747efa7b54cd4">&#9670;&nbsp;</a></span>Cursos()</h2>
@@ -127,31 +130,31 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creadora por defecto. </p>
-<p>Se ejecuta automàticamente al declarar un curso. </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<p>Se ejecuta automáticamente al declarar un conjunto de cursos. </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El resultado es un conjunto de cursos vacío </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a id="a64e6fd6a1d034b381b0377d098778dd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e6fd6a1d034b381b0377d098778dd9">&#9670;&nbsp;</a></span>nuevo_curso()</h2>
+<a id="a78452941945e62a07a717cb5188332fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78452941945e62a07a717cb5188332fd">&#9670;&nbsp;</a></span>nuevo_curso()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Cursos::nuevo_curso </td>
+          <td class="memname">bool Cursos::nuevo_curso </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_sesiones.html">Sesiones</a> &amp;&#160;</td>
+          <td class="paramname"><em>cjt_sesiones</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Añade un nuevo curso al conjunto de cursos. </p>
-<dl class="section pre"><dt>Precondición</dt><dd>c es un entero que represental el identificador del curso a añadir </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>se ha añadido el curso con identificador c al conjunto de cursos siempre y cuando este no estuviera previamente y cumpla la no repetición de problemas dentro del mismo. En caso contrario, se imprime un mensaje de error </dd></dl>
+<p>Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Si no hay intersección de problemas entre sesiones, añade un nuevo curso al parámetro implícito y devuelve <em>true/<em>. En caso contrario, devuelve <em>false</em> </em></em></dd></dl>
 
 </div>
 </div>
@@ -218,25 +221,68 @@ Métodos públicos</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b79de54f6d7f08e7edf21bbe62b47ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b79de54f6d7f08e7edf21bbe62b47ab">&#9670;&nbsp;</a></span>repeticion_ejercicios()</h2>
+<a id="aade12943fdce21445be44c2f1a84525c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade12943fdce21445be44c2f1a84525c">&#9670;&nbsp;</a></span>consultar_curso()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Cursos::repeticion_ejercicios </td>
+          <td class="memname"><a class="el" href="class_curso.html">Curso</a> Cursos::consultar_curso </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_curso.html">Curso</a> &amp;&#160;</td>
-          <td class="paramname"><em>curso</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Consultora de el cumplimiento de la restricción de no repetición. </p>
-<dl class="section pre"><dt>Precondición</dt><dd>p es el identificador de un problema </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false </dd></dl>
+<p>Consultora de un curso de la plataforma. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Devuelve el curso perteneciente al parámetro implícito con identificador c </dd></dl>
+
+</div>
+</div>
+<a id="a452f2fff12a917d4ca3a20812050f816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452f2fff12a917d4ca3a20812050f816">&#9670;&nbsp;</a></span>existe_curso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cursos::existe_curso </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora de la existencia de un curso dentro de la plataforma. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Devuelve <em>true</em> si el curso pertenece al parámetro implícito. En caso contrario, devuelve <em>false</em> </dd></dl>
+
+</div>
+</div>
+<a id="aafef6554cfdf5958038b075eeac07415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafef6554cfdf5958038b075eeac07415">&#9670;&nbsp;</a></span>numero_cursos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cursos::numero_cursos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora del número total de cursos que hay en la plataforma. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Devuelve el número total de cursos que contiene el parámetro implícito </dd></dl>
 
 </div>
 </div>
@@ -288,7 +334,7 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Operación de lectura. </p>
-<p>Se leen los cursos que formaran parte de la plataforma EVALUATOR. </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito contiene uno o más cursos </dd></dl>
 
 </div>
@@ -309,30 +355,8 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Operación de escritura. </p>
-<p>Se listan los cursos actuales de la plataforma EVALUATOR </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Se imprimen por pantalla los cursos del conjunto de forma creciente por su identificador. Para cada uno, se muestra el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso </dd></dl>
-
-</div>
-</div>
-<a id="af870c77c0a43615e18d4f7c5db30c49f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af870c77c0a43615e18d4f7c5db30c49f">&#9670;&nbsp;</a></span>buscar_escribir_curso()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Cursos::buscar_escribir_curso </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Operación de escritura. </p>
-<p>Busca y imprime un curso perteneciente al parámetro implícito. </p><dl class="section pre"><dt>Precondición</dt><dd>c es el identificador de un curso </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Si c pertenece al parámetro implícito, se imprime el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente, el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden en el que se leyeron cuando se creó el curso. En caso que c no exista, se imprime por pantalla un mensaje de error </dd></dl>
 
 </div>
 </div>

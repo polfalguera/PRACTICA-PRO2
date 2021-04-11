@@ -33,19 +33,7 @@ public:
     /* Post: el resultat es un Usuario no inscrit a cap curs i amb zero problemes
     intentats i resolts i, per tant, amb zero problemes enviables */
 
-    // Destructora: esborra automaticament els objectes locals en sortir
-    // d'un ambit de visibilitat
-
-    ~Usuario();
-
     //Modificadoras
-
-    /** @brief Inscribe al parámetro implícito a un curso determinado
-        \pre c es el identificador de un curso
-        \post El parámetro implícito pasa a estar inscrito al curso con 
-        identificador c
-    */
-    void inscribir_curso(int c);
 
     /** @brief Consultora del curso al cual está inscrito el parámetro implícito
         \pre Cierto
@@ -57,21 +45,21 @@ public:
 
     //Consultoras
 
-    /** @brief Consultora del curso al cual está inscrito el parámetro implícito
+    /** @brief Consultora del curso al cual está inscrito un usuario.
         \pre Cierto
-        \post Se imprime el identificador del curso al cual está inscrito o un 0
-        si no está inscitro a ningun curso.
+        \post Se imprime el identificador del curso al cual está inscrito
+        el parámetro implícito o un 0 si no está inscitro a ningun curso
     */
     void curso_usuario();
 
-    /** @brief Consultora del curso al cual está inscrito el parámetro implícito
+    /** @brief Consultora del curso al cual está inscrito un usuario.
         \pre Cierto
         \post Si el parámetro implícito está inscrito en algun curso, devuelve
         el identificador de éste. En caso contrario, devuelve un 0
     */
     int consultar_curso();
 
-    /** @brief Consultora de los problemas resueltos por el parámetro implícito
+    /** @brief Consultora de los problemas resueltos de un usuario.
         \pre Cierto
         \post Se imprimen en orden creciente por identificador los problemas
         solucionados con éxito por el parámetro implícito, ya sean del curso
@@ -81,7 +69,7 @@ public:
     */
     void problemas_resueltos();
 
-    /** @brief Consultora de los problemas enviables por el parámetro implícito
+    /** @brief Consultora de los problemas enviables de un usuario.
         \pre Cierto
         \post Se imprimen en orden creciente por identificador los problemas
         que no ha solucionado todavía, pero ya puede realizar un envío, el 
@@ -93,7 +81,7 @@ public:
 
     //Lectura
 
-    /** @brief Operación de lectura del parámetro implícito
+    /** @brief Operación de lectura.
         \pre Cierto
         \post El parámetro implícito pasa a tener los atributos leídos por
         el canal estandard de entrada
@@ -102,9 +90,13 @@ public:
 
     //Escritura
 
-    /** @brief Operación de escritura
+    /** @brief Operación de escritura.
         \pre Cierto
-        \post Se imprimen por pantalla los atributos del parámetro implícito
+        \post Se imprimen los siguientes datos del parámetro implícito:
+        cuántos envíos en total ha realizado, cuántos problemas ha resuelto
+        satisfactoriamente, cuántos problemas ha intentado resolver y el
+        identificador del curso en el que está inscrito o un cero si no está
+        inscrito en ninguno
     */
    void escribir_usuario();
 };

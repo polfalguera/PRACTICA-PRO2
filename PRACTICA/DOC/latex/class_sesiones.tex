@@ -9,17 +9,19 @@ Representa el conjunto de sesiones pertenecientes a la plataforma E\+V\+A\+L\+U\
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_sesiones_a1b845cc2a490941bac3ada0d3b6cc2f3}{Sesiones}} ()
-\item 
-\mbox{\hyperlink{class_sesiones_ac56862ed0ddea43917e54667173bd21a}{$\sim$\+Sesiones}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesiones_a9a08619cdbf3cdc21b7be343c2f05ce4}{nueva\+\_\+sesion}} (string s)
-\item 
+\begin{DoxyCompactList}\small\item\em Añade una nueva sesion al conjunto de sesiones. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sesion}{Sesion}} \mbox{\hyperlink{class_sesiones_a9d84cb2ad82e1ae6cdd42b5258b091f0}{consultar\+\_\+sesion}} (string s)
+\begin{DoxyCompactList}\small\item\em Consultora de una sesión de la plataforma. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_sesiones_acd9f3c347cca772a0bc8746cff94f3bc}{existe\+\_\+sesion}} (string s)
 \begin{DoxyCompactList}\small\item\em Consultora de la existencia de una sesión dentro del parámetro implícito. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesiones_aa2f82c9a02e16d6eee4ba571b8df2669}{numero\+\_\+sesiones}} ()
+\begin{DoxyCompactList}\small\item\em Consultora del número total de sesiones que hay en la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}{leer\+\_\+conjunto\+\_\+sesiones}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}{listar\+\_\+sesiones}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesiones_a2ade13f47c028e41888540c4f03449b6}{buscar\+\_\+escribir\+\_\+sesion}} (string s)
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -38,12 +40,16 @@ Definición en la línea 23 del archivo Sesiones.\+hh.
 \doxysubsubsection{\texorpdfstring{Sesiones()}{Sesiones()}}
 {\footnotesize\ttfamily Sesiones\+::\+Sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_sesiones_ac56862ed0ddea43917e54667173bd21a}\label{class_sesiones_ac56862ed0ddea43917e54667173bd21a}} 
-\index{Sesiones@{Sesiones}!````~Sesiones@{$\sim$Sesiones}}
-\index{````~Sesiones@{$\sim$Sesiones}!Sesiones@{Sesiones}}
-\doxysubsubsection{\texorpdfstring{$\sim$Sesiones()}{~Sesiones()}}
-{\footnotesize\ttfamily Sesiones\+::$\sim$\+Sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de sesiones. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de sesiones vacío 
+\end{DoxyPostcond}
 
 
 \doxysubsection{Documentación de las funciones miembro}
@@ -53,6 +59,32 @@ Definición en la línea 23 del archivo Sesiones.\+hh.
 \doxysubsubsection{\texorpdfstring{nueva\_sesion()}{nueva\_sesion()}}
 {\footnotesize\ttfamily void Sesiones\+::nueva\+\_\+sesion (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
 
+
+
+Añade una nueva sesion al conjunto de sesiones. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido una nueva sesion con identificador s al parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_sesiones_a9d84cb2ad82e1ae6cdd42b5258b091f0}\label{class_sesiones_a9d84cb2ad82e1ae6cdd42b5258b091f0}} 
+\index{Sesiones@{Sesiones}!consultar\_sesion@{consultar\_sesion}}
+\index{consultar\_sesion@{consultar\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{consultar\_sesion()}{consultar\_sesion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sesion}{Sesion}} Sesiones\+::consultar\+\_\+sesion (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Consultora de una sesión de la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve la sesión perteneciente al parámetro implícito con identificador s 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesiones_acd9f3c347cca772a0bc8746cff94f3bc}\label{class_sesiones_acd9f3c347cca772a0bc8746cff94f3bc}} 
 \index{Sesiones@{Sesiones}!existe\_sesion@{existe\_sesion}}
 \index{existe\_sesion@{existe\_sesion}!Sesiones@{Sesiones}}
@@ -67,7 +99,23 @@ Consultora de la existencia de una sesión dentro del parámetro implícito.
 s es el identificador de una sesión 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Devuelve true si la sesión pertenece al parámetro implícito. En caso contrario, devuelve false 
+Devuelve {\itshape true} si la sesión con identificador s pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_sesiones_aa2f82c9a02e16d6eee4ba571b8df2669}\label{class_sesiones_aa2f82c9a02e16d6eee4ba571b8df2669}} 
+\index{Sesiones@{Sesiones}!numero\_sesiones@{numero\_sesiones}}
+\index{numero\_sesiones@{numero\_sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{numero\_sesiones()}{numero\_sesiones()}}
+{\footnotesize\ttfamily int Sesiones\+::numero\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del número total de sesiones que hay en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de sesiones que contiene el parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}\label{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}} 
 \index{Sesiones@{Sesiones}!leer\_conjunto\_sesiones@{leer\_conjunto\_sesiones}}
@@ -75,12 +123,32 @@ Devuelve true si la sesión pertenece al parámetro implícito. En caso contrari
 \doxysubsubsection{\texorpdfstring{leer\_conjunto\_sesiones()}{leer\_conjunto\_sesiones()}}
 {\footnotesize\ttfamily void Sesiones\+::leer\+\_\+conjunto\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene una o más sesiones 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}\label{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}} 
 \index{Sesiones@{Sesiones}!listar\_sesiones@{listar\_sesiones}}
 \index{listar\_sesiones@{listar\_sesiones}!Sesiones@{Sesiones}}
 \doxysubsubsection{\texorpdfstring{listar\_sesiones()}{listar\_sesiones()}}
 {\footnotesize\ttfamily void Sesiones\+::listar\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen las sesiones actuales de la plataforma en orden creciente por su identificador y mostrando, para cada sesión, el número de problemas que la forman y los identificadores de dichos problemas 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesiones_a2ade13f47c028e41888540c4f03449b6}\label{class_sesiones_a2ade13f47c028e41888540c4f03449b6}} 
 \index{Sesiones@{Sesiones}!buscar\_escribir\_sesion@{buscar\_escribir\_sesion}}
 \index{buscar\_escribir\_sesion@{buscar\_escribir\_sesion}!Sesiones@{Sesiones}}

@@ -29,7 +29,7 @@ public:
 
     /** @brief Creadora por defecto.
 
-        Se ejecuta automàticamente al declarar un curso.
+        Se ejecuta automáticamente al declarar un conjunto de cursos.
         \pre Cierto
         \post El resultado es un conjunto de cursos vacío
     */
@@ -37,14 +37,14 @@ public:
 
     //Modificadoras
 
-    /** @brief Añade un nuevo curso al conjunto de cursos.
-        \pre cierto
-        \post se ha añadido el curso con identificador c al conjunto de cursos
-        siempre y cuando este no estuviera previamente y cumpla la no repetición
-        de problemas dentro del mismo. En caso contrario, se imprime un mensaje
-        de error
+    /** @brief Añade un nuevo curso al conjunto de cursos siempre y cuando no 
+        haya intersección de problemas entre las sesiones.
+        \pre Cierto
+        \post Si no hay intersección de problemas entre sesiones, añade un 
+        nuevo curso al parámetro implícito y devuelve <em>true/<em>. En caso
+        contrario, devuelve <em>false</em>
     */
-    void nuevo_curso();
+    bool nuevo_curso(const Sesiones& cjt_sesiones);
 
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
@@ -72,20 +72,27 @@ public:
 
     //Consultoras
 
-    /** @brief Consultora de un curso perteneciente al parámetro implícito
-        \pre c es el identificador de un curso
+    /** @brief Consultora de un curso de la plataforma.
+        \pre Cierto
         \post Devuelve el curso perteneciente al parámetro implícito con 
         identificador c
     */
     Curso consultar_curso(int c);
 
-    /** @brief Consultora de la existencia de un curso dentro del
-        parámetro implícito
-        \pre c es el identificador de un curso
+    /** @brief Consultora de la existencia de un curso dentro de la plataforma.
+        \pre Cierto
         \post Devuelve <em>true</em> si el curso pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
     */
     bool existe_curso(int c);
+
+    /** @brief Consultora del número total de cursos que hay en la
+        plataforma.
+        \pre Cierto
+        \post Devuelve el número total de cursos que contiene el 
+        parámetro implícito
+    */
+    int numero_cursos();
 
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
         curso
@@ -102,8 +109,6 @@ public:
     //Lectura
 
     /** @brief Operación de lectura.
-
-        Se leen los cursos que formaran parte de la plataforma EVALUATOR.
         \pre Cierto
         \post El parámetro implícito contiene uno o más cursos
     */
@@ -112,8 +117,6 @@ public:
     //Escritura
 
     /** @brief Operación de escritura.
-
-        Se listan los cursos actuales de la plataforma EVALUATOR.
         \pre Cierto
         \post Se imprimen por pantalla los cursos del conjunto de forma
         creciente por su identificador. Para cada uno, se muestra el número

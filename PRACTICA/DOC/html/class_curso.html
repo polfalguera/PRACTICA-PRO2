@@ -78,6 +78,15 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:add3bcc7fd065fa02b8fad76cedcc3a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a">Curso</a> ()</td></tr>
 <tr class="memdesc:add3bcc7fd065fa02b8fad76cedcc3a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creadora por defecto.  <a href="class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a">Más...</a><br /></td></tr>
 <tr class="separator:add3bcc7fd065fa02b8fad76cedcc3a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9f2fa10f3a9eee050f5cb85755ff87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curso.html#a8e9f2fa10f3a9eee050f5cb85755ff87">repeticion_ejercicios</a> ()</td></tr>
+<tr class="memdesc:a8e9f2fa10f3a9eee050f5cb85755ff87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de el cumplimiento de la restricción de no repetición.  <a href="class_curso.html#a8e9f2fa10f3a9eee050f5cb85755ff87">Más...</a><br /></td></tr>
+<tr class="separator:a8e9f2fa10f3a9eee050f5cb85755ff87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6a68c8248056eeb08e61b0c621410f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curso.html#abe6a68c8248056eeb08e61b0c621410f">sesion_problema</a> (string p)</td></tr>
+<tr class="memdesc:abe6a68c8248056eeb08e61b0c621410f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de la sesión a la que pertenece un problema dentro de un curso.  <a href="class_curso.html#abe6a68c8248056eeb08e61b0c621410f">Más...</a><br /></td></tr>
+<tr class="separator:abe6a68c8248056eeb08e61b0c621410f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade1176c3dec275124197e9dd3770ec0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curso.html#aade1176c3dec275124197e9dd3770ec0">existe_problema_curso</a> (string p)</td></tr>
+<tr class="memdesc:aade1176c3dec275124197e9dd3770ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de la existencia de un problema en el parámetro implícito.  <a href="class_curso.html#aade1176c3dec275124197e9dd3770ec0">Más...</a><br /></td></tr>
+<tr class="separator:aade1176c3dec275124197e9dd3770ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea06a246148abfe3651e3aa7fa25618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curso.html#a1ea06a246148abfe3651e3aa7fa25618">leer_curso</a> ()</td></tr>
 <tr class="memdesc:a1ea06a246148abfe3651e3aa7fa25618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operación de lectura.  <a href="class_curso.html#a1ea06a246148abfe3651e3aa7fa25618">Más...</a><br /></td></tr>
 <tr class="separator:a1ea06a246148abfe3651e3aa7fa25618"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,6 +121,71 @@ Métodos públicos</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a id="a8e9f2fa10f3a9eee050f5cb85755ff87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9f2fa10f3a9eee050f5cb85755ff87">&#9670;&nbsp;</a></span>repeticion_ejercicios()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Curso::repeticion_ejercicios </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora de el cumplimiento de la restricción de no repetición. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>p es el identificador de un problema </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false </dd></dl>
+
+</div>
+</div>
+<a id="abe6a68c8248056eeb08e61b0c621410f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6a68c8248056eeb08e61b0c621410f">&#9670;&nbsp;</a></span>sesion_problema()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Curso::sesion_problema </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora de la sesión a la que pertenece un problema dentro de un curso. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Se imprime el identificador de la sesión a la que pertenece el problema con identificador p dentro del parámetro implícito </dd></dl>
+
+</div>
+</div>
+<a id="aade1176c3dec275124197e9dd3770ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade1176c3dec275124197e9dd3770ec0">&#9670;&nbsp;</a></span>existe_problema_curso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Curso::existe_problema_curso </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consultora de la existencia de un problema en el parámetro implícito. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>p es el identificador de un problema </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Se imprime el identificador del curso al cual está inscrito o un 0 si no está inscitro a ningun curso. </dd></dl>
+
+</div>
+</div>
 <a id="a1ea06a246148abfe3651e3aa7fa25618"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ea06a246148abfe3651e3aa7fa25618">&#9670;&nbsp;</a></span>leer_curso()</h2>
 
@@ -128,7 +202,7 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Operación de lectura. </p>
-<p>Se leen el identificador del parámetro implícito y identificadores válidos de las sesiones que lo forman. </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>El parámetro implícito contiene un número de sesiones, cada una formada por un número de problemas. También contiene el número de usuarios que han completado el curso, tanto actuales como pasados, y el número de usuarios inscritos en él </dd></dl>
 
 </div>
@@ -149,8 +223,8 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Operación de escritura. </p>
-<p>Se listan los cursos actuales de la plataforma EVALUATOR </p><dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Se imprimen por pantalla los siguientes atributos del parámetro implícito: el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Se imprimen los siguientes datos del parámetro implícito: el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso </dd></dl>
 
 </div>
 </div>

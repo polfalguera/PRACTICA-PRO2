@@ -11,14 +11,16 @@ Representa la colección de problemas de la plataforma E\+V\+A\+L\+U\+A\+T\+OR.
 \mbox{\hyperlink{class_problemas_ae587a6825117a5103b50f544a7415c0c}{Problemas}} ()
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a1cebce2784b951482651d299be50d8b3}{nuevo\+\_\+problema}} (string p)
-\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección de problemas. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\+\_\+problema}} (string p)
-\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro del parámetro implícito. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro de la plataforma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problemas_a730f2cf3c1f2218fc565994fd8d6c48d}{numero\+\_\+problemas}} ()
+\begin{DoxyCompactList}\small\item\em Consultora del número total de problemas que hay en la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a6d16937dea64409081e507065e17f2b1}{leer\+\_\+coleccion\+\_\+problemas}} ()
-\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_adecee5e2c7cfb2fdd5da52801d0c4ddc}{escribir\+\_\+problema}} (string p) const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\+\_\+problemas}} () const
-\item 
-void \mbox{\hyperlink{class_problemas_aa66262cdeb053754e3a8571850486736}{buscar\+\_\+escribir\+\_\+problema}} (string p)
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -40,7 +42,7 @@ Definición en la línea 22 del archivo Problemas.\+hh.
 
 Creadora por defecto. 
 
-Se ejecuta automàticamente al declarar un problema. \begin{DoxyPrecond}{Precondición}
+Se ejecuta automáticamente al declarar un conjunto de problemas. \begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
@@ -57,13 +59,13 @@ El resultado es un conjunto de problemas vacío
 
 
 
-Añade un nuevo problema a la colección. 
+Añade un nuevo problema a la colección de problemas. 
 
 \begin{DoxyPrecond}{Precondición}
-p es un string que representa el identificador del problema a añadir 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se ha añadido el problema con identificador p al parámetro implícito 
+Se ha añadido un nuevo problema con identificador p al parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}\label{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}} 
 \index{Problemas@{Problemas}!existe\_problema@{existe\_problema}}
@@ -73,13 +75,29 @@ Se ha añadido el problema con identificador p al parámetro implícito
 
 
 
-Consultora de la existencia de un problema dentro del parámetro implícito. 
+Consultora de la existencia de un problema dentro de la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-p es el identificador de un problema 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false 
+Devuelve {\itshape true} si el problema pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_problemas_a730f2cf3c1f2218fc565994fd8d6c48d}\label{class_problemas_a730f2cf3c1f2218fc565994fd8d6c48d}} 
+\index{Problemas@{Problemas}!numero\_problemas@{numero\_problemas}}
+\index{numero\_problemas@{numero\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas()}{numero\_problemas()}}
+{\footnotesize\ttfamily int Problemas\+::numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del número total de problemas que hay en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de problemas que contiene el parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_a6d16937dea64409081e507065e17f2b1}\label{class_problemas_a6d16937dea64409081e507065e17f2b1}} 
 \index{Problemas@{Problemas}!leer\_coleccion\_problemas@{leer\_coleccion\_problemas}}
@@ -89,13 +107,29 @@ Devuelve true si el problema pertenece al parámetro implícito. En caso contrar
 
 
 
-Añade un nuevo problema a la colección. 
+Operación de lectura. 
 
 \begin{DoxyPrecond}{Precondición}
-p es un string que representa el identificador del problema a añadir 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se ha añadido el problema con identificador p al parámetro implícito 
+El parámetro implícito contiene uno o más problemas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_problemas_adecee5e2c7cfb2fdd5da52801d0c4ddc}\label{class_problemas_adecee5e2c7cfb2fdd5da52801d0c4ddc}} 
+\index{Problemas@{Problemas}!escribir\_problema@{escribir\_problema}}
+\index{escribir\_problema@{escribir\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{escribir\_problema()}{escribir\_problema()}}
+{\footnotesize\ttfamily void Problemas\+::escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el número de envíos totales y el número de envíos con éxito realizados a un problema con identificador p 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}\label{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}} 
 \index{Problemas@{Problemas}!listar\_problemas@{listar\_problemas}}
@@ -103,21 +137,15 @@ Se ha añadido el problema con identificador p al parámetro implícito
 \doxysubsubsection{\texorpdfstring{listar\_problemas()}{listar\_problemas()}}
 {\footnotesize\ttfamily void Problemas\+::listar\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{class_problemas_aa66262cdeb053754e3a8571850486736}\label{class_problemas_aa66262cdeb053754e3a8571850486736}} 
-\index{Problemas@{Problemas}!buscar\_escribir\_problema@{buscar\_escribir\_problema}}
-\index{buscar\_escribir\_problema@{buscar\_escribir\_problema}!Problemas@{Problemas}}
-\doxysubsubsection{\texorpdfstring{buscar\_escribir\_problema()}{buscar\_escribir\_problema()}}
-{\footnotesize\ttfamily void Problemas\+::buscar\+\_\+escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
-
 
 
 Operación de escritura. 
 
-Busca y imprime un problema perteneciente al parámetro implícito. \begin{DoxyPrecond}{Precondición}
-p es el identificador de un problema 
+\begin{DoxyPrecond}{Precondición}
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Si p pertenece al parámetro implícito, se imprime por pantalla el número de envíos totales y el número de envíos con éxito del problema. En caso que no exista, se imprime un mensaje de error 
+Se imprimen por pantalla los problemas de la colección, indicando para cada uno el número de envíos totales(t) y el número de envíos con éxito(e). El orden en el que se imprimen viene determinado por el ratio (t+1)/(e+1), el cual también se imprime. En caso de empate, se imprimen en orden creciente por identificador 
 \end{DoxyPostcond}
 
 

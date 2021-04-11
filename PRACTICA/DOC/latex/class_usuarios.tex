@@ -2,26 +2,34 @@
 \label{class_usuarios}\index{Usuarios@{Usuarios}}
 
 
-Representa el conjunt d\textquotesingle{}\mbox{\hyperlink{class_usuarios}{Usuarios}} registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
+Representa el conjunt d\textquotesingle{}usuarios registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
 
 
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_usuarios_a90a1868e60e0914555701ae554aa9e87}{Usuarios}} ()
-\item 
-\mbox{\hyperlink{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}{$\sim$\+Usuarios}} ()
-\item 
-void \mbox{\hyperlink{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}{alta\+\_\+usuario}} (string u, const \mbox{\hyperlink{class_usuario}{Usuario}} \&us)
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuarios_a2a5a9dfe49ee726fcb8225cc865cadac}{alta\+\_\+usuario}} (string u)
 \begin{DoxyCompactList}\small\item\em Registra a un nuevo usuario en la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_usuarios_a11e75ce29066b53e84731315ef476312}{baja\+\_\+usuario}} (string u)
-\begin{DoxyCompactList}\small\item\em Da de baja a un usuario de la plataforma. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Da de baja a un usuario registrado de la plataforma. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_usuario}{Usuario}} \mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\+\_\+usuario}} (string u)
+\begin{DoxyCompactList}\small\item\em Consultora de un usuario registrado en la plataforma. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\+\_\+usuario}} (string u)
-\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un usuario dentro del parámetro implícito. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un usuario dentro de la plataforma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuarios_aadd424709de46087c62424d6626f5e12}{numero\+\_\+usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Consultora del número total de usuarios que hay registrados en la plataforma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuarios_ae238ea7e94249359946672e219b4062f}{inscribir\+\_\+curso}} (string u, int c)
+\begin{DoxyCompactList}\small\item\em Inscribe a un usuario a un curso de la plataforma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuarios_a2ea007ca9e24e599cf2294702f29d113}{leer\+\_\+conjunto\+\_\+usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuarios_a9b87afb7b2c0ab4f4855fe08a1e26839}{listar\+\_\+usuarios}} ()
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
-Representa el conjunt d\textquotesingle{}\mbox{\hyperlink{class_usuarios}{Usuarios}} registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
+Representa el conjunt d\textquotesingle{}usuarios registrats a la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
 
 Definición en la línea 25 del archivo Usuarios.\+hh.
 
@@ -34,30 +42,34 @@ Definición en la línea 25 del archivo Usuarios.\+hh.
 \doxysubsubsection{\texorpdfstring{Usuarios()}{Usuarios()}}
 {\footnotesize\ttfamily Usuarios\+::\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}\label{class_usuarios_a6ca03accac71e8267f98558b18f8b78e}} 
-\index{Usuarios@{Usuarios}!````~Usuarios@{$\sim$Usuarios}}
-\index{````~Usuarios@{$\sim$Usuarios}!Usuarios@{Usuarios}}
-\doxysubsubsection{\texorpdfstring{$\sim$Usuarios()}{~Usuarios()}}
-{\footnotesize\ttfamily Usuarios\+::$\sim$\+Usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de usuarios. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de usuarios vacío 
+\end{DoxyPostcond}
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}\label{class_usuarios_aae1a0ac8740e6396a6325d56043060f8}} 
+\mbox{\Hypertarget{class_usuarios_a2a5a9dfe49ee726fcb8225cc865cadac}\label{class_usuarios_a2a5a9dfe49ee726fcb8225cc865cadac}} 
 \index{Usuarios@{Usuarios}!alta\_usuario@{alta\_usuario}}
 \index{alta\_usuario@{alta\_usuario}!Usuarios@{Usuarios}}
 \doxysubsubsection{\texorpdfstring{alta\_usuario()}{alta\_usuario()}}
-{\footnotesize\ttfamily void Usuarios\+::alta\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{u,  }\item[{const \mbox{\hyperlink{class_usuario}{Usuario}} \&}]{us }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Usuarios\+::alta\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{u }\end{DoxyParamCaption})}
 
 
 
 Registra a un nuevo usuario en la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-u representa el identificador del usuario a dar de alta y us el usuario en si 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se ha añadido el usuario con identificador u al parámetro implícito, si este no existía previamente, y se imprime por pantalla el número de usuarios registrados tras ser añadido. En caso que el usuario ya exista, se imprime un mensaje de error 
+Se ha añadido un usuario con identificador u al parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_usuarios_a11e75ce29066b53e84731315ef476312}\label{class_usuarios_a11e75ce29066b53e84731315ef476312}} 
 \index{Usuarios@{Usuarios}!baja\_usuario@{baja\_usuario}}
@@ -67,13 +79,29 @@ Se ha añadido el usuario con identificador u al parámetro implícito, si este 
 
 
 
-Da de baja a un usuario de la plataforma. 
+Da de baja a un usuario registrado de la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-u representa el identificador del usuario a dar de baja 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Si u es un identificador válido, se borra de la plataforma el usuario con identificador u y se imprime por pantalla el número de usuarios registrados tras ser borrado. En caso que no exista el usuario, se imprime por pantalla un mensaje de error 
+Se ha borrado del parámetro implícito el usuario con identificador u 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_a9f3c2184034dbf548660a3093659f19c}\label{class_usuarios_a9f3c2184034dbf548660a3093659f19c}} 
+\index{Usuarios@{Usuarios}!consultar\_usuario@{consultar\_usuario}}
+\index{consultar\_usuario@{consultar\_usuario}!Usuarios@{Usuarios}}
+\doxysubsubsection{\texorpdfstring{consultar\_usuario()}{consultar\_usuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_usuario}{Usuario}} Usuarios\+::consultar\+\_\+usuario (\begin{DoxyParamCaption}\item[{string}]{u }\end{DoxyParamCaption})}
+
+
+
+Consultora de un usuario registrado en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el usuario perteneciente al parámetro implícito con identificador u 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}\label{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}} 
 \index{Usuarios@{Usuarios}!existe\_usuario@{existe\_usuario}}
@@ -83,13 +111,78 @@ Si u es un identificador válido, se borra de la plataforma el usuario con ident
 
 
 
-Consultora de la existencia de un usuario dentro del parámetro implícito. 
+Consultora de la existencia de un usuario dentro de la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-u es el identificador de un usuario 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Devuelve {\itshape true} si el usuario con identificador u pertenece al parámetro implícito. En caso contrario, devuelve false 
+Devuelve {\itshape true} si el usuario con identificador u pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_aadd424709de46087c62424d6626f5e12}\label{class_usuarios_aadd424709de46087c62424d6626f5e12}} 
+\index{Usuarios@{Usuarios}!numero\_usuarios@{numero\_usuarios}}
+\index{numero\_usuarios@{numero\_usuarios}!Usuarios@{Usuarios}}
+\doxysubsubsection{\texorpdfstring{numero\_usuarios()}{numero\_usuarios()}}
+{\footnotesize\ttfamily int Usuarios\+::numero\+\_\+usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del número total de usuarios que hay registrados en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de usuarios que contiene el parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_ae238ea7e94249359946672e219b4062f}\label{class_usuarios_ae238ea7e94249359946672e219b4062f}} 
+\index{Usuarios@{Usuarios}!inscribir\_curso@{inscribir\_curso}}
+\index{inscribir\_curso@{inscribir\_curso}!Usuarios@{Usuarios}}
+\doxysubsubsection{\texorpdfstring{inscribir\_curso()}{inscribir\_curso()}}
+{\footnotesize\ttfamily void Usuarios\+::inscribir\+\_\+curso (\begin{DoxyParamCaption}\item[{string}]{u,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Inscribe a un usuario a un curso de la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El usuario con identificador u pasa a estar inscrito al curso con identificador c 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_a2ea007ca9e24e599cf2294702f29d113}\label{class_usuarios_a2ea007ca9e24e599cf2294702f29d113}} 
+\index{Usuarios@{Usuarios}!leer\_conjunto\_usuarios@{leer\_conjunto\_usuarios}}
+\index{leer\_conjunto\_usuarios@{leer\_conjunto\_usuarios}!Usuarios@{Usuarios}}
+\doxysubsubsection{\texorpdfstring{leer\_conjunto\_usuarios()}{leer\_conjunto\_usuarios()}}
+{\footnotesize\ttfamily void Usuarios\+::leer\+\_\+conjunto\+\_\+usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene uno o más usuarios 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_usuarios_a9b87afb7b2c0ab4f4855fe08a1e26839}\label{class_usuarios_a9b87afb7b2c0ab4f4855fe08a1e26839}} 
+\index{Usuarios@{Usuarios}!listar\_usuarios@{listar\_usuarios}}
+\index{listar\_usuarios@{listar\_usuarios}!Usuarios@{Usuarios}}
+\doxysubsubsection{\texorpdfstring{listar\_usuarios()}{listar\_usuarios()}}
+{\footnotesize\ttfamily void Usuarios\+::listar\+\_\+usuarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen los usuarios registrados actualmente en la plataforma, ordenados crecientemente por su nombre. Para cada uno, se ~\newline
+ imprime cuántos envíos en total ha realizado, cuántos problemas ha resuelto satisfactoriamente, cuántos problemas ha intentado resolver y el identificador del curso en el que está inscrito o un cero si no está inscrito en ninguno 
 \end{DoxyPostcond}
 
 

@@ -18,78 +18,86 @@ using namespace std;
  */
 
 /** @class Usuarios
-    @brief Representa el conjunt d'Usuarios registrats a la plataforma EVALUATOR
+    @brief Representa el conjunt d'usuarios registrats a la plataforma EVALUATOR
 
 */
 
 class Usuarios {
-private:
-//Defineixes els atributs, però no els esmentes explícitament
-
 public:
-    //Constructores
+    //Constructora
 
+    /** @brief Creadora por defecto.
+
+        Se ejecuta automáticamente al declarar un conjunto de usuarios.
+        \pre Cierto
+        \post El resultado es un conjunto de usuarios vacío
+    */
     Usuarios();
-    /* Pre: cert */
-    /* Post: el resultat es un conjunt d'Usuarios buit */
 
-    // Destructora: esborra automaticament els objectes locals en sortir
-    // d'un ambit de visibilitat
+    //Modificadoras
 
-    ~Usuarios();
-
-    //Modificadores
-
-    /** @brief Registra a un nuevo usuario en la plataforma
-      \pre u representa el identificador del usuario a dar de alta y us
-      el usuario en si
-      \post Se ha añadido el usuario con identificador u al parámetro
-      implícito, si este no existía previamente, y se imprime por pantalla
-      el número de usuarios registrados tras ser añadido. En caso que el
-      usuario ya existiera, se imprime un mensaje de error
+    /** @brief Registra a un nuevo usuario en la plataforma.
+      \pre Cierto
+      \post Se ha añadido un usuario con identificador u al parámetro
+      implícito
     */
     void alta_usuario(string u);
 
-    /** @brief Da de baja a un usuario de la plataforma
-      \pre u representa el identificador del usuario a dar de baja
-      \post Si u es un identificador válido, se borra de la plataforma el
-      usuario con identificador u y se imprime por pantalla el número de
-      usuarios registrados tras ser borrado. En caso que no exista el usuario,
-      se imprime por pantalla un mensaje de error
+    /** @brief Da de baja a un usuario registrado de la plataforma.
+      \pre Cierto
+      \post Se ha borrado del parámetro implícito el usuario con identificador
+      u
     */
     void baja_usuario(string u);
 
     //Consultoras
 
-    /** @brief Consultora de la existencia de un usuario dentro del parámetro
-        implícito
-        \pre u es el identificador de un usuario
-        \post Devuelve <em>true</em> si el usuario con identificador u pertenece 
-        al parámetro implícito. En caso contrario, devuelve <em>false</em>
-    */
-    bool existe_usuario(string u);
-
-    /** @brief Consultora de un usuario perteneciente al parámetro implícito
-        \pre u es el identificador de un usuario
+    /** @brief Consultora de un usuario registrado en la plataforma.
+        \pre Cierto
         \post Devuelve el usuario perteneciente al parámetro implícito con 
         identificador u
     */
     Usuario consultar_usuario(string u);
 
+    /** @brief Consultora de la existencia de un usuario dentro de la plataforma.
+        \pre Cierto
+        \post Devuelve <em>true</em> si el usuario con identificador u pertenece 
+        al parámetro implícito. En caso contrario, devuelve <em>false</em>
+    */
+    bool existe_usuario(string u);
+
+    /** @brief Consultora del número total de usuarios que hay registrados en
+        la plataforma.
+        \pre Cierto
+        \post Devuelve el número total de usuarios que contiene el parámetro
+        implícito
+    */
+    int numero_usuarios();
+
+    /** @brief Inscribe a un usuario a un curso de la plataforma.
+        \pre Cierto
+        \post El usuario con identificador u pasa a estar inscrito al curso con 
+        identificador c
+    */
+    void inscribir_curso(string u, int c);
+
     //Lectura
 
+    /** @brief Operación de lectura.
+        \pre Cierto
+        \post El parámetro implícito contiene uno o más usuarios
+    */
+    void leer_conjunto_usuarios();
 
     //Escritura
 
     /** @brief Operación de escritura.
-
-        Se listan los usuarios registrados actualmente en la plataforma.
         \pre Cierto
-        \post Se imprimen por pantalla los usuarios registrados actualmente en 
-        la plataforma, ordenados crecientemente por su nombre. Para cada uno, 
-        se imprime cuántos envíos en total ha realizado, cuántos problemas ha
+        \post Se imprimen los usuarios registrados actualmente en la 
+        plataforma, ordenados crecientemente por su nombre. Para cada uno, se  
+        imprime cuántos envíos en total ha realizado, cuántos problemas ha 
         resuelto satisfactoriamente, cuántos problemas ha intentado resolver y 
-        el identificador del curso en el que está escrito o un cero si no está
+        el identificador del curso en el que está inscrito o un cero si no está
         inscrito en ninguno
     */
     void listar_usuarios();

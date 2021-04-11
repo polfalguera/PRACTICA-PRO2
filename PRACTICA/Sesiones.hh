@@ -22,26 +22,33 @@ using namespace std;
 */
 class Sesiones {
 public:
-    //Constructoras
+    //Constructora
 
+    /** @brief Creadora por defecto.
+
+        Se ejecuta automáticamente al declarar un conjunto de sesiones.
+        \pre Cierto
+        \post El resultado es un conjunto de sesiones vacío
+    */
     Sesiones();
-    /* Pre: cierto */
-    /* Post: el resultado es un conjunto de sesiones vacio */
-
-    // Destructora: borra automaticamente los objetos locales en salir de un
-    //ambito de visibilidad
-
-    ~Sesiones();
 
     //Modificadoras
 
+    /** @brief Añade una nueva sesion al conjunto de sesiones.
+        \pre Cierto
+        \post Se ha añadido una nueva sesion con identificador s al parámetro
+        implícito
+    */
     void nueva_sesion(string s);
-    /* Pre: s es un string que representa el identificador de la sesión
-    a añadir */
-    /* Post: la sesión con idetificador s se ha añadido al conjunto de
-    sesiones */
 
     //Consultoras
+
+    /** @brief Consultora de una sesión de la plataforma.
+        \pre Cierto
+        \post Devuelve la sesión perteneciente al parámetro implícito con 
+        identificador s
+    */
+    Sesion consultar_sesion(string s);
 
     /** @brief Consultora de la existencia de una sesión dentro del
         parámetro implícito
@@ -51,18 +58,29 @@ public:
     */
     bool existe_sesion(string s);
 
+    /** @brief Consultora del número total de sesiones que hay en la
+        plataforma.
+        \pre Cierto
+        \post Devuelve el número total de sesiones que contiene el 
+        parámetro implícito
+    */
+    int numero_sesiones();
+
     //Lectura
 
+    /** @brief Operación de lectura.
+        \pre Cierto
+        \post El parámetro implícito contiene una o más sesiones
+    */
     void leer_conjunto_sesiones();
-    /* Pre: cierto */
-    /* Post: el parámetro implícito contiene una o más sesiones */
 
     //Escritura
 
-    /* Pre: cierto */
-    /* Post: se imprime por pantalla las sesiones actuales de la plataforma
-    crecientemente por su identificador y, mostrando para cada sesión, el
-    número de problemas que la forman y los identificadores de dichos problemas
+    /** @brief Operación de escritura.
+        \pre Cierto
+        \post Se imprimen las sesiones actuales de la plataforma en orden
+        creciente por su identificador y mostrando, para cada sesión, el número
+        de problemas que la forman y los identificadores de dichos problemas
     */
     void listar_sesiones();
 

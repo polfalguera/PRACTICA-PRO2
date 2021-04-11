@@ -10,6 +10,12 @@ Representa un curso.
 \item 
 \mbox{\hyperlink{class_curso_add3bcc7fd065fa02b8fad76cedcc3a8a}{Curso}} ()
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}{repeticion\+\_\+ejercicios}} ()
+\begin{DoxyCompactList}\small\item\em Consultora de el cumplimiento de la restricción de no repetición. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_abe6a68c8248056eeb08e61b0c621410f}{sesion\+\_\+problema}} (string p)
+\begin{DoxyCompactList}\small\item\em Consultora de la sesión a la que pertenece un problema dentro de un curso. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_curso_aade1176c3dec275124197e9dd3770ec0}{existe\+\_\+problema\+\_\+curso}} (string p)
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema en el parámetro implícito. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_curso_a1ea06a246148abfe3651e3aa7fa25618}{leer\+\_\+curso}} ()
 \begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_curso_ac196f3a5a5d30d41d2c0a0c295f052d3}{escribir\+\_\+curso}} ()
@@ -43,6 +49,54 @@ El resultado es un curso sin sesiones y, por ello, sin problemas. Tampoco tiene 
 
 
 \doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}\label{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}} 
+\index{Curso@{Curso}!repeticion\_ejercicios@{repeticion\_ejercicios}}
+\index{repeticion\_ejercicios@{repeticion\_ejercicios}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{repeticion\_ejercicios()}{repeticion\_ejercicios()}}
+{\footnotesize\ttfamily bool Curso\+::repeticion\+\_\+ejercicios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora de el cumplimiento de la restricción de no repetición. 
+
+\begin{DoxyPrecond}{Precondición}
+p es el identificador de un problema 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_curso_abe6a68c8248056eeb08e61b0c621410f}\label{class_curso_abe6a68c8248056eeb08e61b0c621410f}} 
+\index{Curso@{Curso}!sesion\_problema@{sesion\_problema}}
+\index{sesion\_problema@{sesion\_problema}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{sesion\_problema()}{sesion\_problema()}}
+{\footnotesize\ttfamily void Curso\+::sesion\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Consultora de la sesión a la que pertenece un problema dentro de un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el identificador de la sesión a la que pertenece el problema con identificador p dentro del parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_curso_aade1176c3dec275124197e9dd3770ec0}\label{class_curso_aade1176c3dec275124197e9dd3770ec0}} 
+\index{Curso@{Curso}!existe\_problema\_curso@{existe\_problema\_curso}}
+\index{existe\_problema\_curso@{existe\_problema\_curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{existe\_problema\_curso()}{existe\_problema\_curso()}}
+{\footnotesize\ttfamily bool Curso\+::existe\+\_\+problema\+\_\+curso (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Consultora de la existencia de un problema en el parámetro implícito. 
+
+\begin{DoxyPrecond}{Precondición}
+p es el identificador de un problema 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el identificador del curso al cual está inscrito o un 0 si no está inscitro a ningun curso. 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_curso_a1ea06a246148abfe3651e3aa7fa25618}\label{class_curso_a1ea06a246148abfe3651e3aa7fa25618}} 
 \index{Curso@{Curso}!leer\_curso@{leer\_curso}}
 \index{leer\_curso@{leer\_curso}!Curso@{Curso}}
@@ -53,7 +107,7 @@ El resultado es un curso sin sesiones y, por ello, sin problemas. Tampoco tiene 
 
 Operación de lectura. 
 
-Se leen el identificador del parámetro implícito y identificadores válidos de las sesiones que lo forman. \begin{DoxyPrecond}{Precondición}
+\begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
@@ -69,11 +123,11 @@ El parámetro implícito contiene un número de sesiones, cada una formada por u
 
 Operación de escritura. 
 
-Se listan los cursos actuales de la plataforma E\+V\+A\+L\+U\+A\+T\+OR \begin{DoxyPrecond}{Precondición}
+\begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se imprimen por pantalla los siguientes atributos del parámetro implícito\+: el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso 
+Se imprimen los siguientes datos del parámetro implícito\+: el número de usuarios actuales o pasados que lo han completado, el número de usuarios inscritos actualmente y el número de sesiones que lo forman y los identificadores de dichas sesiones, en el mismo orden que se leyeron cuando se creó el curso 
 \end{DoxyPostcond}
 
 

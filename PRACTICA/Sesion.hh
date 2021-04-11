@@ -43,11 +43,11 @@ public:
 
     //Escritura
 
-    void escribir_sesion() const;
-    /* Pre: cierto */
-    /* Post: en caso que s sea un identificador válido, se imprime por pantalla
-    el número de problemas que forman la sesión y los identificadores de dichos
-    problemas. En caso contrario, se imprime un mensaje de error por pantalla
+    /** @brief Operación de escritura.
+        \pre Cierto
+        \post Se imprimen el número de problemas que forman parte del 
+        parámetro implícito
     */
+    void escribir_sesion() const;
 };
 #endif

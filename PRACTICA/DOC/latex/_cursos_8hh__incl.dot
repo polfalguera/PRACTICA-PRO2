@@ -6,4 +6,12 @@ digraph "Cursos.hh"
   Node1 [label="Cursos.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Especificación de la clase Cursos."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
   Node2 [label="Curso.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_curso_8hh.html",tooltip="Especificación de la clase Curso."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Sesiones.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sesiones_8hh.html",tooltip="Especificación de la clase Sesiones."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Sesion.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_sesion_8hh.html",tooltip="Especificación de la clase Sesion."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Usuarios.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_usuarios_8hh.html",tooltip="Especificación de la clase Usuarios."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Usuario.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_usuario_8hh.html",tooltip="Especificación de la clase Usuario."];
 }
