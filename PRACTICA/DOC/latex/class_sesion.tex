@@ -2,28 +2,26 @@
 \label{class_sesion}\index{Sesion@{Sesion}}
 
 
-Representa una sesión con un conjunto de problemas que pertenece a uno o a más de los cursos de E\+V\+A\+L\+U\+A\+T\+OR.  
+Representa una sesión de la plataforma Evaluator. Está formada por un conjunto de problemas, todos distintos entre ellos.  
 
 
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}{Sesion}} ()
-\item 
-\mbox{\hyperlink{class_sesion_acc4bd3e753a45d6b7a01aa27fb8f171f}{$\sim$\+Sesion}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesion_ae1db05d8d0539d36beb5839736b891f6}{consultar\+\_\+numero\+\_\+problemas}} ()
+\begin{DoxyCompactList}\small\item\em Consultora del número de problemas que contiene una sesión. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}{leer\+\_\+sesion}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}{escribir\+\_\+sesion}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Descripción detallada}
-Representa una sesión con un conjunto de problemas que pertenece a uno o a más de los cursos de E\+V\+A\+L\+U\+A\+T\+OR. 
+Representa una sesión de la plataforma Evaluator. Está formada por un conjunto de problemas, todos distintos entre ellos. 
 
-Todos los problemas son distintos entre ellos 
-
-Definición en la línea 24 del archivo Sesion.\+hh.
+Definición en la línea 23 del archivo Sesion.\+hh.
 
 
 
@@ -34,21 +32,51 @@ Definición en la línea 24 del archivo Sesion.\+hh.
 \doxysubsubsection{\texorpdfstring{Sesion()}{Sesion()}}
 {\footnotesize\ttfamily Sesion\+::\+Sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_sesion_acc4bd3e753a45d6b7a01aa27fb8f171f}\label{class_sesion_acc4bd3e753a45d6b7a01aa27fb8f171f}} 
-\index{Sesion@{Sesion}!````~Sesion@{$\sim$Sesion}}
-\index{````~Sesion@{$\sim$Sesion}!Sesion@{Sesion}}
-\doxysubsubsection{\texorpdfstring{$\sim$Sesion()}{~Sesion()}}
-{\footnotesize\ttfamily Sesion\+::$\sim$\+Sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una sesión vacía 
+\end{DoxyPostcond}
 
 
 \doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sesion_ae1db05d8d0539d36beb5839736b891f6}\label{class_sesion_ae1db05d8d0539d36beb5839736b891f6}} 
+\index{Sesion@{Sesion}!consultar\_numero\_problemas@{consultar\_numero\_problemas}}
+\index{consultar\_numero\_problemas@{consultar\_numero\_problemas}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{consultar\_numero\_problemas()}{consultar\_numero\_problemas()}}
+{\footnotesize\ttfamily int Sesion\+::consultar\+\_\+numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultora del número de problemas que contiene una sesión. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número de problemas que pertenecen al parámetro implícito 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}\label{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}} 
 \index{Sesion@{Sesion}!leer\_sesion@{leer\_sesion}}
 \index{leer\_sesion@{leer\_sesion}!Sesion@{Sesion}}
 \doxysubsubsection{\texorpdfstring{leer\_sesion()}{leer\_sesion()}}
 {\footnotesize\ttfamily void Sesion\+::leer\+\_\+sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene un número de problemas y un conjunto de identificadores de dichos problemas 
+\end{DoxyPostcond}
 \mbox{\Hypertarget{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}\label{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}} 
 \index{Sesion@{Sesion}!escribir\_sesion@{escribir\_sesion}}
 \index{escribir\_sesion@{escribir\_sesion}!Sesion@{Sesion}}

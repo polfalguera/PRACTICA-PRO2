@@ -2,7 +2,7 @@
 \label{class_cursos}\index{Cursos@{Cursos}}
 
 
-Representa el conjunto de cursos de la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
+Representa el conjunto de cursos de la plataforma Evaluator.  
 
 
 \doxysubsection*{Métodos públicos}
@@ -12,6 +12,8 @@ Representa el conjunto de cursos de la plataforma E\+V\+A\+L\+U\+A\+T\+OR.
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_cursos_a78452941945e62a07a717cb5188332fd}{nuevo\+\_\+curso}} (const \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cjt\+\_\+sesiones)
 \begin{DoxyCompactList}\small\item\em Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cursos_a27952f809517a548e8a81cf4d290e603}{envio}} (string u, string p, int r, const \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cjt\+\_\+sesiones, const \mbox{\hyperlink{class_usuarios}{Usuarios}} \&cjt\+\_\+usuarios)
+\begin{DoxyCompactList}\small\item\em Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}{incrementar\+\_\+usuarios\+\_\+completado}} ()
 \begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios que han completado el curso. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}{incrementar\+\_\+usuarios\+\_\+inscritos}} ()
@@ -33,7 +35,7 @@ void \mbox{\hyperlink{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}{listar\+\_
 
 
 \doxysubsection{Descripción detallada}
-Representa el conjunto de cursos de la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
+Representa el conjunto de cursos de la plataforma Evaluator. 
 
 Definición en la línea 26 del archivo Cursos.\+hh.
 
@@ -74,6 +76,22 @@ Cierto
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 Si no hay intersección de problemas entre sesiones, añade un nuevo curso al parámetro implícito y devuelve {\itshape true/{\itshape . En caso contrario, devuelve {\itshape false} }}
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_cursos_a27952f809517a548e8a81cf4d290e603}\label{class_cursos_a27952f809517a548e8a81cf4d290e603}} 
+\index{Cursos@{Cursos}!envio@{envio}}
+\index{envio@{envio}!Cursos@{Cursos}}
+\doxysubsubsection{\texorpdfstring{envio()}{envio()}}
+{\footnotesize\ttfamily void Cursos\+::envio (\begin{DoxyParamCaption}\item[{string}]{u,  }\item[{string}]{p,  }\item[{int}]{r,  }\item[{const \mbox{\hyperlink{class_sesiones}{Sesiones}} \&}]{cjt\+\_\+sesiones,  }\item[{const \mbox{\hyperlink{class_usuarios}{Usuarios}} \&}]{cjt\+\_\+usuarios }\end{DoxyParamCaption})}
+
+
+
+Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Sea un envío exitoso o no, se actualizan las estadísticas del usuario con identificador u y del problema con identificador p. Además, se actualizan los problemas resueltos y enviables del usuario y se comprueba que con este envío el usuario haya completado o no el curso en el que estaba inscrito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}\label{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}} 
 \index{Cursos@{Cursos}!incrementar\_usuarios\_completado@{incrementar\_usuarios\_completado}}

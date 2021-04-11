@@ -17,29 +17,31 @@ using namespace std;
  */
 
 /** @class Usuario
-    @brief Representa un usuario registrado en la plataforma EVALUATOR.
-
+    @brief Representa un usuario registrado en la plataforma Evaluator.
 */
 
 class Usuario {
-private:
-//Defineixes els atributs, però no els esmentes explícitament
-
 public:
-    //Constructores
+    //Constructora
 
+    /** @brief Creadora por defecto.
+
+        Se ejecuta automáticamente al declarar un conjunto de usuarios.
+        \pre Cierto
+        \post El resultado es un usuario no inscrito a ningun curso y con zero
+        problemas intentados y resueltos y, por tanto, con zero problemas 
+        enviables
+    */
     Usuario();
-    /* Pre: cert */
-    /* Post: el resultat es un Usuario no inscrit a cap curs i amb zero problemes
-    intentats i resolts i, per tant, amb zero problemes enviables */
-
+    
     //Modificadoras
 
-    /** @brief Consultora del curso al cual está inscrito el parámetro implícito
+    /** @brief Se actualiza el identificador del curso en el cual está inscrito 
+        un usuario. El identificador será 0 en caso de que pase a no estar 
+        inscrito en nigun curso.
         \pre Cierto
-        \post Si el parámetro implícito existe, se imprime el identificador del
-        curso al cual está inscrito o un 0 si no está inscitro a ningun curso.
-        En caso contrario, se imprime por pantalla un mensaje de error
+        \post El parámetro implícito pasa a estar suscrito a otro curso o a
+        ninguno
     */
     void modificar_inscripciones();    
 
@@ -50,14 +52,14 @@ public:
         \post Se imprime el identificador del curso al cual está inscrito
         el parámetro implícito o un 0 si no está inscitro a ningun curso
     */
-    void curso_usuario();
+    void curso_usuario() const;
 
     /** @brief Consultora del curso al cual está inscrito un usuario.
         \pre Cierto
         \post Si el parámetro implícito está inscrito en algun curso, devuelve
         el identificador de éste. En caso contrario, devuelve un 0
     */
-    int consultar_curso();
+    int consultar_curso() const;
 
     /** @brief Consultora de los problemas resueltos de un usuario.
         \pre Cierto
@@ -67,7 +69,7 @@ public:
         para cada problema, se imprime el número de envíos realizados por el 
         parámetro implícito a dicho problema
     */
-    void problemas_resueltos();
+    void problemas_resueltos() const;
 
     /** @brief Consultora de los problemas enviables de un usuario.
         \pre Cierto
@@ -77,14 +79,14 @@ public:
         Además, para cada problema, se imprime el número de envíos realizados
         por el parámetro implícito a dicho problema
     */
-    void problemas_enviables();
+    void problemas_enviables() const;
 
     //Lectura
 
     /** @brief Operación de lectura.
         \pre Cierto
         \post El parámetro implícito pasa a tener los atributos leídos por
-        el canal estandard de entrada
+        el canal estándard de entrada
     */
     void leer_usuario();
 
@@ -98,6 +100,6 @@ public:
         identificador del curso en el que está inscrito o un cero si no está
         inscrito en ninguno
     */
-   void escribir_usuario();
+   void escribir_usuario() const;
 };
 #endif

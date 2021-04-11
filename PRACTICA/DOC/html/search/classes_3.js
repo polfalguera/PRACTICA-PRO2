@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sesion_70',['Sesion',['../class_sesion.html',1,'']]],
-  ['sesiones_71',['Sesiones',['../class_sesiones.html',1,'']]]
+  ['usuario_67',['Usuario',['../class_usuario.html',1,'']]],
+  ['usuarios_68',['Usuarios',['../class_usuarios.html',1,'']]]
 ];

@@ -16,37 +16,44 @@ using namespace std;
  */
 
 /** @class Sesion
-    @brief Representa una sesión con un conjunto de problemas que pertenece
-    a uno o a más de los cursos de EVALUATOR
-
-    Todos los problemas son distintos entre ellos
+    @brief Representa una sesión de la plataforma Evaluator. Está formada
+    por un conjunto de problemas, todos distintos entre ellos.
 */
+
 class Sesion {
 public:
-    //Constructoras
+    //Constructora
 
+    /** @brief Constructora por defecto.
+        \pre Cierto
+        \post El resultado es una sesión vacía
+    */
     Sesion();
-    /* Pre: cierto */
-    /* Post: el resultado es una sesión vacía */
 
-    // Destructora: borra automaticamente los objetos locales en salir de un
-    // ámbito de visibilidad
+    //Consultora
 
-    ~Sesion();
-
+    /** @brief Consultora del número de problemas que contiene una sesión.
+        \pre Cierto
+        \post Devuelve el número de problemas que pertenecen al parámetro
+        implícito
+    */
+    int consultar_numero_problemas() const;
+    
     //Lectura
 
-    void leer_sesion();
-    /* Pre: cierto */
-    /* Post: el parámetro implícito contiene un numero de problemas y un
-    conjunto de identificadores de dichos problemas */
+    /** @brief Operación de lectura.
+       \pre Cierto
+       \post El parámetro implícito contiene un número de problemas y un 
+       conjunto de identificadores de dichos problemas
+    */
+    void leer_sesion() const;
 
     //Escritura
 
     /** @brief Operación de escritura.
         \pre Cierto
         \post Se imprimen el número de problemas que forman parte del 
-        parámetro implícito
+        parámetro implícito y sus identificadores
     */
     void escribir_sesion() const;
 };

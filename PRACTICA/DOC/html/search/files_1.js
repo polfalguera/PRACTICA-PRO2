@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['curso_2ehh_75',['Curso.hh',['../_curso_8hh.html',1,'']]],
-  ['cursos_2ehh_76',['Cursos.hh',['../_cursos_8hh.html',1,'']]]
+  ['problemas_2ehh_71',['Problemas.hh',['../_problemas_8hh.html',1,'']]],
+  ['program_2ecc_72',['program.cc',['../program_8cc.html',1,'']]]
 ];

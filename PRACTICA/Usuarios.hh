@@ -18,8 +18,8 @@ using namespace std;
  */
 
 /** @class Usuarios
-    @brief Representa el conjunt d'usuarios registrats a la plataforma EVALUATOR
-
+    @brief Representa el conjunto de usuarios registrados en la plataforma
+    Evaluator.
 */
 
 class Usuarios {
@@ -37,7 +37,7 @@ public:
     //Modificadoras
 
     /** @brief Registra a un nuevo usuario en la plataforma.
-      \pre Cierto
+      \pre El usuario con identificador u existe
       \post Se ha añadido un usuario con identificador u al parámetro
       implícito
     */
@@ -50,6 +50,16 @@ public:
     */
     void baja_usuario(string u);
 
+    //Modificadora
+
+    /** @brief Inscribe a un usuario a un curso de la plataforma.
+        \pre El usuario y el curso con identificadores u y c respectivamente
+        existen. El usuario u no está inscrito en ningún curso
+        \post El usuario con identificador u pasa a estar inscrito al curso con 
+        identificador c
+    */
+    void inscribir_curso(string u, int c);
+
     //Consultoras
 
     /** @brief Consultora de un usuario registrado en la plataforma.
@@ -57,29 +67,22 @@ public:
         \post Devuelve el usuario perteneciente al parámetro implícito con 
         identificador u
     */
-    Usuario consultar_usuario(string u);
+    Usuario consultar_usuario(string u) const;
 
     /** @brief Consultora de la existencia de un usuario dentro de la plataforma.
         \pre Cierto
         \post Devuelve <em>true</em> si el usuario con identificador u pertenece 
         al parámetro implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_usuario(string u);
+    bool existe_usuario(string u) const;
 
     /** @brief Consultora del número total de usuarios que hay registrados en
         la plataforma.
-        \pre Cierto
+        \pre El parámetro implícito puede estar o no vacío
         \post Devuelve el número total de usuarios que contiene el parámetro
         implícito
     */
-    int numero_usuarios();
-
-    /** @brief Inscribe a un usuario a un curso de la plataforma.
-        \pre Cierto
-        \post El usuario con identificador u pasa a estar inscrito al curso con 
-        identificador c
-    */
-    void inscribir_curso(string u, int c);
+    int numero_usuarios() const; 
 
     //Lectura
 
@@ -100,6 +103,6 @@ public:
         el identificador del curso en el que está inscrito o un cero si no está
         inscrito en ninguno
     */
-    void listar_usuarios();
+    void listar_usuarios() const;
 };
 #endif

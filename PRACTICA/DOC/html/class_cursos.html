@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Laboratorio de PRO2. Ejercicio &#39;EVALUATOR&#39;.: Referencia de la Clase Cursos</title>
+<title>Práctica PRO2 - Plataforma EVALUATOR: Referencia de la Clase Cursos</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Laboratorio de PRO2. Ejercicio &#39;EVALUATOR&#39;.
-   &#160;<span id="projectnumber">version 1 12-abr-2021</span>
+   <div id="projectname">Práctica PRO2 - Plataforma EVALUATOR
+   &#160;<span id="projectnumber">version 1 12/04/2021</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Representa el conjunto de cursos de la plataforma EVALUATOR.  
+<p>Representa el conjunto de cursos de la plataforma Evaluator.  
  <a href="class_cursos.html#details">Más...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -81,6 +81,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a78452941945e62a07a717cb5188332fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a78452941945e62a07a717cb5188332fd">nuevo_curso</a> (const <a class="el" href="class_sesiones.html">Sesiones</a> &amp;cjt_sesiones)</td></tr>
 <tr class="memdesc:a78452941945e62a07a717cb5188332fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones.  <a href="class_cursos.html#a78452941945e62a07a717cb5188332fd">Más...</a><br /></td></tr>
 <tr class="separator:a78452941945e62a07a717cb5188332fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27952f809517a548e8a81cf4d290e603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a27952f809517a548e8a81cf4d290e603">envio</a> (string u, string p, int r, const <a class="el" href="class_sesiones.html">Sesiones</a> &amp;cjt_sesiones, const <a class="el" href="class_usuarios.html">Usuarios</a> &amp;cjt_usuarios)</td></tr>
+<tr class="memdesc:a27952f809517a548e8a81cf4d290e603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no.  <a href="class_cursos.html#a27952f809517a548e8a81cf4d290e603">Más...</a><br /></td></tr>
+<tr class="separator:a27952f809517a548e8a81cf4d290e603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cursos.html#a3ce8af0e0132939cf6f51a4321d58d7f">incrementar_usuarios_completado</a> ()</td></tr>
 <tr class="memdesc:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incrementa una unidad el número de usuarios que han completado el curso.  <a href="class_cursos.html#a3ce8af0e0132939cf6f51a4321d58d7f">Más...</a><br /></td></tr>
 <tr class="separator:a3ce8af0e0132939cf6f51a4321d58d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +113,7 @@ Métodos públicos</h2></td></tr>
 <tr class="separator:aeb29e1a1c81d4bbe0537653a0a6bbc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>Representa el conjunto de cursos de la plataforma EVALUATOR. </p>
+<div class="textblock"><p>Representa el conjunto de cursos de la plataforma Evaluator. </p>
 
 <p class="definition">Definición en la línea <a class="el" href="_cursos_8hh_source.html#l00026">26</a> del archivo <a class="el" href="_cursos_8hh_source.html">Cursos.hh</a>.</p>
 </div><h2 class="groupheader">Documentación del constructor y destructor</h2>
@@ -155,6 +158,56 @@ Métodos públicos</h2></td></tr>
 <p>Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones. </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Si no hay intersección de problemas entre sesiones, añade un nuevo curso al parámetro implícito y devuelve <em>true/<em>. En caso contrario, devuelve <em>false</em> </em></em></dd></dl>
+
+</div>
+</div>
+<a id="a27952f809517a548e8a81cf4d290e603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27952f809517a548e8a81cf4d290e603">&#9670;&nbsp;</a></span>envio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cursos::envio </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_sesiones.html">Sesiones</a> &amp;&#160;</td>
+          <td class="paramname"><em>cjt_sesiones</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_usuarios.html">Usuarios</a> &amp;&#160;</td>
+          <td class="paramname"><em>cjt_usuarios</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no. </p>
+<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Sea un envío exitoso o no, se actualizan las estadísticas del usuario con identificador u y del problema con identificador p. Además, se actualizan los problemas resueltos y enviables del usuario y se comprueba que con este envío el usuario haya completado o no el curso en el que estaba inscrito </dd></dl>
 
 </div>
 </div>

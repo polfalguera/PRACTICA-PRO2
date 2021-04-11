@@ -17,7 +17,10 @@ using namespace std;
  */
 
 /** @class Curso
-    @brief Representa un curso
+    @brief Representa un curso que pertenece a la plataforma Evaluator. 
+    Está formado por un conjunto de sesiones y estas, a la vez, por un
+    conjunto de problemas, con la característica de que en un mismo curso
+    no aparece el mismo problema más de una vez.
 */
 
 class Curso {
@@ -26,7 +29,7 @@ public:
 
     /** @brief Creadora por defecto.
 
-        Se ejecuta automàticamente al declarar un curso.
+        Se ejecuta automáticamente al declarar un curso.
         \pre Cierto
         \post El resultado es un curso sin sesiones y, por ello, sin problemas.
         Tampoco tiene un número de usuarios que lo haya completado ni usurarios
@@ -36,28 +39,22 @@ public:
 
     //Consultoras
 
-    /** @brief Consultora de el cumplimiento de la restricción de no repetición
-        \pre p es el identificador de un problema
-        \post Devuelve true si el problema pertenece al parámetro implícito.
-        En caso contrario, devuelve false
-    */
-    bool repeticion_ejercicios();
-
-    /** @brief Consultora de la sesión a la que pertenece un problema dentro
-        de un curso.
+    /** @brief Consultora del cumplimiento de la restricción de no repetición
+        de problemas.
         \pre Cierto
-        \post Se imprime el identificador de la sesión a la que pertenece
-        el problema con identificador p dentro del parámetro implícito
+        \post Devuelve <em>true</em> si se cumple la restricción de no 
+        repetición de problemas. En caso contrario, devuelve <em>false</em>
     */
-    void sesion_problema(string p);
+    bool repeticion_ejercicios() const;
 
     /** @brief Consultora de la existencia de un problema en el parámetro 
         implícito
-        \pre p es el identificador de un problema
-        \post Se imprime el identificador del curso al cual está inscrito o un 0
-        si no está inscitro a ningun curso.
+        \pre El problema con identificador p existe
+        \post Devuelve <em>true</em> si el problema con identificador p
+        pertenece al parámetro implícito. En caso contrario, devuelve
+        <em>false</em>
     */
-    bool existe_problema_curso(string p);
+    bool existe_problema_curso(string p) const;
 
     //Lectura
 
@@ -82,6 +79,6 @@ public:
         forman y los identificadores de dichas sesiones, en el mismo orden que
         se leyeron cuando se creó el curso
     */
-   void escribir_curso();
+    void escribir_curso() const;
 };
 #endif

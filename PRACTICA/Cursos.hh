@@ -20,7 +20,7 @@ using namespace std;
  */
 
 /** @class Cursos
-    @brief Representa el conjunto de cursos de la plataforma EVALUATOR
+    @brief Representa el conjunto de cursos de la plataforma Evaluator.
 */
 
 class Cursos {
@@ -41,31 +41,43 @@ public:
         haya intersección de problemas entre las sesiones.
         \pre Cierto
         \post Si no hay intersección de problemas entre sesiones, añade un 
-        nuevo curso al parámetro implícito y devuelve <em>true/<em>. En caso
+        nuevo curso al parámetro implícito y devuelve <em>true</em>. En caso
         contrario, devuelve <em>false</em>
     */
     bool nuevo_curso(const Sesiones& cjt_sesiones);
 
+    /** @brief Toma nota del resultado de un envío hecho por un usuario a un 
+        problema, actualizando a la vez todo lo que conlleva el envío en si y 
+        que éste resulte exitoso o no.
+        \pre Cierto
+        \post Sea un envío exitoso o no, se actualizan las estadísticas del 
+        usuario con identificador u y del problema con identificador p. Además,
+        se actualizan los problemas resueltos y enviables del usuario y se 
+        comprueba que con este envío el usuario haya completado o no el curso
+        en el que estaba inscrito
+    */
+    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios);
+
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
-        \pre cierto
-        \post se ha incrementado una unidad el número de usuarios que han
+        \pre Cierto
+        \post Se ha incrementado una unidad el número de usuarios que han
         completado el parámetro implícito
     */
     void incrementar_usuarios_completado();
 
-    /** @brief Incrementa una unidad el número de usuarios inscritos
-        actualmente en el curso.
-        \pre cierto
-        \post se ha incrementado una unidad el número de usuarios inscritos
-        actualmente en el parámetro implícito
+    /** @brief Incrementa una unidad el número de usuarios que han completado
+        el curso
+        \pre Cierto
+        \post Se ha incrementado una unidad el número de usuarios que han 
+        completado el parámetro implícito
     */
     void incrementar_usuarios_inscritos();
 
     /** @brief Decrementa una unidad el número de usuarios inscritos
         actualmente en el curso.
-        \pre cierto
-        \post se ha decrementado una unidad el número de usuarios inscritos
+        \pre Como mínimo hay un usuario inscrito al parámetro implícito
+        \post Se ha decrementado una unidad el número de usuarios inscritos
         actualmente en el parámetro implícito
     */
     void decrementar_usuarios_inscritos();
@@ -73,38 +85,36 @@ public:
     //Consultoras
 
     /** @brief Consultora de un curso de la plataforma.
-        \pre Cierto
+        \pre El curso con identificador c existe
         \post Devuelve el curso perteneciente al parámetro implícito con 
         identificador c
     */
-    Curso consultar_curso(int c);
+    Curso consultar_curso(int c) const;
 
-    /** @brief Consultora de la existencia de un curso dentro de la plataforma.
+    /** @brief Consultora de la existencia de un curso dentro del conjunto
+        de cursos.
         \pre Cierto
         \post Devuelve <em>true</em> si el curso pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_curso(int c);
+    bool existe_curso(int c) const;
 
     /** @brief Consultora del número total de cursos que hay en la
         plataforma.
-        \pre Cierto
+        \pre El parámetro implícito no está vacío
         \post Devuelve el número total de cursos que contiene el 
         parámetro implícito
     */
-    int numero_cursos();
+    int numero_cursos() const;
 
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
         curso
-        \pre c es el identificador de un curso y p es el identificador de un
-        problema
-        \post Si c es un curso válido y p pertenece a c, se imprime la sesión
-        a la que pertenece p dentro de c. En caso que el curso no existao el
-        problema no pertenezca al curso, se imprime un mensaje de error
+        \pre El curso y el problema con identificadores c y p respectivamente,
+        existen
+        \post Se imprime el identificador de la sesión a la que pertence 
+        el problema con identificador p dentro del curso con identificador c
     */
-    void sesion_problema(int c, string p);
-
-
+    void sesion_problema(int c, string p) const;
 
     //Lectura
 
@@ -125,7 +135,6 @@ public:
         y los identificadores de dichas sesiones, en el mismo orden que se
         leyeron cuando se creó el curso
     */
-    void listar_cursos();
-
+    void listar_cursos() const;
 };
 #endif

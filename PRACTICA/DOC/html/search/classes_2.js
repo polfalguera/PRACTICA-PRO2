@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['problemas_69',['Problemas',['../class_problemas.html',1,'']]]
+  ['sesion_65',['Sesion',['../class_sesion.html',1,'']]],
+  ['sesiones_66',['Sesiones',['../class_sesiones.html',1,'']]]
 ];

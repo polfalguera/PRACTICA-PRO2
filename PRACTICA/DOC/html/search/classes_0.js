@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['bintree_66',['BinTree',['../class_bin_tree.html',1,'']]]
+  ['curso_62',['Curso',['../class_curso.html',1,'']]],
+  ['cursos_63',['Cursos',['../class_cursos.html',1,'']]]
 ];

@@ -16,7 +16,7 @@ using namespace std;
  */
 
 /** @class Problemas
-    @brief Representa la colección de problemas de la plataforma EVALUATOR
+    @brief Representa la colección de problemas de la plataforma Evaluator.
 */
 
 class Problemas {
@@ -24,7 +24,7 @@ private:
 //Defines atributos, pero no los mencionas explicitamente
 
 public:
-    //Constructoras
+    //Constructora
 
     /** @brief Creadora por defecto.
 
@@ -37,16 +37,24 @@ public:
     //Modificadoras
 
     /** @brief Añade un nuevo problema a la colección de problemas.
-        \pre Cierto
+        \pre El problema con identificador p existe
         \post Se ha añadido un nuevo problema con identificador p al parámetro 
         implícito
     */
     void nuevo_problema(string p);
 
+    /** @brief Actualiza las estadísticas de un problema al realizarse un 
+        envío de dicho problema por un usuario.
+        \pre Cierto
+        \post Se han actualizado las estadísticas del problema con 
+        identificador p tras recibir un envío por parte de un usuario
+    */
+    void envio(string p, int r);
+
     //Consultoras
 
     /** @brief Consultora de la existencia de un problema dentro de la
-        plataforma.
+        colección de problemas.
         \pre Cierto
         \post Devuelve <em>true</em> si el problema pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
@@ -55,7 +63,7 @@ public:
 
     /** @brief Consultora del número total de problemas que hay en la
         plataforma.
-        \pre Cierto
+        \pre El parámetro implícito no está vacío
         \post Devuelve el número total de problemas que contiene el 
         parámetro implícito
     */
@@ -72,9 +80,9 @@ public:
     //Escritura
 
     /** @brief Operación de escritura.
-        \pre Cierto
+        \pre El problema con identificador p existe
         \post Se imprime el número de envíos totales y el número de envíos
-        con éxito realizados a un problema con identificador p
+        realizados con éxito a un problema con identificador p
     */
     void escribir_problema(string p) const;
 

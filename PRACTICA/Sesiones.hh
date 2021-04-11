@@ -8,6 +8,7 @@
 #include "Sesion.hh"
 
 #ifndef NO_DIAGRAM
+#include <iostream>
 #include <map>
 #endif
 using namespace std;
@@ -17,8 +18,7 @@ using namespace std;
  */
 
 /** @class Sesiones
-    @brief Representa el conjunto de sesiones pertenecientes a la plataforma
-    EVALUATOR.
+    @brief Representa el conjunto de sesiones de la plataforma Evaluator.
 */
 class Sesiones {
 public:
@@ -34,8 +34,8 @@ public:
 
     //Modificadoras
 
-    /** @brief Añade una nueva sesion al conjunto de sesiones.
-        \pre Cierto
+    /** @brief Añade una nueva sesión al conjunto de sesiones.
+        \pre La sesión con identificador s existe
         \post Se ha añadido una nueva sesion con identificador s al parámetro
         implícito
     */
@@ -48,11 +48,11 @@ public:
         \post Devuelve la sesión perteneciente al parámetro implícito con 
         identificador s
     */
-    Sesion consultar_sesion(string s);
+    Sesion consultar_sesion(string s) const;
 
     /** @brief Consultora de la existencia de una sesión dentro del
-        parámetro implícito
-        \pre s es el identificador de una sesión
+        parámetro implícito.
+        \pre Cierto
         \post Devuelve <em>true</em> si la sesión con identificador s pertenece 
         al parámetro implícito. En caso contrario, devuelve <em>false</em>
     */
@@ -60,7 +60,7 @@ public:
 
     /** @brief Consultora del número total de sesiones que hay en la
         plataforma.
-        \pre Cierto
+        \pre El parámetro implícito no está vacío
         \post Devuelve el número total de sesiones que contiene el 
         parámetro implícito
     */
@@ -83,20 +83,5 @@ public:
         de problemas que la forman y los identificadores de dichos problemas
     */
     void listar_sesiones();
-
-    /** @brief Operación de escritura.
-
-        Busca y imprime una sesión perteneciente al parámetro implícito.
-        \pre s es el identificador de una sesión
-        \post Si s pertenece al parámetro implícito, se imprime el número de
-        problemas que la forman y los identificadores de dichos prolemas,
-        siguiendo su estructura de prerequisitos en postorden. En caso que
-        no exista, se imprime mensaje de error
-    */
-   void buscar_escribir_sesion(string s);
-
-
-
-
 };
 #endif

@@ -2,14 +2,14 @@
 \label{class_usuario}\index{Usuario@{Usuario}}
 
 
-Representa un usuario registrado en la plataforma E\+V\+A\+L\+U\+A\+T\+OR.  
+Representa un usuario registrado en la plataforma Evaluator.  
 
 
 \doxysubsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_usuario_aa85a5371a098dfba5449140d9b8a472f}{Usuario}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_usuario_ab66b39db9f681381d23ac4993641d876}{modificar\+\_\+inscripciones}} ()
 \begin{DoxyCompactList}\small\item\em Consultora del curso al cual está inscrito el parámetro implícito. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_usuario_ab3766c74e754836c618ca5e31fac4e7e}{curso\+\_\+usuario}} ()
@@ -27,9 +27,9 @@ void \mbox{\hyperlink{class_usuario_a501a484852ba4eca86c0e78f246c87e9}{escribir\
 
 
 \doxysubsection{Descripción detallada}
-Representa un usuario registrado en la plataforma E\+V\+A\+L\+U\+A\+T\+OR. 
+Representa un usuario registrado en la plataforma Evaluator. 
 
-Definición en la línea 24 del archivo Usuario.\+hh.
+Definición en la línea 23 del archivo Usuario.\+hh.
 
 
 
@@ -40,6 +40,16 @@ Definición en la línea 24 del archivo Usuario.\+hh.
 \doxysubsubsection{\texorpdfstring{Usuario()}{Usuario()}}
 {\footnotesize\ttfamily Usuario\+::\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de usuarios. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un usuario no inscrito a ningun curso y con zero problemas intentados y resueltos y, por tanto, con zero problemas enviables 
+\end{DoxyPostcond}
 
 
 \doxysubsection{Documentación de las funciones miembro}
