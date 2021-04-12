@@ -47,14 +47,21 @@ public:
     */
     bool repeticion_ejercicios() const;
 
-    /** @brief Consultora de la existencia de un problema en el parámetro 
-        implícito
+    /** @brief Consultora de la existencia de un problema dentro de un curso.
         \pre El problema con identificador p existe
         \post Devuelve <em>true</em> si el problema con identificador p
         pertenece al parámetro implícito. En caso contrario, devuelve
         <em>false</em>
     */
     bool existe_problema_curso(string p) const;
+
+    /** @brief Consulta la sesion a la que pertenece un problema dentro de un
+        curso
+        \pre El problema con identificador p existe
+        \post Se imprime el identificador de la sesión a la que pertence 
+        el problema con identificador p dentro del párametro implícito
+    */
+    void sesion_problema(string p) const;
 
     //Lectura
 

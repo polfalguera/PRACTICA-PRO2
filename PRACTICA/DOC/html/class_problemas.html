@@ -85,7 +85,7 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:a4bb0cd331e46468086964a1136cf8e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza las estadísticas de un problema al realizarse un envío de dicho problema por un usuario.  <a href="class_problemas.html#a4bb0cd331e46468086964a1136cf8e0b">Más...</a><br /></td></tr>
 <tr class="separator:a4bb0cd331e46468086964a1136cf8e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91ea9c4288f00b44d9d69a5337ce937"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_problemas.html#ac91ea9c4288f00b44d9d69a5337ce937">existe_problema</a> (string p)</td></tr>
-<tr class="memdesc:ac91ea9c4288f00b44d9d69a5337ce937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de la existencia de un problema dentro de la plataforma.  <a href="class_problemas.html#ac91ea9c4288f00b44d9d69a5337ce937">Más...</a><br /></td></tr>
+<tr class="memdesc:ac91ea9c4288f00b44d9d69a5337ce937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora de la existencia de un problema dentro de la colección de problemas.  <a href="class_problemas.html#ac91ea9c4288f00b44d9d69a5337ce937">Más...</a><br /></td></tr>
 <tr class="separator:ac91ea9c4288f00b44d9d69a5337ce937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730f2cf3c1f2218fc565994fd8d6c48d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_problemas.html#a730f2cf3c1f2218fc565994fd8d6c48d">numero_problemas</a> ()</td></tr>
 <tr class="memdesc:a730f2cf3c1f2218fc565994fd8d6c48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consultora del número total de problemas que hay en la plataforma.  <a href="class_problemas.html#a730f2cf3c1f2218fc565994fd8d6c48d">Más...</a><br /></td></tr>
@@ -177,7 +177,7 @@ Métodos públicos</h2></td></tr>
 
 <p>Actualiza las estadísticas de un problema al realizarse un envío de dicho problema por un usuario. </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Se han actualizado las estadísticas del parámetro implícito tras recibir un envío por parte de un usuario </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Se han actualizado las estadísticas del problema con identificador p tras recibir un envío por parte de un usuario </dd></dl>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ Métodos públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Consultora de la existencia de un problema dentro de la plataforma. </p>
+<p>Consultora de la existencia de un problema dentro de la colección de problemas. </p>
 <dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
 <dl class="section post"><dt>Postcondición</dt><dd>Devuelve <em>true</em> si el problema pertenece al parámetro implícito. En caso contrario, devuelve <em>false</em> </dd></dl>
 
@@ -262,8 +262,8 @@ Métodos públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Operación de escritura. </p>
-<dl class="section pre"><dt>Precondición</dt><dd>Cierto </dd></dl>
-<dl class="section post"><dt>Postcondición</dt><dd>Se imprime el número de envíos totales y el número de envíos con éxito realizados a un problema con identificador p </dd></dl>
+<dl class="section pre"><dt>Precondición</dt><dd>El problema con identificador p existe </dd></dl>
+<dl class="section post"><dt>Postcondición</dt><dd>Se imprime el número de envíos totales y el número de envíos realizados con éxito a un problema con identificador p </dd></dl>
 
 </div>
 </div>

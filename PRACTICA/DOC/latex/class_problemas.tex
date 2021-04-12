@@ -15,7 +15,7 @@ void \mbox{\hyperlink{class_problemas_a1cebce2784b951482651d299be50d8b3}{nuevo\+
 void \mbox{\hyperlink{class_problemas_a4bb0cd331e46468086964a1136cf8e0b}{envio}} (string p, int r)
 \begin{DoxyCompactList}\small\item\em Actualiza las estadísticas de un problema al realizarse un envío de dicho problema por un usuario. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\+\_\+problema}} (string p)
-\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro de la plataforma. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro de la colección de problemas. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_problemas_a730f2cf3c1f2218fc565994fd8d6c48d}{numero\+\_\+problemas}} ()
 \begin{DoxyCompactList}\small\item\em Consultora del número total de problemas que hay en la plataforma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_problemas_a6d16937dea64409081e507065e17f2b1}{leer\+\_\+coleccion\+\_\+problemas}} ()
@@ -83,7 +83,7 @@ Actualiza las estadísticas de un problema al realizarse un envío de dicho prob
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se han actualizado las estadísticas del parámetro implícito tras recibir un envío por parte de un usuario 
+Se han actualizado las estadísticas del problema con identificador p tras recibir un envío por parte de un usuario 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}\label{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}} 
 \index{Problemas@{Problemas}!existe\_problema@{existe\_problema}}
@@ -93,7 +93,7 @@ Se han actualizado las estadísticas del parámetro implícito tras recibir un e
 
 
 
-Consultora de la existencia de un problema dentro de la plataforma. 
+Consultora de la existencia de un problema dentro de la colección de problemas. 
 
 \begin{DoxyPrecond}{Precondición}
 Cierto 
@@ -144,10 +144,10 @@ El parámetro implícito contiene uno o más problemas
 Operación de escritura. 
 
 \begin{DoxyPrecond}{Precondición}
-Cierto 
+El problema con identificador p existe 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se imprime el número de envíos totales y el número de envíos con éxito realizados a un problema con identificador p 
+Se imprime el número de envíos totales y el número de envíos realizados con éxito a un problema con identificador p 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}\label{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}} 
 \index{Problemas@{Problemas}!listar\_problemas@{listar\_problemas}}

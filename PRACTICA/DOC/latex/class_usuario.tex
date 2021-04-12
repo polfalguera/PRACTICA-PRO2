@@ -11,18 +11,18 @@ Representa un usuario registrado en la plataforma Evaluator.
 \mbox{\hyperlink{class_usuario_aa85a5371a098dfba5449140d9b8a472f}{Usuario}} ()
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_usuario_ab66b39db9f681381d23ac4993641d876}{modificar\+\_\+inscripciones}} ()
-\begin{DoxyCompactList}\small\item\em Consultora del curso al cual está inscrito el parámetro implícito. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_usuario_ab3766c74e754836c618ca5e31fac4e7e}{curso\+\_\+usuario}} ()
+\begin{DoxyCompactList}\small\item\em Se actualiza el identificador del curso en el cual está inscrito un usuario. El identificador será 0 en caso de que pase a no estar inscrito en nigun curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a743d149907c5b446c3542f368bd39bb9}{curso\+\_\+usuario}} () const
 \begin{DoxyCompactList}\small\item\em Consultora del curso al cual está inscrito un usuario. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_usuario_a2170d7252ea6bad6fa6736e1fdb33e86}{consultar\+\_\+curso}} ()
+int \mbox{\hyperlink{class_usuario_a3e0664d011722d19baf9d518ee692eb7}{consultar\+\_\+curso}} () const
 \begin{DoxyCompactList}\small\item\em Consultora del curso al cual está inscrito un usuario. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_usuario_a0bc64933a85ec56c2c7f8ffffbfe1805}{problemas\+\_\+resueltos}} ()
+void \mbox{\hyperlink{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}{problemas\+\_\+resueltos}} () const
 \begin{DoxyCompactList}\small\item\em Consultora de los problemas resueltos de un usuario. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_usuario_a90619a422b9402d2d17754aa8fe47fe0}{problemas\+\_\+enviables}} ()
+void \mbox{\hyperlink{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}{problemas\+\_\+enviables}} () const
 \begin{DoxyCompactList}\small\item\em Consultora de los problemas enviables de un usuario. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_usuario_a2643a5c29f64aab2c531f78d2618e891}{leer\+\_\+usuario}} ()
 \begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_usuario_a501a484852ba4eca86c0e78f246c87e9}{escribir\+\_\+usuario}} ()
+void \mbox{\hyperlink{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}{escribir\+\_\+usuario}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -61,19 +61,19 @@ El resultado es un usuario no inscrito a ningun curso y con zero problemas inten
 
 
 
-Consultora del curso al cual está inscrito el parámetro implícito. 
+Se actualiza el identificador del curso en el cual está inscrito un usuario. El identificador será 0 en caso de que pase a no estar inscrito en nigun curso. 
 
 \begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Si el parámetro implícito existe, se imprime el identificador del curso al cual está inscrito o un 0 si no está inscitro a ningun curso. En caso contrario, se imprime por pantalla un mensaje de error 
+El parámetro implícito pasa a estar suscrito a otro curso o a ninguno 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_usuario_ab3766c74e754836c618ca5e31fac4e7e}\label{class_usuario_ab3766c74e754836c618ca5e31fac4e7e}} 
+\mbox{\Hypertarget{class_usuario_a743d149907c5b446c3542f368bd39bb9}\label{class_usuario_a743d149907c5b446c3542f368bd39bb9}} 
 \index{Usuario@{Usuario}!curso\_usuario@{curso\_usuario}}
 \index{curso\_usuario@{curso\_usuario}!Usuario@{Usuario}}
 \doxysubsubsection{\texorpdfstring{curso\_usuario()}{curso\_usuario()}}
-{\footnotesize\ttfamily void Usuario\+::curso\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Usuario\+::curso\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -85,11 +85,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 Se imprime el identificador del curso al cual está inscrito el parámetro implícito o un 0 si no está inscitro a ningun curso 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_usuario_a2170d7252ea6bad6fa6736e1fdb33e86}\label{class_usuario_a2170d7252ea6bad6fa6736e1fdb33e86}} 
+\mbox{\Hypertarget{class_usuario_a3e0664d011722d19baf9d518ee692eb7}\label{class_usuario_a3e0664d011722d19baf9d518ee692eb7}} 
 \index{Usuario@{Usuario}!consultar\_curso@{consultar\_curso}}
 \index{consultar\_curso@{consultar\_curso}!Usuario@{Usuario}}
 \doxysubsubsection{\texorpdfstring{consultar\_curso()}{consultar\_curso()}}
-{\footnotesize\ttfamily int Usuario\+::consultar\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Usuario\+::consultar\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -101,11 +101,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 Si el parámetro implícito está inscrito en algun curso, devuelve el identificador de éste. En caso contrario, devuelve un 0 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_usuario_a0bc64933a85ec56c2c7f8ffffbfe1805}\label{class_usuario_a0bc64933a85ec56c2c7f8ffffbfe1805}} 
+\mbox{\Hypertarget{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}\label{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}} 
 \index{Usuario@{Usuario}!problemas\_resueltos@{problemas\_resueltos}}
 \index{problemas\_resueltos@{problemas\_resueltos}!Usuario@{Usuario}}
 \doxysubsubsection{\texorpdfstring{problemas\_resueltos()}{problemas\_resueltos()}}
-{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+resueltos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+resueltos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -117,11 +117,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 Se imprimen en orden creciente por identificador los problemas solucionados con éxito por el parámetro implícito, ya sean del curso en el cual está inscrito actualmente o de cursos anteriores. Además, para cada problema, se imprime el número de envíos realizados por el parámetro implícito a dicho problema 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_usuario_a90619a422b9402d2d17754aa8fe47fe0}\label{class_usuario_a90619a422b9402d2d17754aa8fe47fe0}} 
+\mbox{\Hypertarget{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}\label{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}} 
 \index{Usuario@{Usuario}!problemas\_enviables@{problemas\_enviables}}
 \index{problemas\_enviables@{problemas\_enviables}!Usuario@{Usuario}}
 \doxysubsubsection{\texorpdfstring{problemas\_enviables()}{problemas\_enviables()}}
-{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+enviables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+enviables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -147,13 +147,13 @@ Operación de lectura.
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-El parámetro implícito pasa a tener los atributos leídos por el canal estandard de entrada 
+El parámetro implícito pasa a tener los atributos leídos por el canal estándard de entrada 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_usuario_a501a484852ba4eca86c0e78f246c87e9}\label{class_usuario_a501a484852ba4eca86c0e78f246c87e9}} 
+\mbox{\Hypertarget{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}\label{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}} 
 \index{Usuario@{Usuario}!escribir\_usuario@{escribir\_usuario}}
 \index{escribir\_usuario@{escribir\_usuario}!Usuario@{Usuario}}
 \doxysubsubsection{\texorpdfstring{escribir\_usuario()}{escribir\_usuario()}}
-{\footnotesize\ttfamily void Usuario\+::escribir\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Usuario\+::escribir\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 

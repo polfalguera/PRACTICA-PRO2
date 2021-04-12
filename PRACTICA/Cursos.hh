@@ -107,15 +107,6 @@ public:
     */
     int numero_cursos() const;
 
-    /** @brief Consulta la sesion a la que pertenece un problema dentro de un
-        curso
-        \pre El curso y el problema con identificadores c y p respectivamente,
-        existen
-        \post Se imprime el identificador de la sesión a la que pertence 
-        el problema con identificador p dentro del curso con identificador c
-    */
-    void sesion_problema(int c, string p) const;
-
     //Lectura
 
     /** @brief Operación de lectura.

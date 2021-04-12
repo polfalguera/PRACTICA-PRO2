@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['consultar_5fcurso_3',['consultar_curso',['../class_cursos.html#aade12943fdce21445be44c2f1a84525c',1,'Cursos::consultar_curso()'],['../class_usuario.html#a2170d7252ea6bad6fa6736e1fdb33e86',1,'Usuario::consultar_curso()']]],
-  ['consultar_5fnumero_5fproblemas_4',['consultar_numero_problemas',['../class_sesion.html#ae1db05d8d0539d36beb5839736b891f6',1,'Sesion']]],
-  ['consultar_5fsesion_5',['consultar_sesion',['../class_sesiones.html#a9d84cb2ad82e1ae6cdd42b5258b091f0',1,'Sesiones']]],
-  ['consultar_5fusuario_6',['consultar_usuario',['../class_usuarios.html#a9f3c2184034dbf548660a3093659f19c',1,'Usuarios']]],
-  ['curso_7',['Curso',['../class_curso.html',1,'Curso'],['../class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a',1,'Curso::Curso()']]],
-  ['curso_2ehh_8',['Curso.hh',['../_curso_8hh.html',1,'']]],
-  ['curso_5fusuario_9',['curso_usuario',['../class_usuario.html#ab3766c74e754836c618ca5e31fac4e7e',1,'Usuario']]],
-  ['cursos_10',['Cursos',['../class_cursos.html',1,'Cursos'],['../class_cursos.html#acdb8d248e1a8ebe1aac747efa7b54cd4',1,'Cursos::Cursos()']]],
-  ['cursos_2ehh_11',['Cursos.hh',['../_cursos_8hh.html',1,'']]]
+  ['consultar_5fcurso_2',['consultar_curso',['../class_cursos.html#a8f2e01ec5145b0aeb60ac6214fcc92a3',1,'Cursos::consultar_curso()'],['../class_usuario.html#a3e0664d011722d19baf9d518ee692eb7',1,'Usuario::consultar_curso()']]],
+  ['consultar_5fnumero_5fproblemas_3',['consultar_numero_problemas',['../class_sesion.html#a96ad15cdd8b592658f755363237e7d8c',1,'Sesion']]],
+  ['consultar_5fsesion_4',['consultar_sesion',['../class_sesiones.html#a51f25339a1368c4764f9740ef212bec5',1,'Sesiones']]],
+  ['consultar_5fusuario_5',['consultar_usuario',['../class_usuarios.html#a5addd263558c1d62df3976efa3d3ab33',1,'Usuarios']]],
+  ['curso_6',['Curso',['../class_curso.html',1,'Curso'],['../class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a',1,'Curso::Curso()']]],
+  ['curso_2ehh_7',['Curso.hh',['../_curso_8hh.html',1,'']]],
+  ['curso_5fusuario_8',['curso_usuario',['../class_usuario.html#a743d149907c5b446c3542f368bd39bb9',1,'Usuario']]],
+  ['cursos_9',['Cursos',['../class_cursos.html',1,'Cursos'],['../class_cursos.html#acdb8d248e1a8ebe1aac747efa7b54cd4',1,'Cursos::Cursos()']]],
+  ['cursos_2ehh_10',['Cursos.hh',['../_cursos_8hh.html',1,'']]]
 ];

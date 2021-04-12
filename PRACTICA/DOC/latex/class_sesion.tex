@@ -10,9 +10,9 @@ Representa una sesión de la plataforma Evaluator. Está formada por un conjunto
 \item 
 \mbox{\hyperlink{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}{Sesion}} ()
 \begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_sesion_ae1db05d8d0539d36beb5839736b891f6}{consultar\+\_\+numero\+\_\+problemas}} ()
+int \mbox{\hyperlink{class_sesion_a96ad15cdd8b592658f755363237e7d8c}{consultar\+\_\+numero\+\_\+problemas}} () const
 \begin{DoxyCompactList}\small\item\em Consultora del número de problemas que contiene una sesión. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}{leer\+\_\+sesion}} ()
+void \mbox{\hyperlink{class_sesion_abe7ffda6b4b23e4c2c69b4b4ee159078}{leer\+\_\+sesion}} () const
 \begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}{escribir\+\_\+sesion}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -45,11 +45,11 @@ El resultado es una sesión vacía
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_sesion_ae1db05d8d0539d36beb5839736b891f6}\label{class_sesion_ae1db05d8d0539d36beb5839736b891f6}} 
+\mbox{\Hypertarget{class_sesion_a96ad15cdd8b592658f755363237e7d8c}\label{class_sesion_a96ad15cdd8b592658f755363237e7d8c}} 
 \index{Sesion@{Sesion}!consultar\_numero\_problemas@{consultar\_numero\_problemas}}
 \index{consultar\_numero\_problemas@{consultar\_numero\_problemas}!Sesion@{Sesion}}
 \doxysubsubsection{\texorpdfstring{consultar\_numero\_problemas()}{consultar\_numero\_problemas()}}
-{\footnotesize\ttfamily int Sesion\+::consultar\+\_\+numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Sesion\+::consultar\+\_\+numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -61,11 +61,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 Devuelve el número de problemas que pertenecen al parámetro implícito 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}\label{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}} 
+\mbox{\Hypertarget{class_sesion_abe7ffda6b4b23e4c2c69b4b4ee159078}\label{class_sesion_abe7ffda6b4b23e4c2c69b4b4ee159078}} 
 \index{Sesion@{Sesion}!leer\_sesion@{leer\_sesion}}
 \index{leer\_sesion@{leer\_sesion}!Sesion@{Sesion}}
 \doxysubsubsection{\texorpdfstring{leer\_sesion()}{leer\_sesion()}}
-{\footnotesize\ttfamily void Sesion\+::leer\+\_\+sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Sesion\+::leer\+\_\+sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -91,7 +91,7 @@ Operación de escritura.
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se imprimen el número de problemas que forman parte del parámetro implícito 
+Se imprimen el número de problemas que forman parte del parámetro implícito y sus identificadores 
 \end{DoxyPostcond}
 
 

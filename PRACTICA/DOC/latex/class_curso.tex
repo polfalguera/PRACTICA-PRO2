@@ -10,15 +10,15 @@ Representa un curso que pertenece a la plataforma Evaluator. Está formado por u
 \item 
 \mbox{\hyperlink{class_curso_add3bcc7fd065fa02b8fad76cedcc3a8a}{Curso}} ()
 \begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}{repeticion\+\_\+ejercicios}} ()
-\begin{DoxyCompactList}\small\item\em Consultora de el cumplimiento de la restricción de no repetición. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_curso_abe6a68c8248056eeb08e61b0c621410f}{sesion\+\_\+problema}} (string p)
-\begin{DoxyCompactList}\small\item\em Consultora de la sesión a la que pertenece un problema dentro de un curso. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_curso_aade1176c3dec275124197e9dd3770ec0}{existe\+\_\+problema\+\_\+curso}} (string p)
-\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema en el parámetro implícito. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_curso_a3b3a7f6bba7a12e43cbecfa0208c17f2}{repeticion\+\_\+ejercicios}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del cumplimiento de la restricción de no repetición de problemas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_curso_a7478e04a51a5838dbb431d03d2226b70}{existe\+\_\+problema\+\_\+curso}} (string p) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro de un curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_curso_a7d4ffb7630e45c2a88631d95357a8ee3}{sesion\+\_\+problema}} (string p) const
+\begin{DoxyCompactList}\small\item\em Consulta la sesion a la que pertenece un problema dentro de un curso. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_curso_a1ea06a246148abfe3651e3aa7fa25618}{leer\+\_\+curso}} ()
 \begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_curso_ac196f3a5a5d30d41d2c0a0c295f052d3}{escribir\+\_\+curso}} ()
+void \mbox{\hyperlink{class_curso_a2c23a6c3350979d86b555cbd8ab9665d}{escribir\+\_\+curso}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -40,7 +40,7 @@ Definición en la línea 26 del archivo Curso.\+hh.
 
 Creadora por defecto. 
 
-Se ejecuta automàticamente al declarar un curso. \begin{DoxyPrecond}{Precondición}
+Se ejecuta automáticamente al declarar un curso. \begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
@@ -49,53 +49,53 @@ El resultado es un curso sin sesiones y, por ello, sin problemas. Tampoco tiene 
 
 
 \doxysubsection{Documentación de las funciones miembro}
-\mbox{\Hypertarget{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}\label{class_curso_a8e9f2fa10f3a9eee050f5cb85755ff87}} 
+\mbox{\Hypertarget{class_curso_a3b3a7f6bba7a12e43cbecfa0208c17f2}\label{class_curso_a3b3a7f6bba7a12e43cbecfa0208c17f2}} 
 \index{Curso@{Curso}!repeticion\_ejercicios@{repeticion\_ejercicios}}
 \index{repeticion\_ejercicios@{repeticion\_ejercicios}!Curso@{Curso}}
 \doxysubsubsection{\texorpdfstring{repeticion\_ejercicios()}{repeticion\_ejercicios()}}
-{\footnotesize\ttfamily bool Curso\+::repeticion\+\_\+ejercicios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Curso\+::repeticion\+\_\+ejercicios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-Consultora de el cumplimiento de la restricción de no repetición. 
-
-\begin{DoxyPrecond}{Precondición}
-p es el identificador de un problema 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondición}
-Devuelve true si el problema pertenece al parámetro implícito. En caso contrario, devuelve false 
-\end{DoxyPostcond}
-\mbox{\Hypertarget{class_curso_abe6a68c8248056eeb08e61b0c621410f}\label{class_curso_abe6a68c8248056eeb08e61b0c621410f}} 
-\index{Curso@{Curso}!sesion\_problema@{sesion\_problema}}
-\index{sesion\_problema@{sesion\_problema}!Curso@{Curso}}
-\doxysubsubsection{\texorpdfstring{sesion\_problema()}{sesion\_problema()}}
-{\footnotesize\ttfamily void Curso\+::sesion\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
-
-
-
-Consultora de la sesión a la que pertenece un problema dentro de un curso. 
+Consultora del cumplimiento de la restricción de no repetición de problemas. 
 
 \begin{DoxyPrecond}{Precondición}
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se imprime el identificador de la sesión a la que pertenece el problema con identificador p dentro del parámetro implícito 
+Devuelve {\itshape true} si se cumple la restricción de no repetición de problemas. En caso contrario, devuelve {\itshape false} 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_curso_aade1176c3dec275124197e9dd3770ec0}\label{class_curso_aade1176c3dec275124197e9dd3770ec0}} 
+\mbox{\Hypertarget{class_curso_a7478e04a51a5838dbb431d03d2226b70}\label{class_curso_a7478e04a51a5838dbb431d03d2226b70}} 
 \index{Curso@{Curso}!existe\_problema\_curso@{existe\_problema\_curso}}
 \index{existe\_problema\_curso@{existe\_problema\_curso}!Curso@{Curso}}
 \doxysubsubsection{\texorpdfstring{existe\_problema\_curso()}{existe\_problema\_curso()}}
-{\footnotesize\ttfamily bool Curso\+::existe\+\_\+problema\+\_\+curso (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Curso\+::existe\+\_\+problema\+\_\+curso (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
 
 
 
-Consultora de la existencia de un problema en el parámetro implícito. 
+Consultora de la existencia de un problema dentro de un curso. 
 
 \begin{DoxyPrecond}{Precondición}
-p es el identificador de un problema 
+El problema con identificador p existe 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Se imprime el identificador del curso al cual está inscrito o un 0 si no está inscitro a ningun curso. 
+Devuelve {\itshape true} si el problema con identificador p pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_curso_a7d4ffb7630e45c2a88631d95357a8ee3}\label{class_curso_a7d4ffb7630e45c2a88631d95357a8ee3}} 
+\index{Curso@{Curso}!sesion\_problema@{sesion\_problema}}
+\index{sesion\_problema@{sesion\_problema}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{sesion\_problema()}{sesion\_problema()}}
+{\footnotesize\ttfamily void Curso\+::sesion\+\_\+problema (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta la sesion a la que pertenece un problema dentro de un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime el identificador de la sesión a la que pertence el problema con identificador p dentro del párametro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_curso_a1ea06a246148abfe3651e3aa7fa25618}\label{class_curso_a1ea06a246148abfe3651e3aa7fa25618}} 
 \index{Curso@{Curso}!leer\_curso@{leer\_curso}}
@@ -113,11 +113,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 El parámetro implícito contiene un número de sesiones, cada una formada por un número de problemas. También contiene el número de usuarios que han completado el curso, tanto actuales como pasados, y el número de usuarios inscritos en él 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_curso_ac196f3a5a5d30d41d2c0a0c295f052d3}\label{class_curso_ac196f3a5a5d30d41d2c0a0c295f052d3}} 
+\mbox{\Hypertarget{class_curso_a2c23a6c3350979d86b555cbd8ab9665d}\label{class_curso_a2c23a6c3350979d86b555cbd8ab9665d}} 
 \index{Curso@{Curso}!escribir\_curso@{escribir\_curso}}
 \index{escribir\_curso@{escribir\_curso}!Curso@{Curso}}
 \doxysubsubsection{\texorpdfstring{escribir\_curso()}{escribir\_curso()}}
-{\footnotesize\ttfamily void Curso\+::escribir\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Curso\+::escribir\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 

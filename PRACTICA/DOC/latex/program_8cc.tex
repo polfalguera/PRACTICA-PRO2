@@ -5,7 +5,8 @@
 Programa principal para el ejercicio {\itshape Plataforma \char`\"{}\+E\+V\+A\+L\+U\+A\+T\+O\+R\char`\"{}}.  
 
 
-Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+Dependencia gráfica adjunta para program.\+cc\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -74,27 +75,27 @@ Definición en la línea 30 del archivo program.\+cc.
 \DoxyCodeLine{60             \}}
 \DoxyCodeLine{61         \}}
 \DoxyCodeLine{62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"nuevo curso"} or op == \textcolor{stringliteral}{"nc"}) \{}
-\DoxyCodeLine{63             \textcolor{keywordflow}{if}(cc.\mbox{\hyperlink{class_cursos_a78452941945e62a07a717cb5188332fd}{nuevo\_curso}}(cs)) cout << cc.\mbox{\hyperlink{class_cursos_aafef6554cfdf5958038b075eeac07415}{numero\_cursos}}() << endl;}
+\DoxyCodeLine{63             \textcolor{keywordflow}{if}(cc.\mbox{\hyperlink{class_cursos_a78452941945e62a07a717cb5188332fd}{nuevo\_curso}}(cs)) cout << cc.\mbox{\hyperlink{class_cursos_acb249ba8a4ded144fba197d8dc06dfef}{numero\_cursos}}() << endl;}
 \DoxyCodeLine{64             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
 \DoxyCodeLine{65         \}}
 \DoxyCodeLine{66         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"alta usuario"} or op == \textcolor{stringliteral}{"a"}) \{}
 \DoxyCodeLine{67             \textcolor{keywordtype}{string} u;}
 \DoxyCodeLine{68             cin >> u;}
 \DoxyCodeLine{69 }
-\DoxyCodeLine{70             \textcolor{keywordflow}{if} (cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
 \DoxyCodeLine{71             \textcolor{keywordflow}{else} \{}
 \DoxyCodeLine{72                 cu.\mbox{\hyperlink{class_usuarios_a2a5a9dfe49ee726fcb8225cc865cadac}{alta\_usuario}}(u);}
-\DoxyCodeLine{73                 cout << cu.\mbox{\hyperlink{class_usuarios_aadd424709de46087c62424d6626f5e12}{numero\_usuarios}}() << endl;}
+\DoxyCodeLine{73                 cout << cu.\mbox{\hyperlink{class_usuarios_a25b22bf6c2ed83d6136a8d6e80745b44}{numero\_usuarios}}() << endl;}
 \DoxyCodeLine{74             \}}
 \DoxyCodeLine{75         \}}
 \DoxyCodeLine{76         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"baja usuario"} or op == \textcolor{stringliteral}{"b"}) \{}
 \DoxyCodeLine{77             \textcolor{keywordtype}{string} u;}
 \DoxyCodeLine{78             cin >> u;}
 \DoxyCodeLine{79             }
-\DoxyCodeLine{80             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
 \DoxyCodeLine{81             \textcolor{keywordflow}{else} \{}
 \DoxyCodeLine{82                 cu.\mbox{\hyperlink{class_usuarios_a11e75ce29066b53e84731315ef476312}{baja\_usuario}}(u);}
-\DoxyCodeLine{83                 cout << cu.\mbox{\hyperlink{class_usuarios_aadd424709de46087c62424d6626f5e12}{numero\_usuarios}}() << endl;}
+\DoxyCodeLine{83                 cout << cu.\mbox{\hyperlink{class_usuarios_a25b22bf6c2ed83d6136a8d6e80745b44}{numero\_usuarios}}() << endl;}
 \DoxyCodeLine{84             \}}
 \DoxyCodeLine{85         \}}
 \DoxyCodeLine{86         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"inscribir curso"} or op == \textcolor{stringliteral}{"i"}) \{}
@@ -102,90 +103,93 @@ Definición en la línea 30 del archivo program.\+cc.
 \DoxyCodeLine{88             \textcolor{keywordtype}{int} c;}
 \DoxyCodeLine{89             cin >> u >> c;}
 \DoxyCodeLine{90 }
-\DoxyCodeLine{91             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{92             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cu.\mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a2170d7252ea6bad6fa6736e1fdb33e86}{consultar\_curso}}() != 0) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{93             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a452f2fff12a917d4ca3a20812050f816}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{91             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{92             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cu.\mbox{\hyperlink{class_usuarios_a5addd263558c1d62df3976efa3d3ab33}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a3e0664d011722d19baf9d518ee692eb7}{consultar\_curso}}() != 0) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{93             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a36f400f476315de6559885b71d3d3fb0}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
 \DoxyCodeLine{94             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_ae238ea7e94249359946672e219b4062f}{inscribir\_curso}}(u,c);}
 \DoxyCodeLine{95         \}}
 \DoxyCodeLine{96         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"curso usuario"} or op == \textcolor{stringliteral}{"cu"}) \{}
 \DoxyCodeLine{97             \textcolor{keywordtype}{string} u;}
 \DoxyCodeLine{98             cin >> u;}
 \DoxyCodeLine{99 }
-\DoxyCodeLine{100             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{101             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_ab3766c74e754836c618ca5e31fac4e7e}{curso\_usuario}}();}
+\DoxyCodeLine{100             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{101             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a5addd263558c1d62df3976efa3d3ab33}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a743d149907c5b446c3542f368bd39bb9}{curso\_usuario}}();}
 \DoxyCodeLine{102         \}}
 \DoxyCodeLine{103         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"sesion problema"} or op == \textcolor{stringliteral}{"sp"}) \{}
 \DoxyCodeLine{104             \textcolor{keywordtype}{int} c;}
 \DoxyCodeLine{105             \textcolor{keywordtype}{string} p;}
 \DoxyCodeLine{106             cin >> c >> p;}
 \DoxyCodeLine{107 }
-\DoxyCodeLine{108             \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a452f2fff12a917d4ca3a20812050f816}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{108             \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a36f400f476315de6559885b71d3d3fb0}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
 \DoxyCodeLine{109             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not cp.\mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\_problema}}(p)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{110             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_aade12943fdce21445be44c2f1a84525c}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_aade1176c3dec275124197e9dd3770ec0}{existe\_problema\_curso}}(p)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{111             \textcolor{keywordflow}{else} cc.\mbox{\hyperlink{class_cursos_aade12943fdce21445be44c2f1a84525c}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_abe6a68c8248056eeb08e61b0c621410f}{sesion\_problema}}(p);}
+\DoxyCodeLine{110             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_a7478e04a51a5838dbb431d03d2226b70}{existe\_problema\_curso}}(p)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{111             \textcolor{keywordflow}{else} cc.\mbox{\hyperlink{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_a7d4ffb7630e45c2a88631d95357a8ee3}{sesion\_problema}}(p);}
 \DoxyCodeLine{112             }
 \DoxyCodeLine{113         \}}
 \DoxyCodeLine{114         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"problemas resueltos"} or op == \textcolor{stringliteral}{"pr"}) \{}
 \DoxyCodeLine{115             \textcolor{keywordtype}{string} u;}
 \DoxyCodeLine{116             cin >> u;}
 \DoxyCodeLine{117 }
-\DoxyCodeLine{118             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{119             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a0bc64933a85ec56c2c7f8ffffbfe1805}{problemas\_resueltos}}();}
+\DoxyCodeLine{118             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{119             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a5addd263558c1d62df3976efa3d3ab33}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}{problemas\_resueltos}}();}
 \DoxyCodeLine{120         \}}
 \DoxyCodeLine{121         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"problemas enviables"} or op == \textcolor{stringliteral}{"pe"}) \{}
 \DoxyCodeLine{122             \textcolor{keywordtype}{string} u;}
 \DoxyCodeLine{123             cin >> u;}
 \DoxyCodeLine{124 }
-\DoxyCodeLine{125             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{126             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a90619a422b9402d2d17754aa8fe47fe0}{problemas\_enviables}}();}
+\DoxyCodeLine{125             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{126             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a5addd263558c1d62df3976efa3d3ab33}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}{problemas\_enviables}}();}
 \DoxyCodeLine{127         \}}
 \DoxyCodeLine{128         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"envio"} or op == \textcolor{stringliteral}{"e"}) \{}
 \DoxyCodeLine{129             \textcolor{keywordtype}{string} u, p;}
 \DoxyCodeLine{130             \textcolor{keywordtype}{int} r;}
 \DoxyCodeLine{131             cin >> u >> p >> r;}
-\DoxyCodeLine{132             }
-\DoxyCodeLine{133         \}}
-\DoxyCodeLine{134         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar\_problemas"} or op == \textcolor{stringliteral}{"lp"}) \{}
-\DoxyCodeLine{135             cp.\mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\_problemas}}();}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133             cc.\mbox{\hyperlink{class_cursos_a27952f809517a548e8a81cf4d290e603}{envio}}(u,p,r,cs,cu);}
+\DoxyCodeLine{134             cp.\mbox{\hyperlink{class_problemas_a4bb0cd331e46468086964a1136cf8e0b}{envio}}(p,r);}
+\DoxyCodeLine{135             }
 \DoxyCodeLine{136         \}}
-\DoxyCodeLine{137         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribrir problema"} or op == \textcolor{stringliteral}{"ep"}) \{}
-\DoxyCodeLine{138             \textcolor{keywordtype}{string} p;}
-\DoxyCodeLine{139             cin >> p;   }
-\DoxyCodeLine{140 }
-\DoxyCodeLine{141             \textcolor{keywordflow}{if} (not cp.\mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\_problema}}(p)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{142             \textcolor{keywordflow}{else} cp.\mbox{\hyperlink{class_problemas_adecee5e2c7cfb2fdd5da52801d0c4ddc}{escribir\_problema}}(p);}
-\DoxyCodeLine{143         \}}
-\DoxyCodeLine{144         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar sesiones"} or op == \textcolor{stringliteral}{"ls"}) \{}
-\DoxyCodeLine{145             cs.\mbox{\hyperlink{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}{listar\_sesiones}}();}
+\DoxyCodeLine{137         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar\_problemas"} or op == \textcolor{stringliteral}{"lp"}) \{}
+\DoxyCodeLine{138             cp.\mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\_problemas}}();}
+\DoxyCodeLine{139         \}}
+\DoxyCodeLine{140         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribrir problema"} or op == \textcolor{stringliteral}{"ep"}) \{}
+\DoxyCodeLine{141             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{142             cin >> p;   }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144             \textcolor{keywordflow}{if} (not cp.\mbox{\hyperlink{class_problemas_ac91ea9c4288f00b44d9d69a5337ce937}{existe\_problema}}(p)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{145             \textcolor{keywordflow}{else} cp.\mbox{\hyperlink{class_problemas_adecee5e2c7cfb2fdd5da52801d0c4ddc}{escribir\_problema}}(p);}
 \DoxyCodeLine{146         \}}
-\DoxyCodeLine{147         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir sesion"} or op == \textcolor{stringliteral}{"es"}) \{}
-\DoxyCodeLine{148             \textcolor{keywordtype}{string} s;}
-\DoxyCodeLine{149             cin >> s;}
-\DoxyCodeLine{150 }
-\DoxyCodeLine{151             \textcolor{keywordflow}{if} (not cs.\mbox{\hyperlink{class_sesiones_acd9f3c347cca772a0bc8746cff94f3bc}{existe\_sesion}}(s)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{152             \textcolor{keywordflow}{else} cs.\mbox{\hyperlink{class_sesiones_a9d84cb2ad82e1ae6cdd42b5258b091f0}{consultar\_sesion}}(s).\mbox{\hyperlink{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}{escribir\_sesion}}();}
-\DoxyCodeLine{153         \}}
-\DoxyCodeLine{154         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar cursos"} or op == \textcolor{stringliteral}{"lc"}) \{}
-\DoxyCodeLine{155             cc.\mbox{\hyperlink{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}{listar\_cursos}}();}
+\DoxyCodeLine{147         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar sesiones"} or op == \textcolor{stringliteral}{"ls"}) \{}
+\DoxyCodeLine{148             cs.\mbox{\hyperlink{class_sesiones_a438bfbd4a37db2f08433c49d451d3e72}{listar\_sesiones}}();}
+\DoxyCodeLine{149         \}}
+\DoxyCodeLine{150         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir sesion"} or op == \textcolor{stringliteral}{"es"}) \{}
+\DoxyCodeLine{151             \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{152             cin >> s;}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             \textcolor{keywordflow}{if} (not cs.\mbox{\hyperlink{class_sesiones_acd9f3c347cca772a0bc8746cff94f3bc}{existe\_sesion}}(s)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{155             \textcolor{keywordflow}{else} cs.\mbox{\hyperlink{class_sesiones_a51f25339a1368c4764f9740ef212bec5}{consultar\_sesion}}(s).\mbox{\hyperlink{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}{escribir\_sesion}}();}
 \DoxyCodeLine{156         \}}
-\DoxyCodeLine{157         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir curso"} or op == \textcolor{stringliteral}{"ec"}) \{}
-\DoxyCodeLine{158             \textcolor{keywordtype}{int} c;}
-\DoxyCodeLine{159             cin >> c;}
-\DoxyCodeLine{160 }
-\DoxyCodeLine{161             \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a452f2fff12a917d4ca3a20812050f816}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{162             \textcolor{keywordflow}{else} cc.\mbox{\hyperlink{class_cursos_aade12943fdce21445be44c2f1a84525c}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_ac196f3a5a5d30d41d2c0a0c295f052d3}{escribir\_curso}}();}
-\DoxyCodeLine{163         \}}
-\DoxyCodeLine{164         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar usuarios"} or op == \textcolor{stringliteral}{"lu"}) \{}
-\DoxyCodeLine{165             cu.\mbox{\hyperlink{class_usuarios_a9b87afb7b2c0ab4f4855fe08a1e26839}{listar\_usuarios}}();}
+\DoxyCodeLine{157         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar cursos"} or op == \textcolor{stringliteral}{"lc"}) \{}
+\DoxyCodeLine{158             cc.\mbox{\hyperlink{class_cursos_a84a06aae82ea6b8694be628495edc44e}{listar\_cursos}}();}
+\DoxyCodeLine{159         \}}
+\DoxyCodeLine{160         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir curso"} or op == \textcolor{stringliteral}{"ec"}) \{}
+\DoxyCodeLine{161             \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{162             cin >> c;}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} (not cc.\mbox{\hyperlink{class_cursos_a36f400f476315de6559885b71d3d3fb0}{existe\_curso}}(c)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{165             \textcolor{keywordflow}{else} cc.\mbox{\hyperlink{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}{consultar\_curso}}(c).\mbox{\hyperlink{class_curso_a2c23a6c3350979d86b555cbd8ab9665d}{escribir\_curso}}();}
 \DoxyCodeLine{166         \}}
-\DoxyCodeLine{167         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir usuario"} or op == \textcolor{stringliteral}{"eu"}) \{}
-\DoxyCodeLine{168             \textcolor{keywordtype}{string} u;}
-\DoxyCodeLine{169             cin >> u;}
-\DoxyCodeLine{170 }
-\DoxyCodeLine{171             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_ac17725e694faa1f4000a3202fbfc42b5}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
-\DoxyCodeLine{172             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a9f3c2184034dbf548660a3093659f19c}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a501a484852ba4eca86c0e78f246c87e9}{escribir\_usuario}}();}
-\DoxyCodeLine{173         \}}
-\DoxyCodeLine{174     \}}
-\DoxyCodeLine{175 \}}
+\DoxyCodeLine{167         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"listar usuarios"} or op == \textcolor{stringliteral}{"lu"}) \{}
+\DoxyCodeLine{168             cu.\mbox{\hyperlink{class_usuarios_aec9c5d893c8da2752a83f1ccefa40b00}{listar\_usuarios}}();}
+\DoxyCodeLine{169         \}}
+\DoxyCodeLine{170         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir usuario"} or op == \textcolor{stringliteral}{"eu"}) \{}
+\DoxyCodeLine{171             \textcolor{keywordtype}{string} u;}
+\DoxyCodeLine{172             cin >> u;}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             \textcolor{keywordflow}{if} (not cu.\mbox{\hyperlink{class_usuarios_abc11322d07870d7f656d5a5391ae17cb}{existe\_usuario}}(u)) cout << \textcolor{stringliteral}{"Mensaje de error"} << endl;}
+\DoxyCodeLine{175             \textcolor{keywordflow}{else} cu.\mbox{\hyperlink{class_usuarios_a5addd263558c1d62df3976efa3d3ab33}{consultar\_usuario}}(u).\mbox{\hyperlink{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}{escribir\_usuario}}();}
+\DoxyCodeLine{176         \}}
+\DoxyCodeLine{177     \}}
+\DoxyCodeLine{178 \}}
 
 \end{DoxyCode}

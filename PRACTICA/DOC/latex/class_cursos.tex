@@ -13,24 +13,22 @@ Representa el conjunto de cursos de la plataforma Evaluator.
 bool \mbox{\hyperlink{class_cursos_a78452941945e62a07a717cb5188332fd}{nuevo\+\_\+curso}} (const \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cjt\+\_\+sesiones)
 \begin{DoxyCompactList}\small\item\em Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersección de problemas entre las sesiones. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a27952f809517a548e8a81cf4d290e603}{envio}} (string u, string p, int r, const \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cjt\+\_\+sesiones, const \mbox{\hyperlink{class_usuarios}{Usuarios}} \&cjt\+\_\+usuarios)
-\begin{DoxyCompactList}\small\item\em Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva el envío en si y que éste resulte exitoso o no. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a3ce8af0e0132939cf6f51a4321d58d7f}{incrementar\+\_\+usuarios\+\_\+completado}} ()
 \begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios que han completado el curso. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}{incrementar\+\_\+usuarios\+\_\+inscritos}} ()
-\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios inscritos actualmente en el curso. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de usuarios que han completado el curso. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_aa9b43f3b9380052878414fa4906b7925}{decrementar\+\_\+usuarios\+\_\+inscritos}} ()
 \begin{DoxyCompactList}\small\item\em Decrementa una unidad el número de usuarios inscritos actualmente en el curso. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_curso}{Curso}} \mbox{\hyperlink{class_cursos_aade12943fdce21445be44c2f1a84525c}{consultar\+\_\+curso}} (int c)
+\mbox{\hyperlink{class_curso}{Curso}} \mbox{\hyperlink{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}{consultar\+\_\+curso}} (int c) const
 \begin{DoxyCompactList}\small\item\em Consultora de un curso de la plataforma. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_cursos_a452f2fff12a917d4ca3a20812050f816}{existe\+\_\+curso}} (int c)
-\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un curso dentro de la plataforma. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_cursos_aafef6554cfdf5958038b075eeac07415}{numero\+\_\+cursos}} ()
+bool \mbox{\hyperlink{class_cursos_a36f400f476315de6559885b71d3d3fb0}{existe\+\_\+curso}} (int c) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un curso dentro del conjunto de cursos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cursos_acb249ba8a4ded144fba197d8dc06dfef}{numero\+\_\+cursos}} () const
 \begin{DoxyCompactList}\small\item\em Consultora del número total de cursos que hay en la plataforma. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_cursos_aa5a8cdb45236245e938ba34481a788fe}{sesion\+\_\+problema}} (int c, string p)
-\begin{DoxyCompactList}\small\item\em Consulta la sesion a la que pertenece un problema dentro de un curso. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}{leer\+\_\+conjunto\+\_\+cursos}} ()
 \begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}{listar\+\_\+cursos}} ()
+void \mbox{\hyperlink{class_cursos_a84a06aae82ea6b8694be628495edc44e}{listar\+\_\+cursos}} () const
 \begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -75,7 +73,7 @@ Añade un nuevo curso al conjunto de cursos siempre y cuando no haya intersecci�
 Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-Si no hay intersección de problemas entre sesiones, añade un nuevo curso al parámetro implícito y devuelve {\itshape true/{\itshape . En caso contrario, devuelve {\itshape false} }}
+Si no hay intersección de problemas entre sesiones, añade un nuevo curso al parámetro implícito y devuelve {\itshape true}. En caso contrario, devuelve {\itshape false} 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_cursos_a27952f809517a548e8a81cf4d290e603}\label{class_cursos_a27952f809517a548e8a81cf4d290e603}} 
 \index{Cursos@{Cursos}!envio@{envio}}
@@ -85,7 +83,7 @@ Si no hay intersección de problemas entre sesiones, añade un nuevo curso al pa
 
 
 
-Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva que el envío resulte exitoso o no. 
+Toma nota del resultado de un envío hecho por un usuario a un problema, actualizando a la vez todo lo que conlleva el envío en si y que éste resulte exitoso o no. 
 
 \begin{DoxyPrecond}{Precondición}
 Cierto 
@@ -104,10 +102,10 @@ Sea un envío exitoso o no, se actualizan las estadísticas del usuario con iden
 Incrementa una unidad el número de usuarios que han completado el curso. 
 
 \begin{DoxyPrecond}{Precondición}
-cierto 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-se ha incrementado una unidad el número de usuarios que han completado el parámetro implícito 
+Se ha incrementado una unidad el número de usuarios que han completado el parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}\label{class_cursos_a8e05dcf1247f0123619b711a68ca4a66}} 
 \index{Cursos@{Cursos}!incrementar\_usuarios\_inscritos@{incrementar\_usuarios\_inscritos}}
@@ -117,13 +115,13 @@ se ha incrementado una unidad el número de usuarios que han completado el pará
 
 
 
-Incrementa una unidad el número de usuarios inscritos actualmente en el curso. 
+Incrementa una unidad el número de usuarios que han completado el curso. 
 
 \begin{DoxyPrecond}{Precondición}
-cierto 
+Cierto 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-se ha incrementado una unidad el número de usuarios inscritos actualmente en el parámetro implícito 
+Se ha incrementado una unidad el número de usuarios que han completado el parámetro implícito 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_cursos_aa9b43f3b9380052878414fa4906b7925}\label{class_cursos_aa9b43f3b9380052878414fa4906b7925}} 
 \index{Cursos@{Cursos}!decrementar\_usuarios\_inscritos@{decrementar\_usuarios\_inscritos}}
@@ -136,36 +134,36 @@ se ha incrementado una unidad el número de usuarios inscritos actualmente en el
 Decrementa una unidad el número de usuarios inscritos actualmente en el curso. 
 
 \begin{DoxyPrecond}{Precondición}
-cierto 
+Como mínimo hay un usuario inscrito al parámetro implícito 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
-se ha decrementado una unidad el número de usuarios inscritos actualmente en el parámetro implícito 
+Se ha decrementado una unidad el número de usuarios inscritos actualmente en el parámetro implícito 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_cursos_aade12943fdce21445be44c2f1a84525c}\label{class_cursos_aade12943fdce21445be44c2f1a84525c}} 
+\mbox{\Hypertarget{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}\label{class_cursos_a8f2e01ec5145b0aeb60ac6214fcc92a3}} 
 \index{Cursos@{Cursos}!consultar\_curso@{consultar\_curso}}
 \index{consultar\_curso@{consultar\_curso}!Cursos@{Cursos}}
 \doxysubsubsection{\texorpdfstring{consultar\_curso()}{consultar\_curso()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_curso}{Curso}} Cursos\+::consultar\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_curso}{Curso}} Cursos\+::consultar\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption}) const}
 
 
 
 Consultora de un curso de la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-Cierto 
+El curso con identificador c existe 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 Devuelve el curso perteneciente al parámetro implícito con identificador c 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_cursos_a452f2fff12a917d4ca3a20812050f816}\label{class_cursos_a452f2fff12a917d4ca3a20812050f816}} 
+\mbox{\Hypertarget{class_cursos_a36f400f476315de6559885b71d3d3fb0}\label{class_cursos_a36f400f476315de6559885b71d3d3fb0}} 
 \index{Cursos@{Cursos}!existe\_curso@{existe\_curso}}
 \index{existe\_curso@{existe\_curso}!Cursos@{Cursos}}
 \doxysubsubsection{\texorpdfstring{existe\_curso()}{existe\_curso()}}
-{\footnotesize\ttfamily bool Cursos\+::existe\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Cursos\+::existe\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption}) const}
 
 
 
-Consultora de la existencia de un curso dentro de la plataforma. 
+Consultora de la existencia de un curso dentro del conjunto de cursos. 
 
 \begin{DoxyPrecond}{Precondición}
 Cierto 
@@ -173,37 +171,21 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 Devuelve {\itshape true} si el curso pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_cursos_aafef6554cfdf5958038b075eeac07415}\label{class_cursos_aafef6554cfdf5958038b075eeac07415}} 
+\mbox{\Hypertarget{class_cursos_acb249ba8a4ded144fba197d8dc06dfef}\label{class_cursos_acb249ba8a4ded144fba197d8dc06dfef}} 
 \index{Cursos@{Cursos}!numero\_cursos@{numero\_cursos}}
 \index{numero\_cursos@{numero\_cursos}!Cursos@{Cursos}}
 \doxysubsubsection{\texorpdfstring{numero\_cursos()}{numero\_cursos()}}
-{\footnotesize\ttfamily int Cursos\+::numero\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Cursos\+::numero\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 Consultora del número total de cursos que hay en la plataforma. 
 
 \begin{DoxyPrecond}{Precondición}
-Cierto 
+El parámetro implícito no está vacío 
 \end{DoxyPrecond}
 \begin{DoxyPostcond}{Postcondición}
 Devuelve el número total de cursos que contiene el parámetro implícito 
-\end{DoxyPostcond}
-\mbox{\Hypertarget{class_cursos_aa5a8cdb45236245e938ba34481a788fe}\label{class_cursos_aa5a8cdb45236245e938ba34481a788fe}} 
-\index{Cursos@{Cursos}!sesion\_problema@{sesion\_problema}}
-\index{sesion\_problema@{sesion\_problema}!Cursos@{Cursos}}
-\doxysubsubsection{\texorpdfstring{sesion\_problema()}{sesion\_problema()}}
-{\footnotesize\ttfamily void Cursos\+::sesion\+\_\+problema (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{string}]{p }\end{DoxyParamCaption})}
-
-
-
-Consulta la sesion a la que pertenece un problema dentro de un curso. 
-
-\begin{DoxyPrecond}{Precondición}
-c es el identificador de un curso y p es el identificador de un problema 
-\end{DoxyPrecond}
-\begin{DoxyPostcond}{Postcondición}
-Si c es un curso válido y p pertenece a c, se imprime la sesión a la que pertenece p dentro de c. En caso que el curso no existao el problema no pertenezca al curso, se imprime un mensaje de error 
 \end{DoxyPostcond}
 \mbox{\Hypertarget{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}\label{class_cursos_a6eeda75d794cfd75a0137977d15d0cc6}} 
 \index{Cursos@{Cursos}!leer\_conjunto\_cursos@{leer\_conjunto\_cursos}}
@@ -221,11 +203,11 @@ Cierto
 \begin{DoxyPostcond}{Postcondición}
 El parámetro implícito contiene uno o más cursos 
 \end{DoxyPostcond}
-\mbox{\Hypertarget{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}\label{class_cursos_aeb29e1a1c81d4bbe0537653a0a6bbc08}} 
+\mbox{\Hypertarget{class_cursos_a84a06aae82ea6b8694be628495edc44e}\label{class_cursos_a84a06aae82ea6b8694be628495edc44e}} 
 \index{Cursos@{Cursos}!listar\_cursos@{listar\_cursos}}
 \index{listar\_cursos@{listar\_cursos}!Cursos@{Cursos}}
 \doxysubsubsection{\texorpdfstring{listar\_cursos()}{listar\_cursos()}}
-{\footnotesize\ttfamily void Cursos\+::listar\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Cursos\+::listar\+\_\+cursos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
