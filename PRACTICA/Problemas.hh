@@ -59,7 +59,7 @@ public:
         \post Devuelve <em>true</em> si el problema pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_problema(string p);
+    bool existe_problema(string p) const;
 
     /** @brief Consultora del número total de problemas que hay en la
         plataforma.
@@ -67,7 +67,7 @@ public:
         \post Devuelve el número total de problemas que contiene el 
         parámetro implícito
     */
-    int numero_problemas();
+    int numero_problemas() const;
 
     //Lectura
 
