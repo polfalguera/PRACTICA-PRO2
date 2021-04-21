@@ -46,7 +46,7 @@ public:
        \post El parámetro implícito contiene un número de problemas y un 
        conjunto de identificadores de dichos problemas
     */
-    void leer_sesion() const;
+    void leer_sesion();
 
     //Escritura
 

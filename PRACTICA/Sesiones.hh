@@ -56,7 +56,7 @@ public:
         \post Devuelve <em>true</em> si la sesión con identificador s pertenece 
         al parámetro implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_sesion(string s);
+    bool existe_sesion(string s) const;
 
     /** @brief Consultora del número total de sesiones que hay en la
         plataforma.
@@ -64,7 +64,7 @@ public:
         \post Devuelve el número total de sesiones que contiene el 
         parámetro implícito
     */
-    int numero_sesiones();
+    int numero_sesiones() const;
 
     //Lectura
 
@@ -82,6 +82,6 @@ public:
         creciente por su identificador y mostrando, para cada sesión, el número
         de problemas que la forman y los identificadores de dichos problemas
     */
-    void listar_sesiones();
+    void listar_sesiones() const;
 };
 #endif
