@@ -11,6 +11,8 @@
 #endif
 using namespace std;
 
+typedef pair<int,int> Problema;
+
 /*
  * Clase Problemas
  */
@@ -21,8 +23,7 @@ using namespace std;
 
 class Problemas {
 private:
-//Defines atributos, pero no los mencionas explicitamente
-
+    map<string,Problema> cjt_problemas;
 public:
     //Constructora
 

@@ -29,19 +29,21 @@ using namespace std;
 
 int main() {
     Problemas cp;
-    cp.leer_coleccion_problemas();
+    //cp.leer_coleccion_problemas();
     Sesiones cs;
-    cs.leer_conjunto_sesiones();
+    //cs.leer_conjunto_sesiones();
     Cursos cc;
-    cc.leer_conjunto_cursos();
+    //cc.leer_conjunto_cursos();
     Usuarios cu;
     cu.leer_conjunto_usuarios();
     
     string op;
-    while (op != "fin") {
-        if (op == "nuevo problema" or op == "np") {
+    while (cin >> op and op != "fin") {
+        if (op == "nuevo_problema" or op == "np") {
             string p;
             cin >> p;
+
+            cout << '#' << op << ' ' << p << endl;
 
             if (cp.existe_problema(p)) cout << "Mensaje de error" << endl;
             else {
@@ -49,23 +51,27 @@ int main() {
                 cout << cp.numero_problemas() << endl;
             }
         }
-        else if (op == "nueva sesion" or op == "ns") {
+        else if (op == "nueva_sesion" or op == "ns") {
             string s;
             cin >> s;
+            
+            cout << '#' << op << ' ' << s << endl;
 
             if (cs.existe_sesion(s)) cout << "Mensaje de error" << endl;
             else {
                 cs.nueva_sesion(s);
-                cout << cs.numero_sesiones() << endl;
+                cout << cs.numero_sesiones() << endl; 
             }
         }
-        else if (op == "nuevo curso" or op == "nc") {
+        else if (op == "nuevo_curso" or op == "nc") {
             if(cc.nuevo_curso(cs)) cout << cc.numero_cursos() << endl;
             else cout << "Mensaje de error" << endl;
         }
-        else if (op == "alta usuario" or op == "a") {
+        else if (op == "alta_usuario" or op == "a") {
             string u;
             cin >> u;
+
+            cout << '#' << op << ' ' << u << endl;
 
             if (cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else {
@@ -73,9 +79,11 @@ int main() {
                 cout << cu.numero_usuarios() << endl;
             }
         }
-        else if (op == "baja usuario" or op == "b") {
+        else if (op == "baja_usuario" or op == "b") {
             string u;
             cin >> u;
+
+            cout << '#' << op << ' ' << u << endl;
             
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else {
@@ -83,27 +91,33 @@ int main() {
                 cout << cu.numero_usuarios() << endl;
             }
         }
-        else if (op == "inscribir curso" or op == "i") {
+        else if (op == "inscribir_curso" or op == "i") {
             string u;
             int c;
             cin >> u >> c;
+
+            cout << '#' << op << ' ' << c << endl;
 
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else if (cu.consultar_usuario(u).consultar_curso() != 0) cout << "Mensaje de error" << endl;
             else if (not cc.existe_curso(c)) cout << "Mensaje de error" << endl;
             else cu.inscribir_curso(u,c);
         }
-        else if (op == "curso usuario" or op == "cu") {
+        else if (op == "curso_usuario" or op == "cu") {
             string u;
             cin >> u;
+
+            cout << '#' << op << ' ' << u << endl;
 
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else cu.consultar_usuario(u).curso_usuario();
         }
-        else if (op == "sesion problema" or op == "sp") {
+        else if (op == "sesion_problema" or op == "sp") {
             int c;
             string p;
             cin >> c >> p;
+
+            cout << '#' << op << ' ' << c << ' ' << p << endl;
 
             if (not cc.existe_curso(c)) cout << "Mensaje de error" << endl;
             else if (not cp.existe_problema(p)) cout << "Mensaje de error" << endl;
@@ -111,16 +125,20 @@ int main() {
             else cc.consultar_curso(c).sesion_problema(p);
             
         }
-        else if (op == "problemas resueltos" or op == "pr") {
+        else if (op == "problemas_resueltos" or op == "pr") {
             string u;
             cin >> u;
+
+            cout << '#' << op << ' ' << u << endl;
 
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else cu.consultar_usuario(u).problemas_resueltos();
         }
-        else if (op == "problemas enviables" or op == "pe") {
+        else if (op == "problemas_enviables" or op == "pe") {
             string u;
             cin >> u;
+
+            cout << '#' << op << ' ' << u << endl;
 
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
             else cu.consultar_usuario(u).problemas_enviables();
@@ -135,44 +153,59 @@ int main() {
             
         }
         else if (op == "listar_problemas" or op == "lp") {
+            cout << '#' << op << endl;
             cp.listar_problemas();
         }
-        else if (op == "escribrir problema" or op == "ep") {
+        else if (op == "escribrir_problema" or op == "ep") {
             string p;
             cin >> p;   
+
+            cout << '#' << op << ' ' << p << endl;
 
             if (not cp.existe_problema(p)) cout << "Mensaje de error" << endl;
             else cp.escribir_problema(p);
         }
-        else if (op == "listar sesiones" or op == "ls") {
+        else if (op == "listar_sesiones" or op == "ls") {
+            cout << '#' << op << endl;
             cs.listar_sesiones();
         }
-        else if (op == "escribir sesion" or op == "es") {
+        else if (op == "escribir_sesion" or op == "es") {
             string s;
             cin >> s;
+
+            cout << '#' << op << ' ' << s << endl;
 
             if (not cs.existe_sesion(s)) cout << "Mensaje de error" << endl;
             else cs.consultar_sesion(s).escribir_sesion();
         }
-        else if (op == "listar cursos" or op == "lc") {
+        else if (op == "listar_cursos" or op == "lc") {
+            cout << '#' << op << endl;
             cc.listar_cursos();
         }
-        else if (op == "escribir curso" or op == "ec") {
+        else if (op == "escribir_curso" or op == "ec") {
             int c;
             cin >> c;
+
+            cout << '#' << op << ' ' << c << endl;
 
             if (not cc.existe_curso(c)) cout << "Mensaje de error" << endl;
             else cc.consultar_curso(c).escribir_curso();
         }
-        else if (op == "listar usuarios" or op == "lu") {
+        else if (op == "listar_usuarios" or op == "lu") {
+            cout << '#' << op << endl;
             cu.listar_usuarios();
         }
-        else if (op == "escribir usuario" or op == "eu") {
+        else if (op == "escribir_usuario" or op == "eu") {
             string u;
             cin >> u;
 
+            cout << '#' << op << ' ' << u << endl;
+
             if (not cu.existe_usuario(u)) cout << "Mensaje de error" << endl;
-            else cu.consultar_usuario(u).escribir_usuario();
+            else { 
+                cout << u << ' ';
+                cu.consultar_usuario(u).escribir_usuario();
+            }
         }
     }
 }

@@ -21,6 +21,12 @@ using namespace std;
 */
 
 class Usuario {
+private: 
+    int id_curso_inscrito;
+    int numero_problemas_intentados;
+    int numero_total_envios;
+    map<string,int> resueltos;
+    map<string,int> enviables;
 public:
     //Constructora
 
@@ -80,15 +86,6 @@ public:
         por el parámetro implícito a dicho problema
     */
     void problemas_enviables() const;
-
-    //Lectura
-
-    /** @brief Operación de lectura.
-        \pre Cierto
-        \post El parámetro implícito pasa a tener los atributos leídos por
-        el canal estándard de entrada
-    */
-    void leer_usuario();
 
     //Escritura
 

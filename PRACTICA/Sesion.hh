@@ -21,6 +21,9 @@ using namespace std;
 */
 
 class Sesion {
+private:
+    BinTree<string> problemas_sesion;
+    int numero_problemas;
 public:
     //Constructora
 
@@ -29,6 +32,14 @@ public:
         \post El resultado es una sesión vacía
     */
     Sesion();
+
+    //Modificadora
+
+    /** @brief Lee el conjunto de problemas de una sesion
+        \pre Cierto
+        \post El parámetro implícito contiene un conjunto de problemas
+    */
+    void leer_problemas_sesion();
 
     //Consultora
 

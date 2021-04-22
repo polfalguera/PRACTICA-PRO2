@@ -23,6 +23,8 @@ using namespace std;
 */
 
 class Usuarios {
+private:
+    map<string,Usuario> cjt_usuarios;
 public:
     //Constructora
 

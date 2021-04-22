@@ -21,6 +21,8 @@ using namespace std;
     @brief Representa el conjunto de sesiones de la plataforma Evaluator.
 */
 class Sesiones {
+private:
+    map<string,Sesion> cjt_sesiones;
 public:
     //Constructora
 
