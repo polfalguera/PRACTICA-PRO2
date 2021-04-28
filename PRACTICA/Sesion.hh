@@ -39,7 +39,7 @@ public:
         \pre Cierto
         \post El parámetro implícito contiene un conjunto de problemas
     */
-    void leer_problemas_sesion();
+    void leer_problemas_sesion(BinTree<string>& problemas);
 
     //Consultora
 
@@ -60,6 +60,13 @@ public:
     void leer_sesion();
 
     //Escritura
+
+    /** @brief Operación de escritura.
+        \pre Cierto
+        \post Se imprimen por pantalla los identificadores de los problemas 
+        que forman el parámetro implícito
+    */
+    void escribir_problemas_sesion(const BinTree<string>& problemas) const;
 
     /** @brief Operación de escritura.
         \pre Cierto

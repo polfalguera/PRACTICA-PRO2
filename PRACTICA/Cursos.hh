@@ -24,6 +24,8 @@ using namespace std;
 */
 
 class Cursos {
+private:
+    vector<Curso> cjt_cursos;
 public:
     //Constructora
 
@@ -60,27 +62,27 @@ public:
 
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
-        \pre Cierto
+        \pre El curso con identificador c existe
         \post Se ha incrementado una unidad el número de usuarios que han
         completado el parámetro implícito
     */
-    void incrementar_usuarios_completado();
+    void incrementar_usuarios_completado(int c);
 
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso
-        \pre Cierto
+        \pre El curso con identificador c existe
         \post Se ha incrementado una unidad el número de usuarios que han 
         completado el parámetro implícito
     */
-    void incrementar_usuarios_inscritos();
+    void incrementar_usuarios_inscritos(int c);
 
     /** @brief Decrementa una unidad el número de usuarios inscritos
         actualmente en el curso.
-        \pre Como mínimo hay un usuario inscrito al parámetro implícito
+        \pre El curso con identificador c existe
         \post Se ha decrementado una unidad el número de usuarios inscritos
         actualmente en el parámetro implícito
     */
-    void decrementar_usuarios_inscritos();
+    void decrementar_usuarios_inscritos(int c);
 
     //Consultoras
 

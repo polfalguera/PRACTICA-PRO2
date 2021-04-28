@@ -52,15 +52,13 @@ public:
     */
     void baja_usuario(string u);
 
-    //Modificadora
-
     /** @brief Inscribe a un usuario a un curso de la plataforma.
         \pre El usuario y el curso con identificadores u y c respectivamente
         existen. El usuario u no está inscrito en ningún curso
         \post El usuario con identificador u pasa a estar inscrito al curso con 
         identificador c
     */
-    void inscribir_curso(string u, int c);
+    void inscribir_curso (string u, int c);  
 
     //Consultoras
 

@@ -38,8 +38,8 @@ public:
         problemas intentados y resueltos y, por tanto, con zero problemas 
         enviables
     */
-    Usuario();
-    
+    Usuario(); 
+
     //Modificadoras
 
     /** @brief Se actualiza el identificador del curso en el cual está inscrito 
@@ -49,7 +49,7 @@ public:
         \post El parámetro implícito pasa a estar suscrito a otro curso o a
         ninguno
     */
-    void modificar_inscripciones();    
+    void modificar_inscripciones(int c);
 
     //Consultoras
 

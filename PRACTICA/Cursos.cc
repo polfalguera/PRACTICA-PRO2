@@ -12,35 +12,52 @@ void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, cons
 
 }
 
-void Cursos::incrementar_usuarios_completado() {
-
+void Cursos::incrementar_usuarios_completado(int c) {
+    cjt_cursos[c-1].incrementar_completados();
 }
 
-void Cursos::incrementar_usuarios_inscritos() {
-
+void Cursos::incrementar_usuarios_inscritos(int c) {
+    cjt_cursos[c-1].incrementar_inscritos();
 }
 
-void Cursos::decrementar_usuarios_inscritos() {
-
+void Cursos::decrementar_usuarios_inscritos(int c) {
+    cjt_cursos[c-1].decrementar_inscritos();
 }
 
 Curso Cursos::consultar_curso(int c) const {
-    Curso crs;
-    return crs;
+    return cjt_cursos[c-1];
 }
 
 bool Cursos::existe_curso(int c) const {
-    return true;
+    int numero_cursos = cjt_cursos.size();
+    int i = 0;
+    while (i != numero_cursos) {
+        if ((i+1) == c) return true;
+        ++i;
+    }
+
+    return false;
 }
 
 int Cursos::numero_cursos() const {
-    return 3;
+    return cjt_cursos.size();
 }
 
 void Cursos::leer_conjunto_cursos() {
+    int numero_cursos;
+    cin >> numero_cursos;
 
+    for (int i = 0; i < numero_cursos; ++i) {
+        Curso c;
+        c.leer_curso();
+        cjt_cursos.push_back(c);
+    }
 }
 
 void Cursos::listar_cursos() const {
-
+    int numero_cursos = cjt_cursos.size();
+    for (int i = 0; i < numero_cursos; ++i) {
+        cout << i+1 << ' ';
+        cjt_cursos[i].escribir_curso();
+    }
 }

@@ -11,16 +11,20 @@ void Usuarios::alta_usuario(string u) {
 
 void Usuarios::baja_usuario(string u) {
     map<string,Usuario>::iterator it = cjt_usuarios.find(u);
+    
     cjt_usuarios.erase(it);
 }
 
 void Usuarios::inscribir_curso(string u, int c) {
+    map<string,Usuario>::iterator it = cjt_usuarios.find(u);
 
+    (*it).second.modificar_inscripciones(c);
 }
 
 Usuario Usuarios::consultar_usuario(string u) const {
-    Usuario us;
-    return us;
+    map<string,Usuario>::const_iterator it = cjt_usuarios.find(u);
+
+    return (*it).second;
 }
 
 bool Usuarios::existe_usuario(string u) const {
@@ -50,9 +54,9 @@ void Usuarios::listar_usuarios() const {
     map<string,Usuario>::const_iterator it = cjt_usuarios.begin();
 
     while (it != cjt_usuarios.end()) {
-        cout << ((*it).first) << ' ';
+        cout << ((*it).first);
         (*it).second.escribir_usuario();
-        
-        ++it;
+
+        ++it;   
     }
 }

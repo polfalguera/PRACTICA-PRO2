@@ -24,6 +24,11 @@ using namespace std;
 */
 
 class Curso {
+private:
+    vector<string> sesiones_curso; //vector, list o set?
+    map<string,string> problemas_sesiones_curso;
+    int num_usuarios_completado;
+    int num_usuarios_inscritos;
 public:
     //Constructora
 
@@ -36,6 +41,33 @@ public:
         inscritos
     */
     Curso();
+
+    //Modificadoras
+
+    /** @brief Incrementa una unidad el número de usuarios que han completado
+        el curso.
+        \pre El curso con identificador c existe
+        \post Se ha incrementado una unidad el número de usuarios que han
+        completado el parámetro implícito
+    */
+    void incrementar_completados();
+
+    /** @brief Incrementa una unidad el número de usuarios inscritos 
+        actualmente en el curso.
+        \pre El curso con identificador c existe
+        \post Se ha incrementado una unidad el número de usuarios inscritos 
+        actualmente el parámetro implícito
+    */
+    void incrementar_inscritos();
+
+    /** @brief Decrementa una unidad el número de usuarios inscritos
+        actualmente en el curso.
+        \pre El curso con identificador c existe
+        \post Se ha decrementado una unidad el número de usuarios inscritos
+        actualmente en el parámetro implícito
+    */
+    void decrementar_inscritos();
+
 
     //Consultoras
 
@@ -62,6 +94,8 @@ public:
         el problema con identificador p dentro del párametro implícito
     */
     void sesion_problema(string p) const;
+
+    int numero_usuarios_inscritos() const;
 
     //Lectura
 

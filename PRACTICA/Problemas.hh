@@ -7,11 +7,17 @@
 
 #ifndef NO_DIAGRAM
 #include <iostream>
+#include <vector>
 #include <map>
+#include <algorithm>
 #endif
 using namespace std;
 
-typedef pair<int,int> Problema;
+struct Problema {
+    int num_total_envios;
+    int num_total_correctos;
+    double ratio;
+};
 
 /*
  * Clase Problemas
@@ -52,6 +58,13 @@ public:
     */
     void envio(string p, int r);
 
+    /** @brief Actualiza el ratio de un problema tras realizarse un envio
+        a dicho problema.
+        \pre Cierto
+        \post Se ha actualizado el ratio del problema en cuestión
+    */
+    void actualizar_ratio();
+     
     //Consultoras
 
     /** @brief Consultora de la existencia de un problema dentro de la
@@ -85,7 +98,7 @@ public:
         \post Se imprime el número de envíos totales y el número de envíos
         realizados con éxito a un problema con identificador p
     */
-    void escribir_problema(string p) const;
+    void escribir_problema(string p) const; 
 
     /** @brief Operación de escritura.
         \pre Cierto
@@ -97,6 +110,13 @@ public:
     */
     void listar_problemas() const;
     
+    //Comparación
 
+    /** @brief Operación de comparación.
+        \pre 
+        \post Devuelve <em>true</em> si el ratio o el string de a és mayor que los de b.
+        En caso contrario, devuelve <em>false</em> 
+    */
+    static bool comp(const pair<string,double>& a, const pair<string,double>& b);
 };
 #endif
