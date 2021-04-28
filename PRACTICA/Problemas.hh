@@ -63,7 +63,7 @@ public:
         \pre Cierto
         \post Se ha actualizado el ratio del problema en cuestión
     */
-    void actualizar_ratio();
+    void actualizar_ratio(string p);
      
     //Consultoras
 
@@ -109,6 +109,14 @@ public:
         en orden creciente por identificador
     */
     void listar_problemas() const;
+
+    /** @brief Operación de escritura.
+       \pre Cierto
+       \post Se imprimen por pantalla los identificadores de los problemas que
+       forman el parámetro implícito, además de los envíos que se han realizado
+       a dicho problema
+    */
+    void listar_identificador_envios() const;
     
     //Comparación
 

@@ -5,6 +5,9 @@
 #ifndef _USUARIO_HH_
 #define _USUARIO_HH_
 
+#include "Problemas.hh"
+#include "Curso.hh"
+
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <vector>
@@ -25,8 +28,8 @@ private:
     int id_curso_inscrito;
     int numero_problemas_intentados;
     int numero_total_envios;
-    map<string,int> resueltos;
-    map<string,int> enviables;
+    Problemas resueltos;
+    Problemas enviables;
 public:
     //Constructora
 
@@ -42,14 +45,11 @@ public:
 
     //Modificadoras
 
-    /** @brief Se actualiza el identificador del curso en el cual está inscrito 
-        un usuario. El identificador será 0 en caso de que pase a no estar 
-        inscrito en nigun curso.
-        \pre Cierto
-        \post El parámetro implícito pasa a estar suscrito a otro curso o a
-        ninguno
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
     */
-    void modificar_inscripciones(int c);
+    void inscribir_usuario_curso(int c, Curso& curso, const Sesiones& cs);
 
     //Consultoras
 

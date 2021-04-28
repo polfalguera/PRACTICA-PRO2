@@ -8,9 +8,9 @@ bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) {
     return true;
 }
 
-void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios) {
+//void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios) {
 
-}
+//}
 
 void Cursos::incrementar_usuarios_completado(int c) {
     cjt_cursos[c-1].incrementar_completados();
@@ -43,13 +43,13 @@ int Cursos::numero_cursos() const {
     return cjt_cursos.size();
 }
 
-void Cursos::leer_conjunto_cursos() {
+void Cursos::leer_conjunto_cursos(const Sesiones& cs) {
     int numero_cursos;
     cin >> numero_cursos;
 
     for (int i = 0; i < numero_cursos; ++i) {
         Curso c;
-        c.leer_curso();
+        c.leer_curso(cs);
         cjt_cursos.push_back(c);
     }
 }

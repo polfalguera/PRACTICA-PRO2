@@ -15,10 +15,11 @@ void Usuarios::baja_usuario(string u) {
     cjt_usuarios.erase(it);
 }
 
-void Usuarios::inscribir_curso(string u, int c) {
-    map<string,Usuario>::iterator it = cjt_usuarios.find(u);
+void Usuarios::inscribir_curso(string u, int c, const Sesiones& cs, const Cursos& cc) {
+    map<string,Usuario>::iterator itu = cjt_usuarios.find(u);
+    Curso curso = cc.consultar_curso(c);
 
-    (*it).second.modificar_inscripciones(c);
+    (*itu).second.inscribir_usuario_curso(c,curso,cs);
 }
 
 Usuario Usuarios::consultar_usuario(string u) const {

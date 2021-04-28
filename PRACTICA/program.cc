@@ -33,7 +33,7 @@ int main() {
     Sesiones cs;
     cs.leer_conjunto_sesiones();
     Cursos cc;
-    cc.leer_conjunto_cursos();
+    cc.leer_conjunto_cursos(cs);
     Usuarios cu;
     cu.leer_conjunto_usuarios();
     
@@ -102,10 +102,10 @@ int main() {
             cout << '#' << op << ' ' << u << ' ' << c << endl;
 
             if (not cu.existe_usuario(u)) cout << "error: el usuario no existe" << endl;
-            else if (cu.consultar_usuario(u).consultar_curso() != 0) cout << "error: usuario inscrito en otro curso" << endl;
             else if (not cc.existe_curso(c)) cout << "error: el curso no existe" << endl;
+            else if (cu.consultar_usuario(u).consultar_curso() != 0) cout << "error: usuario inscrito en otro curso" << endl;
             else {
-                cu.inscribir_curso(u,c);
+                cu.inscribir_curso(u,c,cs,cc);
                 cc.incrementar_usuarios_inscritos(c);
                 cout << cc.consultar_curso(c).numero_usuarios_inscritos() << endl;                
             }
@@ -156,8 +156,8 @@ int main() {
             int r;
             cin >> u >> p >> r;
 
-            cc.envio(u,p,r,cs,cu);
-            cp.envio(p,r);
+            /*cc.envio(u,p,r,cs,cu);
+            cp.envio(p,r);*/
             
         }
         else if (op == "listar_problemas" or op == "lp") {

@@ -6,8 +6,6 @@
 #define _CURSOS_HH_
 
 #include "Curso.hh"
-#include "Sesiones.hh"
-#include "Usuarios.hh"
 
 #ifndef NO_DIAGRAM
 #include <iostream>
@@ -58,7 +56,7 @@ public:
         comprueba que con este envío el usuario haya completado o no el curso
         en el que estaba inscrito
     */
-    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios);
+    //void envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios);
 
     /** @brief Incrementa una unidad el número de usuarios que han completado
         el curso.
@@ -115,7 +113,7 @@ public:
         \pre Cierto
         \post El parámetro implícito contiene uno o más cursos
     */
-    void leer_conjunto_cursos();
+    void leer_conjunto_cursos(const Sesiones& cs);
 
     //Escritura
 

@@ -6,8 +6,9 @@ Usuario::Usuario() {
     numero_total_envios = 0;
 }
 
-void Usuario::modificar_inscripciones(int c) {
+void Usuario::inscribir_usuario_curso(int c, Curso& curso, const Sesiones& cs) {
     id_curso_inscrito = c;
+    curso.modificar_enviables(enviables,resueltos,cs);
 }
 
 void Usuario::curso_usuario() const {
@@ -19,24 +20,14 @@ int Usuario::consultar_curso() const {
 }
 
 void Usuario::problemas_resueltos() const {
-    map<string,int>::const_iterator it = resueltos.begin();
-
-    while (it != resueltos.end()) {
-        cout << (*it).first << ' ' << (*it).second << endl;
-        ++it;
-    }
+    resueltos.listar_identificador_envios();
 }
 
 void Usuario::problemas_enviables() const {
-    map<string,int>::const_iterator it = enviables.begin();
-
-    while (it != enviables.end()) {
-        cout << (*it).first << ' ' << (*it).second << endl;
-        ++it;
-    }
+    enviables.listar_identificador_envios();
 }
 
 void Usuario::escribir_usuario() const {
-    cout << '(' << numero_total_envios << ',' << resueltos.size() << ',' <<
+    cout << '(' << numero_total_envios << ',' << resueltos.numero_problemas() << ',' <<
     numero_total_envios << ',' << id_curso_inscrito << ')' << endl;
 }

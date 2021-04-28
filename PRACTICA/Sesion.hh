@@ -5,8 +5,11 @@
 #ifndef _SESION_HH_
 #define _SESION_HH_
 
+#include "Problemas.hh"
+
 #ifndef NO_DIAGRAM
 #include <iostream>
+#include <vector>
 #include "BinTree.hh"
 #endif
 using namespace std;
@@ -23,6 +26,7 @@ using namespace std;
 class Sesion {
 private:
     BinTree<string> problemas_sesion;
+    vector<string> id_problemas;
     int numero_problemas;
 public:
     //Constructora
@@ -49,6 +53,12 @@ public:
         implícito
     */
     int consultar_numero_problemas() const;
+
+    /** @brief 
+        \pre Cierto
+        \post 
+    */
+    string consultar_problema_iesimo(int i) const;
     
     //Lectura
 
@@ -74,5 +84,18 @@ public:
         parámetro implícito y sus identificadores
     */
     void escribir_sesion() const;
-};
+
+    //-----------------------------------------------------------------
+    /** @brief
+        \pre
+        \post
+    */
+    void modificar_enviables_sesion(Problemas& enviables, Problemas& resueltos);
+
+    /** @brief
+        \pre
+        \post
+    */
+    void i_modificar_enviables_sesion(const BinTree<string>& problemas_sesion, Problemas& enviables, Problemas& resueltos);
 #endif
+};

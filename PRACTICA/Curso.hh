@@ -5,6 +5,9 @@
 #ifndef _CURSO_HH_
 #define _CURSO_HH_
 
+#include "Sesiones.hh"
+#include "Problemas.hh"
+
 #ifndef NO_DIAGRAM
 #include <iostream>
 #include <vector>
@@ -25,7 +28,7 @@ using namespace std;
 
 class Curso {
 private:
-    vector<string> sesiones_curso; //vector, list o set?
+    vector<string> sesiones_curso; 
     map<string,string> problemas_sesiones_curso;
     int num_usuarios_completado;
     int num_usuarios_inscritos;
@@ -107,7 +110,7 @@ public:
         usuarios que han completado el curso, tanto actuales como pasados,
         y el número de usuarios inscritos en él
     */
-    void leer_curso();
+    void leer_curso(const Sesiones& cs);
 
     //Escritura
 
@@ -121,5 +124,13 @@ public:
         se leyeron cuando se creó el curso
     */
     void escribir_curso() const;
+
+    //---------------------------------------------------------------------------------
+
+    /** @brief Falta cambiarlo.
+        \pre
+        \post
+    */
+    void modificar_enviables(Problemas& enviables, Problemas& resueltos, const Sesiones& cs);
 };
 #endif

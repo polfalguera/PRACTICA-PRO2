@@ -8,9 +8,14 @@ int Sesion::consultar_numero_problemas() const {
     return numero_problemas;
 }
 
+string Sesion::consultar_problema_iesimo(int i) const {
+    return id_problemas[i];
+}
+
 void Sesion::leer_problemas_sesion(BinTree<string>& problemas) {
     string p;
     cin >> p;
+    id_problemas.push_back(p);
     if(p != "0"){
         ++numero_problemas;
         BinTree<string> e,d;
@@ -42,3 +47,21 @@ void Sesion::escribir_sesion() const {
     cout << endl;
 
 }
+
+void Sesion::modificar_enviables_sesion(Problemas& enviables, Problemas& resueltos) {
+    i_modificar_enviables_sesion(problemas_sesion,enviables,resueltos);
+}
+
+void Sesion::i_modificar_enviables_sesion(const BinTree<string>& problemas_sesion, Problemas& enviables, Problemas& resueltos) {
+    if (resueltos.existe_problema(problemas_sesion.value())) {
+        BinTree<string> e, d;
+        e = problemas_sesion.left();
+        i_modificar_enviables_sesion(e,enviables,resueltos);
+        d = problemas_sesion.right();
+        i_modificar_enviables_sesion(d,enviables,resueltos);
+    }
+    else {
+        enviables.nuevo_problema(problemas_sesion.value());
+    }
+}
+

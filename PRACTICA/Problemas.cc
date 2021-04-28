@@ -16,7 +16,10 @@ void Problemas::envio(string p, int r) {
     
 }
 
-void Problemas::actualizar_ratio() {
+void Problemas::actualizar_ratio(string p) {
+    map<string,Problema>::iterator it = cjt_problemas.find(p);
+
+    (*it).second.ratio = ((*it).second.num_total_envios+1) / ((*it).second.num_total_correctos+1);
 
 }
 
@@ -69,7 +72,15 @@ void Problemas::listar_problemas() const {
     for (int i = 0; i < numero_problemas; ++i) {
         escribir_problema(ordenacion_problemas[i].first);
     }
+}
 
+void Problemas::listar_identificador_envios() const {
+    map<string,Problema>::const_iterator it = cjt_problemas.begin();
+
+    while (it != cjt_problemas.end()) {
+        cout << (*it).first << '(' << (*it).second.num_total_envios << ')' << endl;
+        ++it;
+    }
 }
 
 bool Problemas::comp(const pair<string,double>& a, const pair<string,double>& b) {

@@ -6,6 +6,9 @@
 #define _USUARIOS_HH_
 
 #include "Usuario.hh"
+#include "Cursos.hh"
+#include "Sesiones.hh"
+#include "Problemas.hh"
 
 #ifndef NO_DIAGRAM
 #include <iostream>
@@ -58,7 +61,7 @@ public:
         \post El usuario con identificador u pasa a estar inscrito al curso con 
         identificador c
     */
-    void inscribir_curso (string u, int c);  
+    void inscribir_curso (string u, int c, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos);  
 
     //Consultoras
 

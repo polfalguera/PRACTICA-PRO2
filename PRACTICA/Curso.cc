@@ -29,14 +29,16 @@ bool Curso::existe_problema_curso(string p) const {
 }
 
 void Curso::sesion_problema(string p) const {
-    
+    map<string,string>::const_iterator it = problemas_sesiones_curso.find(p);
+
+    cout << (*it).second << endl;
 }
 
 int Curso::numero_usuarios_inscritos() const {
     return num_usuarios_inscritos;
 }
 
-void Curso::leer_curso() {
+void Curso::leer_curso(const Sesiones& cs) {
     int numero_sesiones_curso;
     cin >> numero_sesiones_curso;
 
@@ -44,6 +46,12 @@ void Curso::leer_curso() {
     for (int i = 0; i < numero_sesiones_curso; ++i) {
         cin >> s;
         sesiones_curso.push_back(s);
+
+        int numero_problemas_sesion = cs.consultar_sesion(s).consultar_numero_problemas();
+        for (int i = 0; i < numero_problemas_sesion; ++i) {
+            string p = cs.consultar_sesion(s).consultar_problema_iesimo(i);
+            problemas_sesiones_curso.insert(make_pair(p,s));
+        }
     }
 }
 
@@ -55,4 +63,12 @@ void Curso::escribir_curso() const {
         cout << ' ' << sesiones_curso[i];
     }
     cout << ')' << endl;
+}
+
+void Curso::modificar_enviables(Problemas& enviables, Problemas& resueltos, const Sesiones& cs) {
+    int numero_sesiones_curso = sesiones_curso.size();
+
+    for (int i = 0; i < numero_sesiones_curso; ++i) {
+        cs.consultar_sesion(sesiones_curso[i]).modificar_enviables_sesion(enviables,resueltos);
+    }
 }
