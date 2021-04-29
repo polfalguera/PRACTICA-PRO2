@@ -1,3 +1,4 @@
+16
 #listar_problemas
 AB01(0,0,1)
 AB02(0,0,1)
@@ -205,7 +206,7 @@ SergioBusquets(0,0,0,0)
 #cu AnsuFati
 error: el usuario no existe
 #sesion_problema 1 V01
-error: el problema no pertenece al curso
+vectores_0
 #sp 0 V01
 error: el curso no existe
 #sp 1 V20
@@ -213,19 +214,39 @@ error: el problema no pertenece al curso
 #sp 1 V30
 error: el problema no existe
 #sp 2 V06
-error: el problema no pertenece al curso
+vectores_1
 #sp 3 V06
-error: el problema no pertenece al curso
+vectores_sel
 #sp 4 CP01
 error: el curso no existe
 #problemas_enviables Pedri
+T01(0)
+V01(0)
 #pe AnsuFati
 error: el usuario no existe
 #pe SerginhoDest
 error: usuario no inscrito en ningun curso
 #pe AitanaBonmati
+C01(0)
+P01(0)
+T01(0)
+V01(0)
+V07(0)
+V15(0)
+V19(0)
 #pe MarcTerStegen
+AB01(0)
+AB07(0)
+CP01(0)
+L01(0)
+L05(0)
+M01(0)
+P03(0)
+S01(0)
+V06(0)
 #pe LiekeMartens
+T01(0)
+V01(0)
 #problemas_resueltos Pedri
 #pr LuisSuarez
 error: el usuario no existe

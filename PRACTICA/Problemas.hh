@@ -56,7 +56,7 @@ public:
         \post Se han actualizado las estadísticas del problema con 
         identificador p tras recibir un envío por parte de un usuario
     */
-    void envio(string p, int r);
+    //void envio(string p, int r);
 
     /** @brief Actualiza el ratio de un problema tras realizarse un envio
         a dicho problema.

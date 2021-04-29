@@ -1,26 +1,34 @@
-program.x: program.o Problemas.o Curso.o Cursos.o Sesion.o Sesiones.o Usuario.o Usuarios.o
-	g++ -o program.x program.o Problemas.o Curso.o Cursos.o Sesion.o Sesiones.o Usuario.o Usuarios.o
+OPCIONS = -D_JUDGE_ -D_GLIBCXX_DEBUG -O2 -std=c++11
 
-Problmeas.o: Problemas.cc Problemas.hh
-	g++ -c Problemas.cc 
-
-Curso.o: Curso.cc Curso.hh
-	g++ -c Curso.cc 
+program.exe: program.o Cursos.o Sesiones.o Problemas.o Usuarios.o Usuario.o Curso.o Sesion.o
+	g++ -o program.exe program.o Cursos.o Sesiones.o Problemas.o Usuarios.o Usuario.o Curso.o Sesion.o
+	
+program.o: program.cc
+	g++ -c program.cc $(OPCIONS)
 
 Cursos.o: Cursos.cc Cursos.hh
-	g++ -c Cursos.cc 
-
-Sesion.o: Sesion.cc Sesion.hh
-	g++ -c Sesion.cc 
+	g++ -c Cursos.cc $(OPCIONS)
+	
 Sesiones.o: Sesiones.cc Sesiones.hh
-	g++ -c Sesiones.cc 
-
-Usuario.o: Usuario.cc Usuario.hh
-	g++ -c Usuario.cc 
+	g++ -c Sesiones.cc $(OPCIONS)
+	
+Problemas.o: Problemas.cc Problemas.hh
+	g++ -c Problemas.cc $(OPCIONS)
 
 Usuarios.o: Usuarios.cc Usuarios.hh
-	g++ -c Usuarios.cc 
+	g++ -c Usuarios.cc $(OPCIONS)
+
+Usuario.o: Usuario.cc Usuario.hh
+	g++ -c Usuario.cc $(OPCIONS)
+	
+Curso.o: Curso.cc Curso.hh
+	g++ -c Curso.cc $(OPCIONS)
+	
+Sesion.o: Sesion.cc Sesion.hh
+	g++ -c Sesion.cc $(OPCIONS)
+tar: program.cc Cursos.cc Cursos.hh Sesiones.cc Sesiones.hh Problemas.cc Problemas.hh Usuarios.cc Usuarios.hh Curso.cc Curso.hh Sesion.cc Sesion.hh Usuario.cc Usuario.hh
+	 tar -cvf practica.tar Makefile program.cc Cursos.cc Cursos.hh Sesiones.cc Sesiones.hh Problemas.cc Problemas.hh Usuarios.cc Usuarios.hh Curso.cc Curso.hh Sesion.cc Sesion.hh Usuario.cc Usuario.hh
 
 clean:
-	rm *.o
-	rm *.x
+	rm -f *.o
+	rm -f *.exe

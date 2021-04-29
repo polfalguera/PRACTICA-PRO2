@@ -1,0 +1,30 @@
+10 
+P4 P1 P8 P9 P3 P7 P10 P2 P6 P5
+5
+S8 P1 P3 0 0 P7 0 0
+S3 P8 P5 P2 0 0 P4 0 0 0
+S6 P9 P10 P5 0 0 0 P6 0 0
+S2 P2 P8 0 0 P4 0 0
+S1 P3 P1 0 P6 0 0 P10 0 0
+2
+2 S2 S1
+3 S6 S2 S8
+4
+Jordi
+Pol
+Marc
+Alicia
+lp
+ls
+lc
+lu
+baja_usuario Manolo
+alta_usuario Jordi
+alta_usuario Miriam
+lu
+baja_usuario Pol
+lu
+nuevo_problema P12
+nuevo_problema P5
+lp
+fin

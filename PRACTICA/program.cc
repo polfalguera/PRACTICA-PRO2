@@ -88,7 +88,7 @@ int main() {
             if (not cu.existe_usuario(u)) cout << "error: el usuario no existe" << endl;
             else {
                 int c = cu.consultar_usuario(u).consultar_curso();
-                cc.decrementar_usuarios_inscritos(c);
+                if(c != 0) cc.decrementar_usuarios_inscritos(c);
 
                 cu.baja_usuario(u);
                 cout << cu.numero_usuarios() << endl;
@@ -156,8 +156,8 @@ int main() {
             int r;
             cin >> u >> p >> r;
 
-            /*cc.envio(u,p,r,cs,cu);
-            cp.envio(p,r);*/
+            //cc.envio(u,p,r,cs,cu);
+            //cp.envio(p,r);
             
         }
         else if (op == "listar_problemas" or op == "lp") {

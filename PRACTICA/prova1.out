@@ -1,0 +1,49 @@
+#lp
+P1(0,0,1)
+P10(0,0,1)
+P2(0,0,1)
+P3(0,0,1)
+P4(0,0,1)
+P5(0,0,1)
+P6(0,0,1)
+P7(0,0,1)
+P8(0,0,1)
+P9(0,0,1)
+#ls
+S1 4 (((P6)P1)(P10)P3)
+S2 3 ((P8)(P4)P2)
+S3 4 (((P2)(P4)P5)P8)
+S6 4 (((P5)P10)(P6)P9)
+S8 3 ((P3)(P7)P1)
+#lc
+1 0 0 2 (S2 S1)
+2 0 0 3 (S6 S2 S8)
+#lu
+Alicia(0,0,0,0)
+Jordi(0,0,0,0)
+Marc(0,0,0,0)
+Pol(0,0,0,0)
+#escribir_problema P9
+P9(0,0,1)
+#escribir_problema P1
+P1(0,0,1)
+#escribir_problema P78
+error: el problema no existe
+#escribir_sesion S8
+S8 3 ((P3)(P7)P1)
+#escribir_sesion S1
+S1 4 (((P6)P1)(P10)P3)
+#escribir_sesion S22
+error: la sesion no existe
+#escribir_curso 1
+1 0 0 2 (S2 S1)
+#escribir_curso 0
+error: el curso no existe
+#escribir_curso 2
+2 0 0 3 (S6 S2 S8)
+#escribir_usuario Miriam
+error: el usuario no existe
+#escribir_usuario Marc
+Marc(0,0,0,0)
+#escribir_usuario Alicia
+Alicia(0,0,0,0)

@@ -12,9 +12,9 @@ void Problemas::nuevo_problema(string p) {
     cjt_problemas.insert(make_pair(p,problema));
 }
 
-void Problemas::envio(string p, int r) {
+/*void Problemas::envio(string p, int r) {
     
-}
+}*/
 
 void Problemas::actualizar_ratio(string p) {
     map<string,Problema>::iterator it = cjt_problemas.find(p);

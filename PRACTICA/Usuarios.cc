@@ -20,6 +20,7 @@ void Usuarios::inscribir_curso(string u, int c, const Sesiones& cs, const Cursos
     Curso curso = cc.consultar_curso(c);
 
     (*itu).second.inscribir_usuario_curso(c,curso,cs);
+
 }
 
 Usuario Usuarios::consultar_usuario(string u) const {

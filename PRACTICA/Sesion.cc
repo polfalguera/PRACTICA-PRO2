@@ -15,8 +15,8 @@ string Sesion::consultar_problema_iesimo(int i) const {
 void Sesion::leer_problemas_sesion(BinTree<string>& problemas) {
     string p;
     cin >> p;
-    id_problemas.push_back(p);
     if(p != "0"){
+        id_problemas.push_back(p);
         ++numero_problemas;
         BinTree<string> e,d;
         leer_problemas_sesion(e);

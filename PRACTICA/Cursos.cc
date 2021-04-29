@@ -8,9 +8,9 @@ bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) {
     return true;
 }
 
-//void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios) {
+/*void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios) {
 
-//}
+}*/
 
 void Cursos::incrementar_usuarios_completado(int c) {
     cjt_cursos[c-1].incrementar_completados();

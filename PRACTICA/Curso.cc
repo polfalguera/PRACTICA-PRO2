@@ -67,7 +67,7 @@ void Curso::escribir_curso() const {
 
 void Curso::modificar_enviables(Problemas& enviables, Problemas& resueltos, const Sesiones& cs) {
     int numero_sesiones_curso = sesiones_curso.size();
-
+    
     for (int i = 0; i < numero_sesiones_curso; ++i) {
         cs.consultar_sesion(sesiones_curso[i]).modificar_enviables_sesion(enviables,resueltos);
     }
