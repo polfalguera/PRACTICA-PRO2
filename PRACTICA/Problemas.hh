@@ -56,14 +56,20 @@ public:
         \post Se han actualizado las estadísticas del problema con 
         identificador p tras recibir un envío por parte de un usuario
     */
-    //void envio(string p, int r);
+    void envio(string p, int r);
 
     /** @brief Actualiza el ratio de un problema tras realizarse un envio
         a dicho problema.
         \pre Cierto
         \post Se ha actualizado el ratio del problema en cuestión
     */
-    void actualizar_ratio(string p);
+    void actualizar_ratio(Problema& p);
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void incrementar_intentos_usuario(string p);
      
     //Consultoras
 
@@ -82,6 +88,12 @@ public:
         parámetro implícito
     */
     int numero_problemas() const;
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    int numero_total_envios_p(string p) const;
 
     //Lectura
 

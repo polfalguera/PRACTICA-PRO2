@@ -64,8 +64,11 @@ int main() {
             }
         }
         else if (op == "nuevo_curso" or op == "nc") {
+
+            cout << '#' << op << endl;
+
             if(cc.nuevo_curso(cs)) cout << cc.numero_cursos() << endl;
-            else cout << "Mensaje de error" << endl;
+            else cout << "error: curso mal formado" << endl;
         }
         else if (op == "alta_usuario" or op == "a") {
             string u;
@@ -156,8 +159,10 @@ int main() {
             int r;
             cin >> u >> p >> r;
 
-            //cc.envio(u,p,r,cs,cu);
-            //cp.envio(p,r);
+            cout << '#' << op << ' ' << u << ' ' << p << ' ' << r << endl; 
+
+            cu.envio(u,p,r,cs,cc);
+            cp.envio(p,r);
             
         }
         else if (op == "listar_problemas" or op == "lp") {

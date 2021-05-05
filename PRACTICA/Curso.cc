@@ -38,11 +38,12 @@ int Curso::numero_usuarios_inscritos() const {
     return num_usuarios_inscritos;
 }
 
-void Curso::leer_curso(const Sesiones& cs) {
+bool Curso::leer_curso(const Sesiones& cs) {
     int numero_sesiones_curso;
     cin >> numero_sesiones_curso;
 
     string s;
+    bool interseccion = false;
     for (int i = 0; i < numero_sesiones_curso; ++i) {
         cin >> s;
         sesiones_curso.push_back(s);
@@ -50,9 +51,14 @@ void Curso::leer_curso(const Sesiones& cs) {
         int numero_problemas_sesion = cs.consultar_sesion(s).consultar_numero_problemas();
         for (int i = 0; i < numero_problemas_sesion; ++i) {
             string p = cs.consultar_sesion(s).consultar_problema_iesimo(i);
-            problemas_sesiones_curso.insert(make_pair(p,s));
+            if (not interseccion) {
+                map<string,string>::iterator it = problemas_sesiones_curso.find(p);
+                if (it != problemas_sesiones_curso.end()) interseccion = true;
+                else problemas_sesiones_curso.insert(make_pair(p,s));
+            }
         }
     }
+    return interseccion;
 }
 
 void Curso::escribir_curso() const {

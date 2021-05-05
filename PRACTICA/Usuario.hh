@@ -51,6 +51,24 @@ public:
     */
     void inscribir_usuario_curso(int c, Curso& curso, const Sesiones& cs);
 
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void incrementar_problemas_intentados();
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void incrementar_intentos_p(string p);
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void incrementar_total_envios();
+
     //Consultoras
 
     /** @brief Consultora del curso al cual está inscrito un usuario.
@@ -86,6 +104,12 @@ public:
         por el parámetro implícito a dicho problema
     */
     void problemas_enviables() const;
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    int consultar_intentos_p(string p) const;
 
     //Escritura
 

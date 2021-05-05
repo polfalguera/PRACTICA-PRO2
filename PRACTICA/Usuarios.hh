@@ -63,6 +63,18 @@ public:
     */
     void inscribir_curso (string u, int c, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos);  
 
+    /** @brief Toma nota del resultado de un envío hecho por un usuario a un 
+        problema, actualizando a la vez todo lo que conlleva el envío en si y 
+        que éste resulte exitoso o no.
+        \pre Cierto
+        \post Sea un envío exitoso o no, se actualizan las estadísticas del 
+        usuario con identificador u y del problema con identificador p. Además,
+        se actualizan los problemas resueltos y enviables del usuario y se 
+        comprueba que con este envío el usuario haya completado o no el curso
+        en el que estaba inscrito
+    */
+    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos);
+
     //Consultoras
 
     /** @brief Consultora de un usuario registrado en la plataforma.

@@ -5,12 +5,14 @@ Cursos::Cursos() {
 }
 
 bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) {
-    return true;
+     Curso c;
+     if (not c.leer_curso(cjt_sesiones)) {
+         cjt_cursos.push_back(c);
+         return true;
+     }
+
+     return false;
 }
-
-/*void Cursos::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Usuarios& cjt_usuarios) {
-
-}*/
 
 void Cursos::incrementar_usuarios_completado(int c) {
     cjt_cursos[c-1].incrementar_completados();

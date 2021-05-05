@@ -23,6 +23,19 @@ void Usuarios::inscribir_curso(string u, int c, const Sesiones& cs, const Cursos
 
 }
 
+void Usuarios::envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos) {
+    map<string,Usuario>::iterator it = cjt_usuarios.find(u);
+    Usuario usuario = (*it).second;
+    usuario.incrementar_total_envios();
+ 
+    if (usuario.consultar_intentos_p(p) == 0) usuario.incrementar_problemas_intentados();
+
+    usuario.incrementar_intentos_p(string p); 
+    if (r == 1) {
+
+    }
+}
+
 Usuario Usuarios::consultar_usuario(string u) const {
     map<string,Usuario>::const_iterator it = cjt_usuarios.find(u);
 

@@ -11,6 +11,18 @@ void Usuario::inscribir_usuario_curso(int c, Curso& curso, const Sesiones& cs) {
     curso.modificar_enviables(enviables,resueltos,cs);
 }
 
+void Usuario::incrementar_problemas_intentados() {
+    ++numero_problemas_intentados;
+}
+
+void Usuario::incrementar_intentos_p(string p) {
+    enviables.incrementar_intentos_usuario(p);
+}
+
+void Usuario::incrementar_total_envios() {
+    ++numero_total_envios;
+}
+
 void Usuario::curso_usuario() const {
     cout << id_curso_inscrito << endl;
 }
@@ -25,6 +37,10 @@ void Usuario::problemas_resueltos() const {
 
 void Usuario::problemas_enviables() const {
     enviables.listar_identificador_envios();
+}
+
+int Usuario::consultar_intentos_p(string p) const {
+    return enviables.numero_total_envios_p(p);
 }
 
 void Usuario::escribir_usuario() const {

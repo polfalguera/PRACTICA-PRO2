@@ -110,7 +110,7 @@ public:
         usuarios que han completado el curso, tanto actuales como pasados,
         y el número de usuarios inscritos en él
     */
-    void leer_curso(const Sesiones& cs);
+    bool leer_curso(const Sesiones& cs);
 
     //Escritura
 
