@@ -61,7 +61,7 @@ public:
         \post El usuario con identificador u pasa a estar inscrito al curso con 
         identificador c
     */
-    void inscribir_curso (string u, int c, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos);  
+    void inscribir_curso (string u, int c, const Sesiones& cjt_sesiones, Cursos& cjt_cursos);  
 
     /** @brief Toma nota del resultado de un envío hecho por un usuario a un 
         problema, actualizando a la vez todo lo que conlleva el envío en si y 
@@ -73,7 +73,7 @@ public:
         comprueba que con este envío el usuario haya completado o no el curso
         en el que estaba inscrito
     */
-    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, const Cursos& cjt_cursos);
+    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, Cursos& cjt_cursos, const Problemas& cjt_problemas);
 
     //Consultoras
 

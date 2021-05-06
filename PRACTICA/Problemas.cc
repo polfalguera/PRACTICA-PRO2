@@ -25,10 +25,19 @@ void Problemas::actualizar_ratio(Problema& p) {
 
 }
 
-void Problemas::incrementar_intentos_usuario(strin p) {
+void Problemas::incrementar_intentos_usuario(string p) {
     map<string,Problema>::iterator it = cjt_problemas.find(p);
 
     (*it).second.num_total_envios += 1;
+}
+
+void Problemas::eliminar_enviable(string p) {
+    map<string,Problema>::iterator it = cjt_problemas.find(p);
+    cjt_problemas.erase((*it).first);
+}
+
+void Problemas::anadir_resuelto(string p, const Problema& problema) {
+    cjt_problemas.insert(make_pair(p,problema));
 }
 
 bool Problemas::existe_problema(string p) const {
@@ -46,6 +55,12 @@ int Problemas::numero_total_envios_p(string p) const {
     map<string,Problema>::const_iterator it = cjt_problemas.find(p);
 
     return (*it).second.num_total_envios;
+}
+
+Problema Problemas::consultar_problema(string p) const {
+    map<string,Problema>::const_iterator it = cjt_problemas.find(p);
+
+    return (*it).second;
 }
 
 void Problemas::leer_coleccion_problemas() {

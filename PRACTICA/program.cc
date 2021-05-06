@@ -161,7 +161,7 @@ int main() {
 
             cout << '#' << op << ' ' << u << ' ' << p << ' ' << r << endl; 
 
-            cu.envio(u,p,r,cs,cc);
+            cu.envio(u,p,r,cs,cc,cp);
             cp.envio(p,r);
             
         }

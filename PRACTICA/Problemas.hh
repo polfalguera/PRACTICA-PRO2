@@ -70,6 +70,18 @@ public:
         \post
     */
     void incrementar_intentos_usuario(string p);
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void eliminar_enviable(string p);
+    
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void anadir_resuelto(string p, const Problema& problema);
      
     //Consultoras
 
@@ -94,6 +106,12 @@ public:
         \post
     */
     int numero_total_envios_p(string p) const;
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    Problema consultar_problema(string p) const;
 
     //Lectura
 

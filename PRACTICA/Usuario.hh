@@ -55,6 +55,12 @@ public:
         \pre
         \post
     */
+    void desinscribir_usuario_curso();
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
     void incrementar_problemas_intentados();
 
     /** @brief Hola falta cambiarlo.
@@ -68,6 +74,18 @@ public:
         \post
     */
     void incrementar_total_envios();
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void actualizar_enviables(string p, const Problema& problema, Curso& curso, const Sesiones& cs);
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    void actualizar_resueltos(string p, const Problema& problema);
 
     //Consultoras
 
@@ -110,6 +128,18 @@ public:
         \post
     */
     int consultar_intentos_p(string p) const;
+
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    int numero_problemas_enviables() const;   
+    
+    /** @brief Hola falta cambiarlo.
+        \pre
+        \post
+    */
+    Problema consultar_problema_enviable(string p) const;
 
     //Escritura
 

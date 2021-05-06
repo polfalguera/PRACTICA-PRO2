@@ -53,15 +53,17 @@ void Sesion::modificar_enviables_sesion(Problemas& enviables, Problemas& resuelt
 }
 
 void Sesion::i_modificar_enviables_sesion(const BinTree<string>& problemas_sesion, Problemas& enviables, Problemas& resueltos) {
-    if (resueltos.existe_problema(problemas_sesion.value())) {
-        BinTree<string> e, d;
-        e = problemas_sesion.left();
-        i_modificar_enviables_sesion(e,enviables,resueltos);
-        d = problemas_sesion.right();
-        i_modificar_enviables_sesion(d,enviables,resueltos);
-    }
-    else {
-        enviables.nuevo_problema(problemas_sesion.value());
+    if (not problemas_sesion.empty()) {
+        if (resueltos.existe_problema(problemas_sesion.value())) {
+            BinTree<string> e, d;
+            e = problemas_sesion.left();
+            i_modificar_enviables_sesion(e,enviables,resueltos);
+            d = problemas_sesion.right();
+            i_modificar_enviables_sesion(d,enviables,resueltos);
+        }
+        else {
+            enviables.nuevo_problema(problemas_sesion.value());
+        }
     }
 }
 
