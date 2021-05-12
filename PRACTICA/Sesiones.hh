@@ -43,14 +43,31 @@ public:
     */
     void nueva_sesion(string s);
 
-    //Consultoras
-
-    /** @brief Consultora de una sesión de la plataforma.
-        \pre Cierto
-        \post Devuelve la sesión perteneciente al parámetro implícito con 
-        identificador s
+    /** @brief
+        \pre
+        \post
     */
-    Sesion consultar_sesion(string s) const;
+    void modificar_envibales_sesion(const string& s, Problemas& enviables, Problemas& resueltos);
+    
+    /** @brief
+        \pre
+        \post
+    */
+    void modificar_envibales_envio_s(const string& p, const string& s, Problemas& enviables, Problemas& resueltos);
+
+    //Consultoras  
+
+    /** @brief Falta hacer cambios.
+        \pre
+        \post
+    */
+    int numero_problemas_sesion(const string& s) const;
+
+    /** @brief Falta hacer cambios.
+        \pre
+        \post
+    */
+    string problema_iessimo_sesion(const string& s, int i) const;
 
     /** @brief Consultora de la existencia de una sesión dentro del
         parámetro implícito.
@@ -58,7 +75,7 @@ public:
         \post Devuelve <em>true</em> si la sesión con identificador s pertenece 
         al parámetro implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_sesion(string s) const;
+    bool existe_sesion(const string& s) const;
 
     /** @brief Consultora del número total de sesiones que hay en la
         plataforma.
@@ -77,6 +94,12 @@ public:
     void leer_conjunto_sesiones();
 
     //Escritura
+
+    /** @brief
+        \pre
+        \post
+    */
+    void escribir_sesion(const string& s) const;
 
     /** @brief Operación de escritura.
         \pre Cierto

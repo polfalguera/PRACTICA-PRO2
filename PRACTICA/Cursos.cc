@@ -26,8 +26,8 @@ void Cursos::decrementar_usuarios_inscritos(int c) {
     cjt_cursos[c-1].decrementar_inscritos();
 }
 
-Curso Cursos::consultar_curso(int c) const {
-    return cjt_cursos[c-1];
+void Cursos::consultar_curso(int c, Curso& curso) {
+    curso = cjt_cursos[c-1];
 }
 
 bool Cursos::existe_curso(int c) const {
@@ -45,6 +45,22 @@ int Cursos::numero_cursos() const {
     return cjt_cursos.size();
 }
 
+int Cursos::numero_inscritos_curso(int c) const {
+    return cjt_cursos[c-1].numero_usuarios_inscritos();
+}
+
+bool Cursos::existe_problema_curso(int c, const string& p) const {
+    return cjt_cursos[c-1].existe_problema_curso(p);
+}
+
+void Cursos::sesion_problema_curso(int c, const string& p) const {
+    return cjt_cursos[c-1].sesion_problema(p);
+}
+
+string Cursos::sesion_problema_curso_aux(int c, const string& p) const {
+    return cjt_cursos[c-1].sesion_problema_aux(p);
+}
+
 void Cursos::leer_conjunto_cursos(const Sesiones& cs) {
     int numero_cursos;
     cin >> numero_cursos;
@@ -56,10 +72,14 @@ void Cursos::leer_conjunto_cursos(const Sesiones& cs) {
     }
 }
 
+void Cursos::escribir_curso(int c) const {
+    cjt_cursos[c-1].escribir();
+}
+
 void Cursos::listar_cursos() const {
     int numero_cursos = cjt_cursos.size();
     for (int i = 0; i < numero_cursos; ++i) {
         cout << i+1 << ' ';
-        cjt_cursos[i].escribir_curso();
+        cjt_cursos[i].escribir();
     }
 }

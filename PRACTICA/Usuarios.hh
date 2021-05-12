@@ -46,14 +46,14 @@ public:
       \post Se ha añadido un usuario con identificador u al parámetro
       implícito
     */
-    void alta_usuario(string u);
+    void alta_usuario(const string& u);
 
     /** @brief Da de baja a un usuario registrado de la plataforma.
       \pre Cierto
       \post Se ha borrado del parámetro implícito el usuario con identificador
       u
     */
-    void baja_usuario(string u);
+    void baja_usuario(const string& u);
 
     /** @brief Inscribe a un usuario a un curso de la plataforma.
         \pre El usuario y el curso con identificadores u y c respectivamente
@@ -61,7 +61,7 @@ public:
         \post El usuario con identificador u pasa a estar inscrito al curso con 
         identificador c
     */
-    void inscribir_curso (string u, int c, const Sesiones& cjt_sesiones, Cursos& cjt_cursos);  
+    void inscribir_curso (const string& u, int c, Sesiones& cjt_sesiones, Cursos& cjt_cursos);  
 
     /** @brief Toma nota del resultado de un envío hecho por un usuario a un 
         problema, actualizando a la vez todo lo que conlleva el envío en si y 
@@ -73,23 +73,16 @@ public:
         comprueba que con este envío el usuario haya completado o no el curso
         en el que estaba inscrito
     */
-    void envio(string u, string p, int r, const Sesiones& cjt_sesiones, Cursos& cjt_cursos, const Problemas& cjt_problemas);
+    void envio(const string& u, const string& p, int r, Sesiones& cjt_sesiones, Cursos& cjt_cursos, const Problemas& cjt_problemas);
 
     //Consultoras
-
-    /** @brief Consultora de un usuario registrado en la plataforma.
-        \pre Cierto
-        \post Devuelve el usuario perteneciente al parámetro implícito con 
-        identificador u
-    */
-    Usuario consultar_usuario(string u) const;
 
     /** @brief Consultora de la existencia de un usuario dentro de la plataforma.
         \pre Cierto
         \post Devuelve <em>true</em> si el usuario con identificador u pertenece 
         al parámetro implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_usuario(string u) const;
+    bool existe_usuario(const string& u) const;
 
     /** @brief Consultora del número total de usuarios que hay registrados en
         la plataforma.
@@ -98,6 +91,25 @@ public:
         implícito
     */
     int numero_usuarios() const; 
+
+    /** @brief
+        \pre
+        \post
+    */
+    int consultar_curso_usuario(const string& u) const;
+
+    /** @brief
+        \pre
+        \post
+    */
+    void problemas_resueltos_usuario(const string& u) const;
+
+    
+    /** @brief
+        \pre
+        \post
+    */
+   void problemas_enviables_usuario(const string& u) const;
 
     //Lectura
 
@@ -108,6 +120,12 @@ public:
     void leer_conjunto_usuarios();
 
     //Escritura
+
+    /** @brief
+        \pre
+        \post
+    */
+    void escribir_usuario(const string& u) const;
 
     /** @brief Operación de escritura.
         \pre Cierto

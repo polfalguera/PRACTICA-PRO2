@@ -48,7 +48,7 @@ public:
         \post Se ha añadido un nuevo problema con identificador p al parámetro 
         implícito
     */
-    void nuevo_problema(string p);
+    void nuevo_problema(const string& p);
 
     /** @brief Actualiza las estadísticas de un problema al realizarse un 
         envío de dicho problema por un usuario.
@@ -56,7 +56,7 @@ public:
         \post Se han actualizado las estadísticas del problema con 
         identificador p tras recibir un envío por parte de un usuario
     */
-    void envio(string p, int r);
+    void envio(const string& p, int r);
 
     /** @brief Actualiza el ratio de un problema tras realizarse un envio
         a dicho problema.
@@ -69,19 +69,19 @@ public:
         \pre
         \post
     */
-    void incrementar_intentos_usuario(string p);
+    void incrementar_intentos_usuario(const string& p);
 
     /** @brief Hola falta cambiarlo.
         \pre
         \post
     */
-    void eliminar_enviable(string p);
+    void eliminar_enviable(const string& p);
     
     /** @brief Hola falta cambiarlo.
         \pre
         \post
     */
-    void anadir_resuelto(string p, const Problema& problema);
+    void anadir_resuelto(const string& p, const Problema& problema);
      
     //Consultoras
 
@@ -91,7 +91,7 @@ public:
         \post Devuelve <em>true</em> si el problema pertenece al parámetro
         implícito. En caso contrario, devuelve <em>false</em>
     */
-    bool existe_problema(string p) const;
+    bool existe_problema(const string& p) const;
 
     /** @brief Consultora del número total de problemas que hay en la
         plataforma.
@@ -105,13 +105,13 @@ public:
         \pre
         \post
     */
-    int numero_total_envios_p(string p) const;
+    int numero_total_envios_p(const string& p) const;
 
     /** @brief Hola falta cambiarlo.
         \pre
         \post
     */
-    Problema consultar_problema(string p) const;
+    void consultar_problema(const string& p, Problema& problema);
 
     //Lectura
 
@@ -128,7 +128,7 @@ public:
         \post Se imprime el número de envíos totales y el número de envíos
         realizados con éxito a un problema con identificador p
     */
-    void escribir_problema(string p) const; 
+    void escribir_problema(const string& p) const; 
 
     /** @brief Operación de escritura.
         \pre Cierto

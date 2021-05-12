@@ -88,7 +88,7 @@ public:
         pertenece al parámetro implícito. En caso contrario, devuelve
         <em>false</em>
     */
-    bool existe_problema_curso(string p) const;
+    bool existe_problema_curso(const string& p) const;
 
     /** @brief Consulta la sesion a la que pertenece un problema dentro de un
         curso
@@ -96,7 +96,15 @@ public:
         \post Se imprime el identificador de la sesión a la que pertence 
         el problema con identificador p dentro del párametro implícito
     */
-    void sesion_problema(string p) const;
+    void sesion_problema(const string& p) const;
+
+    /** @brief Consulta la sesion a la que pertenece un problema dentro de un
+        curso
+        \pre El problema con identificador p existe
+        \post Se imprime el identificador de la sesión a la que pertence 
+        el problema con identificador p dentro del párametro implícito
+    */
+    string sesion_problema_aux(const string& p) const;
 
     int numero_usuarios_inscritos() const;
 
@@ -123,7 +131,7 @@ public:
         forman y los identificadores de dichas sesiones, en el mismo orden que
         se leyeron cuando se creó el curso
     */
-    void escribir_curso() const;
+    void escribir() const;
 
     //---------------------------------------------------------------------------------
 
@@ -131,6 +139,12 @@ public:
         \pre
         \post
     */
-    void modificar_enviables(Problemas& enviables, Problemas& resueltos, const Sesiones& cs);
+    void modificar_enviables(Problemas& enviables, Problemas& resueltos, Sesiones& cs);
+
+    /** @brief Falta cambiarlo.
+        \pre
+        \post
+    */
+    void modificar_enviables_s(const string& p, const string& s, Problemas& enviables, Problemas& resueltos, Sesiones& cs);
 };
 #endif

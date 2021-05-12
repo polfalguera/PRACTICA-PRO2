@@ -25,7 +25,7 @@ using namespace std;
 
 class Sesion {
 private:
-    BinTree<string> problemas_sesion;
+    BinTree<int> problemas_sesion;
     vector<string> id_problemas;
     int numero_problemas;
 public:
@@ -43,7 +43,7 @@ public:
         \pre Cierto
         \post El parámetro implícito contiene un conjunto de problemas
     */
-    void leer_problemas_sesion(BinTree<string>& problemas);
+    void leer_problemas_sesion(BinTree<int>& problemas);
 
     //Consultora
 
@@ -76,26 +76,38 @@ public:
         \post Se imprimen por pantalla los identificadores de los problemas 
         que forman el parámetro implícito
     */
-    void escribir_problemas_sesion(const BinTree<string>& problemas) const;
+    void escribir_problemas_sesion(const BinTree<int>& problemas) const;
 
     /** @brief Operación de escritura.
         \pre Cierto
         \post Se imprimen el número de problemas que forman parte del 
         parámetro implícito y sus identificadores
     */
-    void escribir_sesion() const;
+    void escribir() const;
 
     //-----------------------------------------------------------------
     /** @brief
         \pre
         \post
     */
-    void modificar_enviables_sesion(Problemas& enviables, Problemas& resueltos);
+    void modificar_enviables_s(Problemas& enviables, Problemas& resueltos);
 
     /** @brief
         \pre
         \post
     */
-    void i_modificar_enviables_sesion(const BinTree<string>& problemas_sesion, Problemas& enviables, Problemas& resueltos);
+    void i_modificar_enviables_s(const BinTree<int>& problemas_sesion, Problemas& enviables, Problemas& resueltos);
+
+    /** @brief
+        \pre
+        \post
+    */
+    void modificar_enviables_envio(const string& p, bool& encontrado, Problemas& enviables, Problemas& resueltos );
+
+    /** @brief
+        \pre
+        \post
+    */
+    void i_modificar_enviables_envio(const BinTree<int>& problemas_sesion, const string& p, bool& encontrado, Problemas& enviables, Problemas& resueltos);
 #endif
 };

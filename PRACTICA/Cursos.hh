@@ -77,7 +77,7 @@ public:
         \post Devuelve el curso perteneciente al parámetro implícito con 
         identificador c
     */
-    Curso consultar_curso(int c) const;
+    void consultar_curso(int c, Curso& curso);
 
     /** @brief Consultora de la existencia de un curso dentro del conjunto
         de cursos.
@@ -95,6 +95,30 @@ public:
     */
     int numero_cursos() const;
 
+    /** @brief
+        \pre
+        \post
+    */
+    int numero_inscritos_curso(int c) const;
+
+    /** @brief
+        \pre
+        \post
+    */
+    bool existe_problema_curso(int c, const string& p) const;
+
+    /** @brief
+        \pre
+        \post
+    */
+    void sesion_problema_curso(int c, const string& p) const;
+
+    /** @brief
+        \pre
+        \post
+    */
+    string sesion_problema_curso_aux(int c, const string& p) const;
+
     //Lectura
 
     /** @brief Operación de lectura.
@@ -104,6 +128,12 @@ public:
     void leer_conjunto_cursos(const Sesiones& cs);
 
     //Escritura
+
+    /** @brief 
+       \pre
+       \post
+    */
+    void escribir_curso(int c) const;
 
     /** @brief Operación de escritura.
         \pre Cierto

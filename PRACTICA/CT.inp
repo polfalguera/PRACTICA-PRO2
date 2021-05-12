@@ -1,0 +1,177 @@
+50
+A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12
+B1 B2 B3 B4 B5 B6 B7 B8
+C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C17
+D1 D2 D3 D4 D5 D6 D7
+E1 E2 E3 E4 E5 E6
+
+5
+Sesion_A A1 A2 A4 0 A7 A11 0 0 A12 0 0 A5 A8 0 0 A9 0 0 A3 0 A6 A10 0 0 0 
+Sesion_B B1 B2 B4 0 0 B5 0 0 B3 B6 B8 0 0 0 B7 0 0
+Sesion_C C1 C2 C4 0 C7 C12 0 0 C13 0 0 0 C3 C5 C8 0 0 C9 0 C14 0 0 C6 C10 0 C15 0 0 C11 C16 0 0 C17 0 0
+Sesion_D D1 0 D2 D3 0 D4 D5 0 D6 0 D7 0 0 0 0
+Sesion_E E1 E2 E4 0 0 E5 0 0 E3 0 E6 0 0
+
+3
+3 Sesion_A Sesion_B Sesion_E
+2 Sesion_B Sesion_C
+4 Sesion_A Sesion_C Sesion_D Sesion_E
+
+25
+Alvaro_Molina
+Carmen_Villalobos
+Lluc_Hospital
+Pol_Falguera
+Victor_Algarra
+Guillermo_Vidal
+Ankush_Rana
+Julia_Alice
+Eric_Ryhr
+Jana_Muñoz
+Pol_Fradera
+Noelia_Jimenez
+Pedri
+Michael_Jackson
+Homer_Simpson
+Trevor_Philips
+Emma_Watson
+Mark_Evans
+Steve
+Tobey_Maguire
+Samuel_de_Luque
+Guillermo_Diaz
+Ruben_Doblas
+Nombre_Apellido
+Alv
+
+nuevo_problema F1
+nuevo_problema C15
+np B3
+np F5
+lp
+nueva_sesion Sesion_A
+A5 A8 A9 0 0 A10 0 0 A3 0 0
+nueva_sesion Sesion_AA
+A1 A4 A3 A6 0 0 A2 0 0 0 0 A8 A11 0 0 A5 0 0
+ns Sesion_C
+C3 C5 C4 0 0 C2 0 0 C9 0 C10 0 0 C11 0 0
+ns Sesion_FDE
+F1 D2 0 E3 F5 0 0 0 E6 E5 D7 0 0 0 D4 0 0
+ls
+nuevo_curso
+3 Sesion_FDE Sesion_A Sesion_E
+nuevo_curso
+3 Sesion_A Sesion_B Sesion_C
+nc
+4 Sesion_AA Sesion_B Sesion_C Sesion_FDE
+nc 
+2 Sesion_AA Sesion_A
+lc
+alta_usuario Tobey_Maguire
+alta_usuario Kyrie_Irving
+a Michael_Jackson
+a Pol_Folguera
+baja_usuario Nombres_Apellidos
+baja_usuario Trevor_Philips
+b Pedri
+b Pablo_Alboran
+lu
+inscribir_curso Stephen_Curry 2
+inscribir_curso Pol_Falguera 3
+problemas_enviables Pol_Falguera
+inscribir_curso Homer_Simpson 6
+pe Homer_Simpson
+inscribir_curso Pedri 4
+i Kyrie_Irving 3
+i Guillermo_Vidal 2
+pe Guillermo_Vidal
+i Juan_Palomo 8
+problemas_enviables Juan_Palomo
+i Pol_Falguera 1
+curso_usuario Pol_Falguera
+curso_usuario Juan_Palomo
+cu Homer_Simpson
+cu Lebron_James
+cu Guillermo_Diaz
+sesion_problema 2 B5
+sesion_problema 5 A5
+sesion_problema 6 F5
+sp 4 F1
+sp 3 G5
+sp 2 C6
+problemas_resueltos Pol_Falguera
+problemas_resueltos Jimmy_Butler
+pr Kyrie_Irving
+pr John_Wall
+pr Kyrie_Irving
+pe Kyrie_Irving
+envio Kyrie_Irving A1 1
+envio Kyrie_Irving C1 0
+envio Kyrie_Irving A3 1
+envio Kyrie_Irving A6 1
+e Kyrie_Irving A10 1
+e Kyrie_Irving C1 1
+pr Kyrie_Irving
+pe Kyrie_Irving
+escribir_usuario Kyrie_Irving
+escribir_usuario Pol_Falguera
+eu Jimmy_Butler
+escribir_problema C1
+ep B69
+envio Guillermo_Vidal B1 0
+envio Guillermo_Vidal B1 0
+envio Guillermo_Vidal B1 1
+envio Guillermo_Vidal B3 1
+envio Guillermo_Vidal B7 0
+envio Guillermo_Vidal B7 0
+envio Guillermo_Vidal B7 0
+envio Guillermo_Vidal B6 1
+envio Guillermo_Vidal C1 0
+envio Guillermo_Vidal B8 0
+envio Guillermo_Vidal B8 1
+pr Guillermo_Vidal
+pe Guillermo_Vidal
+e Guillermo_Vidal B2 1
+e Guillermo_Vidal B4 1
+e Guillermo_Vidal B5 1
+e Guillermo_Vidal C1 0
+e Guillermo_Vidal C1 1
+pr Guillermo_Vidal
+pe Guillermo_Vidal
+envio Guillermo_Vidal B7 1
+envio Guillermo_Vidal C2 1
+envio Guillermo_Vidal C3 1
+envio Guillermo_Vidal C4 1
+envio Guillermo_Vidal C7 0
+envio Guillermo_Vidal C7 0
+envio Guillermo_Vidal C7 1
+pr Guillermo_Vidal
+pe Guillermo_Vidal
+listar_problemas
+envio Guillermo_Vidal C5 1
+envio Guillermo_Vidal C6 1
+envio Guillermo_Vidal C12 1
+envio Guillermo_Vidal C13 1
+envio Guillermo_Vidal C8 1
+envio Guillermo_Vidal C9 1
+envio Guillermo_Vidal C11 1
+pr Guillermo_Vidal
+pe Guillermo_Vidal
+escribir_curso 2
+envio Guillermo_Vidal C10 1
+envio Guillermo_Vidal C14 1
+envio Guillermo_Vidal C15 1
+envio Guillermo_Vidal C16 1
+envio Guillermo_Vidal C17 1
+pr Guillermo_Vidal
+pe Guillermo_Vidal
+escribir_curso 2
+cu Guillermo_Vidal
+i Guillermo_Vidal 3
+cu Guillermo_Vidal
+pe Guillermo_Vidal
+eu Guillermo_Vidal
+escribir_sesion Sesion_54
+es Sesion_FDE
+fin
+

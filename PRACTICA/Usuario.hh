@@ -49,7 +49,7 @@ public:
         \pre
         \post
     */
-    void inscribir_usuario_curso(int c, Curso& curso, const Sesiones& cs);
+    void inscribir_usuario_curso(int c, Curso& curso, Sesiones& cs);
 
     /** @brief Hola falta cambiarlo.
         \pre
@@ -67,7 +67,7 @@ public:
         \pre
         \post
     */
-    void incrementar_intentos_p(string p);
+    void incrementar_intentos_p(const string& p);
 
     /** @brief Hola falta cambiarlo.
         \pre
@@ -79,29 +79,22 @@ public:
         \pre
         \post
     */
-    void actualizar_enviables(string p, const Problema& problema, Curso& curso, const Sesiones& cs);
+    void actualizar_enviables(const string& p, const string& s, const Problema& problema, Curso& curso, Sesiones& cs);
 
     /** @brief Hola falta cambiarlo.
         \pre
         \post
     */
-    void actualizar_resueltos(string p, const Problema& problema);
+    void actualizar_resueltos(const string& p, const Problema& problema);
 
     //Consultoras
-
-    /** @brief Consultora del curso al cual está inscrito un usuario.
-        \pre Cierto
-        \post Se imprime el identificador del curso al cual está inscrito
-        el parámetro implícito o un 0 si no está inscitro a ningun curso
-    */
-    void curso_usuario() const;
 
     /** @brief Consultora del curso al cual está inscrito un usuario.
         \pre Cierto
         \post Si el parámetro implícito está inscrito en algun curso, devuelve
         el identificador de éste. En caso contrario, devuelve un 0
     */
-    int consultar_curso() const;
+    int curso_usuario() const;
 
     /** @brief Consultora de los problemas resueltos de un usuario.
         \pre Cierto
@@ -127,7 +120,7 @@ public:
         \pre
         \post
     */
-    int consultar_intentos_p(string p) const;
+    int consultar_intentos_p(const string& p) const;
 
     /** @brief Hola falta cambiarlo.
         \pre
@@ -139,7 +132,7 @@ public:
         \pre
         \post
     */
-    Problema consultar_problema_enviable(string p) const;
+    void consultar_problema_enviable(const string& p, Problema& problema);
 
     //Escritura
 
@@ -151,6 +144,6 @@ public:
         identificador del curso en el que está inscrito o un cero si no está
         inscrito en ninguno
     */
-   void escribir_usuario() const;
+   void escribir() const;
 };
 #endif

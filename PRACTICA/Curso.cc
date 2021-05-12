@@ -21,17 +21,23 @@ bool Curso::repeticion_ejercicios() const {
     return true;
 }
 
-bool Curso::existe_problema_curso(string p) const {
+bool Curso::existe_problema_curso(const string& p) const {
     map<string,string>::const_iterator it = problemas_sesiones_curso.find(p);
     if (it == problemas_sesiones_curso.end()) return false;
 
     return true;
 }
 
-void Curso::sesion_problema(string p) const {
+void Curso::sesion_problema(const string& p) const {
     map<string,string>::const_iterator it = problemas_sesiones_curso.find(p);
 
     cout << (*it).second << endl;
+}
+
+string Curso::sesion_problema_aux(const string& p) const {
+    map<string,string>::const_iterator it = problemas_sesiones_curso.find(p);
+
+    return (*it).second;
 }
 
 int Curso::numero_usuarios_inscritos() const {
@@ -48,12 +54,12 @@ bool Curso::leer_curso(const Sesiones& cs) {
         cin >> s;
         sesiones_curso.push_back(s);
 
-        int numero_problemas_sesion = cs.consultar_sesion(s).consultar_numero_problemas();
+        int numero_problemas_sesion = cs.numero_problemas_sesion(s);
         for (int i = 0; i < numero_problemas_sesion; ++i) {
-            string p = cs.consultar_sesion(s).consultar_problema_iesimo(i);
+            string p = cs.problema_iessimo_sesion(s,i);
             if (not interseccion) {
                 map<string,string>::iterator it = problemas_sesiones_curso.find(p);
-                if (it != problemas_sesiones_curso.end()) interseccion = true;
+                if (not interseccion and it != problemas_sesiones_curso.end()) interseccion = true;
                 else problemas_sesiones_curso.insert(make_pair(p,s));
             }
         }
@@ -61,7 +67,7 @@ bool Curso::leer_curso(const Sesiones& cs) {
     return interseccion;
 }
 
-void Curso::escribir_curso() const {
+void Curso::escribir() const {
     cout << num_usuarios_completado << ' ' << num_usuarios_inscritos << ' ';
     int numero_sesiones_curso = sesiones_curso.size();
     cout << numero_sesiones_curso << " (" << sesiones_curso[0];
@@ -71,10 +77,14 @@ void Curso::escribir_curso() const {
     cout << ')' << endl;
 }
 
-void Curso::modificar_enviables(Problemas& enviables, Problemas& resueltos, const Sesiones& cs) {
+void Curso::modificar_enviables(Problemas& enviables, Problemas& resueltos, Sesiones& cs) {
     int numero_sesiones_curso = sesiones_curso.size();
     
     for (int i = 0; i < numero_sesiones_curso; ++i) {
-        cs.consultar_sesion(sesiones_curso[i]).modificar_enviables_sesion(enviables,resueltos);
+        cs.modificar_envibales_sesion(sesiones_curso[i],enviables,resueltos);
     }
+}
+
+void Curso::modificar_enviables_s(const string& p, const string& s, Problemas& enviables, Problemas& resueltos, Sesiones& cs) {
+    cs.modificar_envibales_envio_s(p,s,enviables,resueltos);
 }

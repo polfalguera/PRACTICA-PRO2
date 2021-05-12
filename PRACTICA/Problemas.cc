@@ -4,7 +4,7 @@ Problemas::Problemas() {
 
 }
 
-void Problemas::nuevo_problema(string p) {
+void Problemas::nuevo_problema(const string& p) {
     Problema problema;
     problema.num_total_envios = 0;
     problema.num_total_correctos = 0;
@@ -12,7 +12,7 @@ void Problemas::nuevo_problema(string p) {
     cjt_problemas.insert(make_pair(p,problema));
 }
 
-void Problemas::envio(string p, int r) {
+void Problemas::envio(const string& p, int r) {
     map<string,Problema>::iterator it = cjt_problemas.find(p);
     (*it).second.num_total_envios += 1;
     if (r == 1) (*it).second.num_total_correctos += 1;
@@ -25,22 +25,22 @@ void Problemas::actualizar_ratio(Problema& p) {
 
 }
 
-void Problemas::incrementar_intentos_usuario(string p) {
+void Problemas::incrementar_intentos_usuario(const string& p) {
     map<string,Problema>::iterator it = cjt_problemas.find(p);
 
     (*it).second.num_total_envios += 1;
 }
 
-void Problemas::eliminar_enviable(string p) {
+void Problemas::eliminar_enviable(const string& p) {
     map<string,Problema>::iterator it = cjt_problemas.find(p);
     cjt_problemas.erase((*it).first);
 }
 
-void Problemas::anadir_resuelto(string p, const Problema& problema) {
+void Problemas::anadir_resuelto(const string& p, const Problema& problema) {
     cjt_problemas.insert(make_pair(p,problema));
 }
 
-bool Problemas::existe_problema(string p) const {
+bool Problemas::existe_problema(const string& p) const {
     map<string,Problema>::const_iterator it = cjt_problemas.find(p);
     if (it == cjt_problemas.end()) return false;
     
@@ -51,16 +51,16 @@ int Problemas::numero_problemas() const {
     return cjt_problemas.size();
 }
 
-int Problemas::numero_total_envios_p(string p) const {
+int Problemas::numero_total_envios_p(const string& p) const {
     map<string,Problema>::const_iterator it = cjt_problemas.find(p);
 
     return (*it).second.num_total_envios;
 }
 
-Problema Problemas::consultar_problema(string p) const {
+void Problemas::consultar_problema(const string& p, Problema& problema) {
     map<string,Problema>::const_iterator it = cjt_problemas.find(p);
 
-    return (*it).second;
+    problema = (*it).second;
 }
 
 void Problemas::leer_coleccion_problemas() {
@@ -74,7 +74,7 @@ void Problemas::leer_coleccion_problemas() {
     }
 }
 
-void Problemas::escribir_problema(string p) const {
+void Problemas::escribir_problema(const string& p) const {
     map<string,Problema>::const_iterator it = cjt_problemas.find(p);
     
     cout << p << '(' << (*it).second.num_total_envios << ',';
