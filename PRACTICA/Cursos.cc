@@ -1,10 +1,16 @@
+/** @file Cursos.cc
+    @brief Código de la clase Cursos
+*/
+
 #include "Cursos.hh"
 
-Cursos::Cursos() {
+Cursos::Cursos() 
+{
 
 }
 
-bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) {
+bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) 
+{
      Curso c;
      if (not c.leer_curso(cjt_sesiones)) {
          cjt_cursos.push_back(c);
@@ -14,23 +20,33 @@ bool Cursos::nuevo_curso(const Sesiones& cjt_sesiones) {
      return false;
 }
 
-void Cursos::incrementar_usuarios_completado(int c) {
+void Cursos::incrementar_usuarios_completado(int c) 
+{
     cjt_cursos[c-1].incrementar_completados();
 }
 
-void Cursos::incrementar_usuarios_inscritos(int c) {
+void Cursos::incrementar_usuarios_inscritos(int c) 
+{
     cjt_cursos[c-1].incrementar_inscritos();
 }
 
-void Cursos::decrementar_usuarios_inscritos(int c) {
+void Cursos::decrementar_usuarios_inscritos(int c) 
+{
     cjt_cursos[c-1].decrementar_inscritos();
 }
 
-void Cursos::consultar_curso(int c, Curso& curso) {
+void Cursos::consultar_curso(int c, Curso& curso) 
+{
     curso = cjt_cursos[c-1];
 }
 
-bool Cursos::existe_curso(int c) const {
+void Cursos::modificar_enviables_s_c(int c, const string& p, const string& s, Problemas& enviables, Problemas& resueltos, Sesiones& cs) const 
+{
+    cjt_cursos[c-1].modificar_enviables_s(p,s,enviables,resueltos,cs);
+}
+
+bool Cursos::existe_curso(int c) const 
+{
     int numero_cursos = cjt_cursos.size();
     int i = 0;
     while (i != numero_cursos) {
@@ -41,27 +57,33 @@ bool Cursos::existe_curso(int c) const {
     return false;
 }
 
-int Cursos::numero_cursos() const {
+int Cursos::numero_cursos() const 
+{
     return cjt_cursos.size();
 }
 
-int Cursos::numero_inscritos_curso(int c) const {
+int Cursos::numero_inscritos_curso(int c) const 
+{
     return cjt_cursos[c-1].numero_usuarios_inscritos();
 }
 
-bool Cursos::existe_problema_curso(int c, const string& p) const {
-    return cjt_cursos[c-1].existe_problema_curso(p);
+bool Cursos::existe_problema_curso(int c, const string& p) const 
+{
+    return cjt_cursos[c-1].existe_problema_curso_c(p);
 }
 
-void Cursos::sesion_problema_curso(int c, const string& p) const {
+void Cursos::sesion_problema_curso(int c, const string& p) const 
+{
     return cjt_cursos[c-1].sesion_problema(p);
 }
 
-string Cursos::sesion_problema_curso_aux(int c, const string& p) const {
-    return cjt_cursos[c-1].sesion_problema_aux(p);
+string Cursos::sesion_problema_p_curso(int c, const string& p) const 
+{
+    return cjt_cursos[c-1].sesion_problema_p(p);
 }
 
-void Cursos::leer_conjunto_cursos(const Sesiones& cs) {
+void Cursos::leer_conjunto_cursos(const Sesiones& cs) 
+{
     int numero_cursos;
     cin >> numero_cursos;
 
@@ -72,11 +94,13 @@ void Cursos::leer_conjunto_cursos(const Sesiones& cs) {
     }
 }
 
-void Cursos::escribir_curso(int c) const {
+void Cursos::escribir_curso(int c) const 
+{
     cjt_cursos[c-1].escribir();
 }
 
-void Cursos::listar_cursos() const {
+void Cursos::listar_cursos() const 
+{
     int numero_cursos = cjt_cursos.size();
     for (int i = 0; i < numero_cursos; ++i) {
         cout << i+1 << ' ';

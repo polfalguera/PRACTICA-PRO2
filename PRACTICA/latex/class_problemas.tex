@@ -1,0 +1,565 @@
+\hypertarget{class_problemas}{}\doxysection{Referencia de la Clase Problemas}
+\label{class_problemas}\index{Problemas@{Problemas}}
+
+
+Representa la colección de problemas de la plataforma Evaluator.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_problemas_ae587a6825117a5103b50f544a7415c0c}{Problemas}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a1cd32a5ef40dd4709ed8a509dce1271a}{nuevo\+\_\+problema}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema a la colección de problemas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_aaf864fbb877725b53243d35cefde72be}{envio}} (const string \&p, int r)
+\begin{DoxyCompactList}\small\item\em Actualiza las estadísticas de un problema cuando un usuario realiza un envío a dicho problema, teniendo en cuenta si lo ha resuelto o no. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_aa18bdb1b0e4b37429a85ddb08fd092cd}{incrementar\+\_\+intentos\+\_\+usuario}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad los intentos realizados a un problema por un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a264aa21c4c3d170a4ea8f8e1f725e566}{eliminar\+\_\+enviable}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Elimina un problema del conjunto de problemas enviables de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_aef3b18810d73f513411668a6c2e700bb}{anadir\+\_\+resuelto}} (const string \&p, const \mbox{\hyperlink{struct_problema}{Problema}} \&problema)
+\begin{DoxyCompactList}\small\item\em Añade un problema al conjunto de problemas resueltos de un usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_problemas_ab5cdc7e8663b9cdd9a1f29c81c3eb2fc}{existe\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de un problema dentro de la colección de problemas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}{numero\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del número total de problemas que hay en la plataforma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_problemas_aa58e4dfaa6e81717408ce7b14d3d4fee}{numero\+\_\+total\+\_\+envios\+\_\+p}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consultora del número total de envíos realizados por un usuario a un problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a99e922f420a19408ff0c9b3da1d6606c}{consultar\+\_\+problema}} (const string \&p, \mbox{\hyperlink{struct_problema}{Problema}} \&problema)
+\begin{DoxyCompactList}\small\item\em Consultora de un problema perteneciente a un conjunto de problemas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a6d16937dea64409081e507065e17f2b1}{leer\+\_\+coleccion\+\_\+problemas}} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a34a6fb7767a92b1ffa01d052104bae07}{escribir\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}{listar\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problemas_a9acf13599085049d66b7099f36bfd122}{listar\+\_\+identificador\+\_\+envios}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_problemas_ac5ebeb4af82a613e8ef5506516546cf0}{actualizar\+\_\+ratio}} (\mbox{\hyperlink{struct_problema}{Problema}} \&p)
+\begin{DoxyCompactList}\small\item\em Actualiza el ratio de un problema cuando un usuario realiza un envío a dicho problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_problemas_a2d2545675f5e155a168f39a5cb82d174}{comp}} (const pair$<$ string, double $>$ \&a, const pair$<$ string, double $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Operación de comparación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{struct_problema}{Problema}} $>$ \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\+\_\+problemas}}
+\begin{DoxyCompactList}\small\item\em Colección de problemas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa la colección de problemas de la plataforma Evaluator. 
+
+Definición en la línea 33 del archivo Problemas.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_problemas_ae587a6825117a5103b50f544a7415c0c}\label{class_problemas_ae587a6825117a5103b50f544a7415c0c}} 
+\index{Problemas@{Problemas}!Problemas@{Problemas}}
+\index{Problemas@{Problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{Problemas()}{Problemas()}}
+{\footnotesize\ttfamily Problemas\+::\+Problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de problemas. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de problemas vacío. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_problemas_ac5ebeb4af82a613e8ef5506516546cf0}\label{class_problemas_ac5ebeb4af82a613e8ef5506516546cf0}} 
+\index{Problemas@{Problemas}!actualizar\_ratio@{actualizar\_ratio}}
+\index{actualizar\_ratio@{actualizar\_ratio}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{actualizar\_ratio()}{actualizar\_ratio()}}
+{\footnotesize\ttfamily void Problemas\+::actualizar\+\_\+ratio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_problema}{Problema}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza el ratio de un problema cuando un usuario realiza un envío a dicho problema. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha actualizado el ratio del problema en cuestión 
+\end{DoxyPostcond}
+
+
+Definición en la línea 29 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     p.\mbox{\hyperlink{struct_problema_acc3d2ce24418ad68650108de4b603d99}{ratio}} = (double)(p.\mbox{\hyperlink{struct_problema_ab5730d9976e8cbb8fb219b0b1316e959}{num\_total\_envios}}+1) / (double)(p.\mbox{\hyperlink{struct_problema_af24d16202e8c86d27511c536bb28afa1}{num\_total\_correctos}}+1);}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a2d2545675f5e155a168f39a5cb82d174}\label{class_problemas_a2d2545675f5e155a168f39a5cb82d174}} 
+\index{Problemas@{Problemas}!comp@{comp}}
+\index{comp@{comp}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{comp()}{comp()}}
+{\footnotesize\ttfamily bool Problemas\+::comp (\begin{DoxyParamCaption}\item[{const pair$<$ string, double $>$ \&}]{a,  }\item[{const pair$<$ string, double $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Operación de comparación. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve {\itshape true} si el ratio o el string de a son mayores que los de b. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 124 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125 \{}
+\DoxyCodeLine{126     \textcolor{keywordflow}{if} (a.second == b.second) \textcolor{keywordflow}{return} a.first < b.first;}
+\DoxyCodeLine{127     \textcolor{keywordflow}{return} a.second < b.second;}
+\DoxyCodeLine{128 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a1cd32a5ef40dd4709ed8a509dce1271a}\label{class_problemas_a1cd32a5ef40dd4709ed8a509dce1271a}} 
+\index{Problemas@{Problemas}!nuevo\_problema@{nuevo\_problema}}
+\index{nuevo\_problema@{nuevo\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{nuevo\_problema()}{nuevo\_problema()}}
+{\footnotesize\ttfamily void Problemas\+::nuevo\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo problema a la colección de problemas. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p no pertenence al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido un nuevo problema con identificador p al parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 12 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{struct_problema}{Problema}} problema;}
+\DoxyCodeLine{15     problema.\mbox{\hyperlink{struct_problema_ab5730d9976e8cbb8fb219b0b1316e959}{num\_total\_envios}} = 0;}
+\DoxyCodeLine{16     problema.\mbox{\hyperlink{struct_problema_af24d16202e8c86d27511c536bb28afa1}{num\_total\_correctos}} = 0;}
+\DoxyCodeLine{17     problema.\mbox{\hyperlink{struct_problema_acc3d2ce24418ad68650108de4b603d99}{ratio}} = 1;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.insert(make\_pair(p,problema));}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_aaf864fbb877725b53243d35cefde72be}\label{class_problemas_aaf864fbb877725b53243d35cefde72be}} 
+\index{Problemas@{Problemas}!envio@{envio}}
+\index{envio@{envio}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{envio()}{envio()}}
+{\footnotesize\ttfamily void Problemas\+::envio (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+Actualiza las estadísticas de un problema cuando un usuario realiza un envío a dicho problema, teniendo en cuenta si lo ha resuelto o no. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p es un problema enviable de un usuario. r es un entero que puede tomar por valor 0 o 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado las estadísticas del problema con identificador p tras recibir un envío por parte de un usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 21 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     map<string,Problema>::iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{24     (*it).second.num\_total\_envios += 1;}
+\DoxyCodeLine{25     \textcolor{keywordflow}{if} (r == 1) (*it).second.num\_total\_correctos += 1;}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_problemas_ac5ebeb4af82a613e8ef5506516546cf0}{actualizar\_ratio}}((*it).second);}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_aa18bdb1b0e4b37429a85ddb08fd092cd}\label{class_problemas_aa18bdb1b0e4b37429a85ddb08fd092cd}} 
+\index{Problemas@{Problemas}!incrementar\_intentos\_usuario@{incrementar\_intentos\_usuario}}
+\index{incrementar\_intentos\_usuario@{incrementar\_intentos\_usuario}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{incrementar\_intentos\_usuario()}{incrementar\_intentos\_usuario()}}
+{\footnotesize\ttfamily void Problemas\+::incrementar\+\_\+intentos\+\_\+usuario (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad los intentos realizados a un problema por un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha incrementado una unidad los intentos realizados por un usuario al problema en cuestión 
+\end{DoxyPostcond}
+
+
+Definición en la línea 34 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{}
+\DoxyCodeLine{36     map<string,Problema>::iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{37     (*it).second.num\_total\_envios += 1;}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a264aa21c4c3d170a4ea8f8e1f725e566}\label{class_problemas_a264aa21c4c3d170a4ea8f8e1f725e566}} 
+\index{Problemas@{Problemas}!eliminar\_enviable@{eliminar\_enviable}}
+\index{eliminar\_enviable@{eliminar\_enviable}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{eliminar\_enviable()}{eliminar\_enviable()}}
+{\footnotesize\ttfamily void Problemas\+::eliminar\+\_\+enviable (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Elimina un problema del conjunto de problemas enviables de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece al conjunto de problemas enviables de un usuario 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha eliminado el problema con identificador p de los problemas enviables de un usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 40 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42     map<string,Problema>::iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.erase((*it).first);}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_aef3b18810d73f513411668a6c2e700bb}\label{class_problemas_aef3b18810d73f513411668a6c2e700bb}} 
+\index{Problemas@{Problemas}!anadir\_resuelto@{anadir\_resuelto}}
+\index{anadir\_resuelto@{anadir\_resuelto}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{anadir\_resuelto()}{anadir\_resuelto()}}
+{\footnotesize\ttfamily void Problemas\+::anadir\+\_\+resuelto (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const \mbox{\hyperlink{struct_problema}{Problema}} \&}]{problema }\end{DoxyParamCaption})}
+
+
+
+Añade un problema al conjunto de problemas resueltos de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p no pertenece al conjunto de problemas resueltos por un usuario ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido el problema con identificador p al conjunto de problemas resueltos por un usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 46 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.insert(make\_pair(p,problema));}
+\DoxyCodeLine{49 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_ab5cdc7e8663b9cdd9a1f29c81c3eb2fc}\label{class_problemas_ab5cdc7e8663b9cdd9a1f29c81c3eb2fc}} 
+\index{Problemas@{Problemas}!existe\_problema@{existe\_problema}}
+\index{existe\_problema@{existe\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{existe\_problema()}{existe\_problema()}}
+{\footnotesize\ttfamily bool Problemas\+::existe\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la existencia de un problema dentro de la colección de problemas. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve {\itshape true} si el problema con identificador p pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 51 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{54     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{55     }
+\DoxyCodeLine{56     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}\label{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}} 
+\index{Problemas@{Problemas}!numero\_problemas@{numero\_problemas}}
+\index{numero\_problemas@{numero\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas()}{numero\_problemas()}}
+{\footnotesize\ttfamily int Problemas\+::numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número total de problemas que hay en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no está vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de problemas que contiene el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 59 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{}
+\DoxyCodeLine{61     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.size();}
+\DoxyCodeLine{62 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_aa58e4dfaa6e81717408ce7b14d3d4fee}\label{class_problemas_aa58e4dfaa6e81717408ce7b14d3d4fee}} 
+\index{Problemas@{Problemas}!numero\_total\_envios\_p@{numero\_total\_envios\_p}}
+\index{numero\_total\_envios\_p@{numero\_total\_envios\_p}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{numero\_total\_envios\_p()}{numero\_total\_envios\_p()}}
+{\footnotesize\ttfamily int Problemas\+::numero\+\_\+total\+\_\+envios\+\_\+p (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número total de envíos realizados por un usuario a un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de envíos realizados por un usuario al problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 64 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{67     \textcolor{keywordflow}{return} (*it).second.num\_total\_envios;}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a99e922f420a19408ff0c9b3da1d6606c}\label{class_problemas_a99e922f420a19408ff0c9b3da1d6606c}} 
+\index{Problemas@{Problemas}!consultar\_problema@{consultar\_problema}}
+\index{consultar\_problema@{consultar\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{consultar\_problema()}{consultar\_problema()}}
+{\footnotesize\ttfamily void Problemas\+::consultar\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{\mbox{\hyperlink{struct_problema}{Problema}} \&}]{problema }\end{DoxyParamCaption})}
+
+
+
+Consultora de un problema perteneciente a un conjunto de problemas. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+P\+R\+O\+B\+L\+E\+MA pasa a ser el problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 70 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{73     problema = (*it).second;}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a6d16937dea64409081e507065e17f2b1}\label{class_problemas_a6d16937dea64409081e507065e17f2b1}} 
+\index{Problemas@{Problemas}!leer\_coleccion\_problemas@{leer\_coleccion\_problemas}}
+\index{leer\_coleccion\_problemas@{leer\_coleccion\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{leer\_coleccion\_problemas()}{leer\_coleccion\_problemas()}}
+{\footnotesize\ttfamily void Problemas\+::leer\+\_\+coleccion\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene uno o más problemas 
+\end{DoxyPostcond}
+
+
+Definición en la línea 76 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{}
+\DoxyCodeLine{78     \textcolor{keywordtype}{int} num\_problemas;}
+\DoxyCodeLine{79     cin >> num\_problemas;}
+\DoxyCodeLine{80     }
+\DoxyCodeLine{81     \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{82     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < num\_problemas; ++i) \{}
+\DoxyCodeLine{83         cin >> p;}
+\DoxyCodeLine{84         \mbox{\hyperlink{class_problemas_a1cd32a5ef40dd4709ed8a509dce1271a}{nuevo\_problema}}(p);}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a34a6fb7767a92b1ffa01d052104bae07}\label{class_problemas_a34a6fb7767a92b1ffa01d052104bae07}} 
+\index{Problemas@{Problemas}!escribir\_problema@{escribir\_problema}}
+\index{escribir\_problema@{escribir\_problema}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{escribir\_problema()}{escribir\_problema()}}
+{\footnotesize\ttfamily void Problemas\+::escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla el número de envíos totales y el número de envíos realizados con éxito a un problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 88 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89 \{}
+\DoxyCodeLine{90     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.find(p);}
+\DoxyCodeLine{91     }
+\DoxyCodeLine{92     cout << p << \textcolor{charliteral}{'('} << (*it).second.num\_total\_envios << \textcolor{charliteral}{','};}
+\DoxyCodeLine{93     cout << (*it).second.num\_total\_correctos << \textcolor{charliteral}{','} << (*it).second.ratio;}
+\DoxyCodeLine{94     cout << \textcolor{charliteral}{')'} << endl;}
+\DoxyCodeLine{95 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}\label{class_problemas_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c}} 
+\index{Problemas@{Problemas}!listar\_problemas@{listar\_problemas}}
+\index{listar\_problemas@{listar\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{listar\_problemas()}{listar\_problemas()}}
+{\footnotesize\ttfamily void Problemas\+::listar\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla los problemas de la colección, indicando para cada uno el número de envíos totales(t) y el número de envíos con éxito(e). El orden en el que se imprimen viene determinado por el ratio (t+1)/(e+1), el cual también se imprime. En caso de empate, se imprimen en orden creciente por identificador 
+\end{DoxyPostcond}
+
+
+Definición en la línea 97 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98 \{}
+\DoxyCodeLine{99     vector<pair<string,double>> ordenacion\_problemas;}
+\DoxyCodeLine{100     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.begin();}
+\DoxyCodeLine{101     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.end()) \{}
+\DoxyCodeLine{102         pair<string,double> p;}
+\DoxyCodeLine{103         p.first = (*it).first;}
+\DoxyCodeLine{104         p.second = (*it).second.ratio;}
+\DoxyCodeLine{105         ordenacion\_problemas.push\_back(p);}
+\DoxyCodeLine{106         ++it;}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108     sort (ordenacion\_problemas.begin(),ordenacion\_problemas.end(),\mbox{\hyperlink{class_problemas_a2d2545675f5e155a168f39a5cb82d174}{comp}});}
+\DoxyCodeLine{109     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}{numero\_problemas}} = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.size();}
+\DoxyCodeLine{110     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}{numero\_problemas}}; ++i) \{}
+\DoxyCodeLine{111         \mbox{\hyperlink{class_problemas_a34a6fb7767a92b1ffa01d052104bae07}{escribir\_problema}}(ordenacion\_problemas[i].first);}
+\DoxyCodeLine{112     \}}
+\DoxyCodeLine{113 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problemas_a9acf13599085049d66b7099f36bfd122}\label{class_problemas_a9acf13599085049d66b7099f36bfd122}} 
+\index{Problemas@{Problemas}!listar\_identificador\_envios@{listar\_identificador\_envios}}
+\index{listar\_identificador\_envios@{listar\_identificador\_envios}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{listar\_identificador\_envios()}{listar\_identificador\_envios()}}
+{\footnotesize\ttfamily void Problemas\+::listar\+\_\+identificador\+\_\+envios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla los identificadores de los problemas que forman el parámetro implícito, además de los envíos que se han realizado a dicho problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 115 del archivo Problemas.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116 \{}
+\DoxyCodeLine{117     map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.begin();}
+\DoxyCodeLine{118     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_problemas_a52e7343a48e45b634008676ece6260c3}{cjt\_problemas}}.end()) \{}
+\DoxyCodeLine{119         cout << (*it).first << \textcolor{charliteral}{'('} << (*it).second.num\_total\_envios << \textcolor{charliteral}{')'} << endl;}
+\DoxyCodeLine{120         ++it;}
+\DoxyCodeLine{121     \}}
+\DoxyCodeLine{122 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_problemas_a52e7343a48e45b634008676ece6260c3}\label{class_problemas_a52e7343a48e45b634008676ece6260c3}} 
+\index{Problemas@{Problemas}!cjt\_problemas@{cjt\_problemas}}
+\index{cjt\_problemas@{cjt\_problemas}!Problemas@{Problemas}}
+\doxysubsubsection{\texorpdfstring{cjt\_problemas}{cjt\_problemas}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{struct_problema}{Problema}}$>$ Problemas\+::cjt\+\_\+problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Colección de problemas. 
+
+
+
+Definición en la línea 36 del archivo Problemas.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_problemas_8hh}{Problemas.\+hh}}\item 
+\mbox{\hyperlink{_problemas_8cc}{Problemas.\+cc}}\end{DoxyCompactItemize}

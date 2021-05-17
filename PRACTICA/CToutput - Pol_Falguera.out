@@ -1,0 +1,426 @@
+#nuevo_problema F1
+51
+#nuevo_problema C15
+error: el problema ya existe
+#np B3
+error: el problema ya existe
+#np F5
+52
+#lp
+A1(0,0,1)
+A10(0,0,1)
+A11(0,0,1)
+A12(0,0,1)
+A2(0,0,1)
+A3(0,0,1)
+A4(0,0,1)
+A5(0,0,1)
+A6(0,0,1)
+A7(0,0,1)
+A8(0,0,1)
+A9(0,0,1)
+B1(0,0,1)
+B2(0,0,1)
+B3(0,0,1)
+B4(0,0,1)
+B5(0,0,1)
+B6(0,0,1)
+B7(0,0,1)
+B8(0,0,1)
+C1(0,0,1)
+C10(0,0,1)
+C11(0,0,1)
+C12(0,0,1)
+C13(0,0,1)
+C14(0,0,1)
+C15(0,0,1)
+C16(0,0,1)
+C17(0,0,1)
+C2(0,0,1)
+C3(0,0,1)
+C4(0,0,1)
+C5(0,0,1)
+C6(0,0,1)
+C7(0,0,1)
+C8(0,0,1)
+C9(0,0,1)
+D1(0,0,1)
+D2(0,0,1)
+D3(0,0,1)
+D4(0,0,1)
+D5(0,0,1)
+D6(0,0,1)
+D7(0,0,1)
+E1(0,0,1)
+E2(0,0,1)
+E3(0,0,1)
+E4(0,0,1)
+E5(0,0,1)
+E6(0,0,1)
+F1(0,0,1)
+F5(0,0,1)
+#nueva_sesion Sesion_A
+error: la sesion ya existe
+#nueva_sesion Sesion_AA
+6
+#ns Sesion_C
+error: la sesion ya existe
+#ns Sesion_FDE
+7
+#ls
+Sesion_A 12 (((((A11)(A12)A7)A4)((A8)(A9)A5)A2)(((A10)A6)A3)A1)
+Sesion_AA 5 ((((A6)(A2)A3)A4)A1)
+Sesion_B 8 (((B4)(B5)B2)(((B8)B6)(B7)B3)B1)
+Sesion_C 17 (((((C12)(C13)C7)C4)C2)(((C8)((C14)C9)C5)(((C15)C10)((C16)(C17)C11)C6)C3)C1)
+Sesion_D 7 (((((((D7)D6)D5)D4)D3)D2)D1)
+Sesion_E 6 (((E4)(E5)E2)((E6)E3)E1)
+Sesion_FDE 8 ((((F5)E3)D2)(((D7)E5)(D4)E6)F1)
+#nuevo_curso
+error: curso mal formado
+#nuevo_curso
+4
+#nc
+5
+#nc
+error: curso mal formado
+#lc
+1 0 0 3 (Sesion_A Sesion_B Sesion_E)
+2 0 0 2 (Sesion_B Sesion_C)
+3 0 0 4 (Sesion_A Sesion_C Sesion_D Sesion_E)
+4 0 0 3 (Sesion_A Sesion_B Sesion_C)
+5 0 0 4 (Sesion_AA Sesion_B Sesion_C Sesion_FDE)
+#alta_usuario Tobey_Maguire
+error: el usuario ya existe
+#alta_usuario Kyrie_Irving
+26
+#a Michael_Jackson
+error: el usuario ya existe
+#a Pol_Folguera
+27
+#baja_usuario Nombres_Apellidos
+error: el usuario no existe
+#baja_usuario Trevor_Philips
+26
+#b Pedri
+25
+#b Pablo_Alboran
+error: el usuario no existe
+#lu
+Alv(0,0,0,0)
+Alvaro_Molina(0,0,0,0)
+Ankush_Rana(0,0,0,0)
+Carmen_Villalobos(0,0,0,0)
+Emma_Watson(0,0,0,0)
+Eric_Ryhr(0,0,0,0)
+Guillermo_Diaz(0,0,0,0)
+Guillermo_Vidal(0,0,0,0)
+Homer_Simpson(0,0,0,0)
+Jana_Muñoz(0,0,0,0)
+Julia_Alice(0,0,0,0)
+Kyrie_Irving(0,0,0,0)
+Lluc_Hospital(0,0,0,0)
+Mark_Evans(0,0,0,0)
+Michael_Jackson(0,0,0,0)
+Noelia_Jimenez(0,0,0,0)
+Nombre_Apellido(0,0,0,0)
+Pol_Falguera(0,0,0,0)
+Pol_Folguera(0,0,0,0)
+Pol_Fradera(0,0,0,0)
+Ruben_Doblas(0,0,0,0)
+Samuel_de_Luque(0,0,0,0)
+Steve(0,0,0,0)
+Tobey_Maguire(0,0,0,0)
+Victor_Algarra(0,0,0,0)
+#inscribir_curso Stephen_Curry 2
+error: el usuario no existe
+#inscribir_curso Pol_Falguera 3
+1
+#problemas_enviables Pol_Falguera
+A1(0)
+C1(0)
+D1(0)
+E1(0)
+#inscribir_curso Homer_Simpson 6
+error: el curso no existe
+#pe Homer_Simpson
+error: usuario no inscrito en ningun curso
+#inscribir_curso Pedri 4
+error: el usuario no existe
+#i Kyrie_Irving 3
+2
+#i Guillermo_Vidal 2
+1
+#pe Guillermo_Vidal
+B1(0)
+C1(0)
+#i Juan_Palomo 8
+error: el usuario no existe
+#problemas_enviables Juan_Palomo
+error: el usuario no existe
+#i Pol_Falguera 1
+error: usuario inscrito en otro curso
+#curso_usuario Pol_Falguera
+3
+#curso_usuario Juan_Palomo
+error: el usuario no existe
+#cu Homer_Simpson
+0
+#cu Lebron_James
+error: el usuario no existe
+#cu Guillermo_Diaz
+0
+#sesion_problema 2 B5
+Sesion_B
+#sesion_problema 5 A5
+error: el problema no pertenece al curso
+#sesion_problema 6 F5
+error: el curso no existe
+#sp 4 F1
+error: el problema no pertenece al curso
+#sp 3 G5
+error: el problema no existe
+#sp 2 C6
+Sesion_C
+#problemas_resueltos Pol_Falguera
+#problemas_resueltos Jimmy_Butler
+error: el usuario no existe
+#pr Kyrie_Irving
+#pr John_Wall
+error: el usuario no existe
+#pr Kyrie_Irving
+#pe Kyrie_Irving
+A1(0)
+C1(0)
+D1(0)
+E1(0)
+#envio Kyrie_Irving A1 1
+#envio Kyrie_Irving C1 0
+#envio Kyrie_Irving A3 1
+#envio Kyrie_Irving A6 1
+#e Kyrie_Irving A10 1
+#e Kyrie_Irving C1 1
+#pr Kyrie_Irving
+A1(1)
+A10(1)
+A3(1)
+A6(1)
+C1(2)
+#pe Kyrie_Irving
+A2(0)
+C2(0)
+C3(0)
+D1(0)
+E1(0)
+#escribir_usuario Kyrie_Irving
+Kyrie_Irving(6,5,5,3)
+#escribir_usuario Pol_Falguera
+Pol_Falguera(0,0,0,3)
+#eu Jimmy_Butler
+error: el usuario no existe
+#escribir_problema C1
+C1(2,1,1.5)
+#ep B69
+error: el problema no existe
+#envio Guillermo_Vidal B1 0
+#envio Guillermo_Vidal B1 0
+#envio Guillermo_Vidal B1 1
+#envio Guillermo_Vidal B3 1
+#envio Guillermo_Vidal B7 0
+#envio Guillermo_Vidal B7 0
+#envio Guillermo_Vidal B7 0
+#envio Guillermo_Vidal B6 1
+#envio Guillermo_Vidal C1 0
+#envio Guillermo_Vidal B8 0
+#envio Guillermo_Vidal B8 1
+#pr Guillermo_Vidal
+B1(3)
+B3(1)
+B6(1)
+B8(2)
+#pe Guillermo_Vidal
+B2(0)
+B7(3)
+C1(1)
+#e Guillermo_Vidal B2 1
+#e Guillermo_Vidal B4 1
+#e Guillermo_Vidal B5 1
+#e Guillermo_Vidal C1 0
+#e Guillermo_Vidal C1 1
+#pr Guillermo_Vidal
+B1(3)
+B2(1)
+B3(1)
+B4(1)
+B5(1)
+B6(1)
+B8(2)
+C1(3)
+#pe Guillermo_Vidal
+B7(3)
+C2(0)
+C3(0)
+#envio Guillermo_Vidal B7 1
+#envio Guillermo_Vidal C2 1
+#envio Guillermo_Vidal C3 1
+#envio Guillermo_Vidal C4 1
+#envio Guillermo_Vidal C7 0
+#envio Guillermo_Vidal C7 0
+#envio Guillermo_Vidal C7 1
+#pr Guillermo_Vidal
+B1(3)
+B2(1)
+B3(1)
+B4(1)
+B5(1)
+B6(1)
+B7(4)
+B8(2)
+C1(3)
+C2(1)
+C3(1)
+C4(1)
+C7(3)
+#pe Guillermo_Vidal
+C12(0)
+C13(0)
+C5(0)
+C6(0)
+#listar_problemas
+A1(1,1,1)
+A10(1,1,1)
+A11(0,0,1)
+A12(0,0,1)
+A2(0,0,1)
+A3(1,1,1)
+A4(0,0,1)
+A5(0,0,1)
+A6(1,1,1)
+A7(0,0,1)
+A8(0,0,1)
+A9(0,0,1)
+B2(1,1,1)
+B3(1,1,1)
+B4(1,1,1)
+B5(1,1,1)
+B6(1,1,1)
+C10(0,0,1)
+C11(0,0,1)
+C12(0,0,1)
+C13(0,0,1)
+C14(0,0,1)
+C15(0,0,1)
+C16(0,0,1)
+C17(0,0,1)
+C2(1,1,1)
+C3(1,1,1)
+C4(1,1,1)
+C5(0,0,1)
+C6(0,0,1)
+C8(0,0,1)
+C9(0,0,1)
+D1(0,0,1)
+D2(0,0,1)
+D3(0,0,1)
+D4(0,0,1)
+D5(0,0,1)
+D6(0,0,1)
+D7(0,0,1)
+E1(0,0,1)
+E2(0,0,1)
+E3(0,0,1)
+E4(0,0,1)
+E5(0,0,1)
+E6(0,0,1)
+F1(0,0,1)
+F5(0,0,1)
+B8(2,1,1.5)
+B1(3,1,2)
+C1(5,2,2)
+C7(3,1,2)
+B7(4,1,2.5)
+#envio Guillermo_Vidal C5 1
+#envio Guillermo_Vidal C6 1
+#envio Guillermo_Vidal C12 1
+#envio Guillermo_Vidal C13 1
+#envio Guillermo_Vidal C8 1
+#envio Guillermo_Vidal C9 1
+#envio Guillermo_Vidal C11 1
+#pr Guillermo_Vidal
+B1(3)
+B2(1)
+B3(1)
+B4(1)
+B5(1)
+B6(1)
+B7(4)
+B8(2)
+C1(3)
+C11(1)
+C12(1)
+C13(1)
+C2(1)
+C3(1)
+C4(1)
+C5(1)
+C6(1)
+C7(3)
+C8(1)
+C9(1)
+#pe Guillermo_Vidal
+C10(0)
+C14(0)
+C16(0)
+C17(0)
+#escribir_curso 2
+2 0 1 2 (Sesion_B Sesion_C)
+#envio Guillermo_Vidal C10 1
+#envio Guillermo_Vidal C14 1
+#envio Guillermo_Vidal C15 1
+#envio Guillermo_Vidal C16 1
+#envio Guillermo_Vidal C17 1
+#pr Guillermo_Vidal
+B1(3)
+B2(1)
+B3(1)
+B4(1)
+B5(1)
+B6(1)
+B7(4)
+B8(2)
+C1(3)
+C10(1)
+C11(1)
+C12(1)
+C13(1)
+C14(1)
+C15(1)
+C16(1)
+C17(1)
+C2(1)
+C3(1)
+C4(1)
+C5(1)
+C6(1)
+C7(3)
+C8(1)
+C9(1)
+#pe Guillermo_Vidal
+error: usuario no inscrito en ningun curso
+#escribir_curso 2
+2 1 0 2 (Sesion_B Sesion_C)
+#cu Guillermo_Vidal
+0
+#i Guillermo_Vidal 3
+3
+#cu Guillermo_Vidal
+3
+#pe Guillermo_Vidal
+A1(0)
+D1(0)
+E1(0)
+#eu Guillermo_Vidal
+Guillermo_Vidal(35,25,25,3)
+#escribir_sesion Sesion_54
+error: la sesion no existe
+#es Sesion_FDE
+Sesion_FDE 8 ((((F5)E3)D2)(((D7)E5)(D4)E6)F1)

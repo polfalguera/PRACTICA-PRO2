@@ -1,0 +1,445 @@
+\hypertarget{class_sesion}{}\doxysection{Referencia de la Clase Sesion}
+\label{class_sesion}\index{Sesion@{Sesion}}
+
+
+Representa una sesión de la plataforma Evaluator. Está formada por un conjunto de problemas, todos distintos entre ellos.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}{Sesion}} ()
+\begin{DoxyCompactList}\small\item\em Constructora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a0cafa1e7e163e760fae4995d80d907de}{modificar\+\_\+enviables\+\_\+s}} (\mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario al ser inscrito en un curso, estudiando que problemas de la sesión puede enviar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a9bf66784180e796d8ba3c223d1dab17b}{modificar\+\_\+enviables\+\_\+envio}} (const string \&p, bool \&encontrado, \mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario al haber realizado el envío de un problema con éxito. Los problemas que pasan a ser enviables son los que tenían como prerequisito el problema del qual se ha hecho el envío. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesion_a96ad15cdd8b592658f755363237e7d8c}{consultar\+\_\+numero\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del número de problemas que contiene una sesión. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sesion_a5655e28d073ed0c428625f6563ecf041}{consultar\+\_\+problema\+\_\+iesimo}} (int i) const
+\begin{DoxyCompactList}\small\item\em Consultora del identificador de un problema perteneciente a una sesión. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}{leer\+\_\+sesion}} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_afbd29ac549cb95c601c703eddc4f7f2e}{escribir}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sesion_a2281d23fdd985bcd3809692618d93fc9}{i\+\_\+modificar\+\_\+enviables\+\_\+s}} (const Bin\+Tree$<$ int $>$ \&\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\+\_\+sesion}}, \mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario al inscribirse en un curso, estudiando que problemas de la sesión puede enviar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}{i\+\_\+modificar\+\_\+enviables\+\_\+envio}} (const Bin\+Tree$<$ int $>$ \&\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\+\_\+sesion}}, const string \&p, bool \&encontrado, \mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\item 
+void \mbox{\hyperlink{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}{leer\+\_\+problemas\+\_\+sesion}} (Bin\+Tree$<$ int $>$ \&problemas)
+\begin{DoxyCompactList}\small\item\em Lee el conjunto de problemas de una sesion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a6e38be8a063a02845a4a781ea30ff563}{escribir\+\_\+problemas\+\_\+sesion}} (const Bin\+Tree$<$ int $>$ \&problemas) const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ int $>$ \mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\+\_\+sesion}}
+\begin{DoxyCompactList}\small\item\em Posición del vector de los identificadores de los problemas de la sesión estructurados según los prerequisitos. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\+\_\+problemas}}
+\begin{DoxyCompactList}\small\item\em Identificadores de los problemas de la sesión. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesion_ac1d7a01973b833526f556d29922a47b2}{numero\+\_\+problemas}}
+\begin{DoxyCompactList}\small\item\em Número de problemas de la sesión. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa una sesión de la plataforma Evaluator. Está formada por un conjunto de problemas, todos distintos entre ellos. 
+
+Definición en la línea 26 del archivo Sesion.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}\label{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}} 
+\index{Sesion@{Sesion}!Sesion@{Sesion}}
+\index{Sesion@{Sesion}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{Sesion()}{Sesion()}}
+{\footnotesize\ttfamily Sesion\+::\+Sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una sesión vacía 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_sesion_ac1d7a01973b833526f556d29922a47b2}{numero\_problemas}} = 0;}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sesion_a2281d23fdd985bcd3809692618d93fc9}\label{class_sesion_a2281d23fdd985bcd3809692618d93fc9}} 
+\index{Sesion@{Sesion}!i\_modificar\_enviables\_s@{i\_modificar\_enviables\_s}}
+\index{i\_modificar\_enviables\_s@{i\_modificar\_enviables\_s}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{i\_modificar\_enviables\_s()}{i\_modificar\_enviables\_s()}}
+{\footnotesize\ttfamily void Sesion\+::i\+\_\+modificar\+\_\+enviables\+\_\+s (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ int $>$ \&}]{problemas\+\_\+sesion,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza los problemas enviables de un usuario al inscribirse en un curso, estudiando que problemas de la sesión puede enviar. 
+
+\begin{DoxyPrecond}{Precondición}
+Cie 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+
+\end{DoxyPostcond}
+
+
+Definición en la línea 68 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{}
+\DoxyCodeLine{70     \textcolor{keywordflow}{if} (not \mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.empty()) }
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         \textcolor{keywordflow}{if} (resueltos.\mbox{\hyperlink{class_problemas_ab5cdc7e8663b9cdd9a1f29c81c3eb2fc}{existe\_problema}}(\mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}[\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.value()])) }
+\DoxyCodeLine{73         \{}
+\DoxyCodeLine{74             \mbox{\hyperlink{class_sesion_a2281d23fdd985bcd3809692618d93fc9}{i\_modificar\_enviables\_s}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.left(),enviables,resueltos);}
+\DoxyCodeLine{75             \mbox{\hyperlink{class_sesion_a2281d23fdd985bcd3809692618d93fc9}{i\_modificar\_enviables\_s}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.right(),enviables,resueltos);}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         \textcolor{keywordflow}{else} }
+\DoxyCodeLine{78         \{}
+\DoxyCodeLine{79             enviables.\mbox{\hyperlink{class_problemas_a1cd32a5ef40dd4709ed8a509dce1271a}{nuevo\_problema}}(\mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}[\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.value()]);}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}\label{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}} 
+\index{Sesion@{Sesion}!i\_modificar\_enviables\_envio@{i\_modificar\_enviables\_envio}}
+\index{i\_modificar\_enviables\_envio@{i\_modificar\_enviables\_envio}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{i\_modificar\_enviables\_envio()}{i\_modificar\_enviables\_envio()}}
+{\footnotesize\ttfamily void Sesion\+::i\+\_\+modificar\+\_\+enviables\+\_\+envio (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ int $>$ \&}]{problemas\+\_\+sesion,  }\item[{const string \&}]{p,  }\item[{bool \&}]{encontrado,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondición}
+
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+
+\end{DoxyPostcond}
+
+
+Definición en la línea 89 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90 \{}
+\DoxyCodeLine{91     \textcolor{keywordflow}{if} (not \mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.empty()) }
+\DoxyCodeLine{92     \{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}[\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.value()] == p ) }
+\DoxyCodeLine{94         \{}
+\DoxyCodeLine{95             \mbox{\hyperlink{class_sesion_a2281d23fdd985bcd3809692618d93fc9}{i\_modificar\_enviables\_s}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}},enviables,resueltos);}
+\DoxyCodeLine{96             encontrado = \textcolor{keyword}{false};}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         \textcolor{keywordflow}{else} }
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100             \mbox{\hyperlink{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}{i\_modificar\_enviables\_envio}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.left(),p,encontrado,enviables,resueltos);}
+\DoxyCodeLine{101             \textcolor{keywordflow}{if} (not encontrado) \mbox{\hyperlink{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}{i\_modificar\_enviables\_envio}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}}.right(),p,encontrado,enviables,resueltos);}
+\DoxyCodeLine{102         \}}
+\DoxyCodeLine{103     \}}
+\DoxyCodeLine{104 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}\label{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}} 
+\index{Sesion@{Sesion}!leer\_problemas\_sesion@{leer\_problemas\_sesion}}
+\index{leer\_problemas\_sesion@{leer\_problemas\_sesion}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{leer\_problemas\_sesion()}{leer\_problemas\_sesion()}}
+{\footnotesize\ttfamily void Sesion\+::leer\+\_\+problemas\+\_\+sesion (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ int $>$ \&}]{problemas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Lee el conjunto de problemas de una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene los problemas estructurados según los prerequisitos 
+\end{DoxyPostcond}
+
+
+Definición en la línea 22 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{25     cin >> p;}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if}(p != \textcolor{stringliteral}{"0"})}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} posicio = \mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}.size();}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}.push\_back(p);}
+\DoxyCodeLine{30         ++\mbox{\hyperlink{class_sesion_ac1d7a01973b833526f556d29922a47b2}{numero\_problemas}};}
+\DoxyCodeLine{31         BinTree<int> e,d;}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}{leer\_problemas\_sesion}}(e);}
+\DoxyCodeLine{33         \mbox{\hyperlink{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}{leer\_problemas\_sesion}}(d);}
+\DoxyCodeLine{34         problemas = BinTree<int>(posicio,e,d);}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a6e38be8a063a02845a4a781ea30ff563}\label{class_sesion_a6e38be8a063a02845a4a781ea30ff563}} 
+\index{Sesion@{Sesion}!escribir\_problemas\_sesion@{escribir\_problemas\_sesion}}
+\index{escribir\_problemas\_sesion@{escribir\_problemas\_sesion}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{escribir\_problemas\_sesion()}{escribir\_problemas\_sesion()}}
+{\footnotesize\ttfamily void Sesion\+::escribir\+\_\+problemas\+\_\+sesion (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ int $>$ \&}]{problemas }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Operación de escritura. 
+
+Se ejecuta automáticamente al declarar una sesión. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla los identificadores de los problemas que forman parte del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 43 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{if} (not problemas.empty())}
+\DoxyCodeLine{46     \{}
+\DoxyCodeLine{47         cout << \textcolor{stringliteral}{"("};}
+\DoxyCodeLine{48         \mbox{\hyperlink{class_sesion_a6e38be8a063a02845a4a781ea30ff563}{escribir\_problemas\_sesion}}(problemas.left());}
+\DoxyCodeLine{49         \mbox{\hyperlink{class_sesion_a6e38be8a063a02845a4a781ea30ff563}{escribir\_problemas\_sesion}}(problemas.right());}
+\DoxyCodeLine{50         cout << \mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}[problemas.value()];}
+\DoxyCodeLine{51         cout << \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a0cafa1e7e163e760fae4995d80d907de}\label{class_sesion_a0cafa1e7e163e760fae4995d80d907de}} 
+\index{Sesion@{Sesion}!modificar\_enviables\_s@{modificar\_enviables\_s}}
+\index{modificar\_enviables\_s@{modificar\_enviables\_s}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{modificar\_enviables\_s()}{modificar\_enviables\_s()}}
+{\footnotesize\ttfamily void Sesion\+::modificar\+\_\+enviables\+\_\+s (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas enviables de un usuario al ser inscrito en un curso, estudiando que problemas de la sesión puede enviar. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los problemas enviables de un usuario, estudiando que problemas de la sesión se pueden enviar 
+\end{DoxyPostcond}
+
+
+Definición en la línea 63 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{}
+\DoxyCodeLine{65     \mbox{\hyperlink{class_sesion_a2281d23fdd985bcd3809692618d93fc9}{i\_modificar\_enviables\_s}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}},enviables,resueltos);}
+\DoxyCodeLine{66 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a9bf66784180e796d8ba3c223d1dab17b}\label{class_sesion_a9bf66784180e796d8ba3c223d1dab17b}} 
+\index{Sesion@{Sesion}!modificar\_enviables\_envio@{modificar\_enviables\_envio}}
+\index{modificar\_enviables\_envio@{modificar\_enviables\_envio}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{modificar\_enviables\_envio()}{modificar\_enviables\_envio()}}
+{\footnotesize\ttfamily void Sesion\+::modificar\+\_\+enviables\+\_\+envio (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{bool \&}]{encontrado,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas enviables de un usuario al haber realizado el envío de un problema con éxito. Los problemas que pasan a ser enviables son los que tenían como prerequisito el problema del qual se ha hecho el envío. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los problemas enviables de un usuario, estudiando que problemas pasan a ser enviables tras realizar un envío con éxito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 84 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85 \{}
+\DoxyCodeLine{86     \mbox{\hyperlink{class_sesion_a2108ced5b9a95a2fdc16a76d1227a09d}{i\_modificar\_enviables\_envio}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}},p,encontrado,enviables,resueltos);}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a96ad15cdd8b592658f755363237e7d8c}\label{class_sesion_a96ad15cdd8b592658f755363237e7d8c}} 
+\index{Sesion@{Sesion}!consultar\_numero\_problemas@{consultar\_numero\_problemas}}
+\index{consultar\_numero\_problemas@{consultar\_numero\_problemas}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{consultar\_numero\_problemas()}{consultar\_numero\_problemas()}}
+{\footnotesize\ttfamily int Sesion\+::consultar\+\_\+numero\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número de problemas que contiene una sesión. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número de problemas que contiene el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 12 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesion_ac1d7a01973b833526f556d29922a47b2}{numero\_problemas}};}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a5655e28d073ed0c428625f6563ecf041}\label{class_sesion_a5655e28d073ed0c428625f6563ecf041}} 
+\index{Sesion@{Sesion}!consultar\_problema\_iesimo@{consultar\_problema\_iesimo}}
+\index{consultar\_problema\_iesimo@{consultar\_problema\_iesimo}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{consultar\_problema\_iesimo()}{consultar\_problema\_iesimo()}}
+{\footnotesize\ttfamily string Sesion\+::consultar\+\_\+problema\+\_\+iesimo (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del identificador de un problema perteneciente a una sesión. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el identificador del problema i-\/esimo 
+\end{DoxyPostcond}
+
+
+Definición en la línea 17 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}{id\_problemas}}[i];}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}\label{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}} 
+\index{Sesion@{Sesion}!leer\_sesion@{leer\_sesion}}
+\index{leer\_sesion@{leer\_sesion}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{leer\_sesion()}{leer\_sesion()}}
+{\footnotesize\ttfamily void Sesion\+::leer\+\_\+sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene un número de problemas y un conjunto de identificadores de dichos problemas 
+\end{DoxyPostcond}
+
+
+Definición en la línea 38 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_sesion_a01d27c95800c1dfdb88f6c9e20701c39}{leer\_problemas\_sesion}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}});}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_afbd29ac549cb95c601c703eddc4f7f2e}\label{class_sesion_afbd29ac549cb95c601c703eddc4f7f2e}} 
+\index{Sesion@{Sesion}!escribir@{escribir}}
+\index{escribir@{escribir}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Sesion\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla el número de problemas que forman parte del parámetro implícito y sus identificadores 
+\end{DoxyPostcond}
+
+
+Definición en la línea 55 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57     cout << \mbox{\hyperlink{class_sesion_ac1d7a01973b833526f556d29922a47b2}{numero\_problemas}} << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{58     \mbox{\hyperlink{class_sesion_a6e38be8a063a02845a4a781ea30ff563}{escribir\_problemas\_sesion}}(\mbox{\hyperlink{class_sesion_a30b18411d7436ba7006e6193628c87ae}{problemas\_sesion}});}
+\DoxyCodeLine{59     cout << endl;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_sesion_a30b18411d7436ba7006e6193628c87ae}\label{class_sesion_a30b18411d7436ba7006e6193628c87ae}} 
+\index{Sesion@{Sesion}!problemas\_sesion@{problemas\_sesion}}
+\index{problemas\_sesion@{problemas\_sesion}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{problemas\_sesion}{problemas\_sesion}}
+{\footnotesize\ttfamily Bin\+Tree$<$int$>$ Sesion\+::problemas\+\_\+sesion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Posición del vector de los identificadores de los problemas de la sesión estructurados según los prerequisitos. 
+
+
+
+Definición en la línea 31 del archivo Sesion.\+hh.
+
+\mbox{\Hypertarget{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}\label{class_sesion_a0229630ec3b5b9f25138c7c01e6c8719}} 
+\index{Sesion@{Sesion}!id\_problemas@{id\_problemas}}
+\index{id\_problemas@{id\_problemas}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{id\_problemas}{id\_problemas}}
+{\footnotesize\ttfamily vector$<$string$>$ Sesion\+::id\+\_\+problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identificadores de los problemas de la sesión. 
+
+
+
+Definición en la línea 33 del archivo Sesion.\+hh.
+
+\mbox{\Hypertarget{class_sesion_ac1d7a01973b833526f556d29922a47b2}\label{class_sesion_ac1d7a01973b833526f556d29922a47b2}} 
+\index{Sesion@{Sesion}!numero\_problemas@{numero\_problemas}}
+\index{numero\_problemas@{numero\_problemas}!Sesion@{Sesion}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas}{numero\_problemas}}
+{\footnotesize\ttfamily int Sesion\+::numero\+\_\+problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Número de problemas de la sesión. 
+
+
+
+Definición en la línea 35 del archivo Sesion.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sesion_8hh}{Sesion.\+hh}}\item 
+\mbox{\hyperlink{_sesion_8cc}{Sesion.\+cc}}\end{DoxyCompactItemize}

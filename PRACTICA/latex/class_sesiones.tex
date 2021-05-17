@@ -1,0 +1,396 @@
+\hypertarget{class_sesiones}{}\doxysection{Referencia de la Clase Sesiones}
+\label{class_sesiones}\index{Sesiones@{Sesiones}}
+
+
+Representa el conjunto de sesiones de la plataforma Evaluator.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sesiones_a1b845cc2a490941bac3ada0d3b6cc2f3}{Sesiones}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_a5f743432fcab3577f98a53e8096a9844}{nueva\+\_\+sesion}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Añade una nueva sesión al conjunto de sesiones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_a6dd5f9066cd28c90f4cb444239fe698e}{modificar\+\_\+enviables\+\_\+sesion}} (const string \&s, \mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario al ser inscrito en un curso, estudiando que problemas de una sesión concreta puede enviar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_a503259a0ee56c52a99c60a799354d34d}{modificar\+\_\+envibales\+\_\+envio\+\_\+s}} (const string \&p, const string \&s, \mbox{\hyperlink{class_problemas}{Problemas}} \&enviables, \mbox{\hyperlink{class_problemas}{Problemas}} \&resueltos)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario al haber realizado el envío de un problema con éxito. Los problemas que pasan a ser enviables son los que tenían como prerequisito el problema del qual se ha hecho el envío. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesiones_a2b16066bec1058ec9c0d2fa0a1e03743}{numero\+\_\+problemas\+\_\+sesion}} (const string \&s) const
+\begin{DoxyCompactList}\small\item\em Consultora del número total de problemas que hay en una sesión concreta. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sesiones_a75baf2c7f1251f77021751ed8164d61c}{problema\+\_\+iesimo\+\_\+sesion}} (const string \&s, int i) const
+\begin{DoxyCompactList}\small\item\em Consultora del identificador de un problema perteneciente a una sesión concreta. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sesiones_aa47b1138d43e52181131df91d3f9df11}{existe\+\_\+sesion}} (const string \&s) const
+\begin{DoxyCompactList}\small\item\em Consultora de la existencia de una sesión dentro del conjunto de sesiones. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}{numero\+\_\+sesiones}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del número total de sesiones que hay en la plataforma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}{leer\+\_\+conjunto\+\_\+sesiones}} ()
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_adec34afe0172a61345553d1d72717906}{escribir\+\_\+sesion}} (const string \&s) const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesiones_a946118243a41df8ef38d85c6b792d657}{listar\+\_\+sesiones}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_sesion}{Sesion}} $>$ \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\+\_\+sesiones}}
+\begin{DoxyCompactList}\small\item\em Conjunto de sesiones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa el conjunto de sesiones de la plataforma Evaluator. 
+
+Definición en la línea 23 del archivo Sesiones.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_sesiones_a1b845cc2a490941bac3ada0d3b6cc2f3}\label{class_sesiones_a1b845cc2a490941bac3ada0d3b6cc2f3}} 
+\index{Sesiones@{Sesiones}!Sesiones@{Sesiones}}
+\index{Sesiones@{Sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{Sesiones()}{Sesiones()}}
+{\footnotesize\ttfamily Sesiones\+::\+Sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un conjunto de sesiones. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un conjunto de sesiones vacío 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sesiones_a5f743432fcab3577f98a53e8096a9844}\label{class_sesiones_a5f743432fcab3577f98a53e8096a9844}} 
+\index{Sesiones@{Sesiones}!nueva\_sesion@{nueva\_sesion}}
+\index{nueva\_sesion@{nueva\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{nueva\_sesion()}{nueva\_sesion()}}
+{\footnotesize\ttfamily void Sesiones\+::nueva\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Añade una nueva sesión al conjunto de sesiones. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s no pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha añadido una nueva sesión con identificador s al parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 12 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_sesion}{Sesion}} sesion;}
+\DoxyCodeLine{15     sesion.\mbox{\hyperlink{class_sesion_a970d42fc3310a465b78b5a1549c30ec1}{leer\_sesion}}();}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.insert(make\_pair(s,sesion));}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a6dd5f9066cd28c90f4cb444239fe698e}\label{class_sesiones_a6dd5f9066cd28c90f4cb444239fe698e}} 
+\index{Sesiones@{Sesiones}!modificar\_enviables\_sesion@{modificar\_enviables\_sesion}}
+\index{modificar\_enviables\_sesion@{modificar\_enviables\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{modificar\_enviables\_sesion()}{modificar\_enviables\_sesion()}}
+{\footnotesize\ttfamily void Sesiones\+::modificar\+\_\+enviables\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas enviables de un usuario al ser inscrito en un curso, estudiando que problemas de una sesión concreta puede enviar. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los problemas enviables de un usuario, estudiando que problemas de la sesión con identificador s se pueden enviar 
+\end{DoxyPostcond}
+
+
+Definición en la línea 19 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     map<string,Sesion>::iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{22     (*it).second.modificar\_enviables\_s(enviables,resueltos);}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a503259a0ee56c52a99c60a799354d34d}\label{class_sesiones_a503259a0ee56c52a99c60a799354d34d}} 
+\index{Sesiones@{Sesiones}!modificar\_envibales\_envio\_s@{modificar\_envibales\_envio\_s}}
+\index{modificar\_envibales\_envio\_s@{modificar\_envibales\_envio\_s}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{modificar\_envibales\_envio\_s()}{modificar\_envibales\_envio\_s()}}
+{\footnotesize\ttfamily void Sesiones\+::modificar\+\_\+envibales\+\_\+envio\+\_\+s (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{s,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{enviables,  }\item[{\mbox{\hyperlink{class_problemas}{Problemas}} \&}]{resueltos }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas enviables de un usuario al haber realizado el envío de un problema con éxito. Los problemas que pasan a ser enviables son los que tenían como prerequisito el problema del qual se ha hecho el envío. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los problemas enviables de un usuario, estudiando que problemas pasan a ser enviables tras realizar un envío con éxito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 25 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     map<string,Sesion>::iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} encontrado = \textcolor{keyword}{false};}
+\DoxyCodeLine{29     (*it).second.modificar\_enviables\_envio(p,encontrado,enviables,resueltos);}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a2b16066bec1058ec9c0d2fa0a1e03743}\label{class_sesiones_a2b16066bec1058ec9c0d2fa0a1e03743}} 
+\index{Sesiones@{Sesiones}!numero\_problemas\_sesion@{numero\_problemas\_sesion}}
+\index{numero\_problemas\_sesion@{numero\_problemas\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas\_sesion()}{numero\_problemas\_sesion()}}
+{\footnotesize\ttfamily int Sesiones\+::numero\+\_\+problemas\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número total de problemas que hay en una sesión concreta. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s pertenece al parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número de problemas que contiene la sesión con identificador s. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 32 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34     map<string,Sesion>::const\_iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{35     \textcolor{keywordflow}{return} (*it).second.consultar\_numero\_problemas();}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a75baf2c7f1251f77021751ed8164d61c}\label{class_sesiones_a75baf2c7f1251f77021751ed8164d61c}} 
+\index{Sesiones@{Sesiones}!problema\_iesimo\_sesion@{problema\_iesimo\_sesion}}
+\index{problema\_iesimo\_sesion@{problema\_iesimo\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{problema\_iesimo\_sesion()}{problema\_iesimo\_sesion()}}
+{\footnotesize\ttfamily string Sesiones\+::problema\+\_\+iesimo\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s,  }\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del identificador de un problema perteneciente a una sesión concreta. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s pertenece al parámetro implícito. i es un entero $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el identificador del problema i-\/esimo perteneciente a la sesión con identificador s 
+\end{DoxyPostcond}
+
+
+Definición en la línea 38 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40     map<string,Sesion>::const\_iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{41     \textcolor{keywordflow}{return} (*it).second.consultar\_problema\_iesimo(i);}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_aa47b1138d43e52181131df91d3f9df11}\label{class_sesiones_aa47b1138d43e52181131df91d3f9df11}} 
+\index{Sesiones@{Sesiones}!existe\_sesion@{existe\_sesion}}
+\index{existe\_sesion@{existe\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{existe\_sesion()}{existe\_sesion()}}
+{\footnotesize\ttfamily bool Sesiones\+::existe\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de la existencia de una sesión dentro del conjunto de sesiones. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve {\itshape true} si la sesión con identificador s pertenece al parámetro implícito. En caso contrario, devuelve {\itshape false} 
+\end{DoxyPostcond}
+
+
+Definición en la línea 44 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46     map<string,Sesion>::const\_iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{47     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}\label{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}} 
+\index{Sesiones@{Sesiones}!numero\_sesiones@{numero\_sesiones}}
+\index{numero\_sesiones@{numero\_sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{numero\_sesiones()}{numero\_sesiones()}}
+{\footnotesize\ttfamily int Sesiones\+::numero\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número total de sesiones que hay en la plataforma. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito no está vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de sesiones que contiene el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 52 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{}
+\DoxyCodeLine{54     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.size();}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}\label{class_sesiones_a88fc086cf1b55ed711f78f143323ad22}} 
+\index{Sesiones@{Sesiones}!leer\_conjunto\_sesiones@{leer\_conjunto\_sesiones}}
+\index{leer\_conjunto\_sesiones@{leer\_conjunto\_sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{leer\_conjunto\_sesiones()}{leer\_conjunto\_sesiones()}}
+{\footnotesize\ttfamily void Sesiones\+::leer\+\_\+conjunto\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito contiene una o más sesiones 
+\end{DoxyPostcond}
+
+
+Definición en la línea 57 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}{numero\_sesiones}};}
+\DoxyCodeLine{60     cin >> \mbox{\hyperlink{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}{numero\_sesiones}};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{string} s;}
+\DoxyCodeLine{63     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_sesiones_a3ac4b17c9e49aaa2e6f893abf59ee959}{numero\_sesiones}}; ++i) }
+\DoxyCodeLine{64     \{}
+\DoxyCodeLine{65         cin >> s;}
+\DoxyCodeLine{66         \mbox{\hyperlink{class_sesiones_a5f743432fcab3577f98a53e8096a9844}{nueva\_sesion}}(s);}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_adec34afe0172a61345553d1d72717906}\label{class_sesiones_adec34afe0172a61345553d1d72717906}} 
+\index{Sesiones@{Sesiones}!escribir\_sesion@{escribir\_sesion}}
+\index{escribir\_sesion@{escribir\_sesion}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{escribir\_sesion()}{escribir\_sesion()}}
+{\footnotesize\ttfamily void Sesiones\+::escribir\+\_\+sesion (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+La sesión con identificador s existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla el número de problemas que forman parte de la sesión con identificador s y sus identificadores 
+\end{DoxyPostcond}
+
+
+Definición en la línea 70 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     map<string,Sesion>::const\_iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.find(s);}
+\DoxyCodeLine{73     (*it).second.escribir();}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesiones_a946118243a41df8ef38d85c6b792d657}\label{class_sesiones_a946118243a41df8ef38d85c6b792d657}} 
+\index{Sesiones@{Sesiones}!listar\_sesiones@{listar\_sesiones}}
+\index{listar\_sesiones@{listar\_sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{listar\_sesiones()}{listar\_sesiones()}}
+{\footnotesize\ttfamily void Sesiones\+::listar\+\_\+sesiones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen por pantalla las sesiones actuales de la plataforma en orden creciente por su identificador y mostrando, para cada sesión, el número de problemas que la forman y los identificadores de dichos problemas 
+\end{DoxyPostcond}
+
+
+Definición en la línea 76 del archivo Sesiones.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{}
+\DoxyCodeLine{78     map<string,Sesion>::const\_iterator it = \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.begin();}
+\DoxyCodeLine{79     \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_sesiones_a698115c3535e58a5f8be2552452bab2b}{cjt\_sesiones}}.end()) }
+\DoxyCodeLine{80     \{}
+\DoxyCodeLine{81         cout << ((*it).first) << \textcolor{charliteral}{' '};}
+\DoxyCodeLine{82         (*it).second.escribir();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         ++it;   }
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_sesiones_a698115c3535e58a5f8be2552452bab2b}\label{class_sesiones_a698115c3535e58a5f8be2552452bab2b}} 
+\index{Sesiones@{Sesiones}!cjt\_sesiones@{cjt\_sesiones}}
+\index{cjt\_sesiones@{cjt\_sesiones}!Sesiones@{Sesiones}}
+\doxysubsubsection{\texorpdfstring{cjt\_sesiones}{cjt\_sesiones}}
+{\footnotesize\ttfamily map$<$string,\mbox{\hyperlink{class_sesion}{Sesion}}$>$ Sesiones\+::cjt\+\_\+sesiones\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de sesiones. 
+
+
+
+Definición en la línea 26 del archivo Sesiones.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sesiones_8hh}{Sesiones.\+hh}}\item 
+\mbox{\hyperlink{_sesiones_8cc}{Sesiones.\+cc}}\end{DoxyCompactItemize}

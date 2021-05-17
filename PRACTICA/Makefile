@@ -27,7 +27,7 @@ Curso.o: Curso.cc Curso.hh
 Sesion.o: Sesion.cc Sesion.hh
 	g++ -c Sesion.cc $(OPCIONS)
 tar: program.cc Cursos.cc Cursos.hh Sesiones.cc Sesiones.hh Problemas.cc Problemas.hh Usuarios.cc Usuarios.hh Curso.cc Curso.hh Sesion.cc Sesion.hh Usuario.cc Usuario.hh
-	 tar -cvf practica.tar Makefile program.cc Cursos.cc Cursos.hh Sesiones.cc Sesiones.hh Problemas.cc Problemas.hh Usuarios.cc Usuarios.hh Curso.cc Curso.hh Sesion.cc Sesion.hh Usuario.cc Usuario.hh
+	 tar -cvf practica.tar Makefile program.cc Cursos.cc Cursos.hh Sesiones.cc Sesiones.hh Problemas.cc Problemas.hh Usuarios.cc Usuarios.hh Curso.cc Curso.hh Sesion.cc Sesion.hh Usuario.cc Usuario.hh pol.falguera.html.zip
 
 clean:
 	rm -f *.o

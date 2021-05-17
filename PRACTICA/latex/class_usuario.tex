@@ -1,0 +1,555 @@
+\hypertarget{class_usuario}{}\doxysection{Referencia de la Clase Usuario}
+\label{class_usuario}\index{Usuario@{Usuario}}
+
+
+Representa un usuario registrado en la plataforma Evaluator.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_usuario_aa85a5371a098dfba5449140d9b8a472f}{Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a55ccd3113b452c9dabc11e5c50462a68}{inscribir\+\_\+usuario\+\_\+curso}} (int c, \mbox{\hyperlink{class_curso}{Curso}} \&curso, \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cs)
+\begin{DoxyCompactList}\small\item\em Inscribe a un usuario a un curso y actualiza sus problemas enviables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a12fbfcea331bd5d2670cf5a0f2a2ae82}{desinscribir\+\_\+usuario\+\_\+curso}} ()
+\begin{DoxyCompactList}\small\item\em Desinscribe a un usuario del curso al cual estaba inscrito actualmente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a029defe05ea709f25569d5c0c47004cc}{incrementar\+\_\+problemas\+\_\+intentados}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número total de problemas intentados por un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_aa9e3cad5da44e9739cc095212ace9ce6}{incrementar\+\_\+intentos\+\_\+p}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número de intentos realizados por un usuario a un problema concreto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a975dfc9b942db50f5c7d1ba33caad9dc}{incrementar\+\_\+total\+\_\+envios}} ()
+\begin{DoxyCompactList}\small\item\em Incrementa una unidad el número total de envíos realizados por un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_ac861c8f3c3218a9ba355175a42505734}{actualizar\+\_\+enviables}} (const string \&p, const string \&s, const \mbox{\hyperlink{struct_problema}{Problema}} \&problema, \mbox{\hyperlink{class_cursos}{Cursos}} \&cc, \mbox{\hyperlink{class_sesiones}{Sesiones}} \&cs)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables de un usuario tras haber realizado un envío con éxito a un problema concreto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_af4654f1d2134af3e6e00c36b39f80be8}{actualizar\+\_\+resueltos}} (const string \&p, const \mbox{\hyperlink{struct_problema}{Problema}} \&problema)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas resueltos de un usuario tras haber realizado un envío con éxito a un problema concreto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}{curso\+\_\+usuario}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del curso al cual está inscrito un usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_a42b70c52c4ce1515725d5946474cd7db}{consultar\+\_\+intentos\+\_\+p}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consultora del número de intentos realizados por un usuario a un problema concreto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_a10b1a8312c399d826fe58ded1dea5658}{numero\+\_\+problemas\+\_\+enviables}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del número de problemas enviables de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}{problemas\+\_\+resueltos}} () const
+\begin{DoxyCompactList}\small\item\em Imprime por pantalla los problemas resueltos de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}{problemas\+\_\+enviables}} () const
+\begin{DoxyCompactList}\small\item\em Imprime por pantalla los problemas enviables de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a26497b1fb06b60dc1c9eee411ad11997}{consultar\+\_\+problema\+\_\+enviable}} (const string \&p, \mbox{\hyperlink{struct_problema}{Problema}} \&problema)
+\begin{DoxyCompactList}\small\item\em Consultora de un problema enviable de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a2c5cad96439c216cf980664f85ef3dda}{escribir}} () const
+\begin{DoxyCompactList}\small\item\em Operación de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\+\_\+curso\+\_\+inscrito}}
+\begin{DoxyCompactList}\small\item\em Identificador del curso en el cual está inscrito el usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_a6546d89313419083a6c522900643e2d0}{numero\+\_\+problemas\+\_\+intentados}}
+\begin{DoxyCompactList}\small\item\em Número total de problemas intentados por el usuario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_a7fdecf647e249b236976e6463860b125}{numero\+\_\+total\+\_\+envios}}
+\begin{DoxyCompactList}\small\item\em Número total de envíos realizados por el usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_problemas}{Problemas}} \mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}}
+\begin{DoxyCompactList}\small\item\em Conjunto de problemas resuletos del usuario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_problemas}{Problemas}} \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}
+\begin{DoxyCompactList}\small\item\em Conjunto de problemas enviables del usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa un usuario registrado en la plataforma Evaluator. 
+
+Definición en la línea 26 del archivo Usuario.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_usuario_aa85a5371a098dfba5449140d9b8a472f}\label{class_usuario_aa85a5371a098dfba5449140d9b8a472f}} 
+\index{Usuario@{Usuario}!Usuario@{Usuario}}
+\index{Usuario@{Usuario}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{Usuario()}{Usuario()}}
+{\footnotesize\ttfamily Usuario\+::\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un usuario. \begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un usuario no inscrito a ningún curso y con zero problemas intentados y resueltos y, por tanto, con zero problemas enviables 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}} = 0;}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_usuario_a6546d89313419083a6c522900643e2d0}{numero\_problemas\_intentados}} = 0;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_usuario_a7fdecf647e249b236976e6463860b125}{numero\_total\_envios}} = 0;}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_usuario_a55ccd3113b452c9dabc11e5c50462a68}\label{class_usuario_a55ccd3113b452c9dabc11e5c50462a68}} 
+\index{Usuario@{Usuario}!inscribir\_usuario\_curso@{inscribir\_usuario\_curso}}
+\index{inscribir\_usuario\_curso@{inscribir\_usuario\_curso}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{inscribir\_usuario\_curso()}{inscribir\_usuario\_curso()}}
+{\footnotesize\ttfamily void Usuario\+::inscribir\+\_\+usuario\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_curso}{Curso}} \&}]{curso,  }\item[{\mbox{\hyperlink{class_sesiones}{Sesiones}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Inscribe a un usuario a un curso y actualiza sus problemas enviables. 
+
+\begin{DoxyPrecond}{Precondición}
+El curso con identificador c existe 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha inscrito al parámetro implícito al curso con identificador c y se han actualizado sus problemas enviables 
+\end{DoxyPostcond}
+
+
+Definición en la línea 14 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}} = c;}
+\DoxyCodeLine{17     curso.\mbox{\hyperlink{class_curso_ada82bb1e13d4e67f8d028fddc684ba7e}{modificar\_enviables}}(\mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}},\mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}},cs);}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a12fbfcea331bd5d2670cf5a0f2a2ae82}\label{class_usuario_a12fbfcea331bd5d2670cf5a0f2a2ae82}} 
+\index{Usuario@{Usuario}!desinscribir\_usuario\_curso@{desinscribir\_usuario\_curso}}
+\index{desinscribir\_usuario\_curso@{desinscribir\_usuario\_curso}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{desinscribir\_usuario\_curso()}{desinscribir\_usuario\_curso()}}
+{\footnotesize\ttfamily void Usuario\+::desinscribir\+\_\+usuario\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desinscribe a un usuario del curso al cual estaba inscrito actualmente. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito está inscrito en un curso 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito ha dejado de estar inscrito en un curso 
+\end{DoxyPostcond}
+
+
+Definición en la línea 20 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}} = 0;}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a029defe05ea709f25569d5c0c47004cc}\label{class_usuario_a029defe05ea709f25569d5c0c47004cc}} 
+\index{Usuario@{Usuario}!incrementar\_problemas\_intentados@{incrementar\_problemas\_intentados}}
+\index{incrementar\_problemas\_intentados@{incrementar\_problemas\_intentados}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{incrementar\_problemas\_intentados()}{incrementar\_problemas\_intentados()}}
+{\footnotesize\ttfamily void Usuario\+::incrementar\+\_\+problemas\+\_\+intentados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad el número total de problemas intentados por un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha incrementado una unidad el número total de problemas intentados por el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 24 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     ++\mbox{\hyperlink{class_usuario_a6546d89313419083a6c522900643e2d0}{numero\_problemas\_intentados}};}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_aa9e3cad5da44e9739cc095212ace9ce6}\label{class_usuario_aa9e3cad5da44e9739cc095212ace9ce6}} 
+\index{Usuario@{Usuario}!incrementar\_intentos\_p@{incrementar\_intentos\_p}}
+\index{incrementar\_intentos\_p@{incrementar\_intentos\_p}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{incrementar\_intentos\_p()}{incrementar\_intentos\_p()}}
+{\footnotesize\ttfamily void Usuario\+::incrementar\+\_\+intentos\+\_\+p (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad el número de intentos realizados por un usuario a un problema concreto. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece a los problemas enviables del parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha incrementado una unidad los intentos que el parámetro implícito ha realizado en el problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 29 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_aa18bdb1b0e4b37429a85ddb08fd092cd}{incrementar\_intentos\_usuario}}(p);}
+\DoxyCodeLine{32 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a975dfc9b942db50f5c7d1ba33caad9dc}\label{class_usuario_a975dfc9b942db50f5c7d1ba33caad9dc}} 
+\index{Usuario@{Usuario}!incrementar\_total\_envios@{incrementar\_total\_envios}}
+\index{incrementar\_total\_envios@{incrementar\_total\_envios}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{incrementar\_total\_envios()}{incrementar\_total\_envios()}}
+{\footnotesize\ttfamily void Usuario\+::incrementar\+\_\+total\+\_\+envios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Incrementa una unidad el número total de envíos realizados por un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha incrementado una unidad el número total de envíos realizados por el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 34 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35 \{}
+\DoxyCodeLine{36     ++\mbox{\hyperlink{class_usuario_a7fdecf647e249b236976e6463860b125}{numero\_total\_envios}};}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_ac861c8f3c3218a9ba355175a42505734}\label{class_usuario_ac861c8f3c3218a9ba355175a42505734}} 
+\index{Usuario@{Usuario}!actualizar\_enviables@{actualizar\_enviables}}
+\index{actualizar\_enviables@{actualizar\_enviables}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{actualizar\_enviables()}{actualizar\_enviables()}}
+{\footnotesize\ttfamily void Usuario\+::actualizar\+\_\+enviables (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const string \&}]{s,  }\item[{const \mbox{\hyperlink{struct_problema}{Problema}} \&}]{problema,  }\item[{\mbox{\hyperlink{class_cursos}{Cursos}} \&}]{cc,  }\item[{\mbox{\hyperlink{class_sesiones}{Sesiones}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas enviables de un usuario tras haber realizado un envío con éxito a un problema concreto. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece al conjunto de problemas enviables del parámetro implícito. La sesión con identificador s pertenece al curso al cual está inscrito el parámetro implícito. El problema p pertenece a la sesión s 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los problemas enviables del parámetro implícito tras haber realizado un envío con éxito al problema con identificador p y se a eliminado éste del conjunto de problemas enviables 
+\end{DoxyPostcond}
+
+
+Definición en la línea 39 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_a264aa21c4c3d170a4ea8f8e1f725e566}{eliminar\_enviable}}(p);}
+\DoxyCodeLine{42     cc.\mbox{\hyperlink{class_cursos_af762e208d2523165a4f8212549697ade}{modificar\_enviables\_s\_c}}(\mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}},p,s,\mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}},\mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}},cs);    }
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_af4654f1d2134af3e6e00c36b39f80be8}\label{class_usuario_af4654f1d2134af3e6e00c36b39f80be8}} 
+\index{Usuario@{Usuario}!actualizar\_resueltos@{actualizar\_resueltos}}
+\index{actualizar\_resueltos@{actualizar\_resueltos}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{actualizar\_resueltos()}{actualizar\_resueltos()}}
+{\footnotesize\ttfamily void Usuario\+::actualizar\+\_\+resueltos (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{const \mbox{\hyperlink{struct_problema}{Problema}} \&}]{problema }\end{DoxyParamCaption})}
+
+
+
+Actualiza los problemas resueltos de un usuario tras haber realizado un envío con éxito a un problema concreto. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p no pertenece al conjunto de problemas resuletos del parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El problema con identificador p ha pasado a pertenecer al conjunto de problemas resuletos del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 45 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{}
+\DoxyCodeLine{47     \mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}}.\mbox{\hyperlink{class_problemas_aef3b18810d73f513411668a6c2e700bb}{anadir\_resuelto}}(p,problema);}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}\label{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}} 
+\index{Usuario@{Usuario}!curso\_usuario@{curso\_usuario}}
+\index{curso\_usuario@{curso\_usuario}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{curso\_usuario()}{curso\_usuario()}}
+{\footnotesize\ttfamily int Usuario\+::curso\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del curso al cual está inscrito un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el parámetro implícito está inscrito en algun curso, devuelve el identificador de éste. En caso contrario, devuelve un 0 
+\end{DoxyPostcond}
+
+
+Definición en la línea 50 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}};   }
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a42b70c52c4ce1515725d5946474cd7db}\label{class_usuario_a42b70c52c4ce1515725d5946474cd7db}} 
+\index{Usuario@{Usuario}!consultar\_intentos\_p@{consultar\_intentos\_p}}
+\index{consultar\_intentos\_p@{consultar\_intentos\_p}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{consultar\_intentos\_p()}{consultar\_intentos\_p()}}
+{\footnotesize\ttfamily int Usuario\+::consultar\+\_\+intentos\+\_\+p (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número de intentos realizados por un usuario a un problema concreto. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número de intentos realizados por el parámetro implícito al problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 55 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_aa58e4dfaa6e81717408ce7b14d3d4fee}{numero\_total\_envios\_p}}(p);}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a10b1a8312c399d826fe58ded1dea5658}\label{class_usuario_a10b1a8312c399d826fe58ded1dea5658}} 
+\index{Usuario@{Usuario}!numero\_problemas\_enviables@{numero\_problemas\_enviables}}
+\index{numero\_problemas\_enviables@{numero\_problemas\_enviables}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas\_enviables()}{numero\_problemas\_enviables()}}
+{\footnotesize\ttfamily int Usuario\+::numero\+\_\+problemas\+\_\+enviables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del número de problemas enviables de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el número total de problemas enviables del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 60 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{}
+\DoxyCodeLine{62     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}{numero\_problemas}}();}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}\label{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}} 
+\index{Usuario@{Usuario}!problemas\_resueltos@{problemas\_resueltos}}
+\index{problemas\_resueltos@{problemas\_resueltos}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{problemas\_resueltos()}{problemas\_resueltos()}}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+resueltos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime por pantalla los problemas resueltos de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen en orden creciente por identificador los problemas solucionados con éxito por el parámetro implícito, ya sean del curso en el cual está inscrito actualmente o de cursos anteriores. Además, para cada problema, se imprime el número de envíos realizados por el parámetro implícito a dicho problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 65 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{}
+\DoxyCodeLine{67     \mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}}.\mbox{\hyperlink{class_problemas_a9acf13599085049d66b7099f36bfd122}{listar\_identificador\_envios}}();}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}\label{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}} 
+\index{Usuario@{Usuario}!problemas\_enviables@{problemas\_enviables}}
+\index{problemas\_enviables@{problemas\_enviables}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{problemas\_enviables()}{problemas\_enviables()}}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+enviables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime por pantalla los problemas enviables de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen en orden creciente por identificador los problemas que no ha solucionado todavía, pero ya puede realizar un envío, el parámetro implícito en el curso en el cual está inscrito actualmente. Además, para cada problema, se imprime el número de envíos realizados por el parámetro implícito a dicho problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 70 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_a9acf13599085049d66b7099f36bfd122}{listar\_identificador\_envios}}();}
+\DoxyCodeLine{73 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a26497b1fb06b60dc1c9eee411ad11997}\label{class_usuario_a26497b1fb06b60dc1c9eee411ad11997}} 
+\index{Usuario@{Usuario}!consultar\_problema\_enviable@{consultar\_problema\_enviable}}
+\index{consultar\_problema\_enviable@{consultar\_problema\_enviable}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{consultar\_problema\_enviable()}{consultar\_problema\_enviable()}}
+{\footnotesize\ttfamily void Usuario\+::consultar\+\_\+problema\+\_\+enviable (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{\mbox{\hyperlink{struct_problema}{Problema}} \&}]{problema }\end{DoxyParamCaption})}
+
+
+
+Consultora de un problema enviable de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+El problema con identificador p pertenece al conjunto de problemas enviables del parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+P\+R\+O\+B\+L\+E\+MA pasa a ser el problema con identificador p 
+\end{DoxyPostcond}
+
+
+Definición en la línea 75 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{}
+\DoxyCodeLine{77     \mbox{\hyperlink{class_usuario_acaa851265a0f972b1bc28ee3801141b6}{enviables}}.\mbox{\hyperlink{class_problemas_a99e922f420a19408ff0c9b3da1d6606c}{consultar\_problema}}(p,problema);}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a2c5cad96439c216cf980664f85ef3dda}\label{class_usuario_a2c5cad96439c216cf980664f85ef3dda}} 
+\index{Usuario@{Usuario}!escribir@{escribir}}
+\index{escribir@{escribir}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void Usuario\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Operación de escritura. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprimen los siguientes datos del parámetro implícito\+: cuántos envíos en total ha realizado, cuántos problemas ha resuelto satisfactoriamente, cuántos problemas ha intentado resolver y el identificador del curso en el que está inscrito o un cero si no está inscrito en ninguno 
+\end{DoxyPostcond}
+
+
+Definición en la línea 80 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81 \{}
+\DoxyCodeLine{82     cout << \textcolor{charliteral}{'('} << \mbox{\hyperlink{class_usuario_a7fdecf647e249b236976e6463860b125}{numero\_total\_envios}} << \textcolor{charliteral}{','} << \mbox{\hyperlink{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}{resueltos}}.\mbox{\hyperlink{class_problemas_a85760dffc679b07de2db9bda4ec2ff80}{numero\_problemas}}() << \textcolor{charliteral}{','} <<}
+\DoxyCodeLine{83     \mbox{\hyperlink{class_usuario_a6546d89313419083a6c522900643e2d0}{numero\_problemas\_intentados}} << \textcolor{charliteral}{','} << \mbox{\hyperlink{class_usuario_a7be56afc931ead7a75f86066996b7c65}{id\_curso\_inscrito}} << \textcolor{charliteral}{')'} << endl;}
+\DoxyCodeLine{84 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_usuario_a7be56afc931ead7a75f86066996b7c65}\label{class_usuario_a7be56afc931ead7a75f86066996b7c65}} 
+\index{Usuario@{Usuario}!id\_curso\_inscrito@{id\_curso\_inscrito}}
+\index{id\_curso\_inscrito@{id\_curso\_inscrito}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{id\_curso\_inscrito}{id\_curso\_inscrito}}
+{\footnotesize\ttfamily int Usuario\+::id\+\_\+curso\+\_\+inscrito\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identificador del curso en el cual está inscrito el usuario. 
+
+
+
+Definición en la línea 29 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a6546d89313419083a6c522900643e2d0}\label{class_usuario_a6546d89313419083a6c522900643e2d0}} 
+\index{Usuario@{Usuario}!numero\_problemas\_intentados@{numero\_problemas\_intentados}}
+\index{numero\_problemas\_intentados@{numero\_problemas\_intentados}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{numero\_problemas\_intentados}{numero\_problemas\_intentados}}
+{\footnotesize\ttfamily int Usuario\+::numero\+\_\+problemas\+\_\+intentados\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Número total de problemas intentados por el usuario. 
+
+
+
+Definición en la línea 31 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a7fdecf647e249b236976e6463860b125}\label{class_usuario_a7fdecf647e249b236976e6463860b125}} 
+\index{Usuario@{Usuario}!numero\_total\_envios@{numero\_total\_envios}}
+\index{numero\_total\_envios@{numero\_total\_envios}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{numero\_total\_envios}{numero\_total\_envios}}
+{\footnotesize\ttfamily int Usuario\+::numero\+\_\+total\+\_\+envios\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Número total de envíos realizados por el usuario. 
+
+
+
+Definición en la línea 33 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}\label{class_usuario_a5eb4dd810d42c4901a807c2ac9611fef}} 
+\index{Usuario@{Usuario}!resueltos@{resueltos}}
+\index{resueltos@{resueltos}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{resueltos}{resueltos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_problemas}{Problemas}} Usuario\+::resueltos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de problemas resuletos del usuario. 
+
+
+
+Definición en la línea 35 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_acaa851265a0f972b1bc28ee3801141b6}\label{class_usuario_acaa851265a0f972b1bc28ee3801141b6}} 
+\index{Usuario@{Usuario}!enviables@{enviables}}
+\index{enviables@{enviables}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{enviables}{enviables}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_problemas}{Problemas}} Usuario\+::enviables\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de problemas enviables del usuario. 
+
+
+
+Definición en la línea 37 del archivo Usuario.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_usuario_8hh}{Usuario.\+hh}}\item 
+\mbox{\hyperlink{_usuario_8cc}{Usuario.\+cc}}\end{DoxyCompactItemize}

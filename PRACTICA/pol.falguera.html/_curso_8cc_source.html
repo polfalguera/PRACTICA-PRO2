@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Plataforma  EVALUATOR: Fichero Fuente Curso.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Plataforma  EVALUATOR
+   &#160;<span id="projectnumber">v1.0 17/05/2021</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Curso.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_curso_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_curso_8hh.html">Curso.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a">    7</a></span>&#160;<a class="code" href="class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a">Curso::Curso</a>() </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_curso.html#a1d0468c1a842f6b470d6ab06f06cf088">num_usuarios_completado</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">num_usuarios_inscritos</a> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_curso.html#a0b6a2a38f9735e3d6d1295cd3c1b48e1">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#a0b6a2a38f9735e3d6d1295cd3c1b48e1">Curso::incrementar_completados</a>() </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    ++<a class="code" href="class_curso.html#a1d0468c1a842f6b470d6ab06f06cf088">num_usuarios_completado</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_curso.html#a8cda1e171a1d2ab7c026362c82963509">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#a8cda1e171a1d2ab7c026362c82963509">Curso::incrementar_inscritos</a>() </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ++<a class="code" href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">num_usuarios_inscritos</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_curso.html#abc349f4408860c340e68a403960a0e98">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#abc349f4408860c340e68a403960a0e98">Curso::decrementar_inscritos</a>() </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    --<a class="code" href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">num_usuarios_inscritos</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_curso.html#ada82bb1e13d4e67f8d028fddc684ba7e">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#ada82bb1e13d4e67f8d028fddc684ba7e">Curso::modificar_enviables</a>(<a class="code" href="class_problemas.html">Problemas</a>&amp; enviables, <a class="code" href="class_problemas.html">Problemas</a>&amp; resueltos, <a class="code" href="class_sesiones.html">Sesiones</a>&amp; cs) </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> numero_sesiones_curso = <a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>.size();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numero_sesiones_curso; ++i) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        cs.<a class="code" href="class_sesiones.html#a6dd5f9066cd28c90f4cb444239fe698e">modificar_enviables_sesion</a>(<a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>[i],enviables,resueltos);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_curso.html#aa7f77a754df491b4f9f89b860d8b547c">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#aa7f77a754df491b4f9f89b860d8b547c">Curso::modificar_enviables_s</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s, <a class="code" href="class_problemas.html">Problemas</a>&amp; enviables, <a class="code" href="class_problemas.html">Problemas</a>&amp; resueltos, <a class="code" href="class_sesiones.html">Sesiones</a>&amp; cs) </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    cs.<a class="code" href="class_sesiones.html#a503259a0ee56c52a99c60a799354d34d">modificar_envibales_envio_s</a>(p,s,enviables,resueltos);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_curso.html#a9c47c3f740d3216996d4b413c319f297">   41</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_curso.html#a9c47c3f740d3216996d4b413c319f297">Curso::existe_problema_curso_c</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    map&lt;string,string&gt;::const_iterator it = <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.find(p);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.end()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_curso.html#aab45a5e8aa38c5d08cb4f4ab1f5341ad">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#aab45a5e8aa38c5d08cb4f4ab1f5341ad">Curso::sesion_problema</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    map&lt;string,string&gt;::const_iterator it = <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.find(p);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    cout &lt;&lt; (*it).second &lt;&lt; endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_curso.html#ae422a46226198e467797957ee02203c9">   55</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_curso.html#ae422a46226198e467797957ee02203c9">Curso::sesion_problema_p</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    map&lt;string,string&gt;::const_iterator it = <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.find(p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> (*it).second;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_curso.html#a9b12a34058fcb3c1dd5a63aa59484aa5">   61</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_curso.html#a9b12a34058fcb3c1dd5a63aa59484aa5">Curso::numero_usuarios_inscritos</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">num_usuarios_inscritos</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_curso.html#a56ba1a8fa89ca944b7a6bd21f97d06c6">   66</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_curso.html#a56ba1a8fa89ca944b7a6bd21f97d06c6">Curso::leer_curso</a>(<span class="keyword">const</span> <a class="code" href="class_sesiones.html">Sesiones</a>&amp; cs) </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> numero_sesiones_curso;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    cin &gt;&gt; numero_sesiones_curso;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">string</span> s;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> interseccion = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numero_sesiones_curso; ++i) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        cin &gt;&gt; s;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>.push_back(s);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">int</span> numero_problemas_sesion = cs.<a class="code" href="class_sesiones.html#a2b16066bec1058ec9c0d2fa0a1e03743">numero_problemas_sesion</a>(s);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numero_problemas_sesion; ++i) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">string</span> p = cs.<a class="code" href="class_sesiones.html#a75baf2c7f1251f77021751ed8164d61c">problema_iesimo_sesion</a>(s,i);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span> (not interseccion) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                map&lt;string,string&gt;::iterator it = <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.find(p);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">if</span> (not interseccion and it != <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.end()) interseccion = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">else</span> <a class="code" href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">problemas_sesiones_curso</a>.insert(make_pair(p,s));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> interseccion;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_curso.html#aed22860311cc050b64c9b0751fd1c482">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_curso.html#aed22860311cc050b64c9b0751fd1c482">Curso::escribir</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cout &lt;&lt; <a class="code" href="class_curso.html#a1d0468c1a842f6b470d6ab06f06cf088">num_usuarios_completado</a> &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code" href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">num_usuarios_inscritos</a> &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> numero_sesiones_curso = <a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>.size();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    cout &lt;&lt; numero_sesiones_curso &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; <a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>[0];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; numero_sesiones_curso; ++i) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        cout &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code" href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">sesiones_curso</a>[i];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_curso_html_a9c47c3f740d3216996d4b413c319f297"><div class="ttname"><a href="class_curso.html#a9c47c3f740d3216996d4b413c319f297">Curso::existe_problema_curso_c</a></div><div class="ttdeci">bool existe_problema_curso_c(const string &amp;p) const</div><div class="ttdoc">Consultora de la existencia de un problema dentro de un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00041">Curso.cc:41</a></div></div>
+<div class="ttc" id="aclass_sesiones_html_a2b16066bec1058ec9c0d2fa0a1e03743"><div class="ttname"><a href="class_sesiones.html#a2b16066bec1058ec9c0d2fa0a1e03743">Sesiones::numero_problemas_sesion</a></div><div class="ttdeci">int numero_problemas_sesion(const string &amp;s) const</div><div class="ttdoc">Consultora del número total de problemas que hay en una sesión concreta.</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8cc_source.html#l00032">Sesiones.cc:32</a></div></div>
+<div class="ttc" id="aclass_curso_html_a0a509f1c564d958f35ab6b148382627e"><div class="ttname"><a href="class_curso.html#a0a509f1c564d958f35ab6b148382627e">Curso::sesiones_curso</a></div><div class="ttdeci">vector&lt; string &gt; sesiones_curso</div><div class="ttdoc">Identificadores de las sesiones del curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8hh_source.html#l00032">Curso.hh:32</a></div></div>
+<div class="ttc" id="aclass_sesiones_html_a503259a0ee56c52a99c60a799354d34d"><div class="ttname"><a href="class_sesiones.html#a503259a0ee56c52a99c60a799354d34d">Sesiones::modificar_envibales_envio_s</a></div><div class="ttdeci">void modificar_envibales_envio_s(const string &amp;p, const string &amp;s, Problemas &amp;enviables, Problemas &amp;resueltos)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario al haber realizado el envío de un problema con éxito....</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8cc_source.html#l00025">Sesiones.cc:25</a></div></div>
+<div class="ttc" id="aclass_curso_html_ada82bb1e13d4e67f8d028fddc684ba7e"><div class="ttname"><a href="class_curso.html#ada82bb1e13d4e67f8d028fddc684ba7e">Curso::modificar_enviables</a></div><div class="ttdeci">void modificar_enviables(Problemas &amp;enviables, Problemas &amp;resueltos, Sesiones &amp;cs)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario tras ser inscrito a un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00028">Curso.cc:28</a></div></div>
+<div class="ttc" id="aclass_curso_html_a8cda1e171a1d2ab7c026362c82963509"><div class="ttname"><a href="class_curso.html#a8cda1e171a1d2ab7c026362c82963509">Curso::incrementar_inscritos</a></div><div class="ttdeci">void incrementar_inscritos()</div><div class="ttdoc">Incrementa una unidad el número de usuarios inscritos actualmente en el curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00018">Curso.cc:18</a></div></div>
+<div class="ttc" id="aclass_curso_html_ae422a46226198e467797957ee02203c9"><div class="ttname"><a href="class_curso.html#ae422a46226198e467797957ee02203c9">Curso::sesion_problema_p</a></div><div class="ttdeci">string sesion_problema_p(const string &amp;p) const</div><div class="ttdoc">Consultora del identificador de la sesión a la que pertenece un problema dentro de un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00055">Curso.cc:55</a></div></div>
+<div class="ttc" id="aclass_problemas_html"><div class="ttname"><a href="class_problemas.html">Problemas</a></div><div class="ttdoc">Representa la colección de problemas de la plataforma Evaluator.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00033">Problemas.hh:33</a></div></div>
+<div class="ttc" id="aclass_sesiones_html_a75baf2c7f1251f77021751ed8164d61c"><div class="ttname"><a href="class_sesiones.html#a75baf2c7f1251f77021751ed8164d61c">Sesiones::problema_iesimo_sesion</a></div><div class="ttdeci">string problema_iesimo_sesion(const string &amp;s, int i) const</div><div class="ttdoc">Consultora del identificador de un problema perteneciente a una sesión concreta.</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8cc_source.html#l00038">Sesiones.cc:38</a></div></div>
+<div class="ttc" id="aclass_curso_html_a564974700bfa94987ad6c5082084cf5c"><div class="ttname"><a href="class_curso.html#a564974700bfa94987ad6c5082084cf5c">Curso::problemas_sesiones_curso</a></div><div class="ttdeci">map&lt; string, string &gt; problemas_sesiones_curso</div><div class="ttdoc">Identificadores de los problemas del curso y, para cada uno, la sesión a la que pertenecen.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8hh_source.html#l00036">Curso.hh:36</a></div></div>
+<div class="ttc" id="aclass_sesiones_html"><div class="ttname"><a href="class_sesiones.html">Sesiones</a></div><div class="ttdoc">Representa el conjunto de sesiones de la plataforma Evaluator.</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8hh_source.html#l00023">Sesiones.hh:23</a></div></div>
+<div class="ttc" id="aclass_curso_html_a622e50c0929b59f157b08eab1b88a681"><div class="ttname"><a href="class_curso.html#a622e50c0929b59f157b08eab1b88a681">Curso::num_usuarios_inscritos</a></div><div class="ttdeci">int num_usuarios_inscritos</div><div class="ttdoc">Número de usuarios inscritos actualmente en el curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8hh_source.html#l00042">Curso.hh:42</a></div></div>
+<div class="ttc" id="aclass_curso_html_aed22860311cc050b64c9b0751fd1c482"><div class="ttname"><a href="class_curso.html#aed22860311cc050b64c9b0751fd1c482">Curso::escribir</a></div><div class="ttdeci">void escribir() const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00090">Curso.cc:90</a></div></div>
+<div class="ttc" id="aclass_curso_html_aa7f77a754df491b4f9f89b860d8b547c"><div class="ttname"><a href="class_curso.html#aa7f77a754df491b4f9f89b860d8b547c">Curso::modificar_enviables_s</a></div><div class="ttdeci">static void modificar_enviables_s(const string &amp;p, const string &amp;s, Problemas &amp;enviables, Problemas &amp;resueltos, Sesiones &amp;cs)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario tras haber realizado un envío con éxito de un problem...</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00036">Curso.cc:36</a></div></div>
+<div class="ttc" id="aclass_sesiones_html_a6dd5f9066cd28c90f4cb444239fe698e"><div class="ttname"><a href="class_sesiones.html#a6dd5f9066cd28c90f4cb444239fe698e">Sesiones::modificar_enviables_sesion</a></div><div class="ttdeci">void modificar_enviables_sesion(const string &amp;s, Problemas &amp;enviables, Problemas &amp;resueltos)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario al ser inscrito en un curso, estudiando que problemas...</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8cc_source.html#l00019">Sesiones.cc:19</a></div></div>
+<div class="ttc" id="aclass_curso_html_a0b6a2a38f9735e3d6d1295cd3c1b48e1"><div class="ttname"><a href="class_curso.html#a0b6a2a38f9735e3d6d1295cd3c1b48e1">Curso::incrementar_completados</a></div><div class="ttdeci">void incrementar_completados()</div><div class="ttdoc">Incrementa una unidad el número de usuarios que han completado un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00013">Curso.cc:13</a></div></div>
+<div class="ttc" id="aclass_curso_html_a56ba1a8fa89ca944b7a6bd21f97d06c6"><div class="ttname"><a href="class_curso.html#a56ba1a8fa89ca944b7a6bd21f97d06c6">Curso::leer_curso</a></div><div class="ttdeci">bool leer_curso(const Sesiones &amp;cs)</div><div class="ttdoc">Operación de lectura.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00066">Curso.cc:66</a></div></div>
+<div class="ttc" id="aclass_curso_html_add3bcc7fd065fa02b8fad76cedcc3a8a"><div class="ttname"><a href="class_curso.html#add3bcc7fd065fa02b8fad76cedcc3a8a">Curso::Curso</a></div><div class="ttdeci">Curso()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00007">Curso.cc:7</a></div></div>
+<div class="ttc" id="aclass_curso_html_a1d0468c1a842f6b470d6ab06f06cf088"><div class="ttname"><a href="class_curso.html#a1d0468c1a842f6b470d6ab06f06cf088">Curso::num_usuarios_completado</a></div><div class="ttdeci">int num_usuarios_completado</div><div class="ttdoc">Número de usuarios, tanto actuales como anteriores, que han completado el curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8hh_source.html#l00040">Curso.hh:40</a></div></div>
+<div class="ttc" id="aclass_curso_html_abc349f4408860c340e68a403960a0e98"><div class="ttname"><a href="class_curso.html#abc349f4408860c340e68a403960a0e98">Curso::decrementar_inscritos</a></div><div class="ttdeci">void decrementar_inscritos()</div><div class="ttdoc">Decrementa una unidad el número de usuarios inscritos actualmente en el curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00023">Curso.cc:23</a></div></div>
+<div class="ttc" id="aclass_curso_html_aab45a5e8aa38c5d08cb4f4ab1f5341ad"><div class="ttname"><a href="class_curso.html#aab45a5e8aa38c5d08cb4f4ab1f5341ad">Curso::sesion_problema</a></div><div class="ttdeci">void sesion_problema(const string &amp;p) const</div><div class="ttdoc">Consultora de la sesión a la que pertenece un problema dentro de un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00049">Curso.cc:49</a></div></div>
+<div class="ttc" id="a_curso_8hh_html"><div class="ttname"><a href="_curso_8hh.html">Curso.hh</a></div><div class="ttdoc">Especificación de la clase Curso.</div></div>
+<div class="ttc" id="aclass_curso_html_a9b12a34058fcb3c1dd5a63aa59484aa5"><div class="ttname"><a href="class_curso.html#a9b12a34058fcb3c1dd5a63aa59484aa5">Curso::numero_usuarios_inscritos</a></div><div class="ttdeci">int numero_usuarios_inscritos() const</div><div class="ttdoc">Consultora del número de usuarios inscritos en un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00061">Curso.cc:61</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Plataforma  EVALUATOR: Fichero Fuente Usuario.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Plataforma  EVALUATOR
+   &#160;<span id="projectnumber">v1.0 17/05/2021</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Usuario.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_usuario_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_usuario_8hh.html">Usuario.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">    7</a></span>&#160;<a class="code" href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a>() </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_usuario.html#a6546d89313419083a6c522900643e2d0">numero_problemas_intentados</a> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_usuario.html#a7fdecf647e249b236976e6463860b125">numero_total_envios</a> = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_usuario.html#a55ccd3113b452c9dabc11e5c50462a68">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a55ccd3113b452c9dabc11e5c50462a68">Usuario::inscribir_usuario_curso</a>(<span class="keywordtype">int</span> c, <a class="code" href="class_curso.html">Curso</a>&amp; curso, <a class="code" href="class_sesiones.html">Sesiones</a>&amp; cs) </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a> = c;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    curso.<a class="code" href="class_curso.html#ada82bb1e13d4e67f8d028fddc684ba7e">modificar_enviables</a>(<a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>,<a class="code" href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">resueltos</a>,cs);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_usuario.html#a12fbfcea331bd5d2670cf5a0f2a2ae82">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a12fbfcea331bd5d2670cf5a0f2a2ae82">Usuario::desinscribir_usuario_curso</a>() </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a> = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_usuario.html#a029defe05ea709f25569d5c0c47004cc">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a029defe05ea709f25569d5c0c47004cc">Usuario::incrementar_problemas_intentados</a>() </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ++<a class="code" href="class_usuario.html#a6546d89313419083a6c522900643e2d0">numero_problemas_intentados</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_usuario.html#aa9e3cad5da44e9739cc095212ace9ce6">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#aa9e3cad5da44e9739cc095212ace9ce6">Usuario::incrementar_intentos_p</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#aa18bdb1b0e4b37429a85ddb08fd092cd">incrementar_intentos_usuario</a>(p);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_usuario.html#a975dfc9b942db50f5c7d1ba33caad9dc">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a975dfc9b942db50f5c7d1ba33caad9dc">Usuario::incrementar_total_envios</a>() </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ++<a class="code" href="class_usuario.html#a7fdecf647e249b236976e6463860b125">numero_total_envios</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_usuario.html#ac861c8f3c3218a9ba355175a42505734">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#ac861c8f3c3218a9ba355175a42505734">Usuario::actualizar_enviables</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s, <span class="keyword">const</span> <a class="code" href="struct_problema.html">Problema</a>&amp; problema, <a class="code" href="class_cursos.html">Cursos</a>&amp; cc, <a class="code" href="class_sesiones.html">Sesiones</a>&amp; cs ) </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#a264aa21c4c3d170a4ea8f8e1f725e566">eliminar_enviable</a>(p);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    cc.<a class="code" href="class_cursos.html#af762e208d2523165a4f8212549697ade">modificar_enviables_s_c</a>(<a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a>,p,s,<a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>,<a class="code" href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">resueltos</a>,cs);    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_usuario.html#af4654f1d2134af3e6e00c36b39f80be8">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#af4654f1d2134af3e6e00c36b39f80be8">Usuario::actualizar_resueltos</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p, <span class="keyword">const</span> <a class="code" href="struct_problema.html">Problema</a>&amp; problema) </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">resueltos</a>.<a class="code" href="class_problemas.html#aef3b18810d73f513411668a6c2e700bb">anadir_resuelto</a>(p,problema);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_usuario.html#aa8b3fb5f9ab3b36a2173b32b265f19c5">   50</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#aa8b3fb5f9ab3b36a2173b32b265f19c5">Usuario::curso_usuario</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a>;   </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_usuario.html#a42b70c52c4ce1515725d5946474cd7db">   55</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#a42b70c52c4ce1515725d5946474cd7db">Usuario::consultar_intentos_p</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#aa58e4dfaa6e81717408ce7b14d3d4fee">numero_total_envios_p</a>(p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_usuario.html#a10b1a8312c399d826fe58ded1dea5658">   60</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_usuario.html#a10b1a8312c399d826fe58ded1dea5658">Usuario::numero_problemas_enviables</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">numero_problemas</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_usuario.html#a11b719ee95e8089a4f34c172c81f2a5b">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a11b719ee95e8089a4f34c172c81f2a5b">Usuario::problemas_resueltos</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">resueltos</a>.<a class="code" href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">listar_identificador_envios</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_usuario.html#a79c8b5d178c8cfe7604210dc38d41fa1">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a79c8b5d178c8cfe7604210dc38d41fa1">Usuario::problemas_enviables</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">listar_identificador_envios</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_usuario.html#a26497b1fb06b60dc1c9eee411ad11997">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a26497b1fb06b60dc1c9eee411ad11997">Usuario::consultar_problema_enviable</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <a class="code" href="struct_problema.html">Problema</a>&amp; problema) </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">enviables</a>.<a class="code" href="class_problemas.html#a99e922f420a19408ff0c9b3da1d6606c">consultar_problema</a>(p,problema);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_usuario.html#a2c5cad96439c216cf980664f85ef3dda">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_usuario.html#a2c5cad96439c216cf980664f85ef3dda">Usuario::escribir</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; <a class="code" href="class_usuario.html#a7fdecf647e249b236976e6463860b125">numero_total_envios</a> &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; <a class="code" href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">resueltos</a>.<a class="code" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">numero_problemas</a>() &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_usuario.html#a6546d89313419083a6c522900643e2d0">numero_problemas_intentados</a> &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; <a class="code" href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">id_curso_inscrito</a> &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_usuario_html_a11b719ee95e8089a4f34c172c81f2a5b"><div class="ttname"><a href="class_usuario.html#a11b719ee95e8089a4f34c172c81f2a5b">Usuario::problemas_resueltos</a></div><div class="ttdeci">void problemas_resueltos() const</div><div class="ttdoc">Imprime por pantalla los problemas resueltos de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00065">Usuario.cc:65</a></div></div>
+<div class="ttc" id="aclass_cursos_html"><div class="ttname"><a href="class_cursos.html">Cursos</a></div><div class="ttdoc">Representa el conjunto de cursos de la plataforma Evaluator.</div><div class="ttdef"><b>Definition:</b> <a href="_cursos_8hh_source.html#l00024">Cursos.hh:24</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a7fdecf647e249b236976e6463860b125"><div class="ttname"><a href="class_usuario.html#a7fdecf647e249b236976e6463860b125">Usuario::numero_total_envios</a></div><div class="ttdeci">int numero_total_envios</div><div class="ttdoc">Número total de envíos realizados por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00033">Usuario.hh:33</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a42b70c52c4ce1515725d5946474cd7db"><div class="ttname"><a href="class_usuario.html#a42b70c52c4ce1515725d5946474cd7db">Usuario::consultar_intentos_p</a></div><div class="ttdeci">int consultar_intentos_p(const string &amp;p) const</div><div class="ttdoc">Consultora del número de intentos realizados por un usuario a un problema concreto.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00055">Usuario.cc:55</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a79c8b5d178c8cfe7604210dc38d41fa1"><div class="ttname"><a href="class_usuario.html#a79c8b5d178c8cfe7604210dc38d41fa1">Usuario::problemas_enviables</a></div><div class="ttdeci">void problemas_enviables() const</div><div class="ttdoc">Imprime por pantalla los problemas enviables de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00070">Usuario.cc:70</a></div></div>
+<div class="ttc" id="a_usuario_8hh_html"><div class="ttname"><a href="_usuario_8hh.html">Usuario.hh</a></div><div class="ttdoc">Especificación de la clase Usuario.</div></div>
+<div class="ttc" id="aclass_problemas_html_a85760dffc679b07de2db9bda4ec2ff80"><div class="ttname"><a href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">Problemas::numero_problemas</a></div><div class="ttdeci">int numero_problemas() const</div><div class="ttdoc">Consultora del número total de problemas que hay en la plataforma.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00059">Problemas.cc:59</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a12fbfcea331bd5d2670cf5a0f2a2ae82"><div class="ttname"><a href="class_usuario.html#a12fbfcea331bd5d2670cf5a0f2a2ae82">Usuario::desinscribir_usuario_curso</a></div><div class="ttdeci">void desinscribir_usuario_curso()</div><div class="ttdoc">Desinscribe a un usuario del curso al cual estaba inscrito actualmente.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00020">Usuario.cc:20</a></div></div>
+<div class="ttc" id="aclass_usuario_html_acaa851265a0f972b1bc28ee3801141b6"><div class="ttname"><a href="class_usuario.html#acaa851265a0f972b1bc28ee3801141b6">Usuario::enviables</a></div><div class="ttdeci">Problemas enviables</div><div class="ttdoc">Conjunto de problemas enviables del usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00037">Usuario.hh:37</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a264aa21c4c3d170a4ea8f8e1f725e566"><div class="ttname"><a href="class_problemas.html#a264aa21c4c3d170a4ea8f8e1f725e566">Problemas::eliminar_enviable</a></div><div class="ttdeci">void eliminar_enviable(const string &amp;p)</div><div class="ttdoc">Elimina un problema del conjunto de problemas enviables de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00040">Problemas.cc:40</a></div></div>
+<div class="ttc" id="aclass_usuario_html_af4654f1d2134af3e6e00c36b39f80be8"><div class="ttname"><a href="class_usuario.html#af4654f1d2134af3e6e00c36b39f80be8">Usuario::actualizar_resueltos</a></div><div class="ttdeci">void actualizar_resueltos(const string &amp;p, const Problema &amp;problema)</div><div class="ttdoc">Actualiza los problemas resueltos de un usuario tras haber realizado un envío con éxito a un problema...</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00045">Usuario.cc:45</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aa85a5371a098dfba5449140d9b8a472f"><div class="ttname"><a href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario::Usuario</a></div><div class="ttdeci">Usuario()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00007">Usuario.cc:7</a></div></div>
+<div class="ttc" id="aclass_cursos_html_af762e208d2523165a4f8212549697ade"><div class="ttname"><a href="class_cursos.html#af762e208d2523165a4f8212549697ade">Cursos::modificar_enviables_s_c</a></div><div class="ttdeci">void modificar_enviables_s_c(int c, const string &amp;p, const string &amp;s, Problemas &amp;enviables, Problemas &amp;resueltos, Sesiones &amp;cs)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario tras haber realizado un envío con éxito de un problem...</div><div class="ttdef"><b>Definition:</b> <a href="_cursos_8cc_source.html#l00043">Cursos.cc:43</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a55ccd3113b452c9dabc11e5c50462a68"><div class="ttname"><a href="class_usuario.html#a55ccd3113b452c9dabc11e5c50462a68">Usuario::inscribir_usuario_curso</a></div><div class="ttdeci">void inscribir_usuario_curso(int c, Curso &amp;curso, Sesiones &amp;cs)</div><div class="ttdoc">Inscribe a un usuario a un curso y actualiza sus problemas enviables.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00014">Usuario.cc:14</a></div></div>
+<div class="ttc" id="aclass_curso_html_ada82bb1e13d4e67f8d028fddc684ba7e"><div class="ttname"><a href="class_curso.html#ada82bb1e13d4e67f8d028fddc684ba7e">Curso::modificar_enviables</a></div><div class="ttdeci">void modificar_enviables(Problemas &amp;enviables, Problemas &amp;resueltos, Sesiones &amp;cs)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario tras ser inscrito a un curso.</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8cc_source.html#l00028">Curso.cc:28</a></div></div>
+<div class="ttc" id="aclass_usuario_html_ac861c8f3c3218a9ba355175a42505734"><div class="ttname"><a href="class_usuario.html#ac861c8f3c3218a9ba355175a42505734">Usuario::actualizar_enviables</a></div><div class="ttdeci">void actualizar_enviables(const string &amp;p, const string &amp;s, const Problema &amp;problema, Cursos &amp;cc, Sesiones &amp;cs)</div><div class="ttdoc">Actualiza los problemas enviables de un usuario tras haber realizado un envío con éxito a un problema...</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00039">Usuario.cc:39</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a9acf13599085049d66b7099f36bfd122"><div class="ttname"><a href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">Problemas::listar_identificador_envios</a></div><div class="ttdeci">void listar_identificador_envios() const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00115">Problemas.cc:115</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aa58e4dfaa6e81717408ce7b14d3d4fee"><div class="ttname"><a href="class_problemas.html#aa58e4dfaa6e81717408ce7b14d3d4fee">Problemas::numero_total_envios_p</a></div><div class="ttdeci">int numero_total_envios_p(const string &amp;p) const</div><div class="ttdoc">Consultora del número total de envíos realizados por un usuario a un problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00064">Problemas.cc:64</a></div></div>
+<div class="ttc" id="astruct_problema_html"><div class="ttname"><a href="struct_problema.html">Problema</a></div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00016">Problemas.hh:16</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aa9e3cad5da44e9739cc095212ace9ce6"><div class="ttname"><a href="class_usuario.html#aa9e3cad5da44e9739cc095212ace9ce6">Usuario::incrementar_intentos_p</a></div><div class="ttdeci">void incrementar_intentos_p(const string &amp;p)</div><div class="ttdoc">Incrementa una unidad el número de intentos realizados por un usuario a un problema concreto.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00029">Usuario.cc:29</a></div></div>
+<div class="ttc" id="aclass_sesiones_html"><div class="ttname"><a href="class_sesiones.html">Sesiones</a></div><div class="ttdoc">Representa el conjunto de sesiones de la plataforma Evaluator.</div><div class="ttdef"><b>Definition:</b> <a href="_sesiones_8hh_source.html#l00023">Sesiones.hh:23</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a975dfc9b942db50f5c7d1ba33caad9dc"><div class="ttname"><a href="class_usuario.html#a975dfc9b942db50f5c7d1ba33caad9dc">Usuario::incrementar_total_envios</a></div><div class="ttdeci">void incrementar_total_envios()</div><div class="ttdoc">Incrementa una unidad el número total de envíos realizados por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00034">Usuario.cc:34</a></div></div>
+<div class="ttc" id="aclass_curso_html"><div class="ttname"><a href="class_curso.html">Curso</a></div><div class="ttdoc">Representa un curso que pertenece a la plataforma Evaluator. Está formado por un conjunto de sesiones...</div><div class="ttdef"><b>Definition:</b> <a href="_curso_8hh_source.html#l00029">Curso.hh:29</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aef3b18810d73f513411668a6c2e700bb"><div class="ttname"><a href="class_problemas.html#aef3b18810d73f513411668a6c2e700bb">Problemas::anadir_resuelto</a></div><div class="ttdeci">void anadir_resuelto(const string &amp;p, const Problema &amp;problema)</div><div class="ttdoc">Añade un problema al conjunto de problemas resueltos de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00046">Problemas.cc:46</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a2c5cad96439c216cf980664f85ef3dda"><div class="ttname"><a href="class_usuario.html#a2c5cad96439c216cf980664f85ef3dda">Usuario::escribir</a></div><div class="ttdeci">void escribir() const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00080">Usuario.cc:80</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aa18bdb1b0e4b37429a85ddb08fd092cd"><div class="ttname"><a href="class_problemas.html#aa18bdb1b0e4b37429a85ddb08fd092cd">Problemas::incrementar_intentos_usuario</a></div><div class="ttdeci">void incrementar_intentos_usuario(const string &amp;p)</div><div class="ttdoc">Incrementa una unidad los intentos realizados a un problema por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00034">Problemas.cc:34</a></div></div>
+<div class="ttc" id="aclass_usuario_html_aa8b3fb5f9ab3b36a2173b32b265f19c5"><div class="ttname"><a href="class_usuario.html#aa8b3fb5f9ab3b36a2173b32b265f19c5">Usuario::curso_usuario</a></div><div class="ttdeci">int curso_usuario() const</div><div class="ttdoc">Consultora del curso al cual está inscrito un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00050">Usuario.cc:50</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a5eb4dd810d42c4901a807c2ac9611fef"><div class="ttname"><a href="class_usuario.html#a5eb4dd810d42c4901a807c2ac9611fef">Usuario::resueltos</a></div><div class="ttdeci">Problemas resueltos</div><div class="ttdoc">Conjunto de problemas resuletos del usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00035">Usuario.hh:35</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a7be56afc931ead7a75f86066996b7c65"><div class="ttname"><a href="class_usuario.html#a7be56afc931ead7a75f86066996b7c65">Usuario::id_curso_inscrito</a></div><div class="ttdeci">int id_curso_inscrito</div><div class="ttdoc">Identificador del curso en el cual está inscrito el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00029">Usuario.hh:29</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a029defe05ea709f25569d5c0c47004cc"><div class="ttname"><a href="class_usuario.html#a029defe05ea709f25569d5c0c47004cc">Usuario::incrementar_problemas_intentados</a></div><div class="ttdeci">void incrementar_problemas_intentados()</div><div class="ttdoc">Incrementa una unidad el número total de problemas intentados por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00024">Usuario.cc:24</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a10b1a8312c399d826fe58ded1dea5658"><div class="ttname"><a href="class_usuario.html#a10b1a8312c399d826fe58ded1dea5658">Usuario::numero_problemas_enviables</a></div><div class="ttdeci">int numero_problemas_enviables() const</div><div class="ttdoc">Consultora del número de problemas enviables de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00060">Usuario.cc:60</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a26497b1fb06b60dc1c9eee411ad11997"><div class="ttname"><a href="class_usuario.html#a26497b1fb06b60dc1c9eee411ad11997">Usuario::consultar_problema_enviable</a></div><div class="ttdeci">void consultar_problema_enviable(const string &amp;p, Problema &amp;problema)</div><div class="ttdoc">Consultora de un problema enviable de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8cc_source.html#l00075">Usuario.cc:75</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a99e922f420a19408ff0c9b3da1d6606c"><div class="ttname"><a href="class_problemas.html#a99e922f420a19408ff0c9b3da1d6606c">Problemas::consultar_problema</a></div><div class="ttdeci">void consultar_problema(const string &amp;p, Problema &amp;problema)</div><div class="ttdoc">Consultora de un problema perteneciente a un conjunto de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00070">Problemas.cc:70</a></div></div>
+<div class="ttc" id="aclass_usuario_html_a6546d89313419083a6c522900643e2d0"><div class="ttname"><a href="class_usuario.html#a6546d89313419083a6c522900643e2d0">Usuario::numero_problemas_intentados</a></div><div class="ttdeci">int numero_problemas_intentados</div><div class="ttdoc">Número total de problemas intentados por el usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_usuario_8hh_source.html#l00031">Usuario.hh:31</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -27,6 +27,7 @@ using namespace std;
 
 class Usuarios {
 private:
+    /** @brief Conjunto de usuarios */
     map<string,Usuario> cjt_usuarios;
 public:
     //Constructora
@@ -41,15 +42,15 @@ public:
 
     //Modificadoras
 
-    /** @brief Registra a un nuevo usuario en la plataforma.
-      \pre El usuario con identificador u existe
+    /** @brief Da de alta a un nuevo usuario en la plataforma.
+      \pre El usuario con identificador u no pertenece al parámetro implícito
       \post Se ha añadido un usuario con identificador u al parámetro
       implícito
     */
     void alta_usuario(const string& u);
 
     /** @brief Da de baja a un usuario registrado de la plataforma.
-      \pre Cierto
+      \pre El usuario con identificador u pertenece al parámetro implícito
       \post Se ha borrado del parámetro implícito el usuario con identificador
       u
     */
@@ -92,24 +93,13 @@ public:
     */
     int numero_usuarios() const; 
 
-    /** @brief
-        \pre
-        \post
+    /** @brief Consultora del identificador del curso en el cual está inscrito
+        un usuario concreto.
+        \pre El usuario con identificador u pertenece al parámetro implícito
+        \post Si el usuario con identificador u está inscrito en algun curso, 
+        devuelve el identificador de éste. En caso contrario, devuelve un 0
     */
     int consultar_curso_usuario(const string& u) const;
-
-    /** @brief
-        \pre
-        \post
-    */
-    void problemas_resueltos_usuario(const string& u) const;
-
-    
-    /** @brief
-        \pre
-        \post
-    */
-   void problemas_enviables_usuario(const string& u) const;
 
     //Lectura
 
@@ -121,9 +111,36 @@ public:
 
     //Escritura
 
-    /** @brief
-        \pre
-        \post
+    /** @brief Imprime por pantalla los problemas resueltos de un usuario
+        concreto.
+        \pre El usuario con identificador u pertenece al parámetro implícito
+        \post Se imprimen en orden creciente por identificador los problemas
+        solucionados con éxito por el usuario con identificador u, ya sean del 
+        curso en el cual está inscrito actualmente o de cursos anteriores.
+        Además, para cada problema, se imprime el número de envíos realizados
+        por el usuario a dicho problema
+    */
+    void problemas_resueltos_usuario(const string& u) const;
+
+    
+    /** @brief Imprime por pantalla los problemas enviables de un usuario
+        concreto.
+        \pre El usuario con identificador u pertenece al parámetro implícito
+        \post Se imprimen en orden creciente por identificador los problemas
+        que no ha solucionado todavía, pero ya puede realizar un envío, el 
+        usuario con ientificador u en el curso en el cual está inscrito
+        actualmente. Además, para cada problema, se imprime el número de envíos
+        realizados por usuario a dicho problema
+    */
+   void problemas_enviables_usuario(const string& u) const;
+
+    /** @brief Operación de escritura.
+        \pre Cierto
+        \post Se imprimen los siguientes datos del usuario con identificador u:
+        cuántos envíos en total ha realizado, cuántos problemas ha resuelto
+        satisfactoriamente, cuántos problemas ha intentado resolver y el
+        identificador del curso en el que está inscrito o un cero si no está
+        inscrito en ninguno
     */
     void escribir_usuario(const string& u) const;
 

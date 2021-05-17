@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Laboratorio de PRO2. Plataforma  EVALUATOR: Fichero Fuente Problemas.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Laboratorio de PRO2. Plataforma  EVALUATOR
+   &#160;<span id="projectnumber">v1.0 17/05/2021</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Problemas.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_problemas_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_problemas_8hh.html">Problemas.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_problemas.html#ae587a6825117a5103b50f544a7415c0c">    7</a></span>&#160;<a class="code" href="class_problemas.html#ae587a6825117a5103b50f544a7415c0c">Problemas::Problemas</a>() </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_problemas.html#a1cd32a5ef40dd4709ed8a509dce1271a">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a1cd32a5ef40dd4709ed8a509dce1271a">Problemas::nuevo_problema</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="struct_problema.html">Problema</a> problema;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    problema.<a class="code" href="struct_problema.html#ab5730d9976e8cbb8fb219b0b1316e959">num_total_envios</a> = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    problema.<a class="code" href="struct_problema.html#af24d16202e8c86d27511c536bb28afa1">num_total_correctos</a> = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    problema.<a class="code" href="struct_problema.html#acc3d2ce24418ad68650108de4b603d99">ratio</a> = 1;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.insert(make_pair(p,problema));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_problemas.html#aaf864fbb877725b53243d35cefde72be">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#aaf864fbb877725b53243d35cefde72be">Problemas::envio</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <span class="keywordtype">int</span> r) </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    map&lt;string,Problema&gt;::iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    (*it).second.num_total_envios += 1;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (r == 1) (*it).second.num_total_correctos += 1;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_problemas.html#ac5ebeb4af82a613e8ef5506516546cf0">actualizar_ratio</a>((*it).second);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_problemas.html#ac5ebeb4af82a613e8ef5506516546cf0">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#ac5ebeb4af82a613e8ef5506516546cf0">Problemas::actualizar_ratio</a>(<a class="code" href="struct_problema.html">Problema</a>&amp; p) </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    p.<a class="code" href="struct_problema.html#acc3d2ce24418ad68650108de4b603d99">ratio</a> = (double)(p.<a class="code" href="struct_problema.html#ab5730d9976e8cbb8fb219b0b1316e959">num_total_envios</a>+1) / (double)(p.<a class="code" href="struct_problema.html#af24d16202e8c86d27511c536bb28afa1">num_total_correctos</a>+1);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_problemas.html#aa18bdb1b0e4b37429a85ddb08fd092cd">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#aa18bdb1b0e4b37429a85ddb08fd092cd">Problemas::incrementar_intentos_usuario</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    map&lt;string,Problema&gt;::iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    (*it).second.num_total_envios += 1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_problemas.html#a264aa21c4c3d170a4ea8f8e1f725e566">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a264aa21c4c3d170a4ea8f8e1f725e566">Problemas::eliminar_enviable</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    map&lt;string,Problema&gt;::iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.erase((*it).first);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_problemas.html#aef3b18810d73f513411668a6c2e700bb">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#aef3b18810d73f513411668a6c2e700bb">Problemas::anadir_resuelto</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <span class="keyword">const</span> <a class="code" href="struct_problema.html">Problema</a>&amp; problema) </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.insert(make_pair(p,problema));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_problemas.html#ab5cdc7e8663b9cdd9a1f29c81c3eb2fc">   51</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_problemas.html#ab5cdc7e8663b9cdd9a1f29c81c3eb2fc">Problemas::existe_problema</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.end()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">   59</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">Problemas::numero_problemas</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.size();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_problemas.html#aa58e4dfaa6e81717408ce7b14d3d4fee">   64</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_problemas.html#aa58e4dfaa6e81717408ce7b14d3d4fee">Problemas::numero_total_envios_p</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> (*it).second.num_total_envios;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_problemas.html#a99e922f420a19408ff0c9b3da1d6606c">   70</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a99e922f420a19408ff0c9b3da1d6606c">Problemas::consultar_problema</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p, <a class="code" href="struct_problema.html">Problema</a>&amp; problema) </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    problema = (*it).second;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_problemas.html#a6d16937dea64409081e507065e17f2b1">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a6d16937dea64409081e507065e17f2b1">Problemas::leer_coleccion_problemas</a>() </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> num_problemas;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    cin &gt;&gt; num_problemas;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">string</span> p;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_problemas; ++i) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        cin &gt;&gt; p;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_problemas.html#a1cd32a5ef40dd4709ed8a509dce1271a">nuevo_problema</a>(p);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_problemas.html#a34a6fb7767a92b1ffa01d052104bae07">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a34a6fb7767a92b1ffa01d052104bae07">Problemas::escribir_problema</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p)<span class="keyword"> const </span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.find(p);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cout &lt;&lt; p &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; (*it).second.num_total_envios &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cout &lt;&lt; (*it).second.num_total_correctos &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; (*it).second.ratio;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    cout &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_problemas.html#a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c">Problemas::listar_problemas</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    vector&lt;pair&lt;string,double&gt;&gt; ordenacion_problemas;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.begin();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.end()) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        pair&lt;string,double&gt; p;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        p.first = (*it).first;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        p.second = (*it).second.ratio;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        ordenacion_problemas.push_back(p);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        ++it;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    sort (ordenacion_problemas.begin(),ordenacion_problemas.end(),<a class="code" href="class_problemas.html#a2d2545675f5e155a168f39a5cb82d174">comp</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">numero_problemas</a> = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.size();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">numero_problemas</a>; ++i) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="class_problemas.html#a34a6fb7767a92b1ffa01d052104bae07">escribir_problema</a>(ordenacion_problemas[i].first);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">  115</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">Problemas::listar_identificador_envios</a>()<span class="keyword"> const </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    map&lt;string,Problema&gt;::const_iterator it = <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.begin();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">while</span> (it != <a class="code" href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">cjt_problemas</a>.end()) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        cout &lt;&lt; (*it).first &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; (*it).second.num_total_envios &lt;&lt; <span class="charliteral">&#39;)&#39;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        ++it;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_problemas.html#a2d2545675f5e155a168f39a5cb82d174">  124</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_problemas.html#a2d2545675f5e155a168f39a5cb82d174">Problemas::comp</a>(<span class="keyword">const</span> pair&lt;string,double&gt;&amp; a, <span class="keyword">const</span> pair&lt;string,double&gt;&amp; b) </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (a.second == b.second) <span class="keywordflow">return</span> a.first &lt; b.first;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> a.second &lt; b.second;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_problemas_html_ae587a6825117a5103b50f544a7415c0c"><div class="ttname"><a href="class_problemas.html#ae587a6825117a5103b50f544a7415c0c">Problemas::Problemas</a></div><div class="ttdeci">Problemas()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00007">Problemas.cc:7</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a85760dffc679b07de2db9bda4ec2ff80"><div class="ttname"><a href="class_problemas.html#a85760dffc679b07de2db9bda4ec2ff80">Problemas::numero_problemas</a></div><div class="ttdeci">int numero_problemas() const</div><div class="ttdoc">Consultora del número total de problemas que hay en la plataforma.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00059">Problemas.cc:59</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a264aa21c4c3d170a4ea8f8e1f725e566"><div class="ttname"><a href="class_problemas.html#a264aa21c4c3d170a4ea8f8e1f725e566">Problemas::eliminar_enviable</a></div><div class="ttdeci">void eliminar_enviable(const string &amp;p)</div><div class="ttdoc">Elimina un problema del conjunto de problemas enviables de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00040">Problemas.cc:40</a></div></div>
+<div class="ttc" id="astruct_problema_html_acc3d2ce24418ad68650108de4b603d99"><div class="ttname"><a href="struct_problema.html#acc3d2ce24418ad68650108de4b603d99">Problema::ratio</a></div><div class="ttdeci">double ratio</div><div class="ttdoc">Ratio del problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00022">Problemas.hh:22</a></div></div>
+<div class="ttc" id="aclass_problemas_html_ac5ebeb4af82a613e8ef5506516546cf0"><div class="ttname"><a href="class_problemas.html#ac5ebeb4af82a613e8ef5506516546cf0">Problemas::actualizar_ratio</a></div><div class="ttdeci">void actualizar_ratio(Problema &amp;p)</div><div class="ttdoc">Actualiza el ratio de un problema cuando un usuario realiza un envío a dicho problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00029">Problemas.cc:29</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a9acf13599085049d66b7099f36bfd122"><div class="ttname"><a href="class_problemas.html#a9acf13599085049d66b7099f36bfd122">Problemas::listar_identificador_envios</a></div><div class="ttdeci">void listar_identificador_envios() const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00115">Problemas.cc:115</a></div></div>
+<div class="ttc" id="aclass_problemas_html_ab5cdc7e8663b9cdd9a1f29c81c3eb2fc"><div class="ttname"><a href="class_problemas.html#ab5cdc7e8663b9cdd9a1f29c81c3eb2fc">Problemas::existe_problema</a></div><div class="ttdeci">bool existe_problema(const string &amp;p) const</div><div class="ttdoc">Consultora de la existencia de un problema dentro de la colección de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00051">Problemas.cc:51</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aa58e4dfaa6e81717408ce7b14d3d4fee"><div class="ttname"><a href="class_problemas.html#aa58e4dfaa6e81717408ce7b14d3d4fee">Problemas::numero_total_envios_p</a></div><div class="ttdeci">int numero_total_envios_p(const string &amp;p) const</div><div class="ttdoc">Consultora del número total de envíos realizados por un usuario a un problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00064">Problemas.cc:64</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a1cd32a5ef40dd4709ed8a509dce1271a"><div class="ttname"><a href="class_problemas.html#a1cd32a5ef40dd4709ed8a509dce1271a">Problemas::nuevo_problema</a></div><div class="ttdeci">void nuevo_problema(const string &amp;p)</div><div class="ttdoc">Añade un nuevo problema a la colección de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00012">Problemas.cc:12</a></div></div>
+<div class="ttc" id="astruct_problema_html_ab5730d9976e8cbb8fb219b0b1316e959"><div class="ttname"><a href="struct_problema.html#ab5730d9976e8cbb8fb219b0b1316e959">Problema::num_total_envios</a></div><div class="ttdeci">int num_total_envios</div><div class="ttdoc">Número total de envíos realizados al problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00018">Problemas.hh:18</a></div></div>
+<div class="ttc" id="astruct_problema_html"><div class="ttname"><a href="struct_problema.html">Problema</a></div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00016">Problemas.hh:16</a></div></div>
+<div class="ttc" id="a_problemas_8hh_html"><div class="ttname"><a href="_problemas_8hh.html">Problemas.hh</a></div><div class="ttdoc">Especificación de la clase Problemas.</div></div>
+<div class="ttc" id="aclass_problemas_html_a2d2545675f5e155a168f39a5cb82d174"><div class="ttname"><a href="class_problemas.html#a2d2545675f5e155a168f39a5cb82d174">Problemas::comp</a></div><div class="ttdeci">static bool comp(const pair&lt; string, double &gt; &amp;a, const pair&lt; string, double &gt; &amp;b)</div><div class="ttdoc">Operación de comparación.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00124">Problemas.cc:124</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aef3b18810d73f513411668a6c2e700bb"><div class="ttname"><a href="class_problemas.html#aef3b18810d73f513411668a6c2e700bb">Problemas::anadir_resuelto</a></div><div class="ttdeci">void anadir_resuelto(const string &amp;p, const Problema &amp;problema)</div><div class="ttdoc">Añade un problema al conjunto de problemas resueltos de un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00046">Problemas.cc:46</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aaf864fbb877725b53243d35cefde72be"><div class="ttname"><a href="class_problemas.html#aaf864fbb877725b53243d35cefde72be">Problemas::envio</a></div><div class="ttdeci">void envio(const string &amp;p, int r)</div><div class="ttdoc">Actualiza las estadísticas de un problema cuando un usuario realiza un envío a dicho problema,...</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00021">Problemas.cc:21</a></div></div>
+<div class="ttc" id="aclass_problemas_html_aa18bdb1b0e4b37429a85ddb08fd092cd"><div class="ttname"><a href="class_problemas.html#aa18bdb1b0e4b37429a85ddb08fd092cd">Problemas::incrementar_intentos_usuario</a></div><div class="ttdeci">void incrementar_intentos_usuario(const string &amp;p)</div><div class="ttdoc">Incrementa una unidad los intentos realizados a un problema por un usuario.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00034">Problemas.cc:34</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a34a6fb7767a92b1ffa01d052104bae07"><div class="ttname"><a href="class_problemas.html#a34a6fb7767a92b1ffa01d052104bae07">Problemas::escribir_problema</a></div><div class="ttdeci">void escribir_problema(const string &amp;p) const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00088">Problemas.cc:88</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c"><div class="ttname"><a href="class_problemas.html#a8c3ec08e7f02cc4ce8c2b5e9a3e19f4c">Problemas::listar_problemas</a></div><div class="ttdeci">void listar_problemas() const</div><div class="ttdoc">Operación de escritura.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00097">Problemas.cc:97</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a52e7343a48e45b634008676ece6260c3"><div class="ttname"><a href="class_problemas.html#a52e7343a48e45b634008676ece6260c3">Problemas::cjt_problemas</a></div><div class="ttdeci">map&lt; string, Problema &gt; cjt_problemas</div><div class="ttdoc">Colección de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00036">Problemas.hh:36</a></div></div>
+<div class="ttc" id="astruct_problema_html_af24d16202e8c86d27511c536bb28afa1"><div class="ttname"><a href="struct_problema.html#af24d16202e8c86d27511c536bb28afa1">Problema::num_total_correctos</a></div><div class="ttdeci">int num_total_correctos</div><div class="ttdoc">Número total de usuarios que han resuelto el problema.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8hh_source.html#l00020">Problemas.hh:20</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a6d16937dea64409081e507065e17f2b1"><div class="ttname"><a href="class_problemas.html#a6d16937dea64409081e507065e17f2b1">Problemas::leer_coleccion_problemas</a></div><div class="ttdeci">void leer_coleccion_problemas()</div><div class="ttdoc">Operación de lectura.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00076">Problemas.cc:76</a></div></div>
+<div class="ttc" id="aclass_problemas_html_a99e922f420a19408ff0c9b3da1d6606c"><div class="ttname"><a href="class_problemas.html#a99e922f420a19408ff0c9b3da1d6606c">Problemas::consultar_problema</a></div><div class="ttdeci">void consultar_problema(const string &amp;p, Problema &amp;problema)</div><div class="ttdoc">Consultora de un problema perteneciente a un conjunto de problemas.</div><div class="ttdef"><b>Definition:</b> <a href="_problemas_8cc_source.html#l00070">Problemas.cc:70</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
